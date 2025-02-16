@@ -46,7 +46,7 @@ jobs:
       - name: Run Gradle
         run: ./gradlew -PskipHandbook=1 && ./gradlew jar -PskipHandbook=1
       - name: Upload build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: LunaGC
           path: LunaGC-*.jar
