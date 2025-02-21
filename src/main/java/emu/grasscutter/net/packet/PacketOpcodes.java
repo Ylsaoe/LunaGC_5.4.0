@@ -94,8 +94,6 @@ public final class PacketOpcodes {
     public static final int SetPlayerNameRsp = 24602;
     public static final int SetPlayerSignatureReq = 26003;
     public static final int SetPlayerSignatureRsp = 8848;
-    public static final int GetAllUnlockNameCardReq = 23362; // ?
-    public static final int GetAllUnlockNameCardRsp = 21801; // ?
     public static final int SetPlayerBirthdayReq = 25797;
     public static final int SetPlayerBirthdayRsp = 7268;
     public static final int ServerBuffChangeNotify = 5851;
@@ -187,20 +185,35 @@ public final class PacketOpcodes {
     public static final int RechargeRsp = 21709;
     public static final int TakeBattlePassRewardReq = 4300;
     public static final int TakeBattlePassRewardRsp = 8882;
-
-    // leaving outdated for no reason
+    public static final int AvatarSatiationDataNotify = 7117;
     public static final int PlayerSetPauseReq = 26188;
+    public static final int AbilityInvocationFixedNotify = 26237;
+    public static final int DailyTaskProgressNotify = 22595;
+    public static final int WorldOwnerDailyTaskNotify = 26372;
+    public static final int SetEntityClientDataNotify = 3136;
+    public static final int EvtAvatarLockChairReq = 28501;
+    public static final int EvtAvatarLockChairRsp = 8901;
+    public static final int EvtAvatarSitDownNotify = 6721;
+    public static final int EvtAvatarStandUpNotify = 28858;
+    public static final int ReliquaryPromoteReq = 25671;
+    public static final int ReliquaryPromoteRsp = 29743;
+    public static final int AvatarPropChangeReasonNotify = 24444;
+    public static final int PlayerPropNotify = 5688;
+    public static final int EvtBulletHitNotify = 134;
+    public static final int MassiveEntityElementOpBatchNotify = 2824;
+    public static final int AvatarLifeStateChangeNotify = 2117;
+    public static final int EntityAuthorityChangeNotify = 23692;
+    public static final int EvtEntityRenderersChangedNotify = 22931;
 
     // probably right
-    public static final int AvatarSatiationDataNotify = 7117;
+    
     public static final int GachaWishRsp = 137;
-    public static final int WorldOwnerDailyTaskNotify = 13767;
     public static final int PlayerReportRsp = 8507;
 
     // unk 
-    public static final int ReliquaryPromoteReq = 1111111111;
-    public static final int ReliquaryPromoteRsp = 1111111111;
     public static final int PrivateChatRsp = 1111111111;
+    public static final int GetAllUnlockNameCardReq = 1111111111; // ?
+    public static final int GetAllUnlockNameCardRsp = 1111111111; // ?
     public static final int ChangeAvatarRsp = 1111111111; // huh
     public static final int ActivityInfoNotify = 1111111111;
     public static final int AddQuestContentProgressReq = 1111111111; //unk
@@ -218,7 +231,6 @@ public final class PacketOpcodes {
     public static final int QuestListNotify = 1111111111; //unk, who cares
     public static final int QuestListUpdateNotify = 1111111111;
     public static final int QuestProgressUpdateNotify = 1111111111;   
-    public static final int SetEntityClientDataNotify = 1111111111; //unk
     public static final int StoreWeightLimitNotify = 1111111111; //unk
     public static final int ToTheMoonEnterSceneReq = 1111111111;
     public static final int SceneForceUnlockNotify = 1111111111; //unk
@@ -234,12 +246,8 @@ public final class PacketOpcodes {
     public static final int GetPlayerAskFriendListRsp = 1111111111;
     public static final int PlayerGameTimeByLuaNotify = 1111111111;
     public static final int PlayerInvestigationAllInfoNotify = 1111111111;
-    public static final int EvtAvatarLockChairRsp = 1111111111;
     public static final int TakeBattlePassMissionPointRsp = 1111111111;
-    public static final int EvtAvatarStandUpNotify = 1111111111;
-    public static final int AvatarLifeStateChangeNotify = 1111111111;
     public static final int PlayerInvestigationTargetNotify = 1111111111;
-    public static final int EvtBulletHitNotify = 1111111111;
     public static final int AvatarPromoteGetRewardRsp = 1111111111;
     public static final int RedeemLegendaryKeyRsp = 1111111111;
     public static final int BattlePassCurScheduleUpdateNotify = 1111111111;
@@ -247,7 +255,6 @@ public final class PacketOpcodes {
     public static final int NormalUidOpNotify = 1111111111; //unk, what
     public static final int ShowTemplateReminderNotify = 1111111111;
     public static final int SceneEntityDrownRsp = 1111111111;
-    public static final int EntityAuthorityChangeNotify = 1111111111;
     public static final int QuestUpdateQuestVarNotify = 1111111111;
     public static final int AvatarDieAnimationEndReq = 1111111111;
     public static final int AvatarDieAnimationEndRsp = 1111111111;
@@ -271,7 +278,6 @@ public final class PacketOpcodes {
     public static final int VehicleInteractReq = 1111111111;
     public static final int VehicleInteractRsp = 1111111111;
     public static final int ScenePlayerLocationNotify = 1111111111;
-    public static final int PlayerPropNotify = 1111111111;
     public static final int GetDailyDungeonEntryInfoRsp = 1111111111;
     public static final int DungeonPreloadMonsterNotify = 1111111111;
     public static final int RegionSearchNotify = 1111111111;
@@ -436,7 +442,6 @@ public final class PacketOpcodes {
     public static final int HitTreeNotify = 1111111111;
     public static final int TheaterLobbySceneJumpReq = 1111111111;
     public static final int TheaterLobbySceneJumpRsp = 1111111111;
-    public static final int EvtAvatarLockChairReq = 1111111111;
     public static final int ObstacleModifyNotify = 1111111111;
     public static final int SetOpenStateReq = 1111111111;
     public static final int GetMapMarkTipsReq = 1111111111;
@@ -506,16 +511,13 @@ public final class PacketOpcodes {
     public static final int AddNoGachaAvatarCardNotify = 1111111111;
     public static final int ChangeMpTeamAvatarReq = 1111111111;
     public static final int ChangeMpTeamAvatarRsp = 1111111111;
-    public static final int AvatarPropChangeReasonNotify = 1111111111;
     public static final int AvatarPromoteRsp = 1111111111;
     public static final int ProudSkillExtraLevelNotify = 1111111111;
     public static final int AvatarEnterElementViewNotify = 1111111111;
     public static final int AvatarEquipAffixStartNotify = 1111111111;
     public static final int AdjustWorldLevelRsp = 1111111111;
-    public static final int EvtEntityRenderersChangedNotify = 1111111111;
     public static final int EvtEntityStartDieEndNotify = 1111111111;
     public static final int AvatarRenameInfoNotify = 1111111111;
-    public static final int EvtAvatarSitDownNotify = 1111111111;
     public static final int EvtCostStaminaNotify = 1111111111;
     public static final int ClientLoadingCostumeVerificationNotify = 1111111111;
     public static final int PlayerForceExitReq = 1111111111;
@@ -538,7 +540,6 @@ public final class PacketOpcodes {
     public static final int PlayerChatRsp = 1111111111;
     public static final int AvatarBuffAddNotify = 1111111111;
     public static final int AvatarBuffDelNotify = 1111111111;
-    public static final int AbilityInvocationFixedNotify = 1111111111;
     public static final int GetWidgetQuickSlotListRsp = 1111111111;
     public static final int TowerAllDataRsp = 1111111111;
     public static final int GetAllSceneGalleryInfoRsp = 1111111111;
@@ -858,7 +859,6 @@ public final class PacketOpcodes {
     public static final int DailyTaskDataNotify = 1111111111;
     public static final int DailyTaskFilterCityReq = 1111111111;
     public static final int DailyTaskFilterCityRsp = 1111111111;
-    public static final int DailyTaskProgressNotify = 1111111111;
     public static final int DailyTaskScoreRewardNotify = 1111111111;
     public static final int DailyTaskUnlockedCitiesNotify = 1111111111;
     public static final int DeathZoneObserveNotify = 1111111111;
@@ -1660,7 +1660,6 @@ public final class PacketOpcodes {
     public static final int MainCoopUpdateNotify = 1111111111;
     public static final int MarkNewNotify = 1111111111;
     public static final int MarkTargetInvestigationMonsterNotify = 1111111111;
-    public static final int MassiveEntityElementOpBatchNotify = 1111111111;
     public static final int MassiveEntityStateChangedNotify = 1111111111;
     public static final int MaterialDeleteReturnNotify = 1111111111;
     public static final int MaterialDeleteUpdateNotify = 1111111111;
