@@ -85,33 +85,25 @@ public final class RegionHandler implements Router {
                                     .build();
                     usedNames.add(region.Name);
                     servers.add(identifier);
-
                     // Create a region info object.
                     var regionInfo =
-    RegionInfo.newBuilder()
-        .setGateserverIp("47.101.66.170")
-        .setGateserverPort(22101)
-        .setResourceUrl("https://autopatchcn.yuanshen.com/client_game_res/5.4_live")
-        .setDataUrl("https://autopatchcn.yuanshen.com/client_design_data/5.4_live")
-        .setClientDataVersion(30510652)
-        .setClientSilenceDataVersion(30427106)
-        .setClientDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"fb594d6581df5341b1e6f803b30fcb94\", \"hash\": \"eb2c76107277f80f\", \"fileSize\": 68709}\r\n"
-                          + "{\"remoteName\": \"data_versions_medium\", \"md5\": \"7d9a173fec2d010b5c556f82473d6663\", \"hash\": \"39ba191556e4ab6b\", \"fileSize\": 6666}")
-        .setClientSilenceDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"6716dfa9603c97b42a382ab46df15219\", \"hash\": \"df537dfcbf95ae15\", \"fileSize\": 522}")
-        .setClientVersionSuffix("59a16d2a4d")
-        .setClientSilenceVersionSuffix("9f24b52ed4")
-        .setResVersionConfig(
-            ResVersionConfig.newBuilder()
-                .setBranch("5.4_live")
-                .setVersionSuffix("4e063299b4")
-                .setVersion(30451171)
-                .setMd5("{\"remoteName\": \"res_versions_external\", \"md5\": \"e4a7b9d841a83a44c4010fdbcb5e0cda\", \"hash\": \"3b484f02e73d5f1d\", \"fileSize\": 175919}\r\n"
-                        + "{\"remoteName\": \"res_versions_medium\", \"md5\": \"c2095e8e62403f31ef811cc10b88889f\", \"hash\": \"48d77d83eeee976a\", \"fileSize\": 12072}\r\n"
-                        + "{\"remoteName\": \"res_versions_streaming\", \"md5\": \"df5ac97861888cde6ed3e1e215b91271\", \"hash\": \"a74789f1e4b3bc2e\", \"fileSize\": 2641}\r\n"
-                        + "{\"remoteName\": \"base_revision\", \"md5\": \"bd1ba2fde4ddd7cb4846cf0fe5de590e\", \"hash\": \"dcf27ba4df1e1492\", \"fileSize\": 19}\r\n"
-                        + "{\"remoteName\": \"patch_node_versions\", \"md5\": \"e5a3bc7e4b857ba027d7a35dd860889a\", \"hash\": \"5238be43edfc53e6\", \"fileSize\": 3955}\r\n"
-                        + "{\"remoteName\": \"audio_diff_versions_30451171-29332470\", \"md5\": \"49ad50b4aaf8bf4387dc6bcfc5b4e249\", \"hash\": \"846c358437cc7ff4\", \"fileSize\": 30126}")
-        );
+                            RegionInfo.newBuilder()
+                                    .setGateserverIp(47.101.66.170)
+                                    .setGateserverPort(22101)
+                                    .setResourceUrl("https://autopatchcn.yuanshen.com/client_game_res/5.4_live")
+                                    .setDataUrl("https://autopatchcn.yuanshen.com/client_design_data/5.4_live")
+                                    .setClientDataVersion(30510652)
+                                    .setClientSilenceDataVersion(30427106)
+                                    .setClientDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"fb594d6581df5341b1e6f803b30fcb94\", \"hash\": \"eb2c76107277f80f\", \"fileSize\": 68709}\r\n{\"remoteName\": \"data_versions_medium\", \"md5\": \"7d9a173fec2d010b5c556f82473d6663\", \"hash\": \"39ba191556e4ab6b\", \"fileSize\": 6666}")
+                                    .setClientSilenceDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"6716dfa9603c97b42a382ab46df15219\", \"hash\": \"df537dfcbf95ae15\", \"fileSize\": 522}")
+                                    .setClientVersionSuffix("59a16d2a4d")
+                                    .setClientSilenceVersionSuffix("9f24b52ed4")
+                                    .setResVersionConfig(
+                                        ResVersionConfig.newBuilder()
+                                        .setBranch("5.4_live")
+                                        .setVersionSuffix("4e063299b4")
+                                        .setVersion(30451171)
+                                        .setMd5("{\"remoteName\": \"res_versions_external\", \"md5\": \"e4a7b9d841a83a44c4010fdbcb5e0cda\", \"hash\": \"3b484f02e73d5f1d\", \"fileSize\": 175919}\r\n{\"remoteName\": \"res_versions_medium\", \"md5\": \"c2095e8e62403f31ef811cc10b88889f\", \"hash\": \"48d77d83eeee976a\", \"fileSize\": 12072}\r\n{\"remoteName\": \"res_versions_streaming\", \"md5\": \"df5ac97861888cde6ed3e1e215b91271\", \"hash\": \"a74789f1e4b3bc2e\", \"fileSize\": 2641}\r\n{\"remoteName\": \"base_revision\", \"md5\": \"bd1ba2fde4ddd7cb4846cf0fe5de590e\", \"hash\": \"dcf27ba4df1e1492\", \"fileSize\": 19}\r\n{\"remoteName\": \"patch_node_versions\", \"md5\": \"e5a3bc7e4b857ba027d7a35dd860889a\", \"hash\": \"5238be43edfc53e6\", \"fileSize\": 3955}\r\n{\"remoteName\": \"audio_diff_versions_30451171-29332470\", \"md5\": \"49ad50b4aaf8bf4387dc6bcfc5b4e249\", \"hash\": \"846c358437cc7ff4\", \"fileSize\": 30126}")
                                         .setReleaseTotalSize("0").build()
                                     )
                                     .build();
