@@ -6,10 +6,12 @@ import com.google.gson.*;
 import com.google.protobuf.ByteString;
 import emu.grasscutter.*;
 import emu.grasscutter.Grasscutter.ServerRunMode;
+import emu.grasscutter.config.ConfigContainer.Region;
 import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp;
 import emu.grasscutter.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp;
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo;
+import emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo;
 import emu.grasscutter.server.event.dispatch.*;
@@ -73,6 +75,8 @@ public final class RegionHandler implements Router {
                         return;
                     }
 
+{
+
                     // Create a region identifier.
                     var identifier =
                             RegionSimpleInfo.newBuilder()
@@ -89,6 +93,22 @@ public final class RegionHandler implements Router {
                             RegionInfo.newBuilder()
                                     .setGateserverIp(region.Ip)
                                     .setGateserverPort(region.Port)
+                                    .setResourceUrl("https://autopatchcn.yuanshen.com/client_game_res/5.4_live")
+                                    .setDataUrl("https://autopatchcn.yuanshen.com/client_design_data/5.4_live")
+                                    .setClientDataVersion(30844639)
+                                    .setClientSilenceDataVersion(30738672)
+                                    .setClientDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"ab62e2934fc1517afa7461414f6a39fd\", \"hash\": \"2795fb4938c7443e\", \"fileSize\": 68709}\r\n{\"remoteName\": \"data_versions_medium\", \"md5\": \"3d6f7390703d5914da2954f7f48f9f73\", \"hash\": \"50fa31c12b15a538\", \"fileSize\": 6666}")
+                                    .setClientSilenceDataMd5("{\"remoteName\": \"data_versions\", \"md5\": \"2bf5c0d17e30f0628cb1975cfaeff003\", \"hash\": \"15784c065054338f\", \"fileSize\": 522}",)
+                                    .setClientVersionSuffix("59aa62852a")
+                                    .setClientSilenceVersionSuffix("d081d2e70f")
+                                    .setResVersionConfig(
+                                        ResVersionConfig.newBuilder()
+                                        .setBranch("5.4_live")
+                                        .setVersionSuffix("eeba17546b")
+                                        .setVersion(30666138)
+                                        .setMd5(""{\"remoteName\": \"res_versions_external\", \"md5\": \"5ed4687111440f75650ee8cd9b7719e8\", \"hash\": \"dc9b7e145021e7e3\", \"fileSize\": 175923}\r\n{\"remoteName\": \"res_versions_medium\", \"md5\": \"6b3ef138214b1c7566c1c395ff5b38aa\", \"hash\": \"529e5b82b8c802f3\", \"fileSize\": 12072}\r\n{\"remoteName\": \"res_versions_streaming\", \"md5\": \"ff810a4c9a9553f20846a9d8dd0d0cb2\", \"hash\": \"114d270362090831\", \"fileSize\": 2641}\r\n{\"remoteName\": \"base_revision\", \"md5\": \"bd1ba2fde4ddd7cb4846cf0fe5de590e\", \"hash\": \"dcf27ba4df1e1492\", \"fileSize\": 19}\r\n{\"remoteName\": \"patch_node_versions\", \"md5\": \"9942b95c226a6e11e29a49a439f97bbe\", \"hash\": \"0c6e4ea548ff4e5a\", \"fileSize\": 3955}")
+                                        .setReleaseTotalSize("0").build()
+                                    )
                                     .build();
                     // Create an updated region query.
                     var updatedQuery =
