@@ -1,18 +1,15 @@
 package emu.grasscutter.server.http.dispatch;
 
-import static emu.grasscutter.server.http.dispatch.HotUpdateResourceDownload.buildRegionInfo;
 import static emu.grasscutter.config.Configuration.*;
 
 import com.google.gson.*;
 import com.google.protobuf.ByteString;
 import emu.grasscutter.*;
 import emu.grasscutter.Grasscutter.ServerRunMode;
-import emu.grasscutter.config.ConfigContainer.Region;
 import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp;
 import emu.grasscutter.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp;
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo;
-import emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfig;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo;
 import emu.grasscutter.server.event.dispatch.*;
@@ -88,7 +85,11 @@ public final class RegionHandler implements Router {
                     servers.add(identifier);
 
                     // Create a region info object.
-                    var regionInfo = HotUpdateResourceDownload.buildRegionInfo(region.Ip, region.Port);
+                    var regionInfo =
+                            RegionInfo.newBuilder()
+                                    .setGateserverIp(region.Ip)
+                                    .setGateserverPort(region.Port)
+                                    .build();
                     // Create an updated region query.
                     var updatedQuery =
                             QueryCurrRegionHttpRsp.newBuilder()
