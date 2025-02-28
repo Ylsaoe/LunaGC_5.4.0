@@ -1,5 +1,5 @@
 # LunaGC-5.4.0
-
+## A better, more functional version of the holy Grasscutter
 Old Discord https://discord.gg/8vSyTHVphj
 
 Please contribute actively to this repository
@@ -164,6 +164,8 @@ Method 2:
 ## What doesn't work
 
 - find out
+
+### most new features are produced by manu's breeding cycle, please wait for next pregnancy
 
 ## Credit
 
