@@ -398,7 +398,6 @@ public class ConfigContainer {
     public static class Region {
         public String Name = "os_usa";
         public String Title = "Grasscutter";
-        public String DispatchUrl = "http://127.0.0.1:22102/query_cur_region";
         public String Ip = "127.0.0.1";
         public int Port = 22102;
 
