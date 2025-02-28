@@ -73,15 +73,14 @@ public final class RegionHandler implements Router {
                         Grasscutter.getLogger().error("Region name already in use.");
                         return;
                     }
+                    
                     // Create a region identifier.
-
-					var dispatchUrl = (region.DispatchUrl != null && !region.DispatchUrl.isEmpty()) ? region.DispatchUrl : dispatchDomain + "/query_cur_region/" + region.Name;
                     var identifier =
                             RegionSimpleInfo.newBuilder()
                                     .setName(region.Name)
                                     .setTitle(region.Title)
                                     .setType("DEV_PUBLIC")
-                                    .setDispatchUrl(dispatchUrl)
+                                    .setDispatchUrl(dispatchDomain + "/query_cur_region/" + region.Name)
                                     .build();
                     usedNames.add(region.Name);
                     servers.add(identifier);
