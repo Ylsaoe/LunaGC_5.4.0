@@ -1425,6 +1425,14 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch { 
         this.getPlayerProgress().setPlayer(this); // Add reference to the player.
     }
 
+    /**
+     * Invoked when the player selects their avatar.
+     */
+    public void onPlayerBorn() {
+        Grasscutter.getThreadPool().submit(
+            this.getQuestManager()::onPlayerBorn);
+    }
+
     public void onLogin() {
 
         Grasscutter.getThreadPool().submit(this.getQuestManager()::onPlayerBorn);
