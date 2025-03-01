@@ -54,22 +54,38 @@ public class EntityAvatar extends GameEntity {
         this.avatar = avatar;
         this.avatar.setCurrentEnergy();
 
-        if (scene != null) {
-            var world = scene.getWorld();
-            this.id = world.getNextEntityId(EntityIdType.AVATAR);
+//        if (scene != null) {
+//            var world = scene.getWorld();
+//            this.id = world.getNextEntityId(EntityIdType.AVATAR);
+//
+//            var weapon = this.getAvatar().getWeapon();
+//            if (weapon != null) {
+//                if (!(weapon.getWeaponEntity() != null && weapon.getWeaponEntity().getScene() == scene)) {
+//                    weapon.setWeaponEntity(
+//                            new EntityWeapon(this.getPlayer().getScene(), weapon.getItemData().getGadgetId()));
+//                    scene.getWeaponEntities().put(weapon.getWeaponEntity().getId(), weapon.getWeaponEntity());
+//                }
+//            }
+//        } else {
+//            Grasscutter.getLogger()
+//                    .error("Unable to create EntityAvatar instance; provided scene is null. 使用默认值scene3");
+//        }
 
-            var weapon = this.getAvatar().getWeapon();
-            if (weapon != null) {
-                if (!(weapon.getWeaponEntity() != null && weapon.getWeaponEntity().getScene() == scene)) {
-                    weapon.setWeaponEntity(
-                            new EntityWeapon(this.getPlayer().getScene(), weapon.getItemData().getGadgetId()));
-                    scene.getWeaponEntities().put(weapon.getWeaponEntity().getId(), weapon.getWeaponEntity());
+        if (scene == null) {
+            Grasscutter.getLogger().error("Unable to create EntityAvatar instance; provided scene is null.");
+        }
+
+            var world = scene.getWorld();
+        this.id = world.getNextEntityId(EntityIdType.AVATAR);
+
+        var weapon = this.getAvatar().getWeapon();
+        if (weapon != null) {
+            if (!(weapon.getWeaponEntity() != null && weapon.getWeaponEntity().getScene() == scene)) {
+                weapon.setWeaponEntity(
+                        new EntityWeapon(this.getPlayer().getScene(), weapon.getItemData().getGadgetId()));
+                scene.getWeaponEntities().put(weapon.getWeaponEntity().getId(), weapon.getWeaponEntity());
                 }
             }
-        } else {
-            Grasscutter.getLogger()
-                    .error("Unable to create EntityAvatar instance; provided scene is null.");
-        }
 
         this.initAbilities();
 
