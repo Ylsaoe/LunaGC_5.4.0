@@ -19,12 +19,12 @@ import emu.grasscutter.scripts.data.*;
 import emu.grasscutter.server.packet.send.*;
 import io.netty.util.concurrent.FastThreadLocal;
 import lombok.val;
+import org.slf4j.*;
 import emu.grasscutter.data.excels.scene.SceneData;
 import emu.grasscutter.game.player.Player;
 //import emu.grasscutter.game.world.Position;
 import org.terasology.jnlua.util.AbstractTableMap;
 import org.terasology.jnlua.LuaState;
-import org.slf4j.*;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -1215,7 +1215,7 @@ public class ScriptLib {
         return 0;
     }
 
-    public int MovePlayerToPos(LuaTable var1) {
+    public int MovePlayerToPos(Object var1) {
         logger.warn("[LUA] Call unchecked MovePlayerToPos with {}", printTable(var1));
         // TODO implement var1 contains int[] uid_list, Position pos, int radius, Position rot
         //return TransPlayerToPos(var1); // todo this is probably not a full scene reload
