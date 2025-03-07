@@ -998,6 +998,7 @@ public class SceneScriptManager {
         return ret;
     }
 
+/* Todo luaj -> jnlua
     public LuaValue safetyCall(String name, LuaValue func, LuaValue args, SceneGroup group) {
         try {
             return func.call(ScriptLoader.getScriptLibLua(), args);
