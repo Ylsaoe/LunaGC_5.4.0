@@ -1,6 +1,6 @@
-# LunaGC-5.0.0
+# LunaGC-5.4.0
 
-我的Discord https://discord.gg/8vSyTHVphj
+旧 Discord https://discord.gg/8vSyTHVphj
 
 请积极为这个仓库贡献
 
@@ -17,46 +17,31 @@
 
 - 获取 [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - 获取 [MongoDB Community Server](https://www.mongodb.com/try/download/community)
-- 获取游戏版本REL5.0.0（如果你没有5.0.0客户端，可以在这里找到，包括音频文件）：
+- 获取 [NodeJS](https://nodejs.org/dist/v20.15.0/node-v20.15.0-x64.msi)
+- 获取游戏版本REL5.4.0（如果你没有5.4.0客户端，可以在这里找到，包括音频文件）：
 
 | 下载链接 | 包大小 | 解压后的包大小 | MD5校验码 |
 | :---: | :---: | :---: | :---: |
-| [GenshinImpact_5.0.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.001) | 10.0 GB | 20.0 GB | 1ebf5dbcbe43bebcda7a57a8d789092e |
-| [GenshinImpact_5.0.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.002) | 10.0 GB | 20.0 GB | 57a67026c45d57c28e5b52e24e84cc04 |
-| [GenshinImpact_5.0.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.003) | 10.0 GB | 20.0 GB | 5e66ff28eaf6ba89e49f153c0f077d34 |
-| [GenshinImpact_5.0.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.004) | 10.0 GB | 20.0 GB | 39f014a760e27f77abed1989739c74c6 |
-| [GenshinImpact_5.0.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.005) | 10.0 GB | 20.0 GB | 15f9405a199afba833f18fce288b9c7f |
-| [GenshinImpact_5.0.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 10.0 GB | 20.0 GB | 881432ceab27987b1297c9eefb39f192 |
-| [GenshinImpact_5.0.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.007) | 3.78 GB | 7.57 GB | 951f91992b428385294baf9b6c764d49 |
-| [Audio_Chinese_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Chinese_5.0.0.zip) | 14.77 GB | 29.56 GB | 216b3e53f3c5c7e1290891696b2bbc66 |
-| [Audio_English(US)_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_English(US)_5.0.0.zip) | 17.23 GB | 34.47 GB | ecd59f31ec48c50f9051fdad39603d67 |
-| [Audio_Korean_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Korean_5.0.0.zip) | 14.51 GB | 29.04 GB | 8bf09bd07413189b69a5a0512df97335 |
-| [Audio_Japanese_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Japanese_5.0.0.zip) | 19.37 GB | 38.76 GB | 95efbd23e1bde2eb574f8090cc118109 |
+| [GenshinImpact_5.4.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.001) | 10.0 GB | 20.0 GB | d7ea7d49334e03e590db3f047cd9ea88 |
+| [GenshinImpact_5.4.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.002) | 10.0 GB | 20.0 GB | b4178034c1d09e889e43fd76b3fb4d3c |
+| [GenshinImpact_5.4.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.003) | 10.0 GB | 20.0 GB | 43b70975fcb957abaaaf7d940969679a |
+| [GenshinImpact_5.4.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.004) | 10.0 GB | 20.0 GB | d734b1edeb1b2b0d47d4d4bab7af6778 |
+| [GenshinImpact_5.4.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.005) | 10.0 GB | 20.0 GB | 95abe987ff924c21f3e5085492448760 |
+| [GenshinImpact_5.4.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.006) | 10.0 GB | 20.0 GB | 492510ae74ae8ac696ee59b4e831d039 |
+| [GenshinImpact_5.4.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.007) | 10.0 GB | 20.0 GB | 0c68334b33ee878c5beac321339b9447 |
+| [GenshinImpact_5.4.0.zip.008](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/GenshinImpact_5.4.0.zip.008) | 0.97 GB | 1.9 GB | 18d44596a5f1467682f5e038c80bd92a |
+| [Audio_Chinese_5.4.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/Audio_Chinese_5.4.0.zip) | 14.11 GB | 28.40 GB | 2727087a20d630d35efe804ae683e72e |
+| [Audio_English(US)_5.4.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/Audio_English(US)_5.4.0.zip) | 16.24 GB | 32.49 GB | 76f338d1925ff39cbf73f0418e9ae354 |
+| [Audio_Korean_5.4.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/Audio_Korean_5.4.0.zip) | 13.99 GB | 28.0 GB | 6356a494c7cce397bdbb1213aa6e7298 |
+| [Audio_Japanese_5.4.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20250125201352_EiPmYLKVptWspsHf/Audio_Japanese_5.4.0.zip) | 18.43 GB | 36.88 GB | f2b1c1f217dafbcdf27aeece987256b7 |
 
-
-- 或者获取 4.8.0 -> 5.0.0 hdiff:
-
-
-| 下载链接 | 包大小 | 解压后的包大小 | MD5校验码 |
-| :---: | :---: | :---: | :---: |
-| [game_4.8.0_5.0.0_hdiff_wZvKsUhQtnBEutrh.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/game_4.8.0_5.0.0_hdiff_wZvKsUhQtnBEutrh.zip) | 19.52 GB | 39.86 | ec0cc740e01c374cd53d48219c1a4aff |
-| [audio_ko-kr_4.8.0_5.0.0_hdiff_gTmBNUAGPpXxrRKC.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ko-kr_4.8.0_5.0.0_hdiff_gTmBNUAGPpXxrRKC.zip) | 0.60 GB | 1.31 GB | 64c52d4065a5d5983b37faeb9796a3eb |
-| [audio_ja-jp_4.8.0_5.0.0_hdiff_LumPhRraNOjGJMnG.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ja-jp_4.8.0_5.0.0_hdiff_LumPhRraNOjGJMnG.zip) | 0.71 GB | 1.63 GB | 934899593f7234bec937fca98c0b0bed |
-| [audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip) | 0.62 GB | 1.35 GB | c1073373d6c7b3680217335dc346de50 |
-| [audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip) | 0.74 GB | 1.58 GB | b5cb77749a0e2fc0e85b6b1ee319a7e9 |
-
-- 确保安装Java并设置环境变量。
-- 构建服务器（参考本指南中的“编译实际服务器”部分）。
-- 解决反作弊弹窗以及补丁重命名问题
-- 私服补丁使用教程
-- 把mhypbase.dll和version.dll放到游戏本地根目录下
-- 下载 [资源](https://github.com/Kei-Luna/LunaGC_Resources_5.0.0)，在下载的LunaGC文件夹中创建一个名为resources的新文件夹，然后在新文件夹中解压资源。
-- 将useEncryption、Questing和useInRouting设置为false（默认情况下应该是false，如果不是则更改）。
-- 启动服务器和游戏，确保在LunaGC控制台中创建一个账户！
-- 玩得开心
-
-## 重要！
-- 如果你使用cultivation并且知道自己在做什么，请在设置中禁用自动补丁RSA选项！（建议使用NotThorny's Cultivation修改，如果你真的想使用Cultivation）Cultivation会自动用4.0或4.6补丁修补游戏，这对LunaGC的4.7版本来说不太好。因此，在设置中取消选中自动修补RSA，然后如果Cultivation删除了rsa补丁dll，请再次将其放置在游戏文件夹中。
+- 确保安装Java并设置环境变量
+- 编译服务器（参考指南中的"编译实际服务器"部分）
+- 将 [Astrolabe.dll](https://github.com/pmagixc/LunaGC_5.4.0/raw/main/patch/Astrolabe.dll) 放入本地游戏根目录
+- 下载 [资源文件](https://github.com/pmagixc/5.4-res)，在LunaGC文件夹内新建名为`Resources`的文件夹并将资源解压至此
+- 将`useEncryption`、`Questing`和`useInRouting`设置为`false`（默认应为`false`，若非默认值请手动修改）
+- 启动服务器和游戏，注意要在LunaGC控制台创建账户！
+- 祝您玩得愉快🎮
 
 ### 编译实际服务器
 
@@ -135,14 +120,14 @@ chmod +x gradlew
 
 方法1：
 
-- 1. 解锁地图：`/prop um 1`
-- 2. 打开地图
-- 3. 使用传送点
+- 1: 解锁地图：`/prop um 1`
+- 2: 打开地图
+- 3: 使用传送点
 
 方法2：
 
-- 1. 打开地图
-- 2. 将一个钓鱼标记（最后一个）放在你想传送的地方并标记。
+- 1: 打开地图
+- 2: 将一个钓鱼标记（最后一个）放在你想传送的地方并标记。
 
 ### 如何获取角色/实体/材料等ID？
 - 访问[ambr.top](https://ambr.top)
@@ -160,7 +145,6 @@ chmod +x gradlew
 - 恢复到服务器默认UID：`/uid default`
 
 ## 不可用功能
-- 祈愿
 - 任务
 - 洞天
 - 深渊
