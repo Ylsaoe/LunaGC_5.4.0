@@ -5,6 +5,8 @@ import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 import dev.morphia.annotations.*;
 import emu.grasscutter.*;
 import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.binout.config.ConfigLevelEntity;
+import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
 import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.entity.*;
@@ -94,6 +96,30 @@ public final class TeamManager extends BasePlayerDataManager {
                                 .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME)
                                 .build();
                 abilityControlBlock.addAbilityEmbryoList(emb);
+            }
+        }
+
+        // 处理Level_Monster_Nada_setting配置
+        // Handle Level_Monster_Nada_setting config
+        String levelEntityConfig = getPlayer().getScene().getSceneData().getLevelEntityConfig();
+        ConfigLevelEntity configLevelEntity = GameData.getConfigLevelEntityDataMap().get(levelEntityConfig);
+        if (configLevelEntity != null) {
+            List<ConfigAbilityData> targetAbilities = configLevelEntity.getTeamAbilities();
+
+            if (targetAbilities != null) {
+                for (ConfigAbilityData abilityData : targetAbilities) {
+                    if (abilityData != null && abilityData.getAbilityName() != null) {
+                        Grasscutter.getLogger().info("Loading team ability: [{}] from config {}",
+                            abilityData.getAbilityName(), levelEntityConfig);
+                        AbilityEmbryoOuterClass.AbilityEmbryo emb =
+                            AbilityEmbryoOuterClass.AbilityEmbryo.newBuilder()
+                                .setAbilityId(++embryoId)
+                                .setAbilityNameHash(Utils.abilityHash(abilityData.getAbilityName()))
+                                .setAbilityOverrideNameHash(Utils.abilityHash(levelEntityConfig))
+                                .build();
+                        abilityControlBlock.addAbilityEmbryoList(emb);
+                    }
+                }
             }
         }
 
