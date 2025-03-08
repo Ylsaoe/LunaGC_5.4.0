@@ -8,8 +8,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import javax.script.*;
 import lombok.*;
-import org.terasology.jnlua.util.AbstractTableMap;
-//import static emu.grasscutter.config.Configuration.SCRIPT;
+import org.luaj.vm2.*;
 
 @ToString
 @Setter
@@ -150,16 +149,15 @@ public final class SceneGroup {
 
             // Garbages // TODO: fix properly later
             Object garbagesValue = this.bindings.get("garbages");
-            if (garbagesValue instanceof AbstractTableMap garbagesTable) {
+            if (garbagesValue instanceof LuaValue garbagesTable) {
                 this.garbages = new SceneGarbage();
-                if (garbagesTable.get("gadgets") != null) {
+                if (garbagesTable.checktable().get("gadgets") != LuaValue.NIL) {
                     this.garbages.gadgets =
-                        (List<SceneGadget>) ScriptLoader.getSerializer()
+                            ScriptLoader.getSerializer()
                                     .toList(
-                                            SceneGadget.class, garbagesTable.get("gadgets"));
+                                            SceneGadget.class, garbagesTable.checktable().get("gadgets").checktable());
                     this.garbages.gadgets.forEach(m -> m.group = this);
                 }
-                bindings.remove("garbages");
             }
 
             // Add variables to suite
@@ -172,6 +170,11 @@ public final class SceneGroup {
             Grasscutter.getLogger()
                     .error(
                             "An error occurred while loading group " + this.id + " in scene " + sceneId + ".", e);
+        } catch (LuaError luaError) {
+            Grasscutter.getLogger()
+                    .error(
+                            "An error occurred while loading group %s in scene %s.".formatted(this.id, sceneId),
+                            luaError);
         }
 
         Grasscutter.getLogger().trace("Successfully loaded group {} in scene {}.", this.id, sceneId);
