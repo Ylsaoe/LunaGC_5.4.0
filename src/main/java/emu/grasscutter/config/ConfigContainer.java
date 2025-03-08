@@ -163,7 +163,6 @@ public class ConfigContainer {
     }
 
     public static class Game {
-        public boolean loginUnlockMap = true; //开局是否默认解锁全图
         public String bindAddress = "0.0.0.0";
         public int bindPort = 22101;
 
@@ -180,7 +179,7 @@ public class ConfigContainer {
         /* Entities within a certain range will be loaded for the player */
         public int loadEntitiesForPlayerRange = 300;
         /* Start in 'unstable-quests', Lua scripts will be enabled by default. */
-        public boolean enableScriptInBigWorld = true;
+        public boolean enableScriptInBigWorld = false;
         public boolean enableConsole = true;
 
         /* Kcp internal work interval (milliseconds) */
@@ -364,7 +363,7 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String noticeMessage = "Welcome to a Grasscutter server.";
+        public String welcomeMessage = "Welcome to LunaGC 5.4.0";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
