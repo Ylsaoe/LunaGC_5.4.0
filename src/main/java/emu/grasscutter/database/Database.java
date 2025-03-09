@@ -1,9 +1,12 @@
 package emu.grasscutter.database;
+
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.utils.objects.DatabaseObject;
 import org.slf4j.*;
+
 import java.util.*;
 import java.util.concurrent.*;
+
 /**
  * Complicated manager of the MongoDB database.
  * Handles caching, data operations, and more.
@@ -11,6 +14,7 @@ import java.util.concurrent.*;
 public interface Database {
     Logger logger = LoggerFactory.getLogger("Database");
     List<DatabaseObject<?>> objects = new CopyOnWriteArrayList<>();
+
     /**
      * Queues an object to be saved.
      *
@@ -23,14 +27,17 @@ public interface Database {
             objects.add(object);
         }
     }
+
     /**
      * Performs a bulk save of all deferred objects.
      */
     static void saveAll() {
         var size = objects.size();
         Database.saveAll(objects);
+
         logger.debug("Performed auto save on {} objects.", size);
     }
+
     /**
      * Performs a bulk save of all deferred objects.
      *
@@ -44,8 +51,10 @@ public interface Database {
         var accountObjects = objects.stream()
                 .filter(o -> !o.isGameObject())
                 .toList();
+
         // Clear the collective list.
         objects.clear();
+
         // Save all objects.
         var executor = DatabaseHelper.getEventExecutor();
         if (Grasscutter.getRunMode() != Grasscutter.ServerRunMode.DISPATCH_ONLY) {
@@ -59,6 +68,7 @@ public interface Database {
             });
         }
     }
+
     /**
      * Starts the auto-save thread.
      * Runs every 10s 1000为1秒.
