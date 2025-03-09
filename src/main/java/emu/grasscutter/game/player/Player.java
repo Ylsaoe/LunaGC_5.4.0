@@ -71,7 +71,8 @@ import java.util.concurrent.*;
 import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 @Entity(value = "players", useDiscriminator = false)
-public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {    @Id private int id;
+public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
+    @Id private int id;
     @Indexed(options = @IndexOptions(unique = true))
     @Getter private String accountId;
     @Setter private transient Account account;

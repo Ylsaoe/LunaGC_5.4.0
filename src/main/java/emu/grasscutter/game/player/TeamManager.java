@@ -29,6 +29,7 @@ import java.util.*;
 import java.util.stream.Stream;
 import lombok.*;
 import emu.grasscutter.database.Database;
+
 @Entity
 public final class TeamManager extends BasePlayerDataManager {
     @Transient private final List<EntityAvatar> avatars;
@@ -1015,6 +1016,7 @@ public final class TeamManager extends BasePlayerDataManager {
 
         return respawnPoint.get().getPointData().getTranPos();
     }
+
 
     /**
     * Performs a bulk save operation on all avatars.
