@@ -783,16 +783,7 @@ public class SceneScriptManager {
     }
 
     public void refreshGroupSuite(SceneGroupInstance groupInstance, SceneSuite suite) {
-        // we added trigger first
-        registerTrigger(suite.sceneTriggers);
-
-        var group = groupInstance.getLuaGroup();
-        var toCreate = new ArrayList<GameEntity>();
-        toCreate.addAll(getGadgetsInGroupSuite(groupInstance, suite));
-        toCreate.addAll(getMonstersInGroupSuite(groupInstance, suite));
-        addEntities(toCreate);
-
-        registerRegionInGroupSuite(group, suite);
+        this.addGroupSuite(groupInstance, suite, null);
     }
 
     public void removeGroupSuite(SceneGroup group, SceneSuite suite) {

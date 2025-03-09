@@ -53,6 +53,7 @@ public class EntityAvatar extends GameEntity {
 
         this.avatar = avatar;
         this.avatar.setCurrentEnergy();
+        this.setLimbo(-1.0f);
 
 //        if (scene != null) {
 //            var world = scene.getWorld();
@@ -106,7 +107,7 @@ public class EntityAvatar extends GameEntity {
                 return 0f;
             }
         }
-    
+
 
     public void setLastExecutionTime(long time) {
         this.lastExecutionTime = time;

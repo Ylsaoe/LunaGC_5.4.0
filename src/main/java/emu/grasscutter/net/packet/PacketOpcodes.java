@@ -357,7 +357,7 @@ public final class PacketOpcodes {
     public static final int ActivityInfoNotify = 26013;
     public static final int ActivityScheduleInfoNotify = 4659;
     /* activityinfo proto scares me */
-	
+
 	// unk
     public static final int AcceptCityReputationRequestReq = 1;
     public static final int AcceptCityReputationRequestRsp = 1;
