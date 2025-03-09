@@ -5,6 +5,8 @@ Old Discord https://discord.gg/8vSyTHVphj
 ## Big update soon, probably..
 Please contribute actively to this repository
 
+## 这是gc优化，没有经过检验的
+
 # Setup Guide
 
 This guide is very minimal and contains steps to just get your server and client up and running.
