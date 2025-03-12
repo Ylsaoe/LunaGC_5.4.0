@@ -2,7 +2,6 @@ package emu.grasscutter.game.entity;
 
 import java.util.List;
 
-import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
@@ -83,8 +82,7 @@ public class EntityClientGadget extends EntityBaseGadget {
         GameEntity ownerEntity = scene.getEntityById(this.ownerEntityId);
         ownerEntity = findOwnerEntity(ownerEntity);
         if (ownerEntity == null) {
-            ownerEntity = ownerEntity.getScene().getEntityById(gadgetId);
-            Grasscutter.getLogger().info("OwnerEntity value is {}", ownerEntity);
+            ownerEntity = ownerEntity.getScene().getEntityById(16777225);
         }
         if (ownerEntity instanceof EntityClientGadget ownerGadget) {
             this.originalOwnerEntityId = ownerGadget.getOriginalOwnerEntityId();
