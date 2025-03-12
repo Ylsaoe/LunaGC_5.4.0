@@ -55,7 +55,7 @@ public abstract class GameEntity {
     @Getter @Setter private int lastMoveReliableSeq;
 
     @Getter @Setter private boolean lockHP;
-    private boolean limbo;
+    private boolean limbo = true;
     private float limboHpThreshold;
 
     @Setter(AccessLevel.PROTECTED)
@@ -93,10 +93,10 @@ public abstract class GameEntity {
             return this.getGlobalAbilityValues().get("NyxValue");
         } else {
             Grasscutter.getLogger().info("NyxValue not found");
-            return 0f;    
+            return 0f;
         }
     }
-    
+
 
     public void setConvertToHpDebt(boolean convertToHpDebt) {
         this.convertToHpDebt = convertToHpDebt;
@@ -110,7 +110,7 @@ public abstract class GameEntity {
         public boolean isRestrictedFromHealing() {
             return restrictedFromHealing;
         }
-    
+
         public void setRestrictedFromHealing(boolean restricted) {
             this.restrictedFromHealing = restricted;
         }
@@ -159,8 +159,10 @@ public abstract class GameEntity {
     }
 
     protected void setLimbo(float hpThreshold) {
-        limbo = true;
-        limboHpThreshold = hpThreshold;
+        if (hpThreshold >= .0f) {
+            limbo = true;
+            limboHpThreshold = hpThreshold;
+        } else limbo = false;
     }
     public GameEntity getTrueOwner() {
     if (this instanceof EntityClientGadget gadget) {
@@ -181,10 +183,10 @@ public abstract class GameEntity {
             if (data.state == AbilityModifier.State.Limbo && hpThresholdRatio > 0.0f) {
                 Grasscutter.getLogger().info("Limbo set to " + hpThresholdRatio);
                 this.setLimbo(hpThresholdRatio);
-            }   
+            }
         }
     }
-    
+
 
     protected MotionInfo getMotionInfo() {
         return MotionInfo.newBuilder()
@@ -197,7 +199,7 @@ public abstract class GameEntity {
     public float heal(float amount) {
         return heal(amount, false);
     }
-    
+
 
     public float heal(float amount, boolean mute) {
         if (this.getFightProperties() == null) {
@@ -230,7 +232,7 @@ public abstract class GameEntity {
                                                         mute
                                                                 ? PropChangeReason.PROP_CHANGE_REASON_NONE
                                                                 : PropChangeReason.PROP_CHANGE_REASON_ABILITY,
-                                                              
+
                                                         ChangeHpDebtsReason.CHANGE_HP_DEBTS_PAY
                 ));
             } else {
@@ -238,7 +240,7 @@ public abstract class GameEntity {
                                                         mute
                                                                 ? PropChangeReason.PROP_CHANGE_REASON_NONE
                                                                 : PropChangeReason.PROP_CHANGE_REASON_ABILITY,
-                                                              
+
                                                         ChangeHpDebtsReason.CHANGE_HP_DEBTS_CLEAR
                                                        ));
             }
@@ -248,7 +250,7 @@ public abstract class GameEntity {
     }
 
     public void damage(float amount) {
-        GameEntity ownerEntity = resolveOwnerEntity(this); 
+        GameEntity ownerEntity = resolveOwnerEntity(this);
         this.damage(amount, 0, ElementType.None);
     }
     private GameEntity resolveOwnerEntity(GameEntity owner) {
@@ -280,11 +282,11 @@ public abstract class GameEntity {
     }
 
     public void damage(float amount, int killerId, ElementType attackType) {
-        this.damage(amount, 0, attackType, PropChangeReason.PROP_CHANGE_REASON_NONE, ChangeHpReason.CHANGE_HP_NONE); 
+        this.damage(amount, 0, attackType, PropChangeReason.PROP_CHANGE_REASON_NONE, ChangeHpReason.CHANGE_HP_NONE);
     }
 
     public void damage(float amount, PropChangeReason propChangeReason, ChangeHpReason changeHpReason) {
-        this.damage(amount, 0, ElementType.None, propChangeReason, changeHpReason); 
+        this.damage(amount, 0, ElementType.None, propChangeReason, changeHpReason);
     }
 
     public void damage(float amount, int killerId, ElementType attackType, PropChangeReason propChangeReason, ChangeHpReason changeHpReason) {
@@ -305,7 +307,7 @@ public abstract class GameEntity {
         float curHp = getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
         if (limbo) {
             float maxHp = getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
-            float curRatio = curHp / maxHp;
+            float curRatio = maxHp > 1e-9 ? curHp / maxHp : .0f;
             if (curRatio > limboHpThreshold) {
                 // OK if this hit takes HP below threshold.
                 effectiveDamage = event.getDamage();
@@ -323,7 +325,7 @@ public abstract class GameEntity {
         this.addFightProperty(FightProperty.FIGHT_PROP_CUR_HP, -effectiveDamage);
 
         this.lastAttackType = attackType;
-        this.checkIfDead();
+        if (effectiveDamage != 0) this.checkIfDead();
         this.runLuaCallbacks(event);
 
         // Packets

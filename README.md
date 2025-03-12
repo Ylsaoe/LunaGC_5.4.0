@@ -1,4 +1,7 @@
 # LunaGC-5.4.0
+
+[简中](docs/README_zh-CN.md)
+
 ## THIS IS THE ONLY PUBLIC PS WITH MOB SPAWNS OVER VERSION 3.2!! NATLAN AND FONTAINE ARE FILLED :3
 ## A better, more functional version of the holy Grasscutter
 Old Discord https://discord.gg/8vSyTHVphj
@@ -49,13 +52,13 @@ This guide is very minimal and contains steps to just get your server and client
 ### Getting started
 
 - Clone the repository (install [Git](https://git-scm.com) first )
-  
+
   ```
   git clone https://github.com/pmagixc/LunaGC_5.4.0.git
   ```
-  
+
 - Now you can continue with the steps below.
-  
+
 
 ### Compile the actual Server
 
@@ -64,16 +67,16 @@ This guide is very minimal and contains steps to just get your server and client
 [Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
 
 - **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
-  
+
 - **For Windows**:
-  
+
   ```shell
   .\gradlew.bat
   .\gradlew.bat jar
   ```
-  
+
 - **For Linux**:
-  
+
   ```bash
   chmod +x gradlew
   ./gradlew
@@ -99,9 +102,9 @@ This guide is very minimal and contains steps to just get your server and client
 - Pre-made: [github repo](https://github.com/Zhaokugua/Grasscutter_Banners)
 - Rename the file you chose to download to Banners.json and replace it with the already-existing one in the data folder.
 - The repo also offers a file which contains all of the banners, to use it follow the same procedure mentioned above.
-  
+
   ### Making custom banners
-  
+
 - If you want to make a custom banner for a character or weapon, you'll need to know the prefabPath, the titlePath and the character/item IDs.
 - Fun fact: You can set any item to be on the rateUp, even if it's a 4* instead of a 5*.
 
@@ -127,13 +130,13 @@ This guide is very minimal and contains steps to just get your server and client
 - Get 9999 Acquaint fates: /g 224 x9999
 - Get 9999 Mora: /g 202 x9999
 - Get 9999 Primogems: /g 201 x9999
-  
+
   ### Make sure to not include <> or [] in the commands! The stuff in <> means its required and the stuff in [] means its not required.
-  
+
   ### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x99999
-  
+
   ### Ways to TP around the map:
-  
+
 
 Method 1:
 
@@ -145,9 +148,9 @@ Method 2:
 
 - 1: Open the map
 - 2: Place a fishing rod marker (the last one) where you want to teleport and mark it.
-  
+
   ### How to get avatar/entity/material etc. IDs?
-  
+
 - Go to [ambr.top](https://ambr.top)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
 
