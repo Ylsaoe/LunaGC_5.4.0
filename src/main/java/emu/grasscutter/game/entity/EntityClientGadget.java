@@ -2,6 +2,7 @@ package emu.grasscutter.game.entity;
 
 import java.util.List;
 
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
@@ -37,14 +38,14 @@ public class EntityClientGadget extends EntityBaseGadget {
     public int gadgetId;
 
     @Getter private int ownerEntityId;
-    @Getter private int targetEntityIdList; 
+    @Getter private int targetEntityIdList;
     @Getter private int propOwnerEntityId;
     @Getter private int localId;
 
     @Getter private long guid;
     @Getter private int targetEntityId;
     @Getter private int gadgetState;  // For the uint32 gadget_state
-    @Getter private int gadgetType; 
+    @Getter private int gadgetType;
     @Getter private int nameId;
     @Getter private float floatVal;
     @Getter private int targetLockPointIndexList;
@@ -82,7 +83,8 @@ public class EntityClientGadget extends EntityBaseGadget {
         GameEntity ownerEntity = scene.getEntityById(this.ownerEntityId);
         ownerEntity = findOwnerEntity(ownerEntity);
         if (ownerEntity == null) {
-            ownerEntity = ownerEntity.getScene().getEntityById(16777225);
+            ownerEntity = ownerEntity.getScene().getEntityById(gadgetId);
+            Grasscutter.getLogger().info("OwnerEntity value is {}", ownerEntity);
         }
         if (ownerEntity instanceof EntityClientGadget ownerGadget) {
             this.originalOwnerEntityId = ownerGadget.getOriginalOwnerEntityId();
@@ -97,18 +99,18 @@ public class EntityClientGadget extends EntityBaseGadget {
         if (owner instanceof EntityClientGadget ownerGadget) {
 
         GameEntity nextOwner = ownerGadget.getScene().getEntityById(ownerGadget.getOwnerEntityId());
-    
+
         // Check if the next owner is another gadget
         if (nextOwner instanceof EntityClientGadget) {
             return findOwnerEntity((EntityClientGadget) nextOwner);
         }
-    
+
         // Return the final owner entity once a non-gadget entity is reached
         return nextOwner;
         }
         return owner;
     }
-    
+
 
     @Override
     public void initAbilities() {
@@ -189,7 +191,7 @@ public class EntityClientGadget extends EntityBaseGadget {
                         .setOwnerEntityId(this.getOwnerEntityId())
                         .setBornType(this.getBornType())
                         .setGadgetState(this.getGadgetState())
-    
+
                         .setIsEnableInteract(true)
                         .setPropOwnerEntityId(this.getPropOwnerEntityId())
                         .setClientGadget(clientGadget)
