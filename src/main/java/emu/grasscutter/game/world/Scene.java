@@ -1069,6 +1069,7 @@ public class Scene {
         if (groups == null || groups.isEmpty()) {
             return;
         }
+        groups = groups.stream().distinct().filter(group -> !loadedGroups.contains(group)).toList();
 
         for (var group : groups) {
             this.loadedGroups.add(group);
@@ -1093,7 +1094,6 @@ public class Scene {
             // int suite = group.findInitSuiteIndex(0);
             this.getScriptManager()
                     .refreshGroup(groupInstance, 0, false); // This is what the official server does
-
 
         }
 

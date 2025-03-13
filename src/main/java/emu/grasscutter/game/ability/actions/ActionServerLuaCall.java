@@ -53,7 +53,7 @@ public final class ActionServerLuaCall extends AbilityActionHandler {
                 if (controller == null || functionName.isBlank()) yield false;
 
                 // Hand off the function handling to the controller.
-            //    controller.callControllerScriptFunc(target, functionName, ability, action);
+                controller.callControllerScriptFunc(target, functionName, ability, action);
 
                 yield true;
             }

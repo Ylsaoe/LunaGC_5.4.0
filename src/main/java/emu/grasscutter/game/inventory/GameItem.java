@@ -86,7 +86,7 @@ public class GameItem {
                 break;
             case ITEM_WEAPON:
                 this.count = 1;
-                this.level = Math.max(this.count, 1); // ??????????????????
+                this.level = Math.max(count, 1);
                 this.affixes = new ArrayList<>(2);
                 if (data.getSkillAffix() != null) {
                     for (int skillAffix : data.getSkillAffix()) {
@@ -355,13 +355,12 @@ public class GameItem {
     }
 
     public ItemHint toItemHintProto() {
-        var proto = ItemHint.newBuilder()
+        return ItemHint.newBuilder()
             .setItemId(getItemId())
             .setGuid(this.getGuid())
             .setCount(getCount())
             .setIsNew(this.isNewItem())
             .build();
-        return proto;
     }
 
     public ItemParam toItemParam() {
