@@ -1287,7 +1287,6 @@ public class ScriptLib {
     public int PlayCutScene(int cutsceneId, int var2) {
         logger.warn("[LUA] Call unchecked PlayCutScene with {} {}", cutsceneId, var2);
         sceneScriptManager.get().getScene().broadcastPacket(new PacketCutsceneBeginNotify(cutsceneId));
-        sceneScriptManager.get().getScene().broadcastPacket(new PacketCutsceneBeginNotify(cutsceneId));
         // TODO implement
         return 0;
     }

@@ -42,14 +42,14 @@ public final class ActionApplyModifier extends AbilityActionHandler {
             ActionLoseHP loseHpAction = new ActionLoseHP();
             return loseHpAction.execute(ability, action, abilityData, target);
         }
-    
+
         // TODO: Check predicates before executing all of these actions
 
         AbilityModifierController modifier = new AbilityModifierController(ability, ability.getData(), modifierData);
         ability.getModifiers().put(action.modifierName, modifier);
         for (var a : modifierData.onAdded)
             this.abilityManager.executeAction(ability, a, abilityData, target);
-            for (var b : modifierData.onAttackLanded)
+        for (var b : modifierData.onAttackLanded)
             this.abilityManager.executeAction(ability, b, abilityData, target);
 
         return true;

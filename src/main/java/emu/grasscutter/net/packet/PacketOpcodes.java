@@ -70,6 +70,7 @@ public final class PacketOpcodes {
 	public static final int ClientTransmitRsp = 26115;
 	public static final int CodexDataUpdateNotify = 944;
 	public static final int CombatInvocationsNotify = 20071;
+    public static final int CutSceneBeginNotify = 22281;
 	public static final int DataResVersionNotify = 3719;
 	public static final int DealAddFriendRsp = 8618;
 	public static final int DeathZoneObserveNotify = 9715;
@@ -711,7 +712,6 @@ public final class PacketOpcodes {
     public static final int CustomGalleryProgressUpdateNotify = 1;
     public static final int CustomGalleryScoreBoardUpdateNotify = 1;
     public static final int CustomGalleryTargetNotify = 1;
-    public static final int CutSceneBeginNotify = 1;
     public static final int CutSceneEndNotify = 1;
     public static final int CutSceneFinishNotify = 1;
     public static final int DailyTaskDataNotify = 1;

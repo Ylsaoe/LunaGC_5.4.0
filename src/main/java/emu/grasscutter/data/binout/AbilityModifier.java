@@ -319,6 +319,9 @@ public class AbilityModifier implements Serializable {
         @SerializedName(value = "ignoreAbilityProperty", alternate = "HHFGADCJJDI")
         public boolean ignoreAbilityProperty;
 
+        @SerializedName("otherTargets")
+        public AbilityTargetSelector otherTargets;
+
         public String modifierName;
 
         public boolean enableLockHP;
@@ -442,6 +445,11 @@ public class AbilityModifier implements Serializable {
             ElementOverdose,
             SpeedDown,
             MuteTaunt
+    }
+
+    public static class AbilityTargetSelector implements Serializable {
+        @SerializedName("configID")
+        public int configId;
     }
 
     // The following should be implemented into DynamicFloat if older resource formats need to be
