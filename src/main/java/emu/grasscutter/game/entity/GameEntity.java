@@ -356,12 +356,16 @@ public abstract class GameEntity {
         }
     }
 
-    /**
+/**
      * Runs the Lua callbacks for {@link EntityDamageEvent}.
      *
      * @param event The damage event.
      */
     public void runLuaCallbacks(EntityDamageEvent event) {
+         // 检查 event 是否为 null
+         if (event == null) {
+             return;
+         }
         if (entityController != null) {
             entityController.onBeHurt(this, event.getAttackElementType(), true); // todo is host handling
         }
