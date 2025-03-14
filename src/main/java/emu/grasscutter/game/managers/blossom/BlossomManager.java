@@ -161,7 +161,7 @@ public class BlossomManager {
         // TODO: blossoms should be based on their city
         if (type == null) {
             Grasscutter.getLogger().error("Illegal blossom type {}", type);
-            return null;
+            return 0; // 修改为返回默认值而不是 null
         }
 
         int blossomChestId = type.getBlossomChestId();
@@ -169,15 +169,16 @@ public class BlossomManager {
         for (var data : dataMap.values()) {
             if (blossomChestId == data.getBlossomChestId()) {
                 var dropVecList = data.getDropVec();
-                if (worldLevel > dropVecList.length) {
+                // 修改边界检查条件
+                 if (worldLevel < 0 || worldLevel >= dropVecList.length) {
                     Grasscutter.getLogger().error("Illegal world level {}", worldLevel);
-                    return null;
+                    return 0; // 修改为返回默认值而不是 null
                 }
                 return dropVecList[worldLevel].getPreviewReward();
             }
         }
-        Grasscutter.getLogger().error("Cannot find blossom type {}", type);
-        return null;
+        Grasscutter.getLogger().error("No data found for blossomChestId {}", blossomChestId);
+         return 0; // 确保所有路径都有返回值
     }
 
     private static RewardPreviewData getRewardList(BlossomType type, int worldLevel) {

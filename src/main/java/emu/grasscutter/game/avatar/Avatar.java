@@ -116,6 +116,10 @@ public class Avatar implements DatabaseObject<Avatar> {
     public Avatar(AvatarData data) {
         this();
 
+        if (data == null) {
+             throw new IllegalArgumentException("AvatarData cannot be null");
+         }
+
         this.avatarId = data.getId();
         this.nameCardRewardId = data.getNameCardRewardId();
         this.nameCardId = data.getNameCardId();

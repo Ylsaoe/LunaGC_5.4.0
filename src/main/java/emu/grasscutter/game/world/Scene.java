@@ -607,9 +607,13 @@ public class Scene {
 
         // Should be OK to check only player 0,
         // as no other players could enter Tower
-        var towerManager = getPlayers().get(0).getTowerManager();
-        if (towerManager != null && towerManager.isInProgress()) {
-            towerManager.onTick();
+
+        List<Player> playersCopy = new ArrayList<>(getPlayers()); // 创建玩家列表的副本
+         if (!playersCopy.isEmpty()) { // 使用副本进行检查
+             var towerManager = playersCopy.get(0).getTowerManager();
+             if (towerManager != null && towerManager.isInProgress()) {
+                 towerManager.onTick();
+             }
         }
 
         this.checkNpcGroup();
@@ -617,6 +621,7 @@ public class Scene {
         this.finishLoading();
         this.checkPlayerRespawn();
         if (this.tickCount++ % 10 == 0) this.broadcastPacket(new PacketSceneTimeNotify(this));
+
     }
 
     /** Validates a player's current position. Teleports the player if the player is out of bounds. */

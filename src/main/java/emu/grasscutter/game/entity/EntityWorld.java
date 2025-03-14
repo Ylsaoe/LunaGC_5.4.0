@@ -27,10 +27,15 @@ public class EntityWorld extends GameEntity {
     @Override
     public void initAbilities() {
         // Load abilities from levelElementAbilities
-        for (var ability :
-                GameData.getConfigGlobalCombat().getDefaultAbilities().getDefaultMPLevelAbilities()) {
-            var data = GameData.getAbilityData(ability);
-            if (data != null) world.getHost().getAbilityManager().addAbilityToEntity(this, data);
+        var configGlobalCombat = GameData.getConfigGlobalCombat();
+         if (configGlobalCombat != null) {
+             for (var ability :
+                     configGlobalCombat.getDefaultAbilities().getDefaultMPLevelAbilities()) {
+                 var data = GameData.getAbilityData(ability);
+                 if (data != null) world.getHost().getAbilityManager().addAbilityToEntity(this, data);
+             }
+         } else {
+             // 处理 configGlobalCombat 为 null 的情况，例如记录日志
         }
     }
 
