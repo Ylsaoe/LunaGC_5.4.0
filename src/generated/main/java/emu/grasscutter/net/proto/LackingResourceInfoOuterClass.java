@@ -19,210 +19,214 @@ public final class LackingResourceInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-     * @return A list containing the oKPPAKPNANE.
+     * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+     * @return A list containing the oNOMCDMBDOH.
      */
-    java.util.List<java.lang.Integer> getOKPPAKPNANEList();
+    java.util.List<java.lang.Integer> getONOMCDMBDOHList();
     /**
-     * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-     * @return The count of oKPPAKPNANE.
+     * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+     * @return The count of oNOMCDMBDOH.
      */
-    int getOKPPAKPNANECount();
+    int getONOMCDMBDOHCount();
     /**
-     * <code>repeated uint32 OKPPAKPNANE = 1;</code>
+     * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
      * @param index The index of the element to return.
-     * @return The oKPPAKPNANE at the given index.
+     * @return The oNOMCDMBDOH at the given index.
      */
-    int getOKPPAKPNANE(int index);
+    int getONOMCDMBDOH(int index);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
-    int getPAPNJAIKLIICount();
+    int getPIBNNEJDPDJCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
-    boolean containsPAPNJAIKLII(
+    boolean containsPIBNNEJDPDJ(
         int key);
     /**
-     * Use {@link #getPAPNJAIKLIIMap()} instead.
+     * Use {@link #getPIBNNEJDPDJMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getPAPNJAIKLII();
+    getPIBNNEJDPDJ();
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getPAPNJAIKLIIMap();
+    getPIBNNEJDPDJMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
 
-    int getPAPNJAIKLIIOrDefault(
+    int getPIBNNEJDPDJOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
 
-    int getPAPNJAIKLIIOrThrow(
+    int getPIBNNEJDPDJOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 NODDADDKHJL = 3;</code>
-     * @return A list containing the nODDADDKHJL.
+     * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+     * @return A list containing the fNCMJABNNLP.
      */
-    java.util.List<java.lang.Integer> getNODDADDKHJLList();
+    java.util.List<java.lang.Integer> getFNCMJABNNLPList();
     /**
-     * <code>repeated uint32 NODDADDKHJL = 3;</code>
-     * @return The count of nODDADDKHJL.
+     * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+     * @return The count of fNCMJABNNLP.
      */
-    int getNODDADDKHJLCount();
+    int getFNCMJABNNLPCount();
     /**
-     * <code>repeated uint32 NODDADDKHJL = 3;</code>
+     * <code>repeated uint32 FNCMJABNNLP = 3;</code>
      * @param index The index of the element to return.
-     * @return The nODDADDKHJL at the given index.
+     * @return The fNCMJABNNLP at the given index.
      */
-    int getNODDADDKHJL(int index);
+    int getFNCMJABNNLP(int index);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
-    int getGDDAJFMLFAHCount();
+    int getOOAIGNECDMMCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
-    boolean containsGDDAJFMLFAH(
+    boolean containsOOAIGNECDMM(
         int key);
     /**
-     * Use {@link #getGDDAJFMLFAHMap()} instead.
+     * Use {@link #getOOAIGNECDMMMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getGDDAJFMLFAH();
+    getOOAIGNECDMM();
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getGDDAJFMLFAHMap();
+    getOOAIGNECDMMMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
 
-    int getGDDAJFMLFAHOrDefault(
+    int getOOAIGNECDMMOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
 
-    int getGDDAJFMLFAHOrThrow(
+    int getOOAIGNECDMMOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-     * @return A list containing the dFEBELMAHMI.
+     * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+     * @return A list containing the mLOIKDNOHKI.
      */
-    java.util.List<java.lang.Integer> getDFEBELMAHMIList();
+    java.util.List<java.lang.Integer> getMLOIKDNOHKIList();
     /**
-     * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-     * @return The count of dFEBELMAHMI.
+     * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+     * @return The count of mLOIKDNOHKI.
      */
-    int getDFEBELMAHMICount();
+    int getMLOIKDNOHKICount();
     /**
-     * <code>repeated uint32 DFEBELMAHMI = 5;</code>
+     * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
      * @param index The index of the element to return.
-     * @return The dFEBELMAHMI at the given index.
+     * @return The mLOIKDNOHKI at the given index.
      */
-    int getDFEBELMAHMI(int index);
+    int getMLOIKDNOHKI(int index);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
-    int getOPFABHCELAMCount();
+    int getHLFGMHFJCOOCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
-    boolean containsOPFABHCELAM(
+    boolean containsHLFGMHFJCOO(
         int key);
     /**
-     * Use {@link #getOPFABHCELAMMap()} instead.
+     * Use {@link #getHLFGMHFJCOOMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOPFABHCELAM();
+    getHLFGMHFJCOO();
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOPFABHCELAMMap();
+    getHLFGMHFJCOOMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
 
-    int getOPFABHCELAMOrDefault(
+    int getHLFGMHFJCOOOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
 
-    int getOPFABHCELAMOrThrow(
+    int getHLFGMHFJCOOOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-     * @return A list containing the oICIAOHDEBD.
+     * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+     * @return A list containing the aIJMMIBILNI.
      */
-    java.util.List<java.lang.Integer> getOICIAOHDEBDList();
+    java.util.List<java.lang.Integer> getAIJMMIBILNIList();
     /**
-     * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-     * @return The count of oICIAOHDEBD.
+     * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+     * @return The count of aIJMMIBILNI.
      */
-    int getOICIAOHDEBDCount();
+    int getAIJMMIBILNICount();
     /**
-     * <code>repeated uint32 OICIAOHDEBD = 7;</code>
+     * <code>repeated uint32 AIJMMIBILNI = 7;</code>
      * @param index The index of the element to return.
-     * @return The oICIAOHDEBD at the given index.
+     * @return The aIJMMIBILNI at the given index.
      */
-    int getOICIAOHDEBD(int index);
+    int getAIJMMIBILNI(int index);
 
     /**
-     * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-     * @return A list containing the hKBEABEOOGH.
+     * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+     * @return A list containing the gKFIALNGMAE.
      */
-    java.util.List<java.lang.Integer> getHKBEABEOOGHList();
+    java.util.List<java.lang.Integer> getGKFIALNGMAEList();
     /**
-     * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-     * @return The count of hKBEABEOOGH.
+     * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+     * @return The count of gKFIALNGMAE.
      */
-    int getHKBEABEOOGHCount();
+    int getGKFIALNGMAECount();
     /**
-     * <code>repeated uint32 HKBEABEOOGH = 8;</code>
+     * <code>repeated uint32 GKFIALNGMAE = 8;</code>
      * @param index The index of the element to return.
-     * @return The hKBEABEOOGH at the given index.
+     * @return The gKFIALNGMAE at the given index.
      */
-    int getHKBEABEOOGH(int index);
+    int getGKFIALNGMAE(int index);
 
     /**
-     * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-     * @return A list containing the nJDGAKKHPIA.
+     * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+     * @return A list containing the pEJBHINDHBH.
      */
-    java.util.List<java.lang.Integer> getNJDGAKKHPIAList();
+    java.util.List<java.lang.Integer> getPEJBHINDHBHList();
     /**
-     * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-     * @return The count of nJDGAKKHPIA.
+     * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+     * @return The count of pEJBHINDHBH.
      */
-    int getNJDGAKKHPIACount();
+    int getPEJBHINDHBHCount();
     /**
-     * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
+     * <code>repeated uint32 PEJBHINDHBH = 9;</code>
      * @param index The index of the element to return.
-     * @return The nJDGAKKHPIA at the given index.
+     * @return The pEJBHINDHBH at the given index.
      */
-    int getNJDGAKKHPIA(int index);
+    int getPEJBHINDHBH(int index);
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code LackingResourceInfo}
    */
   public static final class LackingResourceInfo extends
@@ -235,12 +239,12 @@ public final class LackingResourceInfoOuterClass {
       super(builder);
     }
     private LackingResourceInfo() {
-      oKPPAKPNANE_ = emptyIntList();
-      nODDADDKHJL_ = emptyIntList();
-      dFEBELMAHMI_ = emptyIntList();
-      oICIAOHDEBD_ = emptyIntList();
-      hKBEABEOOGH_ = emptyIntList();
-      nJDGAKKHPIA_ = emptyIntList();
+      oNOMCDMBDOH_ = emptyIntList();
+      fNCMJABNNLP_ = emptyIntList();
+      mLOIKDNOHKI_ = emptyIntList();
+      aIJMMIBILNI_ = emptyIntList();
+      gKFIALNGMAE_ = emptyIntList();
+      pEJBHINDHBH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -276,165 +280,165 @@ public final class LackingResourceInfoOuterClass {
               break;
             case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oKPPAKPNANE_ = newIntList();
+                oNOMCDMBDOH_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              oKPPAKPNANE_.addInt(input.readUInt32());
+              oNOMCDMBDOH_.addInt(input.readUInt32());
               break;
             }
             case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                oKPPAKPNANE_ = newIntList();
+                oNOMCDMBDOH_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oKPPAKPNANE_.addInt(input.readUInt32());
+                oNOMCDMBDOH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                pAPNJAIKLII_ = com.google.protobuf.MapField.newMapField(
-                    PAPNJAIKLIIDefaultEntryHolder.defaultEntry);
+                pIBNNEJDPDJ_ = com.google.protobuf.MapField.newMapField(
+                    PIBNNEJDPDJDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000002;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              pAPNJAIKLII__ = input.readMessage(
-                  PAPNJAIKLIIDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              pAPNJAIKLII_.getMutableMap().put(
-                  pAPNJAIKLII__.getKey(), pAPNJAIKLII__.getValue());
+              pIBNNEJDPDJ__ = input.readMessage(
+                  PIBNNEJDPDJDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              pIBNNEJDPDJ_.getMutableMap().put(
+                  pIBNNEJDPDJ__.getKey(), pIBNNEJDPDJ__.getValue());
               break;
             }
             case 24: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                nODDADDKHJL_ = newIntList();
+                fNCMJABNNLP_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
-              nODDADDKHJL_.addInt(input.readUInt32());
+              fNCMJABNNLP_.addInt(input.readUInt32());
               break;
             }
             case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                nODDADDKHJL_ = newIntList();
+                fNCMJABNNLP_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
-                nODDADDKHJL_.addInt(input.readUInt32());
+                fNCMJABNNLP_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                gDDAJFMLFAH_ = com.google.protobuf.MapField.newMapField(
-                    GDDAJFMLFAHDefaultEntryHolder.defaultEntry);
+                oOAIGNECDMM_ = com.google.protobuf.MapField.newMapField(
+                    OOAIGNECDMMDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000008;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              gDDAJFMLFAH__ = input.readMessage(
-                  GDDAJFMLFAHDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              gDDAJFMLFAH_.getMutableMap().put(
-                  gDDAJFMLFAH__.getKey(), gDDAJFMLFAH__.getValue());
+              oOAIGNECDMM__ = input.readMessage(
+                  OOAIGNECDMMDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              oOAIGNECDMM_.getMutableMap().put(
+                  oOAIGNECDMM__.getKey(), oOAIGNECDMM__.getValue());
               break;
             }
             case 40: {
               if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                dFEBELMAHMI_ = newIntList();
+                mLOIKDNOHKI_ = newIntList();
                 mutable_bitField0_ |= 0x00000010;
               }
-              dFEBELMAHMI_.addInt(input.readUInt32());
+              mLOIKDNOHKI_.addInt(input.readUInt32());
               break;
             }
             case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
-                dFEBELMAHMI_ = newIntList();
+                mLOIKDNOHKI_ = newIntList();
                 mutable_bitField0_ |= 0x00000010;
               }
               while (input.getBytesUntilLimit() > 0) {
-                dFEBELMAHMI_.addInt(input.readUInt32());
+                mLOIKDNOHKI_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-                oPFABHCELAM_ = com.google.protobuf.MapField.newMapField(
-                    OPFABHCELAMDefaultEntryHolder.defaultEntry);
+                hLFGMHFJCOO_ = com.google.protobuf.MapField.newMapField(
+                    HLFGMHFJCOODefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000020;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              oPFABHCELAM__ = input.readMessage(
-                  OPFABHCELAMDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              oPFABHCELAM_.getMutableMap().put(
-                  oPFABHCELAM__.getKey(), oPFABHCELAM__.getValue());
+              hLFGMHFJCOO__ = input.readMessage(
+                  HLFGMHFJCOODefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              hLFGMHFJCOO_.getMutableMap().put(
+                  hLFGMHFJCOO__.getKey(), hLFGMHFJCOO__.getValue());
               break;
             }
             case 56: {
               if (!((mutable_bitField0_ & 0x00000040) != 0)) {
-                oICIAOHDEBD_ = newIntList();
+                aIJMMIBILNI_ = newIntList();
                 mutable_bitField0_ |= 0x00000040;
               }
-              oICIAOHDEBD_.addInt(input.readUInt32());
+              aIJMMIBILNI_.addInt(input.readUInt32());
               break;
             }
             case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000040) != 0) && input.getBytesUntilLimit() > 0) {
-                oICIAOHDEBD_ = newIntList();
+                aIJMMIBILNI_ = newIntList();
                 mutable_bitField0_ |= 0x00000040;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oICIAOHDEBD_.addInt(input.readUInt32());
+                aIJMMIBILNI_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 64: {
               if (!((mutable_bitField0_ & 0x00000080) != 0)) {
-                hKBEABEOOGH_ = newIntList();
+                gKFIALNGMAE_ = newIntList();
                 mutable_bitField0_ |= 0x00000080;
               }
-              hKBEABEOOGH_.addInt(input.readUInt32());
+              gKFIALNGMAE_.addInt(input.readUInt32());
               break;
             }
             case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000080) != 0) && input.getBytesUntilLimit() > 0) {
-                hKBEABEOOGH_ = newIntList();
+                gKFIALNGMAE_ = newIntList();
                 mutable_bitField0_ |= 0x00000080;
               }
               while (input.getBytesUntilLimit() > 0) {
-                hKBEABEOOGH_.addInt(input.readUInt32());
+                gKFIALNGMAE_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 72: {
               if (!((mutable_bitField0_ & 0x00000100) != 0)) {
-                nJDGAKKHPIA_ = newIntList();
+                pEJBHINDHBH_ = newIntList();
                 mutable_bitField0_ |= 0x00000100;
               }
-              nJDGAKKHPIA_.addInt(input.readUInt32());
+              pEJBHINDHBH_.addInt(input.readUInt32());
               break;
             }
             case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000100) != 0) && input.getBytesUntilLimit() > 0) {
-                nJDGAKKHPIA_ = newIntList();
+                pEJBHINDHBH_ = newIntList();
                 mutable_bitField0_ |= 0x00000100;
               }
               while (input.getBytesUntilLimit() > 0) {
-                nJDGAKKHPIA_.addInt(input.readUInt32());
+                pEJBHINDHBH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -455,22 +459,22 @@ public final class LackingResourceInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          oKPPAKPNANE_.makeImmutable(); // C
+          oNOMCDMBDOH_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          nODDADDKHJL_.makeImmutable(); // C
+          fNCMJABNNLP_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000010) != 0)) {
-          dFEBELMAHMI_.makeImmutable(); // C
+          mLOIKDNOHKI_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000040) != 0)) {
-          oICIAOHDEBD_.makeImmutable(); // C
+          aIJMMIBILNI_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000080) != 0)) {
-          hKBEABEOOGH_.makeImmutable(); // C
+          gKFIALNGMAE_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000100) != 0)) {
-          nJDGAKKHPIA_.makeImmutable(); // C
+          pEJBHINDHBH_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -487,11 +491,11 @@ public final class LackingResourceInfoOuterClass {
         int number) {
       switch (number) {
         case 2:
-          return internalGetPAPNJAIKLII();
+          return internalGetPIBNNEJDPDJ();
         case 4:
-          return internalGetGDDAJFMLFAH();
+          return internalGetOOAIGNECDMM();
         case 6:
-          return internalGetOPFABHCELAM();
+          return internalGetHLFGMHFJCOO();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -505,416 +509,416 @@ public final class LackingResourceInfoOuterClass {
               emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.class, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder.class);
     }
 
-    public static final int OKPPAKPNANE_FIELD_NUMBER = 1;
-    private com.google.protobuf.Internal.IntList oKPPAKPNANE_;
+    public static final int ONOMCDMBDOH_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList oNOMCDMBDOH_;
     /**
-     * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-     * @return A list containing the oKPPAKPNANE.
+     * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+     * @return A list containing the oNOMCDMBDOH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOKPPAKPNANEList() {
-      return oKPPAKPNANE_;
+        getONOMCDMBDOHList() {
+      return oNOMCDMBDOH_;
     }
     /**
-     * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-     * @return The count of oKPPAKPNANE.
+     * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+     * @return The count of oNOMCDMBDOH.
      */
-    public int getOKPPAKPNANECount() {
-      return oKPPAKPNANE_.size();
+    public int getONOMCDMBDOHCount() {
+      return oNOMCDMBDOH_.size();
     }
     /**
-     * <code>repeated uint32 OKPPAKPNANE = 1;</code>
+     * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
      * @param index The index of the element to return.
-     * @return The oKPPAKPNANE at the given index.
+     * @return The oNOMCDMBDOH at the given index.
      */
-    public int getOKPPAKPNANE(int index) {
-      return oKPPAKPNANE_.getInt(index);
+    public int getONOMCDMBDOH(int index) {
+      return oNOMCDMBDOH_.getInt(index);
     }
-    private int oKPPAKPNANEMemoizedSerializedSize = -1;
+    private int oNOMCDMBDOHMemoizedSerializedSize = -1;
 
-    public static final int PAPNJAIKLII_FIELD_NUMBER = 2;
-    private static final class PAPNJAIKLIIDefaultEntryHolder {
+    public static final int PIBNNEJDPDJ_FIELD_NUMBER = 2;
+    private static final class PIBNNEJDPDJDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.LackingResourceInfoOuterClass.internal_static_LackingResourceInfo_PAPNJAIKLIIEntry_descriptor, 
+                  emu.grasscutter.net.proto.LackingResourceInfoOuterClass.internal_static_LackingResourceInfo_PIBNNEJDPDJEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> pAPNJAIKLII_;
+        java.lang.Integer, java.lang.Integer> pIBNNEJDPDJ_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetPAPNJAIKLII() {
-      if (pAPNJAIKLII_ == null) {
+    internalGetPIBNNEJDPDJ() {
+      if (pIBNNEJDPDJ_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            PAPNJAIKLIIDefaultEntryHolder.defaultEntry);
+            PIBNNEJDPDJDefaultEntryHolder.defaultEntry);
       }
-      return pAPNJAIKLII_;
+      return pIBNNEJDPDJ_;
     }
 
-    public int getPAPNJAIKLIICount() {
-      return internalGetPAPNJAIKLII().getMap().size();
+    public int getPIBNNEJDPDJCount() {
+      return internalGetPIBNNEJDPDJ().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
 
     @java.lang.Override
-    public boolean containsPAPNJAIKLII(
+    public boolean containsPIBNNEJDPDJ(
         int key) {
       
-      return internalGetPAPNJAIKLII().getMap().containsKey(key);
+      return internalGetPIBNNEJDPDJ().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getPAPNJAIKLIIMap()} instead.
+     * Use {@link #getPIBNNEJDPDJMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getPAPNJAIKLII() {
-      return getPAPNJAIKLIIMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getPIBNNEJDPDJ() {
+      return getPIBNNEJDPDJMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getPAPNJAIKLIIMap() {
-      return internalGetPAPNJAIKLII().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getPIBNNEJDPDJMap() {
+      return internalGetPIBNNEJDPDJ().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
     @java.lang.Override
 
-    public int getPAPNJAIKLIIOrDefault(
+    public int getPIBNNEJDPDJOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetPAPNJAIKLII().getMap();
+          internalGetPIBNNEJDPDJ().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
      */
     @java.lang.Override
 
-    public int getPAPNJAIKLIIOrThrow(
+    public int getPIBNNEJDPDJOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetPAPNJAIKLII().getMap();
+          internalGetPIBNNEJDPDJ().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int NODDADDKHJL_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList nODDADDKHJL_;
+    public static final int FNCMJABNNLP_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList fNCMJABNNLP_;
     /**
-     * <code>repeated uint32 NODDADDKHJL = 3;</code>
-     * @return A list containing the nODDADDKHJL.
+     * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+     * @return A list containing the fNCMJABNNLP.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getNODDADDKHJLList() {
-      return nODDADDKHJL_;
+        getFNCMJABNNLPList() {
+      return fNCMJABNNLP_;
     }
     /**
-     * <code>repeated uint32 NODDADDKHJL = 3;</code>
-     * @return The count of nODDADDKHJL.
+     * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+     * @return The count of fNCMJABNNLP.
      */
-    public int getNODDADDKHJLCount() {
-      return nODDADDKHJL_.size();
+    public int getFNCMJABNNLPCount() {
+      return fNCMJABNNLP_.size();
     }
     /**
-     * <code>repeated uint32 NODDADDKHJL = 3;</code>
+     * <code>repeated uint32 FNCMJABNNLP = 3;</code>
      * @param index The index of the element to return.
-     * @return The nODDADDKHJL at the given index.
+     * @return The fNCMJABNNLP at the given index.
      */
-    public int getNODDADDKHJL(int index) {
-      return nODDADDKHJL_.getInt(index);
+    public int getFNCMJABNNLP(int index) {
+      return fNCMJABNNLP_.getInt(index);
     }
-    private int nODDADDKHJLMemoizedSerializedSize = -1;
+    private int fNCMJABNNLPMemoizedSerializedSize = -1;
 
-    public static final int GDDAJFMLFAH_FIELD_NUMBER = 4;
-    private static final class GDDAJFMLFAHDefaultEntryHolder {
+    public static final int OOAIGNECDMM_FIELD_NUMBER = 4;
+    private static final class OOAIGNECDMMDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.LackingResourceInfoOuterClass.internal_static_LackingResourceInfo_GDDAJFMLFAHEntry_descriptor, 
+                  emu.grasscutter.net.proto.LackingResourceInfoOuterClass.internal_static_LackingResourceInfo_OOAIGNECDMMEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> gDDAJFMLFAH_;
+        java.lang.Integer, java.lang.Integer> oOAIGNECDMM_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetGDDAJFMLFAH() {
-      if (gDDAJFMLFAH_ == null) {
+    internalGetOOAIGNECDMM() {
+      if (oOAIGNECDMM_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            GDDAJFMLFAHDefaultEntryHolder.defaultEntry);
+            OOAIGNECDMMDefaultEntryHolder.defaultEntry);
       }
-      return gDDAJFMLFAH_;
+      return oOAIGNECDMM_;
     }
 
-    public int getGDDAJFMLFAHCount() {
-      return internalGetGDDAJFMLFAH().getMap().size();
+    public int getOOAIGNECDMMCount() {
+      return internalGetOOAIGNECDMM().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
 
     @java.lang.Override
-    public boolean containsGDDAJFMLFAH(
+    public boolean containsOOAIGNECDMM(
         int key) {
       
-      return internalGetGDDAJFMLFAH().getMap().containsKey(key);
+      return internalGetOOAIGNECDMM().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getGDDAJFMLFAHMap()} instead.
+     * Use {@link #getOOAIGNECDMMMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getGDDAJFMLFAH() {
-      return getGDDAJFMLFAHMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getOOAIGNECDMM() {
+      return getOOAIGNECDMMMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getGDDAJFMLFAHMap() {
-      return internalGetGDDAJFMLFAH().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getOOAIGNECDMMMap() {
+      return internalGetOOAIGNECDMM().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
     @java.lang.Override
 
-    public int getGDDAJFMLFAHOrDefault(
+    public int getOOAIGNECDMMOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetGDDAJFMLFAH().getMap();
+          internalGetOOAIGNECDMM().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
      */
     @java.lang.Override
 
-    public int getGDDAJFMLFAHOrThrow(
+    public int getOOAIGNECDMMOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetGDDAJFMLFAH().getMap();
+          internalGetOOAIGNECDMM().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int DFEBELMAHMI_FIELD_NUMBER = 5;
-    private com.google.protobuf.Internal.IntList dFEBELMAHMI_;
+    public static final int MLOIKDNOHKI_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.IntList mLOIKDNOHKI_;
     /**
-     * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-     * @return A list containing the dFEBELMAHMI.
+     * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+     * @return A list containing the mLOIKDNOHKI.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getDFEBELMAHMIList() {
-      return dFEBELMAHMI_;
+        getMLOIKDNOHKIList() {
+      return mLOIKDNOHKI_;
     }
     /**
-     * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-     * @return The count of dFEBELMAHMI.
+     * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+     * @return The count of mLOIKDNOHKI.
      */
-    public int getDFEBELMAHMICount() {
-      return dFEBELMAHMI_.size();
+    public int getMLOIKDNOHKICount() {
+      return mLOIKDNOHKI_.size();
     }
     /**
-     * <code>repeated uint32 DFEBELMAHMI = 5;</code>
+     * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
      * @param index The index of the element to return.
-     * @return The dFEBELMAHMI at the given index.
+     * @return The mLOIKDNOHKI at the given index.
      */
-    public int getDFEBELMAHMI(int index) {
-      return dFEBELMAHMI_.getInt(index);
+    public int getMLOIKDNOHKI(int index) {
+      return mLOIKDNOHKI_.getInt(index);
     }
-    private int dFEBELMAHMIMemoizedSerializedSize = -1;
+    private int mLOIKDNOHKIMemoizedSerializedSize = -1;
 
-    public static final int OPFABHCELAM_FIELD_NUMBER = 6;
-    private static final class OPFABHCELAMDefaultEntryHolder {
+    public static final int HLFGMHFJCOO_FIELD_NUMBER = 6;
+    private static final class HLFGMHFJCOODefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.LackingResourceInfoOuterClass.internal_static_LackingResourceInfo_OPFABHCELAMEntry_descriptor, 
+                  emu.grasscutter.net.proto.LackingResourceInfoOuterClass.internal_static_LackingResourceInfo_HLFGMHFJCOOEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> oPFABHCELAM_;
+        java.lang.Integer, java.lang.Integer> hLFGMHFJCOO_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetOPFABHCELAM() {
-      if (oPFABHCELAM_ == null) {
+    internalGetHLFGMHFJCOO() {
+      if (hLFGMHFJCOO_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            OPFABHCELAMDefaultEntryHolder.defaultEntry);
+            HLFGMHFJCOODefaultEntryHolder.defaultEntry);
       }
-      return oPFABHCELAM_;
+      return hLFGMHFJCOO_;
     }
 
-    public int getOPFABHCELAMCount() {
-      return internalGetOPFABHCELAM().getMap().size();
+    public int getHLFGMHFJCOOCount() {
+      return internalGetHLFGMHFJCOO().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
 
     @java.lang.Override
-    public boolean containsOPFABHCELAM(
+    public boolean containsHLFGMHFJCOO(
         int key) {
       
-      return internalGetOPFABHCELAM().getMap().containsKey(key);
+      return internalGetHLFGMHFJCOO().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getOPFABHCELAMMap()} instead.
+     * Use {@link #getHLFGMHFJCOOMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getOPFABHCELAM() {
-      return getOPFABHCELAMMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getHLFGMHFJCOO() {
+      return getHLFGMHFJCOOMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getOPFABHCELAMMap() {
-      return internalGetOPFABHCELAM().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getHLFGMHFJCOOMap() {
+      return internalGetHLFGMHFJCOO().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
     @java.lang.Override
 
-    public int getOPFABHCELAMOrDefault(
+    public int getHLFGMHFJCOOOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOPFABHCELAM().getMap();
+          internalGetHLFGMHFJCOO().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
      */
     @java.lang.Override
 
-    public int getOPFABHCELAMOrThrow(
+    public int getHLFGMHFJCOOOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOPFABHCELAM().getMap();
+          internalGetHLFGMHFJCOO().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int OICIAOHDEBD_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList oICIAOHDEBD_;
+    public static final int AIJMMIBILNI_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList aIJMMIBILNI_;
     /**
-     * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-     * @return A list containing the oICIAOHDEBD.
+     * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+     * @return A list containing the aIJMMIBILNI.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOICIAOHDEBDList() {
-      return oICIAOHDEBD_;
+        getAIJMMIBILNIList() {
+      return aIJMMIBILNI_;
     }
     /**
-     * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-     * @return The count of oICIAOHDEBD.
+     * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+     * @return The count of aIJMMIBILNI.
      */
-    public int getOICIAOHDEBDCount() {
-      return oICIAOHDEBD_.size();
+    public int getAIJMMIBILNICount() {
+      return aIJMMIBILNI_.size();
     }
     /**
-     * <code>repeated uint32 OICIAOHDEBD = 7;</code>
+     * <code>repeated uint32 AIJMMIBILNI = 7;</code>
      * @param index The index of the element to return.
-     * @return The oICIAOHDEBD at the given index.
+     * @return The aIJMMIBILNI at the given index.
      */
-    public int getOICIAOHDEBD(int index) {
-      return oICIAOHDEBD_.getInt(index);
+    public int getAIJMMIBILNI(int index) {
+      return aIJMMIBILNI_.getInt(index);
     }
-    private int oICIAOHDEBDMemoizedSerializedSize = -1;
+    private int aIJMMIBILNIMemoizedSerializedSize = -1;
 
-    public static final int HKBEABEOOGH_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList hKBEABEOOGH_;
+    public static final int GKFIALNGMAE_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList gKFIALNGMAE_;
     /**
-     * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-     * @return A list containing the hKBEABEOOGH.
+     * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+     * @return A list containing the gKFIALNGMAE.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getHKBEABEOOGHList() {
-      return hKBEABEOOGH_;
+        getGKFIALNGMAEList() {
+      return gKFIALNGMAE_;
     }
     /**
-     * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-     * @return The count of hKBEABEOOGH.
+     * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+     * @return The count of gKFIALNGMAE.
      */
-    public int getHKBEABEOOGHCount() {
-      return hKBEABEOOGH_.size();
+    public int getGKFIALNGMAECount() {
+      return gKFIALNGMAE_.size();
     }
     /**
-     * <code>repeated uint32 HKBEABEOOGH = 8;</code>
+     * <code>repeated uint32 GKFIALNGMAE = 8;</code>
      * @param index The index of the element to return.
-     * @return The hKBEABEOOGH at the given index.
+     * @return The gKFIALNGMAE at the given index.
      */
-    public int getHKBEABEOOGH(int index) {
-      return hKBEABEOOGH_.getInt(index);
+    public int getGKFIALNGMAE(int index) {
+      return gKFIALNGMAE_.getInt(index);
     }
-    private int hKBEABEOOGHMemoizedSerializedSize = -1;
+    private int gKFIALNGMAEMemoizedSerializedSize = -1;
 
-    public static final int NJDGAKKHPIA_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList nJDGAKKHPIA_;
+    public static final int PEJBHINDHBH_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList pEJBHINDHBH_;
     /**
-     * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-     * @return A list containing the nJDGAKKHPIA.
+     * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+     * @return A list containing the pEJBHINDHBH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getNJDGAKKHPIAList() {
-      return nJDGAKKHPIA_;
+        getPEJBHINDHBHList() {
+      return pEJBHINDHBH_;
     }
     /**
-     * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-     * @return The count of nJDGAKKHPIA.
+     * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+     * @return The count of pEJBHINDHBH.
      */
-    public int getNJDGAKKHPIACount() {
-      return nJDGAKKHPIA_.size();
+    public int getPEJBHINDHBHCount() {
+      return pEJBHINDHBH_.size();
     }
     /**
-     * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
+     * <code>repeated uint32 PEJBHINDHBH = 9;</code>
      * @param index The index of the element to return.
-     * @return The nJDGAKKHPIA at the given index.
+     * @return The pEJBHINDHBH at the given index.
      */
-    public int getNJDGAKKHPIA(int index) {
-      return nJDGAKKHPIA_.getInt(index);
+    public int getPEJBHINDHBH(int index) {
+      return pEJBHINDHBH_.getInt(index);
     }
-    private int nJDGAKKHPIAMemoizedSerializedSize = -1;
+    private int pEJBHINDHBHMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -931,65 +935,65 @@ public final class LackingResourceInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getOKPPAKPNANEList().size() > 0) {
+      if (getONOMCDMBDOHList().size() > 0) {
         output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(oKPPAKPNANEMemoizedSerializedSize);
+        output.writeUInt32NoTag(oNOMCDMBDOHMemoizedSerializedSize);
       }
-      for (int i = 0; i < oKPPAKPNANE_.size(); i++) {
-        output.writeUInt32NoTag(oKPPAKPNANE_.getInt(i));
+      for (int i = 0; i < oNOMCDMBDOH_.size(); i++) {
+        output.writeUInt32NoTag(oNOMCDMBDOH_.getInt(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetPAPNJAIKLII(),
-          PAPNJAIKLIIDefaultEntryHolder.defaultEntry,
+          internalGetPIBNNEJDPDJ(),
+          PIBNNEJDPDJDefaultEntryHolder.defaultEntry,
           2);
-      if (getNODDADDKHJLList().size() > 0) {
+      if (getFNCMJABNNLPList().size() > 0) {
         output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(nODDADDKHJLMemoizedSerializedSize);
+        output.writeUInt32NoTag(fNCMJABNNLPMemoizedSerializedSize);
       }
-      for (int i = 0; i < nODDADDKHJL_.size(); i++) {
-        output.writeUInt32NoTag(nODDADDKHJL_.getInt(i));
+      for (int i = 0; i < fNCMJABNNLP_.size(); i++) {
+        output.writeUInt32NoTag(fNCMJABNNLP_.getInt(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetGDDAJFMLFAH(),
-          GDDAJFMLFAHDefaultEntryHolder.defaultEntry,
+          internalGetOOAIGNECDMM(),
+          OOAIGNECDMMDefaultEntryHolder.defaultEntry,
           4);
-      if (getDFEBELMAHMIList().size() > 0) {
+      if (getMLOIKDNOHKIList().size() > 0) {
         output.writeUInt32NoTag(42);
-        output.writeUInt32NoTag(dFEBELMAHMIMemoizedSerializedSize);
+        output.writeUInt32NoTag(mLOIKDNOHKIMemoizedSerializedSize);
       }
-      for (int i = 0; i < dFEBELMAHMI_.size(); i++) {
-        output.writeUInt32NoTag(dFEBELMAHMI_.getInt(i));
+      for (int i = 0; i < mLOIKDNOHKI_.size(); i++) {
+        output.writeUInt32NoTag(mLOIKDNOHKI_.getInt(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetOPFABHCELAM(),
-          OPFABHCELAMDefaultEntryHolder.defaultEntry,
+          internalGetHLFGMHFJCOO(),
+          HLFGMHFJCOODefaultEntryHolder.defaultEntry,
           6);
-      if (getOICIAOHDEBDList().size() > 0) {
+      if (getAIJMMIBILNIList().size() > 0) {
         output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(oICIAOHDEBDMemoizedSerializedSize);
+        output.writeUInt32NoTag(aIJMMIBILNIMemoizedSerializedSize);
       }
-      for (int i = 0; i < oICIAOHDEBD_.size(); i++) {
-        output.writeUInt32NoTag(oICIAOHDEBD_.getInt(i));
+      for (int i = 0; i < aIJMMIBILNI_.size(); i++) {
+        output.writeUInt32NoTag(aIJMMIBILNI_.getInt(i));
       }
-      if (getHKBEABEOOGHList().size() > 0) {
+      if (getGKFIALNGMAEList().size() > 0) {
         output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(hKBEABEOOGHMemoizedSerializedSize);
+        output.writeUInt32NoTag(gKFIALNGMAEMemoizedSerializedSize);
       }
-      for (int i = 0; i < hKBEABEOOGH_.size(); i++) {
-        output.writeUInt32NoTag(hKBEABEOOGH_.getInt(i));
+      for (int i = 0; i < gKFIALNGMAE_.size(); i++) {
+        output.writeUInt32NoTag(gKFIALNGMAE_.getInt(i));
       }
-      if (getNJDGAKKHPIAList().size() > 0) {
+      if (getPEJBHINDHBHList().size() > 0) {
         output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(nJDGAKKHPIAMemoizedSerializedSize);
+        output.writeUInt32NoTag(pEJBHINDHBHMemoizedSerializedSize);
       }
-      for (int i = 0; i < nJDGAKKHPIA_.size(); i++) {
-        output.writeUInt32NoTag(nJDGAKKHPIA_.getInt(i));
+      for (int i = 0; i < pEJBHINDHBH_.size(); i++) {
+        output.writeUInt32NoTag(pEJBHINDHBH_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -1002,117 +1006,117 @@ public final class LackingResourceInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < oKPPAKPNANE_.size(); i++) {
+        for (int i = 0; i < oNOMCDMBDOH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oKPPAKPNANE_.getInt(i));
+            .computeUInt32SizeNoTag(oNOMCDMBDOH_.getInt(i));
         }
         size += dataSize;
-        if (!getOKPPAKPNANEList().isEmpty()) {
+        if (!getONOMCDMBDOHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oKPPAKPNANEMemoizedSerializedSize = dataSize;
+        oNOMCDMBDOHMemoizedSerializedSize = dataSize;
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetPAPNJAIKLII().getMap().entrySet()) {
+           : internalGetPIBNNEJDPDJ().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        pAPNJAIKLII__ = PAPNJAIKLIIDefaultEntryHolder.defaultEntry.newBuilderForType()
+        pIBNNEJDPDJ__ = PIBNNEJDPDJDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, pAPNJAIKLII__);
+            .computeMessageSize(2, pIBNNEJDPDJ__);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < nODDADDKHJL_.size(); i++) {
+        for (int i = 0; i < fNCMJABNNLP_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(nODDADDKHJL_.getInt(i));
+            .computeUInt32SizeNoTag(fNCMJABNNLP_.getInt(i));
         }
         size += dataSize;
-        if (!getNODDADDKHJLList().isEmpty()) {
+        if (!getFNCMJABNNLPList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        nODDADDKHJLMemoizedSerializedSize = dataSize;
+        fNCMJABNNLPMemoizedSerializedSize = dataSize;
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetGDDAJFMLFAH().getMap().entrySet()) {
+           : internalGetOOAIGNECDMM().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        gDDAJFMLFAH__ = GDDAJFMLFAHDefaultEntryHolder.defaultEntry.newBuilderForType()
+        oOAIGNECDMM__ = OOAIGNECDMMDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, gDDAJFMLFAH__);
+            .computeMessageSize(4, oOAIGNECDMM__);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < dFEBELMAHMI_.size(); i++) {
+        for (int i = 0; i < mLOIKDNOHKI_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(dFEBELMAHMI_.getInt(i));
+            .computeUInt32SizeNoTag(mLOIKDNOHKI_.getInt(i));
         }
         size += dataSize;
-        if (!getDFEBELMAHMIList().isEmpty()) {
+        if (!getMLOIKDNOHKIList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        dFEBELMAHMIMemoizedSerializedSize = dataSize;
+        mLOIKDNOHKIMemoizedSerializedSize = dataSize;
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetOPFABHCELAM().getMap().entrySet()) {
+           : internalGetHLFGMHFJCOO().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        oPFABHCELAM__ = OPFABHCELAMDefaultEntryHolder.defaultEntry.newBuilderForType()
+        hLFGMHFJCOO__ = HLFGMHFJCOODefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, oPFABHCELAM__);
+            .computeMessageSize(6, hLFGMHFJCOO__);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < oICIAOHDEBD_.size(); i++) {
+        for (int i = 0; i < aIJMMIBILNI_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oICIAOHDEBD_.getInt(i));
+            .computeUInt32SizeNoTag(aIJMMIBILNI_.getInt(i));
         }
         size += dataSize;
-        if (!getOICIAOHDEBDList().isEmpty()) {
+        if (!getAIJMMIBILNIList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oICIAOHDEBDMemoizedSerializedSize = dataSize;
+        aIJMMIBILNIMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < hKBEABEOOGH_.size(); i++) {
+        for (int i = 0; i < gKFIALNGMAE_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(hKBEABEOOGH_.getInt(i));
+            .computeUInt32SizeNoTag(gKFIALNGMAE_.getInt(i));
         }
         size += dataSize;
-        if (!getHKBEABEOOGHList().isEmpty()) {
+        if (!getGKFIALNGMAEList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        hKBEABEOOGHMemoizedSerializedSize = dataSize;
+        gKFIALNGMAEMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < nJDGAKKHPIA_.size(); i++) {
+        for (int i = 0; i < pEJBHINDHBH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(nJDGAKKHPIA_.getInt(i));
+            .computeUInt32SizeNoTag(pEJBHINDHBH_.getInt(i));
         }
         size += dataSize;
-        if (!getNJDGAKKHPIAList().isEmpty()) {
+        if (!getPEJBHINDHBHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        nJDGAKKHPIAMemoizedSerializedSize = dataSize;
+        pEJBHINDHBHMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1129,24 +1133,24 @@ public final class LackingResourceInfoOuterClass {
       }
       emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo other = (emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo) obj;
 
-      if (!getOKPPAKPNANEList()
-          .equals(other.getOKPPAKPNANEList())) return false;
-      if (!internalGetPAPNJAIKLII().equals(
-          other.internalGetPAPNJAIKLII())) return false;
-      if (!getNODDADDKHJLList()
-          .equals(other.getNODDADDKHJLList())) return false;
-      if (!internalGetGDDAJFMLFAH().equals(
-          other.internalGetGDDAJFMLFAH())) return false;
-      if (!getDFEBELMAHMIList()
-          .equals(other.getDFEBELMAHMIList())) return false;
-      if (!internalGetOPFABHCELAM().equals(
-          other.internalGetOPFABHCELAM())) return false;
-      if (!getOICIAOHDEBDList()
-          .equals(other.getOICIAOHDEBDList())) return false;
-      if (!getHKBEABEOOGHList()
-          .equals(other.getHKBEABEOOGHList())) return false;
-      if (!getNJDGAKKHPIAList()
-          .equals(other.getNJDGAKKHPIAList())) return false;
+      if (!getONOMCDMBDOHList()
+          .equals(other.getONOMCDMBDOHList())) return false;
+      if (!internalGetPIBNNEJDPDJ().equals(
+          other.internalGetPIBNNEJDPDJ())) return false;
+      if (!getFNCMJABNNLPList()
+          .equals(other.getFNCMJABNNLPList())) return false;
+      if (!internalGetOOAIGNECDMM().equals(
+          other.internalGetOOAIGNECDMM())) return false;
+      if (!getMLOIKDNOHKIList()
+          .equals(other.getMLOIKDNOHKIList())) return false;
+      if (!internalGetHLFGMHFJCOO().equals(
+          other.internalGetHLFGMHFJCOO())) return false;
+      if (!getAIJMMIBILNIList()
+          .equals(other.getAIJMMIBILNIList())) return false;
+      if (!getGKFIALNGMAEList()
+          .equals(other.getGKFIALNGMAEList())) return false;
+      if (!getPEJBHINDHBHList()
+          .equals(other.getPEJBHINDHBHList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1158,41 +1162,41 @@ public final class LackingResourceInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getOKPPAKPNANECount() > 0) {
-        hash = (37 * hash) + OKPPAKPNANE_FIELD_NUMBER;
-        hash = (53 * hash) + getOKPPAKPNANEList().hashCode();
+      if (getONOMCDMBDOHCount() > 0) {
+        hash = (37 * hash) + ONOMCDMBDOH_FIELD_NUMBER;
+        hash = (53 * hash) + getONOMCDMBDOHList().hashCode();
       }
-      if (!internalGetPAPNJAIKLII().getMap().isEmpty()) {
-        hash = (37 * hash) + PAPNJAIKLII_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetPAPNJAIKLII().hashCode();
+      if (!internalGetPIBNNEJDPDJ().getMap().isEmpty()) {
+        hash = (37 * hash) + PIBNNEJDPDJ_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetPIBNNEJDPDJ().hashCode();
       }
-      if (getNODDADDKHJLCount() > 0) {
-        hash = (37 * hash) + NODDADDKHJL_FIELD_NUMBER;
-        hash = (53 * hash) + getNODDADDKHJLList().hashCode();
+      if (getFNCMJABNNLPCount() > 0) {
+        hash = (37 * hash) + FNCMJABNNLP_FIELD_NUMBER;
+        hash = (53 * hash) + getFNCMJABNNLPList().hashCode();
       }
-      if (!internalGetGDDAJFMLFAH().getMap().isEmpty()) {
-        hash = (37 * hash) + GDDAJFMLFAH_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetGDDAJFMLFAH().hashCode();
+      if (!internalGetOOAIGNECDMM().getMap().isEmpty()) {
+        hash = (37 * hash) + OOAIGNECDMM_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetOOAIGNECDMM().hashCode();
       }
-      if (getDFEBELMAHMICount() > 0) {
-        hash = (37 * hash) + DFEBELMAHMI_FIELD_NUMBER;
-        hash = (53 * hash) + getDFEBELMAHMIList().hashCode();
+      if (getMLOIKDNOHKICount() > 0) {
+        hash = (37 * hash) + MLOIKDNOHKI_FIELD_NUMBER;
+        hash = (53 * hash) + getMLOIKDNOHKIList().hashCode();
       }
-      if (!internalGetOPFABHCELAM().getMap().isEmpty()) {
-        hash = (37 * hash) + OPFABHCELAM_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetOPFABHCELAM().hashCode();
+      if (!internalGetHLFGMHFJCOO().getMap().isEmpty()) {
+        hash = (37 * hash) + HLFGMHFJCOO_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetHLFGMHFJCOO().hashCode();
       }
-      if (getOICIAOHDEBDCount() > 0) {
-        hash = (37 * hash) + OICIAOHDEBD_FIELD_NUMBER;
-        hash = (53 * hash) + getOICIAOHDEBDList().hashCode();
+      if (getAIJMMIBILNICount() > 0) {
+        hash = (37 * hash) + AIJMMIBILNI_FIELD_NUMBER;
+        hash = (53 * hash) + getAIJMMIBILNIList().hashCode();
       }
-      if (getHKBEABEOOGHCount() > 0) {
-        hash = (37 * hash) + HKBEABEOOGH_FIELD_NUMBER;
-        hash = (53 * hash) + getHKBEABEOOGHList().hashCode();
+      if (getGKFIALNGMAECount() > 0) {
+        hash = (37 * hash) + GKFIALNGMAE_FIELD_NUMBER;
+        hash = (53 * hash) + getGKFIALNGMAEList().hashCode();
       }
-      if (getNJDGAKKHPIACount() > 0) {
-        hash = (37 * hash) + NJDGAKKHPIA_FIELD_NUMBER;
-        hash = (53 * hash) + getNJDGAKKHPIAList().hashCode();
+      if (getPEJBHINDHBHCount() > 0) {
+        hash = (37 * hash) + PEJBHINDHBH_FIELD_NUMBER;
+        hash = (53 * hash) + getPEJBHINDHBHList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1290,6 +1294,10 @@ public final class LackingResourceInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code LackingResourceInfo}
      */
     public static final class Builder extends
@@ -1306,11 +1314,11 @@ public final class LackingResourceInfoOuterClass {
           int number) {
         switch (number) {
           case 2:
-            return internalGetPAPNJAIKLII();
+            return internalGetPIBNNEJDPDJ();
           case 4:
-            return internalGetGDDAJFMLFAH();
+            return internalGetOOAIGNECDMM();
           case 6:
-            return internalGetOPFABHCELAM();
+            return internalGetHLFGMHFJCOO();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1321,11 +1329,11 @@ public final class LackingResourceInfoOuterClass {
           int number) {
         switch (number) {
           case 2:
-            return internalGetMutablePAPNJAIKLII();
+            return internalGetMutablePIBNNEJDPDJ();
           case 4:
-            return internalGetMutableGDDAJFMLFAH();
+            return internalGetMutableOOAIGNECDMM();
           case 6:
-            return internalGetMutableOPFABHCELAM();
+            return internalGetMutableHLFGMHFJCOO();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1357,20 +1365,20 @@ public final class LackingResourceInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oKPPAKPNANE_ = emptyIntList();
+        oNOMCDMBDOH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        internalGetMutablePAPNJAIKLII().clear();
-        nODDADDKHJL_ = emptyIntList();
+        internalGetMutablePIBNNEJDPDJ().clear();
+        fNCMJABNNLP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
-        internalGetMutableGDDAJFMLFAH().clear();
-        dFEBELMAHMI_ = emptyIntList();
+        internalGetMutableOOAIGNECDMM().clear();
+        mLOIKDNOHKI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000010);
-        internalGetMutableOPFABHCELAM().clear();
-        oICIAOHDEBD_ = emptyIntList();
+        internalGetMutableHLFGMHFJCOO().clear();
+        aIJMMIBILNI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000040);
-        hKBEABEOOGH_ = emptyIntList();
+        gKFIALNGMAE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000080);
-        nJDGAKKHPIA_ = emptyIntList();
+        pEJBHINDHBH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
@@ -1400,41 +1408,41 @@ public final class LackingResourceInfoOuterClass {
         emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo result = new emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          oKPPAKPNANE_.makeImmutable();
+          oNOMCDMBDOH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.oKPPAKPNANE_ = oKPPAKPNANE_;
-        result.pAPNJAIKLII_ = internalGetPAPNJAIKLII();
-        result.pAPNJAIKLII_.makeImmutable();
+        result.oNOMCDMBDOH_ = oNOMCDMBDOH_;
+        result.pIBNNEJDPDJ_ = internalGetPIBNNEJDPDJ();
+        result.pIBNNEJDPDJ_.makeImmutable();
         if (((bitField0_ & 0x00000004) != 0)) {
-          nODDADDKHJL_.makeImmutable();
+          fNCMJABNNLP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.nODDADDKHJL_ = nODDADDKHJL_;
-        result.gDDAJFMLFAH_ = internalGetGDDAJFMLFAH();
-        result.gDDAJFMLFAH_.makeImmutable();
+        result.fNCMJABNNLP_ = fNCMJABNNLP_;
+        result.oOAIGNECDMM_ = internalGetOOAIGNECDMM();
+        result.oOAIGNECDMM_.makeImmutable();
         if (((bitField0_ & 0x00000010) != 0)) {
-          dFEBELMAHMI_.makeImmutable();
+          mLOIKDNOHKI_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000010);
         }
-        result.dFEBELMAHMI_ = dFEBELMAHMI_;
-        result.oPFABHCELAM_ = internalGetOPFABHCELAM();
-        result.oPFABHCELAM_.makeImmutable();
+        result.mLOIKDNOHKI_ = mLOIKDNOHKI_;
+        result.hLFGMHFJCOO_ = internalGetHLFGMHFJCOO();
+        result.hLFGMHFJCOO_.makeImmutable();
         if (((bitField0_ & 0x00000040) != 0)) {
-          oICIAOHDEBD_.makeImmutable();
+          aIJMMIBILNI_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000040);
         }
-        result.oICIAOHDEBD_ = oICIAOHDEBD_;
+        result.aIJMMIBILNI_ = aIJMMIBILNI_;
         if (((bitField0_ & 0x00000080) != 0)) {
-          hKBEABEOOGH_.makeImmutable();
+          gKFIALNGMAE_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000080);
         }
-        result.hKBEABEOOGH_ = hKBEABEOOGH_;
+        result.gKFIALNGMAE_ = gKFIALNGMAE_;
         if (((bitField0_ & 0x00000100) != 0)) {
-          nJDGAKKHPIA_.makeImmutable();
+          pEJBHINDHBH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000100);
         }
-        result.nJDGAKKHPIA_ = nJDGAKKHPIA_;
+        result.pEJBHINDHBH_ = pEJBHINDHBH_;
         onBuilt();
         return result;
       }
@@ -1483,69 +1491,69 @@ public final class LackingResourceInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo other) {
         if (other == emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance()) return this;
-        if (!other.oKPPAKPNANE_.isEmpty()) {
-          if (oKPPAKPNANE_.isEmpty()) {
-            oKPPAKPNANE_ = other.oKPPAKPNANE_;
+        if (!other.oNOMCDMBDOH_.isEmpty()) {
+          if (oNOMCDMBDOH_.isEmpty()) {
+            oNOMCDMBDOH_ = other.oNOMCDMBDOH_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureOKPPAKPNANEIsMutable();
-            oKPPAKPNANE_.addAll(other.oKPPAKPNANE_);
+            ensureONOMCDMBDOHIsMutable();
+            oNOMCDMBDOH_.addAll(other.oNOMCDMBDOH_);
           }
           onChanged();
         }
-        internalGetMutablePAPNJAIKLII().mergeFrom(
-            other.internalGetPAPNJAIKLII());
-        if (!other.nODDADDKHJL_.isEmpty()) {
-          if (nODDADDKHJL_.isEmpty()) {
-            nODDADDKHJL_ = other.nODDADDKHJL_;
+        internalGetMutablePIBNNEJDPDJ().mergeFrom(
+            other.internalGetPIBNNEJDPDJ());
+        if (!other.fNCMJABNNLP_.isEmpty()) {
+          if (fNCMJABNNLP_.isEmpty()) {
+            fNCMJABNNLP_ = other.fNCMJABNNLP_;
             bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureNODDADDKHJLIsMutable();
-            nODDADDKHJL_.addAll(other.nODDADDKHJL_);
+            ensureFNCMJABNNLPIsMutable();
+            fNCMJABNNLP_.addAll(other.fNCMJABNNLP_);
           }
           onChanged();
         }
-        internalGetMutableGDDAJFMLFAH().mergeFrom(
-            other.internalGetGDDAJFMLFAH());
-        if (!other.dFEBELMAHMI_.isEmpty()) {
-          if (dFEBELMAHMI_.isEmpty()) {
-            dFEBELMAHMI_ = other.dFEBELMAHMI_;
+        internalGetMutableOOAIGNECDMM().mergeFrom(
+            other.internalGetOOAIGNECDMM());
+        if (!other.mLOIKDNOHKI_.isEmpty()) {
+          if (mLOIKDNOHKI_.isEmpty()) {
+            mLOIKDNOHKI_ = other.mLOIKDNOHKI_;
             bitField0_ = (bitField0_ & ~0x00000010);
           } else {
-            ensureDFEBELMAHMIIsMutable();
-            dFEBELMAHMI_.addAll(other.dFEBELMAHMI_);
+            ensureMLOIKDNOHKIIsMutable();
+            mLOIKDNOHKI_.addAll(other.mLOIKDNOHKI_);
           }
           onChanged();
         }
-        internalGetMutableOPFABHCELAM().mergeFrom(
-            other.internalGetOPFABHCELAM());
-        if (!other.oICIAOHDEBD_.isEmpty()) {
-          if (oICIAOHDEBD_.isEmpty()) {
-            oICIAOHDEBD_ = other.oICIAOHDEBD_;
+        internalGetMutableHLFGMHFJCOO().mergeFrom(
+            other.internalGetHLFGMHFJCOO());
+        if (!other.aIJMMIBILNI_.isEmpty()) {
+          if (aIJMMIBILNI_.isEmpty()) {
+            aIJMMIBILNI_ = other.aIJMMIBILNI_;
             bitField0_ = (bitField0_ & ~0x00000040);
           } else {
-            ensureOICIAOHDEBDIsMutable();
-            oICIAOHDEBD_.addAll(other.oICIAOHDEBD_);
+            ensureAIJMMIBILNIIsMutable();
+            aIJMMIBILNI_.addAll(other.aIJMMIBILNI_);
           }
           onChanged();
         }
-        if (!other.hKBEABEOOGH_.isEmpty()) {
-          if (hKBEABEOOGH_.isEmpty()) {
-            hKBEABEOOGH_ = other.hKBEABEOOGH_;
+        if (!other.gKFIALNGMAE_.isEmpty()) {
+          if (gKFIALNGMAE_.isEmpty()) {
+            gKFIALNGMAE_ = other.gKFIALNGMAE_;
             bitField0_ = (bitField0_ & ~0x00000080);
           } else {
-            ensureHKBEABEOOGHIsMutable();
-            hKBEABEOOGH_.addAll(other.hKBEABEOOGH_);
+            ensureGKFIALNGMAEIsMutable();
+            gKFIALNGMAE_.addAll(other.gKFIALNGMAE_);
           }
           onChanged();
         }
-        if (!other.nJDGAKKHPIA_.isEmpty()) {
-          if (nJDGAKKHPIA_.isEmpty()) {
-            nJDGAKKHPIA_ = other.nJDGAKKHPIA_;
+        if (!other.pEJBHINDHBH_.isEmpty()) {
+          if (pEJBHINDHBH_.isEmpty()) {
+            pEJBHINDHBH_ = other.pEJBHINDHBH_;
             bitField0_ = (bitField0_ & ~0x00000100);
           } else {
-            ensureNJDGAKKHPIAIsMutable();
-            nJDGAKKHPIA_.addAll(other.nJDGAKKHPIA_);
+            ensurePEJBHINDHBHIsMutable();
+            pEJBHINDHBH_.addAll(other.pEJBHINDHBH_);
           }
           onChanged();
         }
@@ -1579,179 +1587,179 @@ public final class LackingResourceInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList oKPPAKPNANE_ = emptyIntList();
-      private void ensureOKPPAKPNANEIsMutable() {
+      private com.google.protobuf.Internal.IntList oNOMCDMBDOH_ = emptyIntList();
+      private void ensureONOMCDMBDOHIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          oKPPAKPNANE_ = mutableCopy(oKPPAKPNANE_);
+          oNOMCDMBDOH_ = mutableCopy(oNOMCDMBDOH_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-       * @return A list containing the oKPPAKPNANE.
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+       * @return A list containing the oNOMCDMBDOH.
        */
       public java.util.List<java.lang.Integer>
-          getOKPPAKPNANEList() {
+          getONOMCDMBDOHList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(oKPPAKPNANE_) : oKPPAKPNANE_;
+                 java.util.Collections.unmodifiableList(oNOMCDMBDOH_) : oNOMCDMBDOH_;
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-       * @return The count of oKPPAKPNANE.
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+       * @return The count of oNOMCDMBDOH.
        */
-      public int getOKPPAKPNANECount() {
-        return oKPPAKPNANE_.size();
+      public int getONOMCDMBDOHCount() {
+        return oNOMCDMBDOH_.size();
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
        * @param index The index of the element to return.
-       * @return The oKPPAKPNANE at the given index.
+       * @return The oNOMCDMBDOH at the given index.
        */
-      public int getOKPPAKPNANE(int index) {
-        return oKPPAKPNANE_.getInt(index);
+      public int getONOMCDMBDOH(int index) {
+        return oNOMCDMBDOH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
        * @param index The index to set the value at.
-       * @param value The oKPPAKPNANE to set.
+       * @param value The oNOMCDMBDOH to set.
        * @return This builder for chaining.
        */
-      public Builder setOKPPAKPNANE(
+      public Builder setONOMCDMBDOH(
           int index, int value) {
-        ensureOKPPAKPNANEIsMutable();
-        oKPPAKPNANE_.setInt(index, value);
+        ensureONOMCDMBDOHIsMutable();
+        oNOMCDMBDOH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-       * @param value The oKPPAKPNANE to add.
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+       * @param value The oNOMCDMBDOH to add.
        * @return This builder for chaining.
        */
-      public Builder addOKPPAKPNANE(int value) {
-        ensureOKPPAKPNANEIsMutable();
-        oKPPAKPNANE_.addInt(value);
+      public Builder addONOMCDMBDOH(int value) {
+        ensureONOMCDMBDOHIsMutable();
+        oNOMCDMBDOH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
-       * @param values The oKPPAKPNANE to add.
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
+       * @param values The oNOMCDMBDOH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOKPPAKPNANE(
+      public Builder addAllONOMCDMBDOH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOKPPAKPNANEIsMutable();
+        ensureONOMCDMBDOHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oKPPAKPNANE_);
+            values, oNOMCDMBDOH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OKPPAKPNANE = 1;</code>
+       * <code>repeated uint32 ONOMCDMBDOH = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOKPPAKPNANE() {
-        oKPPAKPNANE_ = emptyIntList();
+      public Builder clearONOMCDMBDOH() {
+        oNOMCDMBDOH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> pAPNJAIKLII_;
+          java.lang.Integer, java.lang.Integer> pIBNNEJDPDJ_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetPAPNJAIKLII() {
-        if (pAPNJAIKLII_ == null) {
+      internalGetPIBNNEJDPDJ() {
+        if (pIBNNEJDPDJ_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              PAPNJAIKLIIDefaultEntryHolder.defaultEntry);
+              PIBNNEJDPDJDefaultEntryHolder.defaultEntry);
         }
-        return pAPNJAIKLII_;
+        return pIBNNEJDPDJ_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutablePAPNJAIKLII() {
+      internalGetMutablePIBNNEJDPDJ() {
         onChanged();;
-        if (pAPNJAIKLII_ == null) {
-          pAPNJAIKLII_ = com.google.protobuf.MapField.newMapField(
-              PAPNJAIKLIIDefaultEntryHolder.defaultEntry);
+        if (pIBNNEJDPDJ_ == null) {
+          pIBNNEJDPDJ_ = com.google.protobuf.MapField.newMapField(
+              PIBNNEJDPDJDefaultEntryHolder.defaultEntry);
         }
-        if (!pAPNJAIKLII_.isMutable()) {
-          pAPNJAIKLII_ = pAPNJAIKLII_.copy();
+        if (!pIBNNEJDPDJ_.isMutable()) {
+          pIBNNEJDPDJ_ = pIBNNEJDPDJ_.copy();
         }
-        return pAPNJAIKLII_;
+        return pIBNNEJDPDJ_;
       }
 
-      public int getPAPNJAIKLIICount() {
-        return internalGetPAPNJAIKLII().getMap().size();
+      public int getPIBNNEJDPDJCount() {
+        return internalGetPIBNNEJDPDJ().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
 
       @java.lang.Override
-      public boolean containsPAPNJAIKLII(
+      public boolean containsPIBNNEJDPDJ(
           int key) {
         
-        return internalGetPAPNJAIKLII().getMap().containsKey(key);
+        return internalGetPIBNNEJDPDJ().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getPAPNJAIKLIIMap()} instead.
+       * Use {@link #getPIBNNEJDPDJMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getPAPNJAIKLII() {
-        return getPAPNJAIKLIIMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getPIBNNEJDPDJ() {
+        return getPIBNNEJDPDJMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getPAPNJAIKLIIMap() {
-        return internalGetPAPNJAIKLII().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getPIBNNEJDPDJMap() {
+        return internalGetPIBNNEJDPDJ().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
       @java.lang.Override
 
-      public int getPAPNJAIKLIIOrDefault(
+      public int getPIBNNEJDPDJOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetPAPNJAIKLII().getMap();
+            internalGetPIBNNEJDPDJ().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
       @java.lang.Override
 
-      public int getPAPNJAIKLIIOrThrow(
+      public int getPIBNNEJDPDJOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetPAPNJAIKLII().getMap();
+            internalGetPIBNNEJDPDJ().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearPAPNJAIKLII() {
-        internalGetMutablePAPNJAIKLII().getMutableMap()
+      public Builder clearPIBNNEJDPDJ() {
+        internalGetMutablePIBNNEJDPDJ().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
 
-      public Builder removePAPNJAIKLII(
+      public Builder removePIBNNEJDPDJ(
           int key) {
         
-        internalGetMutablePAPNJAIKLII().getMutableMap()
+        internalGetMutablePIBNNEJDPDJ().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1760,205 +1768,205 @@ public final class LackingResourceInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutablePAPNJAIKLII() {
-        return internalGetMutablePAPNJAIKLII().getMutableMap();
+      getMutablePIBNNEJDPDJ() {
+        return internalGetMutablePIBNNEJDPDJ().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
-      public Builder putPAPNJAIKLII(
+      public Builder putPIBNNEJDPDJ(
           int key,
           int value) {
         
         
-        internalGetMutablePAPNJAIKLII().getMutableMap()
+        internalGetMutablePIBNNEJDPDJ().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; PAPNJAIKLII = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; PIBNNEJDPDJ = 2;</code>
        */
 
-      public Builder putAllPAPNJAIKLII(
+      public Builder putAllPIBNNEJDPDJ(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutablePAPNJAIKLII().getMutableMap()
+        internalGetMutablePIBNNEJDPDJ().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList nODDADDKHJL_ = emptyIntList();
-      private void ensureNODDADDKHJLIsMutable() {
+      private com.google.protobuf.Internal.IntList fNCMJABNNLP_ = emptyIntList();
+      private void ensureFNCMJABNNLPIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          nODDADDKHJL_ = mutableCopy(nODDADDKHJL_);
+          fNCMJABNNLP_ = mutableCopy(fNCMJABNNLP_);
           bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
-       * @return A list containing the nODDADDKHJL.
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+       * @return A list containing the fNCMJABNNLP.
        */
       public java.util.List<java.lang.Integer>
-          getNODDADDKHJLList() {
+          getFNCMJABNNLPList() {
         return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(nODDADDKHJL_) : nODDADDKHJL_;
+                 java.util.Collections.unmodifiableList(fNCMJABNNLP_) : fNCMJABNNLP_;
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
-       * @return The count of nODDADDKHJL.
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+       * @return The count of fNCMJABNNLP.
        */
-      public int getNODDADDKHJLCount() {
-        return nODDADDKHJL_.size();
+      public int getFNCMJABNNLPCount() {
+        return fNCMJABNNLP_.size();
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
        * @param index The index of the element to return.
-       * @return The nODDADDKHJL at the given index.
+       * @return The fNCMJABNNLP at the given index.
        */
-      public int getNODDADDKHJL(int index) {
-        return nODDADDKHJL_.getInt(index);
+      public int getFNCMJABNNLP(int index) {
+        return fNCMJABNNLP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
        * @param index The index to set the value at.
-       * @param value The nODDADDKHJL to set.
+       * @param value The fNCMJABNNLP to set.
        * @return This builder for chaining.
        */
-      public Builder setNODDADDKHJL(
+      public Builder setFNCMJABNNLP(
           int index, int value) {
-        ensureNODDADDKHJLIsMutable();
-        nODDADDKHJL_.setInt(index, value);
+        ensureFNCMJABNNLPIsMutable();
+        fNCMJABNNLP_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
-       * @param value The nODDADDKHJL to add.
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+       * @param value The fNCMJABNNLP to add.
        * @return This builder for chaining.
        */
-      public Builder addNODDADDKHJL(int value) {
-        ensureNODDADDKHJLIsMutable();
-        nODDADDKHJL_.addInt(value);
+      public Builder addFNCMJABNNLP(int value) {
+        ensureFNCMJABNNLPIsMutable();
+        fNCMJABNNLP_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
-       * @param values The nODDADDKHJL to add.
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
+       * @param values The fNCMJABNNLP to add.
        * @return This builder for chaining.
        */
-      public Builder addAllNODDADDKHJL(
+      public Builder addAllFNCMJABNNLP(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureNODDADDKHJLIsMutable();
+        ensureFNCMJABNNLPIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, nODDADDKHJL_);
+            values, fNCMJABNNLP_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NODDADDKHJL = 3;</code>
+       * <code>repeated uint32 FNCMJABNNLP = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNODDADDKHJL() {
-        nODDADDKHJL_ = emptyIntList();
+      public Builder clearFNCMJABNNLP() {
+        fNCMJABNNLP_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> gDDAJFMLFAH_;
+          java.lang.Integer, java.lang.Integer> oOAIGNECDMM_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetGDDAJFMLFAH() {
-        if (gDDAJFMLFAH_ == null) {
+      internalGetOOAIGNECDMM() {
+        if (oOAIGNECDMM_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              GDDAJFMLFAHDefaultEntryHolder.defaultEntry);
+              OOAIGNECDMMDefaultEntryHolder.defaultEntry);
         }
-        return gDDAJFMLFAH_;
+        return oOAIGNECDMM_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableGDDAJFMLFAH() {
+      internalGetMutableOOAIGNECDMM() {
         onChanged();;
-        if (gDDAJFMLFAH_ == null) {
-          gDDAJFMLFAH_ = com.google.protobuf.MapField.newMapField(
-              GDDAJFMLFAHDefaultEntryHolder.defaultEntry);
+        if (oOAIGNECDMM_ == null) {
+          oOAIGNECDMM_ = com.google.protobuf.MapField.newMapField(
+              OOAIGNECDMMDefaultEntryHolder.defaultEntry);
         }
-        if (!gDDAJFMLFAH_.isMutable()) {
-          gDDAJFMLFAH_ = gDDAJFMLFAH_.copy();
+        if (!oOAIGNECDMM_.isMutable()) {
+          oOAIGNECDMM_ = oOAIGNECDMM_.copy();
         }
-        return gDDAJFMLFAH_;
+        return oOAIGNECDMM_;
       }
 
-      public int getGDDAJFMLFAHCount() {
-        return internalGetGDDAJFMLFAH().getMap().size();
+      public int getOOAIGNECDMMCount() {
+        return internalGetOOAIGNECDMM().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
 
       @java.lang.Override
-      public boolean containsGDDAJFMLFAH(
+      public boolean containsOOAIGNECDMM(
           int key) {
         
-        return internalGetGDDAJFMLFAH().getMap().containsKey(key);
+        return internalGetOOAIGNECDMM().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getGDDAJFMLFAHMap()} instead.
+       * Use {@link #getOOAIGNECDMMMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getGDDAJFMLFAH() {
-        return getGDDAJFMLFAHMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getOOAIGNECDMM() {
+        return getOOAIGNECDMMMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getGDDAJFMLFAHMap() {
-        return internalGetGDDAJFMLFAH().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getOOAIGNECDMMMap() {
+        return internalGetOOAIGNECDMM().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
       @java.lang.Override
 
-      public int getGDDAJFMLFAHOrDefault(
+      public int getOOAIGNECDMMOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetGDDAJFMLFAH().getMap();
+            internalGetOOAIGNECDMM().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
       @java.lang.Override
 
-      public int getGDDAJFMLFAHOrThrow(
+      public int getOOAIGNECDMMOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetGDDAJFMLFAH().getMap();
+            internalGetOOAIGNECDMM().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearGDDAJFMLFAH() {
-        internalGetMutableGDDAJFMLFAH().getMutableMap()
+      public Builder clearOOAIGNECDMM() {
+        internalGetMutableOOAIGNECDMM().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
 
-      public Builder removeGDDAJFMLFAH(
+      public Builder removeOOAIGNECDMM(
           int key) {
         
-        internalGetMutableGDDAJFMLFAH().getMutableMap()
+        internalGetMutableOOAIGNECDMM().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1967,205 +1975,205 @@ public final class LackingResourceInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableGDDAJFMLFAH() {
-        return internalGetMutableGDDAJFMLFAH().getMutableMap();
+      getMutableOOAIGNECDMM() {
+        return internalGetMutableOOAIGNECDMM().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
-      public Builder putGDDAJFMLFAH(
+      public Builder putOOAIGNECDMM(
           int key,
           int value) {
         
         
-        internalGetMutableGDDAJFMLFAH().getMutableMap()
+        internalGetMutableOOAIGNECDMM().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GDDAJFMLFAH = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; OOAIGNECDMM = 4;</code>
        */
 
-      public Builder putAllGDDAJFMLFAH(
+      public Builder putAllOOAIGNECDMM(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableGDDAJFMLFAH().getMutableMap()
+        internalGetMutableOOAIGNECDMM().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList dFEBELMAHMI_ = emptyIntList();
-      private void ensureDFEBELMAHMIIsMutable() {
+      private com.google.protobuf.Internal.IntList mLOIKDNOHKI_ = emptyIntList();
+      private void ensureMLOIKDNOHKIIsMutable() {
         if (!((bitField0_ & 0x00000010) != 0)) {
-          dFEBELMAHMI_ = mutableCopy(dFEBELMAHMI_);
+          mLOIKDNOHKI_ = mutableCopy(mLOIKDNOHKI_);
           bitField0_ |= 0x00000010;
          }
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-       * @return A list containing the dFEBELMAHMI.
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+       * @return A list containing the mLOIKDNOHKI.
        */
       public java.util.List<java.lang.Integer>
-          getDFEBELMAHMIList() {
+          getMLOIKDNOHKIList() {
         return ((bitField0_ & 0x00000010) != 0) ?
-                 java.util.Collections.unmodifiableList(dFEBELMAHMI_) : dFEBELMAHMI_;
+                 java.util.Collections.unmodifiableList(mLOIKDNOHKI_) : mLOIKDNOHKI_;
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-       * @return The count of dFEBELMAHMI.
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+       * @return The count of mLOIKDNOHKI.
        */
-      public int getDFEBELMAHMICount() {
-        return dFEBELMAHMI_.size();
+      public int getMLOIKDNOHKICount() {
+        return mLOIKDNOHKI_.size();
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
        * @param index The index of the element to return.
-       * @return The dFEBELMAHMI at the given index.
+       * @return The mLOIKDNOHKI at the given index.
        */
-      public int getDFEBELMAHMI(int index) {
-        return dFEBELMAHMI_.getInt(index);
+      public int getMLOIKDNOHKI(int index) {
+        return mLOIKDNOHKI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
        * @param index The index to set the value at.
-       * @param value The dFEBELMAHMI to set.
+       * @param value The mLOIKDNOHKI to set.
        * @return This builder for chaining.
        */
-      public Builder setDFEBELMAHMI(
+      public Builder setMLOIKDNOHKI(
           int index, int value) {
-        ensureDFEBELMAHMIIsMutable();
-        dFEBELMAHMI_.setInt(index, value);
+        ensureMLOIKDNOHKIIsMutable();
+        mLOIKDNOHKI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-       * @param value The dFEBELMAHMI to add.
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+       * @param value The mLOIKDNOHKI to add.
        * @return This builder for chaining.
        */
-      public Builder addDFEBELMAHMI(int value) {
-        ensureDFEBELMAHMIIsMutable();
-        dFEBELMAHMI_.addInt(value);
+      public Builder addMLOIKDNOHKI(int value) {
+        ensureMLOIKDNOHKIIsMutable();
+        mLOIKDNOHKI_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
-       * @param values The dFEBELMAHMI to add.
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
+       * @param values The mLOIKDNOHKI to add.
        * @return This builder for chaining.
        */
-      public Builder addAllDFEBELMAHMI(
+      public Builder addAllMLOIKDNOHKI(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDFEBELMAHMIIsMutable();
+        ensureMLOIKDNOHKIIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, dFEBELMAHMI_);
+            values, mLOIKDNOHKI_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 DFEBELMAHMI = 5;</code>
+       * <code>repeated uint32 MLOIKDNOHKI = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDFEBELMAHMI() {
-        dFEBELMAHMI_ = emptyIntList();
+      public Builder clearMLOIKDNOHKI() {
+        mLOIKDNOHKI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> oPFABHCELAM_;
+          java.lang.Integer, java.lang.Integer> hLFGMHFJCOO_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetOPFABHCELAM() {
-        if (oPFABHCELAM_ == null) {
+      internalGetHLFGMHFJCOO() {
+        if (hLFGMHFJCOO_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              OPFABHCELAMDefaultEntryHolder.defaultEntry);
+              HLFGMHFJCOODefaultEntryHolder.defaultEntry);
         }
-        return oPFABHCELAM_;
+        return hLFGMHFJCOO_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableOPFABHCELAM() {
+      internalGetMutableHLFGMHFJCOO() {
         onChanged();;
-        if (oPFABHCELAM_ == null) {
-          oPFABHCELAM_ = com.google.protobuf.MapField.newMapField(
-              OPFABHCELAMDefaultEntryHolder.defaultEntry);
+        if (hLFGMHFJCOO_ == null) {
+          hLFGMHFJCOO_ = com.google.protobuf.MapField.newMapField(
+              HLFGMHFJCOODefaultEntryHolder.defaultEntry);
         }
-        if (!oPFABHCELAM_.isMutable()) {
-          oPFABHCELAM_ = oPFABHCELAM_.copy();
+        if (!hLFGMHFJCOO_.isMutable()) {
+          hLFGMHFJCOO_ = hLFGMHFJCOO_.copy();
         }
-        return oPFABHCELAM_;
+        return hLFGMHFJCOO_;
       }
 
-      public int getOPFABHCELAMCount() {
-        return internalGetOPFABHCELAM().getMap().size();
+      public int getHLFGMHFJCOOCount() {
+        return internalGetHLFGMHFJCOO().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
 
       @java.lang.Override
-      public boolean containsOPFABHCELAM(
+      public boolean containsHLFGMHFJCOO(
           int key) {
         
-        return internalGetOPFABHCELAM().getMap().containsKey(key);
+        return internalGetHLFGMHFJCOO().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getOPFABHCELAMMap()} instead.
+       * Use {@link #getHLFGMHFJCOOMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getOPFABHCELAM() {
-        return getOPFABHCELAMMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getHLFGMHFJCOO() {
+        return getHLFGMHFJCOOMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getOPFABHCELAMMap() {
-        return internalGetOPFABHCELAM().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getHLFGMHFJCOOMap() {
+        return internalGetHLFGMHFJCOO().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
       @java.lang.Override
 
-      public int getOPFABHCELAMOrDefault(
+      public int getHLFGMHFJCOOOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOPFABHCELAM().getMap();
+            internalGetHLFGMHFJCOO().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
       @java.lang.Override
 
-      public int getOPFABHCELAMOrThrow(
+      public int getHLFGMHFJCOOOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOPFABHCELAM().getMap();
+            internalGetHLFGMHFJCOO().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearOPFABHCELAM() {
-        internalGetMutableOPFABHCELAM().getMutableMap()
+      public Builder clearHLFGMHFJCOO() {
+        internalGetMutableHLFGMHFJCOO().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
 
-      public Builder removeOPFABHCELAM(
+      public Builder removeHLFGMHFJCOO(
           int key) {
         
-        internalGetMutableOPFABHCELAM().getMutableMap()
+        internalGetMutableHLFGMHFJCOO().getMutableMap()
             .remove(key);
         return this;
       }
@@ -2174,264 +2182,264 @@ public final class LackingResourceInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableOPFABHCELAM() {
-        return internalGetMutableOPFABHCELAM().getMutableMap();
+      getMutableHLFGMHFJCOO() {
+        return internalGetMutableHLFGMHFJCOO().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
-      public Builder putOPFABHCELAM(
+      public Builder putHLFGMHFJCOO(
           int key,
           int value) {
         
         
-        internalGetMutableOPFABHCELAM().getMutableMap()
+        internalGetMutableHLFGMHFJCOO().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; OPFABHCELAM = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; HLFGMHFJCOO = 6;</code>
        */
 
-      public Builder putAllOPFABHCELAM(
+      public Builder putAllHLFGMHFJCOO(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableOPFABHCELAM().getMutableMap()
+        internalGetMutableHLFGMHFJCOO().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList oICIAOHDEBD_ = emptyIntList();
-      private void ensureOICIAOHDEBDIsMutable() {
+      private com.google.protobuf.Internal.IntList aIJMMIBILNI_ = emptyIntList();
+      private void ensureAIJMMIBILNIIsMutable() {
         if (!((bitField0_ & 0x00000040) != 0)) {
-          oICIAOHDEBD_ = mutableCopy(oICIAOHDEBD_);
+          aIJMMIBILNI_ = mutableCopy(aIJMMIBILNI_);
           bitField0_ |= 0x00000040;
          }
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-       * @return A list containing the oICIAOHDEBD.
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+       * @return A list containing the aIJMMIBILNI.
        */
       public java.util.List<java.lang.Integer>
-          getOICIAOHDEBDList() {
+          getAIJMMIBILNIList() {
         return ((bitField0_ & 0x00000040) != 0) ?
-                 java.util.Collections.unmodifiableList(oICIAOHDEBD_) : oICIAOHDEBD_;
+                 java.util.Collections.unmodifiableList(aIJMMIBILNI_) : aIJMMIBILNI_;
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-       * @return The count of oICIAOHDEBD.
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+       * @return The count of aIJMMIBILNI.
        */
-      public int getOICIAOHDEBDCount() {
-        return oICIAOHDEBD_.size();
+      public int getAIJMMIBILNICount() {
+        return aIJMMIBILNI_.size();
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
        * @param index The index of the element to return.
-       * @return The oICIAOHDEBD at the given index.
+       * @return The aIJMMIBILNI at the given index.
        */
-      public int getOICIAOHDEBD(int index) {
-        return oICIAOHDEBD_.getInt(index);
+      public int getAIJMMIBILNI(int index) {
+        return aIJMMIBILNI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
        * @param index The index to set the value at.
-       * @param value The oICIAOHDEBD to set.
+       * @param value The aIJMMIBILNI to set.
        * @return This builder for chaining.
        */
-      public Builder setOICIAOHDEBD(
+      public Builder setAIJMMIBILNI(
           int index, int value) {
-        ensureOICIAOHDEBDIsMutable();
-        oICIAOHDEBD_.setInt(index, value);
+        ensureAIJMMIBILNIIsMutable();
+        aIJMMIBILNI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-       * @param value The oICIAOHDEBD to add.
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+       * @param value The aIJMMIBILNI to add.
        * @return This builder for chaining.
        */
-      public Builder addOICIAOHDEBD(int value) {
-        ensureOICIAOHDEBDIsMutable();
-        oICIAOHDEBD_.addInt(value);
+      public Builder addAIJMMIBILNI(int value) {
+        ensureAIJMMIBILNIIsMutable();
+        aIJMMIBILNI_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
-       * @param values The oICIAOHDEBD to add.
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
+       * @param values The aIJMMIBILNI to add.
        * @return This builder for chaining.
        */
-      public Builder addAllOICIAOHDEBD(
+      public Builder addAllAIJMMIBILNI(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOICIAOHDEBDIsMutable();
+        ensureAIJMMIBILNIIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oICIAOHDEBD_);
+            values, aIJMMIBILNI_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 OICIAOHDEBD = 7;</code>
+       * <code>repeated uint32 AIJMMIBILNI = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOICIAOHDEBD() {
-        oICIAOHDEBD_ = emptyIntList();
+      public Builder clearAIJMMIBILNI() {
+        aIJMMIBILNI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList hKBEABEOOGH_ = emptyIntList();
-      private void ensureHKBEABEOOGHIsMutable() {
+      private com.google.protobuf.Internal.IntList gKFIALNGMAE_ = emptyIntList();
+      private void ensureGKFIALNGMAEIsMutable() {
         if (!((bitField0_ & 0x00000080) != 0)) {
-          hKBEABEOOGH_ = mutableCopy(hKBEABEOOGH_);
+          gKFIALNGMAE_ = mutableCopy(gKFIALNGMAE_);
           bitField0_ |= 0x00000080;
          }
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-       * @return A list containing the hKBEABEOOGH.
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+       * @return A list containing the gKFIALNGMAE.
        */
       public java.util.List<java.lang.Integer>
-          getHKBEABEOOGHList() {
+          getGKFIALNGMAEList() {
         return ((bitField0_ & 0x00000080) != 0) ?
-                 java.util.Collections.unmodifiableList(hKBEABEOOGH_) : hKBEABEOOGH_;
+                 java.util.Collections.unmodifiableList(gKFIALNGMAE_) : gKFIALNGMAE_;
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-       * @return The count of hKBEABEOOGH.
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+       * @return The count of gKFIALNGMAE.
        */
-      public int getHKBEABEOOGHCount() {
-        return hKBEABEOOGH_.size();
+      public int getGKFIALNGMAECount() {
+        return gKFIALNGMAE_.size();
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
        * @param index The index of the element to return.
-       * @return The hKBEABEOOGH at the given index.
+       * @return The gKFIALNGMAE at the given index.
        */
-      public int getHKBEABEOOGH(int index) {
-        return hKBEABEOOGH_.getInt(index);
+      public int getGKFIALNGMAE(int index) {
+        return gKFIALNGMAE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
        * @param index The index to set the value at.
-       * @param value The hKBEABEOOGH to set.
+       * @param value The gKFIALNGMAE to set.
        * @return This builder for chaining.
        */
-      public Builder setHKBEABEOOGH(
+      public Builder setGKFIALNGMAE(
           int index, int value) {
-        ensureHKBEABEOOGHIsMutable();
-        hKBEABEOOGH_.setInt(index, value);
+        ensureGKFIALNGMAEIsMutable();
+        gKFIALNGMAE_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-       * @param value The hKBEABEOOGH to add.
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+       * @param value The gKFIALNGMAE to add.
        * @return This builder for chaining.
        */
-      public Builder addHKBEABEOOGH(int value) {
-        ensureHKBEABEOOGHIsMutable();
-        hKBEABEOOGH_.addInt(value);
+      public Builder addGKFIALNGMAE(int value) {
+        ensureGKFIALNGMAEIsMutable();
+        gKFIALNGMAE_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
-       * @param values The hKBEABEOOGH to add.
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
+       * @param values The gKFIALNGMAE to add.
        * @return This builder for chaining.
        */
-      public Builder addAllHKBEABEOOGH(
+      public Builder addAllGKFIALNGMAE(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureHKBEABEOOGHIsMutable();
+        ensureGKFIALNGMAEIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, hKBEABEOOGH_);
+            values, gKFIALNGMAE_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 HKBEABEOOGH = 8;</code>
+       * <code>repeated uint32 GKFIALNGMAE = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHKBEABEOOGH() {
-        hKBEABEOOGH_ = emptyIntList();
+      public Builder clearGKFIALNGMAE() {
+        gKFIALNGMAE_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList nJDGAKKHPIA_ = emptyIntList();
-      private void ensureNJDGAKKHPIAIsMutable() {
+      private com.google.protobuf.Internal.IntList pEJBHINDHBH_ = emptyIntList();
+      private void ensurePEJBHINDHBHIsMutable() {
         if (!((bitField0_ & 0x00000100) != 0)) {
-          nJDGAKKHPIA_ = mutableCopy(nJDGAKKHPIA_);
+          pEJBHINDHBH_ = mutableCopy(pEJBHINDHBH_);
           bitField0_ |= 0x00000100;
          }
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-       * @return A list containing the nJDGAKKHPIA.
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+       * @return A list containing the pEJBHINDHBH.
        */
       public java.util.List<java.lang.Integer>
-          getNJDGAKKHPIAList() {
+          getPEJBHINDHBHList() {
         return ((bitField0_ & 0x00000100) != 0) ?
-                 java.util.Collections.unmodifiableList(nJDGAKKHPIA_) : nJDGAKKHPIA_;
+                 java.util.Collections.unmodifiableList(pEJBHINDHBH_) : pEJBHINDHBH_;
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-       * @return The count of nJDGAKKHPIA.
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+       * @return The count of pEJBHINDHBH.
        */
-      public int getNJDGAKKHPIACount() {
-        return nJDGAKKHPIA_.size();
+      public int getPEJBHINDHBHCount() {
+        return pEJBHINDHBH_.size();
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
        * @param index The index of the element to return.
-       * @return The nJDGAKKHPIA at the given index.
+       * @return The pEJBHINDHBH at the given index.
        */
-      public int getNJDGAKKHPIA(int index) {
-        return nJDGAKKHPIA_.getInt(index);
+      public int getPEJBHINDHBH(int index) {
+        return pEJBHINDHBH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
        * @param index The index to set the value at.
-       * @param value The nJDGAKKHPIA to set.
+       * @param value The pEJBHINDHBH to set.
        * @return This builder for chaining.
        */
-      public Builder setNJDGAKKHPIA(
+      public Builder setPEJBHINDHBH(
           int index, int value) {
-        ensureNJDGAKKHPIAIsMutable();
-        nJDGAKKHPIA_.setInt(index, value);
+        ensurePEJBHINDHBHIsMutable();
+        pEJBHINDHBH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-       * @param value The nJDGAKKHPIA to add.
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+       * @param value The pEJBHINDHBH to add.
        * @return This builder for chaining.
        */
-      public Builder addNJDGAKKHPIA(int value) {
-        ensureNJDGAKKHPIAIsMutable();
-        nJDGAKKHPIA_.addInt(value);
+      public Builder addPEJBHINDHBH(int value) {
+        ensurePEJBHINDHBHIsMutable();
+        pEJBHINDHBH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
-       * @param values The nJDGAKKHPIA to add.
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
+       * @param values The pEJBHINDHBH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllNJDGAKKHPIA(
+      public Builder addAllPEJBHINDHBH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureNJDGAKKHPIAIsMutable();
+        ensurePEJBHINDHBHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, nJDGAKKHPIA_);
+            values, pEJBHINDHBH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 NJDGAKKHPIA = 9;</code>
+       * <code>repeated uint32 PEJBHINDHBH = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNJDGAKKHPIA() {
-        nJDGAKKHPIA_ = emptyIntList();
+      public Builder clearPEJBHINDHBH() {
+        pEJBHINDHBH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000100);
         onChanged();
         return this;
@@ -2495,20 +2503,20 @@ public final class LackingResourceInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_LackingResourceInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_LackingResourceInfo_PAPNJAIKLIIEntry_descriptor;
+    internal_static_LackingResourceInfo_PIBNNEJDPDJEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_LackingResourceInfo_PAPNJAIKLIIEntry_fieldAccessorTable;
+      internal_static_LackingResourceInfo_PIBNNEJDPDJEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_LackingResourceInfo_GDDAJFMLFAHEntry_descriptor;
+    internal_static_LackingResourceInfo_OOAIGNECDMMEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_LackingResourceInfo_GDDAJFMLFAHEntry_fieldAccessorTable;
+      internal_static_LackingResourceInfo_OOAIGNECDMMEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_LackingResourceInfo_OPFABHCELAMEntry_descriptor;
+    internal_static_LackingResourceInfo_HLFGMHFJCOOEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_LackingResourceInfo_OPFABHCELAMEntry_fieldAccessorTable;
+      internal_static_LackingResourceInfo_HLFGMHFJCOOEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2519,17 +2527,17 @@ public final class LackingResourceInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031LackingResourceInfo.proto\"\343\003\n\023LackingR" +
-      "esourceInfo\022\023\n\013OKPPAKPNANE\030\001 \003(\r\022:\n\013PAPN" +
-      "JAIKLII\030\002 \003(\0132%.LackingResourceInfo.PAPN" +
-      "JAIKLIIEntry\022\023\n\013NODDADDKHJL\030\003 \003(\r\022:\n\013GDD" +
-      "AJFMLFAH\030\004 \003(\0132%.LackingResourceInfo.GDD" +
-      "AJFMLFAHEntry\022\023\n\013DFEBELMAHMI\030\005 \003(\r\022:\n\013OP" +
-      "FABHCELAM\030\006 \003(\0132%.LackingResourceInfo.OP" +
-      "FABHCELAMEntry\022\023\n\013OICIAOHDEBD\030\007 \003(\r\022\023\n\013H" +
-      "KBEABEOOGH\030\010 \003(\r\022\023\n\013NJDGAKKHPIA\030\t \003(\r\0322\n" +
-      "\020PAPNJAIKLIIEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
-      "\002 \001(\r:\0028\001\0322\n\020GDDAJFMLFAHEntry\022\013\n\003key\030\001 \001" +
-      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0322\n\020OPFABHCELAMEntr" +
+      "esourceInfo\022\023\n\013ONOMCDMBDOH\030\001 \003(\r\022:\n\013PIBN" +
+      "NEJDPDJ\030\002 \003(\0132%.LackingResourceInfo.PIBN" +
+      "NEJDPDJEntry\022\023\n\013FNCMJABNNLP\030\003 \003(\r\022:\n\013OOA" +
+      "IGNECDMM\030\004 \003(\0132%.LackingResourceInfo.OOA" +
+      "IGNECDMMEntry\022\023\n\013MLOIKDNOHKI\030\005 \003(\r\022:\n\013HL" +
+      "FGMHFJCOO\030\006 \003(\0132%.LackingResourceInfo.HL" +
+      "FGMHFJCOOEntry\022\023\n\013AIJMMIBILNI\030\007 \003(\r\022\023\n\013G" +
+      "KFIALNGMAE\030\010 \003(\r\022\023\n\013PEJBHINDHBH\030\t \003(\r\0322\n" +
+      "\020PIBNNEJDPDJEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001\0322\n\020OOAIGNECDMMEntry\022\013\n\003key\030\001 \001" +
+      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0322\n\020HLFGMHFJCOOEntr" +
       "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
@@ -2542,24 +2550,24 @@ public final class LackingResourceInfoOuterClass {
     internal_static_LackingResourceInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LackingResourceInfo_descriptor,
-        new java.lang.String[] { "OKPPAKPNANE", "PAPNJAIKLII", "NODDADDKHJL", "GDDAJFMLFAH", "DFEBELMAHMI", "OPFABHCELAM", "OICIAOHDEBD", "HKBEABEOOGH", "NJDGAKKHPIA", });
-    internal_static_LackingResourceInfo_PAPNJAIKLIIEntry_descriptor =
+        new java.lang.String[] { "ONOMCDMBDOH", "PIBNNEJDPDJ", "FNCMJABNNLP", "OOAIGNECDMM", "MLOIKDNOHKI", "HLFGMHFJCOO", "AIJMMIBILNI", "GKFIALNGMAE", "PEJBHINDHBH", });
+    internal_static_LackingResourceInfo_PIBNNEJDPDJEntry_descriptor =
       internal_static_LackingResourceInfo_descriptor.getNestedTypes().get(0);
-    internal_static_LackingResourceInfo_PAPNJAIKLIIEntry_fieldAccessorTable = new
+    internal_static_LackingResourceInfo_PIBNNEJDPDJEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_LackingResourceInfo_PAPNJAIKLIIEntry_descriptor,
+        internal_static_LackingResourceInfo_PIBNNEJDPDJEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_LackingResourceInfo_GDDAJFMLFAHEntry_descriptor =
+    internal_static_LackingResourceInfo_OOAIGNECDMMEntry_descriptor =
       internal_static_LackingResourceInfo_descriptor.getNestedTypes().get(1);
-    internal_static_LackingResourceInfo_GDDAJFMLFAHEntry_fieldAccessorTable = new
+    internal_static_LackingResourceInfo_OOAIGNECDMMEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_LackingResourceInfo_GDDAJFMLFAHEntry_descriptor,
+        internal_static_LackingResourceInfo_OOAIGNECDMMEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_LackingResourceInfo_OPFABHCELAMEntry_descriptor =
+    internal_static_LackingResourceInfo_HLFGMHFJCOOEntry_descriptor =
       internal_static_LackingResourceInfo_descriptor.getNestedTypes().get(2);
-    internal_static_LackingResourceInfo_OPFABHCELAMEntry_fieldAccessorTable = new
+    internal_static_LackingResourceInfo_HLFGMHFJCOOEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_LackingResourceInfo_OPFABHCELAMEntry_descriptor,
+        internal_static_LackingResourceInfo_HLFGMHFJCOOEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 
