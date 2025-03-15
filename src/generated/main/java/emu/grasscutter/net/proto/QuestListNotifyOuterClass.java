@@ -19,30 +19,35 @@ public final class QuestListNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.QuestOuterClass.Quest> 
         getQuestListList();
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     emu.grasscutter.net.proto.QuestOuterClass.Quest getQuestList(int index);
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     int getQuestListCount();
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder> 
         getQuestListOrBuilderList();
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder getQuestListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 8487
+   * </pre>
+   *
    * Protobuf type {@code QuestListNotify}
    */
   public static final class QuestListNotify extends
@@ -89,7 +94,7 @@ public final class QuestListNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 114: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 questList_ = new java.util.ArrayList<emu.grasscutter.net.proto.QuestOuterClass.Quest>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +138,17 @@ public final class QuestListNotifyOuterClass {
               emu.grasscutter.net.proto.QuestListNotifyOuterClass.QuestListNotify.class, emu.grasscutter.net.proto.QuestListNotifyOuterClass.QuestListNotify.Builder.class);
     }
 
-    public static final int QUEST_LIST_FIELD_NUMBER = 14;
+    public static final int QUEST_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.QuestOuterClass.Quest> questList_;
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.QuestOuterClass.Quest> getQuestListList() {
       return questList_;
     }
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder> 
@@ -151,21 +156,21 @@ public final class QuestListNotifyOuterClass {
       return questList_;
     }
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     @java.lang.Override
     public int getQuestListCount() {
       return questList_.size();
     }
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.QuestOuterClass.Quest getQuestList(int index) {
       return questList_.get(index);
     }
     /**
-     * <code>repeated .Quest quest_list = 14;</code>
+     * <code>repeated .Quest quest_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder getQuestListOrBuilder(
@@ -188,7 +193,7 @@ public final class QuestListNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < questList_.size(); i++) {
-        output.writeMessage(14, questList_.get(i));
+        output.writeMessage(2, questList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +206,7 @@ public final class QuestListNotifyOuterClass {
       size = 0;
       for (int i = 0; i < questList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, questList_.get(i));
+          .computeMessageSize(2, questList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -331,6 +336,11 @@ public final class QuestListNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 8487
+     * </pre>
+     *
      * Protobuf type {@code QuestListNotify}
      */
     public static final class Builder extends
@@ -528,7 +538,7 @@ public final class QuestListNotifyOuterClass {
           emu.grasscutter.net.proto.QuestOuterClass.Quest, emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder, emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder> questListBuilder_;
 
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.QuestOuterClass.Quest> getQuestListList() {
         if (questListBuilder_ == null) {
@@ -538,7 +548,7 @@ public final class QuestListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public int getQuestListCount() {
         if (questListBuilder_ == null) {
@@ -548,7 +558,7 @@ public final class QuestListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public emu.grasscutter.net.proto.QuestOuterClass.Quest getQuestList(int index) {
         if (questListBuilder_ == null) {
@@ -558,7 +568,7 @@ public final class QuestListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder setQuestList(
           int index, emu.grasscutter.net.proto.QuestOuterClass.Quest value) {
@@ -575,7 +585,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder setQuestList(
           int index, emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder builderForValue) {
@@ -589,7 +599,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder addQuestList(emu.grasscutter.net.proto.QuestOuterClass.Quest value) {
         if (questListBuilder_ == null) {
@@ -605,7 +615,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder addQuestList(
           int index, emu.grasscutter.net.proto.QuestOuterClass.Quest value) {
@@ -622,7 +632,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder addQuestList(
           emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder builderForValue) {
@@ -636,7 +646,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder addQuestList(
           int index, emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder builderForValue) {
@@ -650,7 +660,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder addAllQuestList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.QuestOuterClass.Quest> values) {
@@ -665,7 +675,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder clearQuestList() {
         if (questListBuilder_ == null) {
@@ -678,7 +688,7 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public Builder removeQuestList(int index) {
         if (questListBuilder_ == null) {
@@ -691,14 +701,14 @@ public final class QuestListNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder getQuestListBuilder(
           int index) {
         return getQuestListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder getQuestListOrBuilder(
           int index) {
@@ -708,7 +718,7 @@ public final class QuestListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.QuestOuterClass.QuestOrBuilder> 
            getQuestListOrBuilderList() {
@@ -719,14 +729,14 @@ public final class QuestListNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder addQuestListBuilder() {
         return getQuestListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.QuestOuterClass.Quest.getDefaultInstance());
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder addQuestListBuilder(
           int index) {
@@ -734,7 +744,7 @@ public final class QuestListNotifyOuterClass {
             index, emu.grasscutter.net.proto.QuestOuterClass.Quest.getDefaultInstance());
       }
       /**
-       * <code>repeated .Quest quest_list = 14;</code>
+       * <code>repeated .Quest quest_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.QuestOuterClass.Quest.Builder> 
            getQuestListBuilderList() {
@@ -822,7 +832,7 @@ public final class QuestListNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025QuestListNotify.proto\032\013Quest.proto\"-\n\017" +
-      "QuestListNotify\022\032\n\nquest_list\030\016 \003(\0132\006.Qu" +
+      "QuestListNotify\022\032\n\nquest_list\030\002 \003(\0132\006.Qu" +
       "estB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

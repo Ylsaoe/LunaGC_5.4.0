@@ -19,39 +19,44 @@ public final class PlayerEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 1;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
+     * @return Whether the enterPosInfo field is set.
+     */
+    boolean hasEnterPosInfo();
+    /**
+     * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
+     * @return The enterPosInfo.
+     */
+    emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo getEnterPosInfo();
+    /**
+     * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
+     */
+    emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder();
+
+    /**
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>uint32 point_id = 2;</code>
+     * <code>bool LDJAELKEILL = 5;</code>
+     * @return The lDJAELKEILL.
+     */
+    boolean getLDJAELKEILL();
+
+    /**
+     * <code>uint32 point_id = 9;</code>
      * @return The pointId.
      */
     int getPointId();
-
-    /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
-     * @return Whether the enterPosInfo field is set.
-     */
-    boolean hasEnterPosInfo();
-    /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
-     * @return The enterPosInfo.
-     */
-    emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo getEnterPosInfo();
-    /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
-     */
-    emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder();
-
-    /**
-     * <code>bool OKHMCHBNHFB = 11;</code>
-     * @return The oKHMCHBNHFB.
-     */
-    boolean getOKHMCHBNHFB();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 26213
+   * </pre>
+   *
    * Protobuf type {@code PlayerEnterDungeonReq}
    */
   public static final class PlayerEnterDungeonReq extends
@@ -96,17 +101,12 @@ public final class PlayerEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
-              dungeonId_ = input.readUInt32();
+              lDJAELKEILL_ = input.readBool();
               break;
             }
-            case 16: {
-
-              pointId_ = input.readUInt32();
-              break;
-            }
-            case 26: {
+            case 50: {
               emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder subBuilder = null;
               if (enterPosInfo_ != null) {
                 subBuilder = enterPosInfo_.toBuilder();
@@ -119,9 +119,14 @@ public final class PlayerEnterDungeonReqOuterClass {
 
               break;
             }
-            case 88: {
+            case 72: {
 
-              oKHMCHBNHFB_ = input.readBool();
+              pointId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,32 +161,10 @@ public final class PlayerEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq.class, emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 1;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 1;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int POINT_ID_FIELD_NUMBER = 2;
-    private int pointId_;
-    /**
-     * <code>uint32 point_id = 2;</code>
-     * @return The pointId.
-     */
-    @java.lang.Override
-    public int getPointId() {
-      return pointId_;
-    }
-
-    public static final int ENTER_POS_INFO_FIELD_NUMBER = 3;
+    public static final int ENTER_POS_INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo enterPosInfo_;
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
      * @return Whether the enterPosInfo field is set.
      */
     @java.lang.Override
@@ -189,7 +172,7 @@ public final class PlayerEnterDungeonReqOuterClass {
       return enterPosInfo_ != null;
     }
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
      * @return The enterPosInfo.
      */
     @java.lang.Override
@@ -197,22 +180,44 @@ public final class PlayerEnterDungeonReqOuterClass {
       return enterPosInfo_ == null ? emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.getDefaultInstance() : enterPosInfo_;
     }
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder() {
       return getEnterPosInfo();
     }
 
-    public static final int OKHMCHBNHFB_FIELD_NUMBER = 11;
-    private boolean oKHMCHBNHFB_;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 10;
+    private int dungeonId_;
     /**
-     * <code>bool OKHMCHBNHFB = 11;</code>
-     * @return The oKHMCHBNHFB.
+     * <code>uint32 dungeon_id = 10;</code>
+     * @return The dungeonId.
      */
     @java.lang.Override
-    public boolean getOKHMCHBNHFB() {
-      return oKHMCHBNHFB_;
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int LDJAELKEILL_FIELD_NUMBER = 5;
+    private boolean lDJAELKEILL_;
+    /**
+     * <code>bool LDJAELKEILL = 5;</code>
+     * @return The lDJAELKEILL.
+     */
+    @java.lang.Override
+    public boolean getLDJAELKEILL() {
+      return lDJAELKEILL_;
+    }
+
+    public static final int POINT_ID_FIELD_NUMBER = 9;
+    private int pointId_;
+    /**
+     * <code>uint32 point_id = 9;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -229,17 +234,17 @@ public final class PlayerEnterDungeonReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(1, dungeonId_);
-      }
-      if (pointId_ != 0) {
-        output.writeUInt32(2, pointId_);
+      if (lDJAELKEILL_ != false) {
+        output.writeBool(5, lDJAELKEILL_);
       }
       if (enterPosInfo_ != null) {
-        output.writeMessage(3, getEnterPosInfo());
+        output.writeMessage(6, getEnterPosInfo());
       }
-      if (oKHMCHBNHFB_ != false) {
-        output.writeBool(11, oKHMCHBNHFB_);
+      if (pointId_ != 0) {
+        output.writeUInt32(9, pointId_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(10, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,21 +255,21 @@ public final class PlayerEnterDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
+      if (lDJAELKEILL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dungeonId_);
-      }
-      if (pointId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, pointId_);
+          .computeBoolSize(5, lDJAELKEILL_);
       }
       if (enterPosInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getEnterPosInfo());
+          .computeMessageSize(6, getEnterPosInfo());
       }
-      if (oKHMCHBNHFB_ != false) {
+      if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, oKHMCHBNHFB_);
+          .computeUInt32Size(9, pointId_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,17 +286,17 @@ public final class PlayerEnterDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq other = (emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq) obj;
 
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
-      if (getPointId()
-          != other.getPointId()) return false;
       if (hasEnterPosInfo() != other.hasEnterPosInfo()) return false;
       if (hasEnterPosInfo()) {
         if (!getEnterPosInfo()
             .equals(other.getEnterPosInfo())) return false;
       }
-      if (getOKHMCHBNHFB()
-          != other.getOKHMCHBNHFB()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
+      if (getLDJAELKEILL()
+          != other.getLDJAELKEILL()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,17 +308,17 @@ public final class PlayerEnterDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
       if (hasEnterPosInfo()) {
         hash = (37 * hash) + ENTER_POS_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getEnterPosInfo().hashCode();
       }
-      hash = (37 * hash) + OKHMCHBNHFB_FIELD_NUMBER;
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + LDJAELKEILL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOKHMCHBNHFB());
+          getLDJAELKEILL());
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,6 +415,11 @@ public final class PlayerEnterDungeonReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 26213
+     * </pre>
+     *
      * Protobuf type {@code PlayerEnterDungeonReq}
      */
     public static final class Builder extends
@@ -447,17 +457,17 @@ public final class PlayerEnterDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonId_ = 0;
-
-        pointId_ = 0;
-
         if (enterPosInfoBuilder_ == null) {
           enterPosInfo_ = null;
         } else {
           enterPosInfo_ = null;
           enterPosInfoBuilder_ = null;
         }
-        oKHMCHBNHFB_ = false;
+        dungeonId_ = 0;
+
+        lDJAELKEILL_ = false;
+
+        pointId_ = 0;
 
         return this;
       }
@@ -485,14 +495,14 @@ public final class PlayerEnterDungeonReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq buildPartial() {
         emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq result = new emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq(this);
-        result.dungeonId_ = dungeonId_;
-        result.pointId_ = pointId_;
         if (enterPosInfoBuilder_ == null) {
           result.enterPosInfo_ = enterPosInfo_;
         } else {
           result.enterPosInfo_ = enterPosInfoBuilder_.build();
         }
-        result.oKHMCHBNHFB_ = oKHMCHBNHFB_;
+        result.dungeonId_ = dungeonId_;
+        result.lDJAELKEILL_ = lDJAELKEILL_;
+        result.pointId_ = pointId_;
         onBuilt();
         return result;
       }
@@ -541,17 +551,17 @@ public final class PlayerEnterDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq other) {
         if (other == emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq.getDefaultInstance()) return this;
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
-        }
         if (other.hasEnterPosInfo()) {
           mergeEnterPosInfo(other.getEnterPosInfo());
         }
-        if (other.getOKHMCHBNHFB() != false) {
-          setOKHMCHBNHFB(other.getOKHMCHBNHFB());
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
+        }
+        if (other.getLDJAELKEILL() != false) {
+          setLDJAELKEILL(other.getLDJAELKEILL());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -582,80 +592,18 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
 
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 1;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 1;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pointId_ ;
-      /**
-       * <code>uint32 point_id = 2;</code>
-       * @return The pointId.
-       */
-      @java.lang.Override
-      public int getPointId() {
-        return pointId_;
-      }
-      /**
-       * <code>uint32 point_id = 2;</code>
-       * @param value The pointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointId(int value) {
-        
-        pointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointId() {
-        
-        pointId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo enterPosInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder> enterPosInfoBuilder_;
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        * @return Whether the enterPosInfo field is set.
        */
       public boolean hasEnterPosInfo() {
         return enterPosInfoBuilder_ != null || enterPosInfo_ != null;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        * @return The enterPosInfo.
        */
       public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo getEnterPosInfo() {
@@ -666,7 +614,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       public Builder setEnterPosInfo(emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo value) {
         if (enterPosInfoBuilder_ == null) {
@@ -682,7 +630,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       public Builder setEnterPosInfo(
           emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder builderForValue) {
@@ -696,7 +644,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       public Builder mergeEnterPosInfo(emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo value) {
         if (enterPosInfoBuilder_ == null) {
@@ -714,7 +662,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       public Builder clearEnterPosInfo() {
         if (enterPosInfoBuilder_ == null) {
@@ -728,7 +676,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder getEnterPosInfoBuilder() {
         
@@ -736,7 +684,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return getEnterPosInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder() {
         if (enterPosInfoBuilder_ != null) {
@@ -747,7 +695,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 3;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder> 
@@ -763,33 +711,95 @@ public final class PlayerEnterDungeonReqOuterClass {
         return enterPosInfoBuilder_;
       }
 
-      private boolean oKHMCHBNHFB_ ;
+      private int dungeonId_ ;
       /**
-       * <code>bool OKHMCHBNHFB = 11;</code>
-       * @return The oKHMCHBNHFB.
+       * <code>uint32 dungeon_id = 10;</code>
+       * @return The dungeonId.
        */
       @java.lang.Override
-      public boolean getOKHMCHBNHFB() {
-        return oKHMCHBNHFB_;
+      public int getDungeonId() {
+        return dungeonId_;
       }
       /**
-       * <code>bool OKHMCHBNHFB = 11;</code>
-       * @param value The oKHMCHBNHFB to set.
+       * <code>uint32 dungeon_id = 10;</code>
+       * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
-      public Builder setOKHMCHBNHFB(boolean value) {
+      public Builder setDungeonId(int value) {
         
-        oKHMCHBNHFB_ = value;
+        dungeonId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OKHMCHBNHFB = 11;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOKHMCHBNHFB() {
+      public Builder clearDungeonId() {
         
-        oKHMCHBNHFB_ = false;
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean lDJAELKEILL_ ;
+      /**
+       * <code>bool LDJAELKEILL = 5;</code>
+       * @return The lDJAELKEILL.
+       */
+      @java.lang.Override
+      public boolean getLDJAELKEILL() {
+        return lDJAELKEILL_;
+      }
+      /**
+       * <code>bool LDJAELKEILL = 5;</code>
+       * @param value The lDJAELKEILL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLDJAELKEILL(boolean value) {
+        
+        lDJAELKEILL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool LDJAELKEILL = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLDJAELKEILL() {
+        
+        lDJAELKEILL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int pointId_ ;
+      /**
+       * <code>uint32 point_id = 9;</code>
+       * @return The pointId.
+       */
+      @java.lang.Override
+      public int getPointId() {
+        return pointId_;
+      }
+      /**
+       * <code>uint32 point_id = 9;</code>
+       * @param value The pointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointId(int value) {
+        
+        pointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 point_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointId() {
+        
+        pointId_ = 0;
         onChanged();
         return this;
       }
@@ -862,9 +872,9 @@ public final class PlayerEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033PlayerEnterDungeonReq.proto\032\031DungeonEn" +
       "terPosInfo.proto\"\200\001\n\025PlayerEnterDungeonR" +
-      "eq\022\022\n\ndungeon_id\030\001 \001(\r\022\020\n\010point_id\030\002 \001(\r" +
-      "\022,\n\016enter_pos_info\030\003 \001(\0132\024.DungeonEnterP" +
-      "osInfo\022\023\n\013OKHMCHBNHFB\030\013 \001(\010B\033\n\031emu.grass" +
+      "eq\022,\n\016enter_pos_info\030\006 \001(\0132\024.DungeonEnte" +
+      "rPosInfo\022\022\n\ndungeon_id\030\n \001(\r\022\023\n\013LDJAELKE" +
+      "ILL\030\005 \001(\010\022\020\n\010point_id\030\t \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -877,7 +887,7 @@ public final class PlayerEnterDungeonReqOuterClass {
     internal_static_PlayerEnterDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerEnterDungeonReq_descriptor,
-        new java.lang.String[] { "DungeonId", "PointId", "EnterPosInfo", "OKHMCHBNHFB", });
+        new java.lang.String[] { "EnterPosInfo", "DungeonId", "LDJAELKEILL", "PointId", });
     emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.getDescriptor();
   }
 
