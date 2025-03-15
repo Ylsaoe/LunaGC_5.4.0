@@ -11,7 +11,6 @@ import emu.grasscutter.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionLis
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
-import emu.grasscutter.net.proto.ResVersionConfigOuterClass;
 import emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo;
 import emu.grasscutter.server.event.dispatch.*;
 import emu.grasscutter.server.http.Router;
@@ -73,7 +72,7 @@ public final class RegionHandler implements Router {
                         Grasscutter.getLogger().error("Region name already in use.");
                         return;
                     }
-                    
+
                     // Create a region identifier.
                     var identifier =
                             RegionSimpleInfo.newBuilder()
@@ -86,10 +85,11 @@ public final class RegionHandler implements Router {
                     servers.add(identifier);
 
                     // Create a region info object.
-                    HotUpdateResourceDownload.Resource hotfix = new HotUpdateResourceDownload.Resource();
-
-					var regionInfo = RegionInfo.newBuilder().setGateserverIp(region.Ip).setGateserverPort(region.Port).setResourceUrl(hotfix.resourceUrl).setDataUrl(hotfix.dataUrl).setResourceUrlBak(hotfix.resourceUrlBak).setClientDataVersion(hotfix.clientDataVersion).setClientSilenceDataVersion(hotfix.clientSilenceDataVersion).setClientDataMd5(hotfix.clientDataMd5).setClientSilenceDataMd5(hotfix.clientSilenceDataMd5).setResVersionConfig(ResVersionConfigOuterClass.ResVersionConfig.newBuilder().setVersion(hotfix.resVersionConfig.version).setMd5(hotfix.resVersionConfig.md5).setReleaseTotalSize(hotfix.resVersionConfig.releaseTotalSize).setVersionSuffix(hotfix.resVersionConfig.versionSuffix).setBranch(hotfix.resVersionConfig.branch).build()).setClientVersionSuffix(hotfix.clientVersionSuffix).setClientSilenceVersionSuffix(hotfix.clientSilenceVersionSuffix).setNextResourceUrl(hotfix.nextResourceUrl).setNextResVersionConfig(ResVersionConfigOuterClass.ResVersionConfig.newBuilder().setVersion(hotfix.nextResVersionConfig.version).setMd5(hotfix.nextResVersionConfig.md5).setReleaseTotalSize(hotfix.nextResVersionConfig.releaseTotalSize).setVersionSuffix(hotfix.nextResVersionConfig.versionSuffix).setBranch(hotfix.nextResVersionConfig.branch)).setSecretKey(ByteString.copyFrom(Crypto.DISPATCH_SEED)).build();
-					
+                    var regionInfo =
+                            RegionInfo.newBuilder()
+                                    .setGateserverIp(region.Ip)
+                                    .setGateserverPort(region.Port)
+                                    .build();
                     // Create an updated region query.
                     var updatedQuery =
                             QueryCurrRegionHttpRsp.newBuilder()
