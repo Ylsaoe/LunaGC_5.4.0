@@ -1,5 +1,7 @@
 # LunaGC-5.4.0
 
+## 我们需要更多的加入我们的项目，修复gc
+
 [简中](docs/README_zh-CN.md)
 
 ## THIS IS THE ONLY PUBLIC PS WITH MOB SPAWNS OVER VERSION 3.2!! NATLAN AND FONTAINE ARE FILLED :3
