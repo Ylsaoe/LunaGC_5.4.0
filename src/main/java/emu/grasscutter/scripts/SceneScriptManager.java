@@ -113,6 +113,15 @@ public class SceneScriptManager {
     }
 
     public Map<Integer, SceneBlock> getBlocks() {
+        try {
+            this.meta = SceneMeta.of(scene.getId()); // 加载场景元数据
+            if (this.meta == null) {
+                Grasscutter.getLogger().warn("Scene meta failed to load");
+            }
+        } catch (Exception e) {
+            Grasscutter.getLogger().warn("Unable to load scene meta SceneID: {}", getScene().getId(), e);
+            this.meta = new SceneMeta(); // 创建空元数据兜底
+        }
         return meta.blocks;
     }
 
