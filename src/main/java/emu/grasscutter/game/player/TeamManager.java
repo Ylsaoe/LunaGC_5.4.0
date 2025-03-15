@@ -114,8 +114,8 @@ public final class TeamManager extends BasePlayerDataManager {
                         .map(ConfigAbilityData::getAbilityName)
                         .filter(abilityName -> abilityName != null && !abilityName.isEmpty())
                         .forEach(abilityName -> {
-                            Grasscutter.getLogger().info("Loading team ability: [{}] from config {}",
-                                    abilityName, levelEntityConfig);
+                            Grasscutter.getLogger().info("Loading team ability: [{}] from config {} as embryoId {}",
+                                    abilityName, levelEntityConfig, embryoId.incrementAndGet());
 
                             try {
                                 AbilityEmbryoOuterClass.AbilityEmbryo emb =

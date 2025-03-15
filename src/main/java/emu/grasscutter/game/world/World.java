@@ -60,6 +60,7 @@ public class World implements Iterable<Player> {
     @Getter protected int tickCount = 0;
     @Getter private boolean isPaused = false;
     @Getter private long currentWorldTime;
+    @Getter private boolean isWeatherLocked = false;
 
     private static final ExecutorService eventExecutor =
             new ThreadPoolExecutor(
@@ -86,6 +87,7 @@ public class World implements Iterable<Player> {
         this.worldLevel = player.getWorldLevel();
         this.isMultiplayer = isMultiplayer;
         this.timeLocked = player.getProperty(PlayerProperty.PROP_IS_GAME_TIME_LOCKED) != 0;
+        this.isWeatherLocked = host.getBoolProperty(PlayerProperty.PROP_IS_WEATHER_LOCKED);
 
         this.lastUpdateTime = System.currentTimeMillis();
         this.currentWorldTime = host.getPlayerGameTime();
@@ -129,6 +131,12 @@ public class World implements Iterable<Player> {
 
     protected synchronized void setHost(Player host) {
         this.host = host;
+    }
+
+    public boolean setWeatherIsLocked(boolean weatherLocked) {
+        isWeatherLocked = weatherLocked;
+        getPlayers().forEach(p -> p.setProperty(PlayerProperty.PROP_IS_WEATHER_LOCKED, isWeatherLocked));
+        return true;
     }
 
     /**
@@ -511,6 +519,7 @@ public class World implements Iterable<Player> {
 
         // Teleport packet
         player.sendPacket(new PacketPlayerEnterSceneNotify(player, teleportProperties));
+        player.updateWeather(newScene);
 
         if (teleportProperties.getTeleportType() != TeleportType.INTERNAL
                 && teleportProperties.getTeleportType() != SCRIPT) {
@@ -577,6 +586,7 @@ public class World implements Iterable<Player> {
         // sync time every 10 seconds
         if (this.tickCount % 10 == 0) {
             this.getPlayers().forEach(p -> p.sendPacket(new PacketPlayerGameTimeNotify(p)));
+            isWeatherLocked = getHost().getBoolProperty(PlayerProperty.PROP_IS_WEATHER_LOCKED);
         }
 
         // store updated world time every 60 seconds. (in-game hour)

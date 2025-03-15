@@ -29,5 +29,6 @@ public class HandlerPostEnterSceneReq extends PacketHandler {
         questManager.queueEvent(QuestContent.QUEST_CONTENT_LEAVE_SCENE, scene.getPrevScene());
 
         session.send(new PacketPostEnterSceneRsp(session.getPlayer()));
+        player.updateWeather(scene);
     }
 }

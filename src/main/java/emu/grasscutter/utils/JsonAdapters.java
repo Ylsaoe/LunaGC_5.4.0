@@ -1,6 +1,7 @@
 package emu.grasscutter.utils;
 
 import com.google.gson.*;
+import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.*;
 import emu.grasscutter.data.common.DynamicFloat;
@@ -162,7 +163,23 @@ public interface JsonAdapters {
             // Make mappings of (string) names to enum constants
             val map = new HashMap<String, T>();
             val enumConstants = enumClass.getEnumConstants();
-            for (val constant : enumConstants) map.put(constant.toString(), constant);
+            // for (val constant : enumConstants) map.put(constant.toString(), constant);
+            for (val constant : enumConstants) {
+                String key = constant.toString();
+                try {
+                    SerializedName sn = constant.getClass().getField(key).getAnnotation(SerializedName.class);
+                    if (sn != null) {
+                        key = sn.value();
+                        if (sn.alternate() != null && sn.alternate().length > 0)
+                            for (var a : sn.alternate()) {
+                                map.put(a, constant);
+                            }
+                    }
+                } catch (NoSuchFieldException | SecurityException e) {
+                    e.printStackTrace();
+                }
+                map.put(key, constant);
+            }
 
             // If the enum also has a numeric value, map those to the constants too
             // System.out.println("Looking for enum value field");

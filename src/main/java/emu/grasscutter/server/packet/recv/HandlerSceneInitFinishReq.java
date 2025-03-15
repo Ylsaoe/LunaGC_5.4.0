@@ -1,6 +1,7 @@
 package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.game.player.Player.SceneLoadState;
+import emu.grasscutter.game.world.WeatherArea;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.packet.send.*;
@@ -24,7 +25,14 @@ public class HandlerSceneInitFinishReq extends PacketHandler {
         session.send(new PacketSceneTimeNotify(player));
         session.send(new PacketPlayerGameTimeNotify(player));
         session.send(new PacketPlayerEnterSceneInfoNotify(player));
-        session.send(new PacketSceneAreaWeatherNotify(player));
+
+        session.getPlayer().getScene().reloadWeathers();
+        session.getPlayer().updateWeather(session.getPlayer().getScene());
+        WeatherArea area = session.getPlayer().getScene().getWeatherAreas().get(session.getPlayer().getWeatherAreaId());
+        if(area != null)
+            session.send(new PacketSceneAreaWeatherNotify(area.getConfig().getAreaID(), area.getCurrentClimateType(), area.getTransDuration()));
+        else
+            session.send(new PacketSceneAreaWeatherNotify(session.getPlayer()));
         session.send(new PacketScenePlayerInfoNotify(world));
         session.send(new PacketSceneTeamUpdateNotify(player));
 

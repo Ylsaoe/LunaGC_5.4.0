@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 import lombok.*;
 import lombok.experimental.Accessors;
+import org.luaj.vm2.LuaTable;
 
 @Entity
 @Accessors(chain = true)
@@ -81,6 +82,10 @@ public class Position implements Serializable {
 
     public Position(Position pos) {
         this.set(pos);
+    }
+
+    public Position(LuaTable pos) {
+        this.set(pos.get("x").tofloat(), pos.get("y").tofloat(), pos.get("z").tofloat());
     }
 
     public Position set(float x, float y) {

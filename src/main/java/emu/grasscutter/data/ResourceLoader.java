@@ -11,6 +11,7 @@ import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.data.binout.config.*;
 import emu.grasscutter.data.binout.routes.*;
 import emu.grasscutter.data.common.PointData;
+import emu.grasscutter.data.common.WeatherAreaPointData;
 import emu.grasscutter.data.custom.*;
 import emu.grasscutter.data.excels.trial.TrialAvatarActivityDataData;
 import emu.grasscutter.data.server.*;
@@ -102,6 +103,7 @@ public final class ResourceLoader {
         loadScriptSceneData();
         // Load scene points - must be done AFTER resources are loaded
         loadScenePoints();
+        loadSceneWeatherAreas();
         // Load default home layout
         loadHomeworldDefaultSaveData();
         loadNpcBornData();
@@ -116,6 +118,7 @@ public final class ResourceLoader {
         loadQuestShareConfig();
         loadGadgetMappings();
         loadSubfieldMappings();
+        loadWeatherMappings();
         loadMonsterMappings();
         loadActivityCondGroups();
         loadGroupReplacements();
@@ -286,6 +289,51 @@ public final class ResourceLoader {
                     .debug("Loaded " + GameData.getSceneNpcBornData().size() + " SceneRouteDatas.");
         } catch (IOException e) {
             Grasscutter.getLogger().error("Failed to load SceneRouteData folder.");
+        }
+    }
+
+    private static void loadSceneWeatherAreas() {
+        val pattern = Pattern.compile("scene([0-9]+)_weather_areas\\.json");
+        try (val dirStream = Files.newDirectoryStream(getResourcePath("Scripts/Scene"))) {
+            dirStream.forEach(dirPath -> {
+                try (val stream = Files.newDirectoryStream(dirPath, "scene*_weather_areas.json")){
+                    stream.forEach(path -> {
+                        val matcher = pattern.matcher(path.getFileName().toString());
+                        if (!matcher.find()) return;
+                        int sceneId = Integer.parseInt(matcher.group(1));
+
+                        List<WeatherAreaPointData> config;
+                        try {
+                            config = JsonUtils.loadToList(path, WeatherAreaPointData.class);
+                        } catch (Exception e) {
+                            Grasscutter.getLogger().error("Error loading weather area file: {}", path, e);
+                            return;
+                        }
+
+                        if (config == null) return;
+
+                        config.forEach((area) -> {
+                            GameData.getWeatherAreaPointData().put(sceneId, config);
+                        });
+                    });
+                } catch (IOException e) {
+                    Grasscutter.getLogger().error("Weather area files cannot be found");
+                }
+            });
+        } catch (IOException e) {
+            Grasscutter.getLogger().error("Weather area files cannot be found");
+        }
+    }
+
+    private static void loadWeatherMappings() {
+        try {
+            val weatherMap = GameData.getWeatherMappingMap();
+            try {
+                JsonUtils.loadToList(getResourcePath("Server/WeatherMapping.json"), WeatherMapping.class).forEach(entry -> weatherMap.put(entry.getAreaId(), entry));;
+            } catch (IOException | NullPointerException ignored) {}
+            Grasscutter.getLogger().debug("Loaded {} weather mappings.", weatherMap.size());
+        } catch (Exception e) {
+            Grasscutter.getLogger().error("Unable to load weather mappings.", e);
         }
     }
 
