@@ -164,6 +164,8 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
     @Getter private transient TalkManager talkManager;
 
     @Getter @Setter private transient Position lastCheckedPosition = null;
+    @Getter private transient int lastWeatherAreaId = 0;
+    @Getter @Setter private transient int weatherAreaId = 0;
 
     // Manager data (Save-able to the database)
     @Getter private transient Achievements achievements;
@@ -335,9 +337,9 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
     public float addPhlogistonValue(float amount) {
         setPhlogistonValue(getPhlogistonValue() + amount);
         return getPhlogistonValue();
-    
+
     }
- 
+
 
     /**
      * Updates the player's game time if it has changed.
@@ -609,7 +611,7 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
         this.setProperty(PlayerProperty.PROP_DIVE_CUR_STAMINA,
                 this.getProperty(PlayerProperty.PROP_DIVE_MAX_STAMINA));
         this.setProperty(PlayerProperty.PROP_CUR_PHLOGISTON,
-            this.getProperty(PlayerProperty.PROP_PHLOGISTON_MAX_VALUE));    
+            this.getProperty(PlayerProperty.PROP_PHLOGISTON_MAX_VALUE));
     }
 
     /**
@@ -808,6 +810,10 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
         return getProperties().get(prop.getId());
     }
 
+    public boolean getBoolProperty(PlayerProperty prop) {
+        return getProperties().get(prop.getId()) == 1;
+    }
+
     public synchronized Int2ObjectMap<CoopRequest> getCoopRequests() {
         return coopRequests;
     }
@@ -992,12 +998,12 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
         this.getCostumeList().add(costumeId);
         this.sendPacket(new PacketAvatarGainCostumeNotify(costumeId));
     }
-    
+
     public void addTraceEffect(int traceEffectId) {
         this.getTraceEffectList().add(traceEffectId);
         this.sendPacket(new PacketAvatarGainTraceEffectNotify(traceEffectId));
     }
-    
+
 
     public int getCostumeFrom(int avatarId) {
         var avatars = this.getAvatars();
@@ -1688,6 +1694,31 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public void updateWeather(Scene scene) {
+        val aVal = scene.getWeatherArea(getPosition());
+        if(aVal != null) {
+            if(getWeatherAreaId() != aVal.getConfig().getAreaID()) {
+                aVal.enterArea(this);
+                WeatherArea lastArea = scene.getWeatherAreas().get(getWeatherAreaId());
+                if(lastArea != null) lastArea.leaveArea(this);
+            }
+            setWeatherAreaId(aVal.getConfig().getAreaID());
+
+            if(sceneLoadState.getValue() >= SceneLoadState.INIT.getValue())
+                sendPacket(new PacketSceneAreaWeatherNotify(aVal.getConfig().getAreaID(), aVal.getCurrentClimateType(), aVal.getTransDuration()));
+        } else {
+            WeatherArea lastArea = scene.getWeatherAreas().get(getWeatherAreaId());
+            if(lastArea != null) {
+                lastArea.leaveArea(this);
+            }
+
+            setWeatherAreaId(0);
+
+            if(sceneLoadState.getValue() >= SceneLoadState.INIT.getValue())
+                sendPacket(new PacketSceneAreaWeatherNotify(0, ClimateType.CLIMATE_SUNNY, 0));
         }
     }
 

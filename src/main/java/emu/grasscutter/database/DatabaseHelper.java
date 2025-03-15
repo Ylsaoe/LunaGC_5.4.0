@@ -19,6 +19,7 @@ import emu.grasscutter.game.mail.Mail;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.quest.GameMainQuest;
 import emu.grasscutter.game.world.SceneGroupInstance;
+import emu.grasscutter.game.world.SceneInstanceData;
 import emu.grasscutter.utils.objects.Returnable;
 import io.netty.util.concurrent.FastThreadLocalThread;
 import java.util.List;
@@ -554,6 +555,15 @@ public final class DatabaseHelper {
             DatabaseManager.getGameDatabase().getCollection("achievements").deleteMany(eq("uid", uid));
             return null;
         }
+    }
+
+    public static void saveSceneInstanceData(SceneInstanceData instance) {
+        DatabaseManager.getGameDatastore().save(instance);
+    }
+
+    public static SceneInstanceData loadSceneInstanceData(int sceneId, Player owner) {
+        SceneInstanceData instance = DatabaseManager.getGameDatastore().find(SceneInstanceData.class).filter(Filters.and(Filters.eq("ownerUid", owner.getUid()), Filters.eq("sceneId", sceneId))).first();
+        return instance;
     }
 
     public static void saveAchievementData(Achievements achievements) {

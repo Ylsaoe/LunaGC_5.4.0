@@ -4,6 +4,7 @@ import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.binout.*;
 import emu.grasscutter.data.binout.config.*;
 import emu.grasscutter.data.binout.routes.Route;
+import emu.grasscutter.data.common.WeatherAreaPointData;
 import emu.grasscutter.data.custom.TrialAvatarActivityCustomData;
 import emu.grasscutter.data.custom.TrialAvatarCustomData;
 import emu.grasscutter.data.excels.*;
@@ -454,6 +455,14 @@ public final class GameData {
     @Getter
     private static final Int2ObjectMap<StatuePromoteData> statuePromoteDataMap =
             new Int2ObjectOpenHashMap<>();
+
+    @Getter private static final Int2ObjectMap<WeatherTemplateData> weatherTemplateDataMap = new Int2ObjectOpenHashMap<>(); //Unused
+
+    @Getter private static final Int2ObjectMap<WeatherMapping> weatherMappingMap = new Int2ObjectOpenHashMap<>();
+
+    @Getter private static final Map<Integer, List<WeatherAreaPointData>> weatherAreaPointData = new HashMap<>();
+
+    @Getter private static final Map<String, WeatherTemplateData> weatherTemplateDataByNameMap = new HashMap<>();
 
     @Getter
     private static final Int2ObjectMap<WeatherData> weatherDataMap = new Int2ObjectOpenHashMap<>();

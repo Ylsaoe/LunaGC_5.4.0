@@ -5,12 +5,15 @@ import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.GameDepot;
 import emu.grasscutter.data.binout.SceneNpcBornEntry;
 import emu.grasscutter.data.binout.routes.Route;
+import emu.grasscutter.data.common.WeatherAreaPointData;
 import emu.grasscutter.data.excels.ItemData;
 import emu.grasscutter.data.excels.codex.CodexAnimalData;
 import emu.grasscutter.data.excels.monster.MonsterData;
 import emu.grasscutter.data.excels.scene.SceneData;
+import emu.grasscutter.data.excels.world.WeatherData;
 import emu.grasscutter.data.excels.world.WorldLevelData;
 import emu.grasscutter.data.server.Grid;
+import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.dungeons.DungeonManager;
 import emu.grasscutter.game.dungeons.DungeonSettleListener;
@@ -52,6 +55,7 @@ import lombok.*;
 public class Scene {
     @Getter private final World world;
     @Getter private final SceneData sceneData;
+    @Getter private final SceneInstanceData sceneInstanceData;
     @Getter private final List<Player> players;
     @Getter private final Map<Integer, GameEntity> entities;
     @Getter private final Map<Integer, GameEntity> weaponEntities;
@@ -76,6 +80,8 @@ public class Scene {
     @Getter private boolean finishedLoading = false;
     @Getter protected int tickCount = 0;
     @Getter private boolean isPaused = false;
+    @Getter private final Map<Integer, WeatherArea> weatherAreas = new ConcurrentHashMap<>();
+    private boolean weatherLoaded = false;
 
     private final List<Runnable> afterLoadedCallbacks = new ArrayList<>();
     private final List<Runnable> afterHostInitCallbacks = new ArrayList<>();
@@ -86,6 +92,12 @@ public class Scene {
     public Scene(World world, SceneData sceneData) {
         this.world = world;
         this.sceneData = sceneData;
+        SceneInstanceData data = DatabaseHelper.loadSceneInstanceData(sceneData.getId(), world.getHost());
+
+        if(data != null)
+            this.sceneInstanceData = data;
+        else
+            this.sceneInstanceData = new SceneInstanceData(this, world.getHost());
         this.players = new CopyOnWriteArrayList<>();
         this.entities = new ConcurrentHashMap<>();
         this.weaponEntities = new ConcurrentHashMap<>();
@@ -247,6 +259,9 @@ public class Scene {
         player.setScene(this);
 
         this.setupPlayerAvatars(player);
+
+        //update weathers
+        player.updateWeather(this);
     }
 
     public synchronized void removePlayer(Player player) {
@@ -281,6 +296,7 @@ public class Scene {
         }
 
         this.saveGroups();
+        saveSceneInstanceData();
     }
 
     private void setupPlayerAvatars(Player player) {
@@ -929,7 +945,11 @@ public class Scene {
         return activeGroups;
     }
 
-    public boolean loadBlock(SceneBlock block) {
+    public void saveSceneInstanceData() {
+        this.sceneInstanceData.save();
+    }
+
+    public synchronized boolean loadBlock(SceneBlock block) {
         if (this.loadedBlocks.contains(block)) return false;
 
         this.onLoadBlock(block, this.players);
@@ -965,8 +985,10 @@ public class Scene {
                         .filter(Objects::nonNull)
                         .toList();
 
-        this.onLoadGroup(toLoad);
-        if (!toLoad.isEmpty()) this.onRegisterGroups();
+        if (!toLoad.isEmpty()) {
+            this.onLoadGroup(toLoad);
+            this.onRegisterGroups();
+        }
     }
 
     public void onLoadBlock(SceneBlock block, List<Player> players) {
@@ -1071,9 +1093,6 @@ public class Scene {
     }
 
     public void onLoadGroup(List<SceneGroup> groups) {
-        if (groups == null || groups.isEmpty()) {
-            return;
-        }
         groups = groups.stream().distinct().filter(group -> !loadedGroups.contains(group)).toList();
 
         for (var group : groups) {
@@ -1134,8 +1153,10 @@ public class Scene {
             challenge.fail();
         }
 
-        scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
-        this.loadedGroups.remove(group);
+        if (loadedGroups.contains(group)) {
+            scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
+            this.loadedGroups.remove(group);
+        }
 
         if (this.scriptManager.getLoadedGroupSetPerBlock().get(block.id).isEmpty()) {
             this.scriptManager.getLoadedGroupSetPerBlock().remove(block.id);
@@ -1324,6 +1345,83 @@ public class Scene {
                 }
             }
         }
+    }
+
+    public WeatherArea getWeatherArea(Position position) {
+        List<WeatherAreaPointData> data = GameData.getWeatherAreaPointData().get(getId());
+        if(data == null) return null;
+
+        int areaId = 0;
+        int maxPriority = -1;
+        for (WeatherAreaPointData points : data) {
+            if(points.isInside(position)) {
+                WeatherArea area = weatherAreas.get(points.getArea_id());
+                if(area == null) continue;
+
+                int priority = area.getConfig().getPriority();
+                if(priority > maxPriority) {
+                    areaId = points.area_id;
+                    maxPriority = priority;
+                }
+            }
+        }
+
+        if(areaId == 0) return null;
+
+        return weatherAreas.get(areaId);
+    }
+
+    //TODO: notify(recalculate current player weather) and save the current weather to database
+
+    public boolean removeWeatherArea(int areaId) {
+        if(!weatherAreas.containsKey(areaId)) return true;
+
+        val area = weatherAreas.get(areaId);
+
+        Grasscutter.getLogger().warn("Removing Weather Area {}({})", areaId, area.getConfig().getProfileName());
+
+        area.remove();
+        weatherAreas.remove(areaId);
+        this.sceneInstanceData.removeWeather(areaId);
+
+        return true;
+    }
+
+    public boolean addWeatherArea(int areaId) {
+        if(weatherAreas.containsKey(areaId)) return false;
+
+        WeatherData w = GameData.getWeatherDataMap().get(areaId);
+        if (w == null) {
+            return false;
+        }
+
+        WeatherArea area = new WeatherArea(this, w);
+        area.init();
+        weatherAreas.put(areaId, area);
+        this.sceneInstanceData.addWeather(areaId);
+
+        //update all weather areas affected by players on this scene
+        this.players.forEach(p -> p.updateWeather(this));
+
+        Grasscutter.getLogger().warn("Added Weather Area {}({}), climateType {}", areaId, area.getConfig().getProfileName(), area.getCurrentClimateType().name());
+
+        return true;
+    }
+
+    public void reloadWeathers() {
+        if(weatherLoaded) return;
+
+        this.sceneInstanceData.getWeatherAreas().entrySet().forEach(e -> {
+            WeatherData w = GameData.getWeatherDataMap().get((int)e.getKey());
+
+            if(w != null && !this.weatherAreas.containsKey(e.getKey())) {
+                WeatherArea area = new WeatherArea(this, w);
+                area.setClimateType(ClimateType.getTypeByValue((int)e.getValue()));
+                weatherAreas.put((int)e.getKey(), area);
+            }
+        });
+
+        weatherLoaded = true;
     }
 
     public void saveGroups() {

@@ -15,7 +15,7 @@ import lombok.Getter;
 
 public final class PlayerBuffManager extends BasePlayerManager {
     private final List<PlayerBuff> pendingBuffs;
-    private final Int2ObjectMap<PlayerBuff> buffs; // Server buffs
+    @Getter private final Int2ObjectMap<PlayerBuff> buffs; // Server buffs
     private int nextBuffUid;
 
     public PlayerBuffManager(Player player) {
@@ -122,21 +122,22 @@ public final class PlayerBuffManager extends BasePlayerManager {
                         .orElse(false);
 
         // Set duration
-        if (duration < 0f) {
+        if (duration <= 0f) {
             duration = buffData.getTime();
         }
 
         // Don't add buff if duration is equal or less than 0
-        if (duration <= 0) {
+        if (duration == 0) {
             return success;
         }
 
-        // Clear previous buff if it exists
-        this.removeBuff(buffData.getGroupId());
+        int id = buffData.getGroupId();
+        if (id == 0) id = buffId;
+        this.removeBuff(id);
 
-        // Create and store buff
+
         PlayerBuff buff = new PlayerBuff(getNextBuffUid(), buffData, duration);
-        this.buffs.put(buff.getGroupId(), buff);
+        this.buffs.put(id, buff);
 
         // Packet
         getPlayer()
@@ -178,7 +179,7 @@ public final class PlayerBuffManager extends BasePlayerManager {
                 .values()
                 .removeIf(
                         buff -> {
-                            if (currentTime <= buff.getEndTime()) return false;
+                            if (buff.getEndTime() == 0 || currentTime <= buff.getEndTime()) return false;
                             this.pendingBuffs.add(buff);
                             return true;
                         });
@@ -199,12 +200,12 @@ public final class PlayerBuffManager extends BasePlayerManager {
     public static class PlayerBuff {
         private final int uid;
         private final BuffData buffData;
-        private final long endTime;
+        private long endTime;
 
         public PlayerBuff(int uid, BuffData buffData, float duration) {
             this.uid = uid;
             this.buffData = buffData;
-            this.endTime = System.currentTimeMillis() + ((long) duration * 1000);
+            this.endTime =  duration > 0 ? System.currentTimeMillis() + ((long) duration * 1000) : 0L;
         }
 
         public int getGroupId() {
@@ -218,6 +219,13 @@ public final class PlayerBuffManager extends BasePlayerManager {
                     .setServerBuffType(this.getBuffData().getServerBuffType().getValue())
                     .setInstancedModifierId(1)
                     .build();
+        }
+
+        public String toString() {
+            long remainTime = this.endTime - System.currentTimeMillis();
+            if (remainTime < 0) remainTime = -1;
+            return "Buff uID: %s, buff id: %s, buff group: %s, %sms remaining"
+                .formatted(this.uid, this.buffData.getId(), this.buffData.getGroupId(), remainTime);
         }
     }
 }

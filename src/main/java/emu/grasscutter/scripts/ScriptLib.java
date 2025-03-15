@@ -53,8 +53,10 @@ public class ScriptLib {
     }
 
     public SceneScriptManager getSceneScriptManager() {
-        // normally not null
-        return Optional.of(sceneScriptManager.get()).get();
+        var ret = sceneScriptManager.get();
+        if (ret == null && currentEntity.get() != null)
+            ret = currentEntity.get().getScene().getScriptManager();
+        return Optional.of(ret).get();
     }
 
     private String printTable(LuaTable table) {
@@ -589,21 +591,20 @@ public class ScriptLib {
         return 0;
     }
 
-    public int CreateMonsterByConfigIdByPos(int monster_id, LuaTable pos, LuaTable rot) {
+    public int CreateMonsterByConfigIdByPos(int configId, LuaTable pos, LuaTable rot) {
         var scene = getSceneScriptManager().getScene();
-        int level = 1;
-        for (var p: scene.getPlayers())
-            if (p.getLevel() > level) level = p.getLevel();
-        var monsterData = GameData.getMonsterDataMap().get(monster_id);
-        Position position = new Position(pos.get("x").tofloat(), pos.get("y").tofloat(), pos.get("z").tofloat());
-        Position rotation = new Position(rot.get("x").tofloat(), rot.get("y").tofloat(), rot.get("z").tofloat());
-        var entity = new EntityMonster(scene, monsterData, position, rotation, level);
-        scene.addEntity(entity);
-        if (!getCurrentGroup().isEmpty()) {
-            var group = getCurrentGroup().get();
-            entity.setGroupId(group.id);
-            entity.setBlockId(group.block_id);
-        }
+        var group = getCurrentGroup().get();
+        if (group == null) return 1;
+        var entity = scene.getEntityByConfigId(configId, group.id);
+        if (entity != null && entity.getGroupId() == group.id) return 1;
+        var monster = group.monsters.get(configId);
+        var monsterData = GameData.getMonsterDataMap().get(monster.monster_id);
+        var m = new EntityMonster(scene, monsterData, new Position(pos), new Position(rot), monster.level);
+        scene.addEntity(m);
+        m.setGroupId(group.id);
+        m.setBlockId(group.block_id);
+        m.setConfigId(configId);
+        m.setMetaMonster(monster);
         return 0;
     }
 
@@ -706,7 +707,10 @@ public class ScriptLib {
 
     public int EnterWeatherArea(int var1) {
         logger.warn("[LUA] Call unimplemented EnterWeatherArea with {}", var1);
-        // TODO implement
+        getSceneScriptManager().getScene().getPlayers().forEach(p -> {
+//            if(p.getWeatherAreaId() != weatherAreaId) p.updateWeather(p.getScene());
+        });
+
         return 0;
     }
 
@@ -910,7 +914,8 @@ public class ScriptLib {
 
     // TODO: GetGivingItemList
     // TODO: GetGroupAliveMonsterList
-    // TODO: GetGroupLogicStateValue
+
+    public int GetGroupLogicStateValue(String var) { return GetGroupVariableValue(var); }
 
     public int GetGroupMonsterCount() {
         int returnValue = (int) getSceneScriptManager().getScene().getEntities().values().stream()
@@ -1492,7 +1497,7 @@ public class ScriptLib {
         return 0;
     }
 
-    // TODO: SetGroupLogicStateValue
+    public int SetGroupLogicStateValue(String var, int value) { return SetGroupVariableValue(var, value); }
 
     public int SetGroupReplaceable(int groupId, boolean value) {
         logger.warn("[LUA] Call unchecked SetGroupReplaceable with {} {}", groupId, value);
@@ -1659,10 +1664,12 @@ public class ScriptLib {
     }
 
     public int SetWeatherAreaState(int var1, int var2) {
-        logger.debug("[LUA] Call SetWeatherAreaState with {} {}", var1, var2);
-        this.getSceneScriptManager().getScene().getPlayers()
-                .forEach(p -> p.setWeather(var1, ClimateType.getTypeByValue(var2)));
-        return 0;
+        logger.warn("[LUA] Call SetWeatherAreaState with {} {}", var1, var2);
+        if(var2 != 0) {
+            return getSceneScriptManager().getScene().addWeatherArea(var1) ? 0 : 1;
+        } else {
+            return getSceneScriptManager().getScene().removeWeatherArea(var1) ? 0 : 1;
+        }
     }
 
     public int SetWorktopOptions(LuaTable table) {
