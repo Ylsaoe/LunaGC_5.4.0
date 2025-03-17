@@ -19,6 +19,11 @@ public final class GetOnlinePlayerListReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 24673
+   * </pre>
+   *
    * Protobuf type {@code GetOnlinePlayerListReq}
    */
   public static final class GetOnlinePlayerListReq extends
@@ -240,6 +245,11 @@ public final class GetOnlinePlayerListReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 24673
+     * </pre>
+     *
      * Protobuf type {@code GetOnlinePlayerListReq}
      */
     public static final class Builder extends

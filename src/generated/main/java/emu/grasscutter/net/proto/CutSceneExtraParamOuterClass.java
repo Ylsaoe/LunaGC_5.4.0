@@ -36,6 +36,10 @@ public final class CutSceneExtraParamOuterClass {
     double getDetailParamList(int index);
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code CutSceneExtraParam}
    */
   public static final class CutSceneExtraParam extends
@@ -336,6 +340,10 @@ public final class CutSceneExtraParamOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code CutSceneExtraParam}
      */
     public static final class Builder extends

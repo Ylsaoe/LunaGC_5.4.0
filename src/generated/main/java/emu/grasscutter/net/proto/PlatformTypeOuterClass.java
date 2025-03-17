@@ -15,6 +15,10 @@ public final class PlatformTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf enum {@code PlatformType}
    */
   public enum PlatformType
@@ -104,9 +108,13 @@ public final class PlatformTypeOuterClass {
      */
     PLATFORM_TYPE_CLOUD_WEB_KEYBOARD(20),
     /**
-     * <code>PLATFORM_TYPE_XBOX_SCARLETT = 21;</code>
+     * <code>LATFORM_TYPE_XBOX_SCARLETT = 21;</code>
      */
-    PLATFORM_TYPE_XBOX_SCARLETT(21),
+    LATFORM_TYPE_XBOX_SCARLETT(21),
+    /**
+     * <code>LATFORM_TYPE_OPEN_HARMONY = 22;</code>
+     */
+    LATFORM_TYPE_OPEN_HARMONY(22),
     UNRECOGNIZED(-1),
     ;
 
@@ -195,9 +203,13 @@ public final class PlatformTypeOuterClass {
      */
     public static final int PLATFORM_TYPE_CLOUD_WEB_KEYBOARD_VALUE = 20;
     /**
-     * <code>PLATFORM_TYPE_XBOX_SCARLETT = 21;</code>
+     * <code>LATFORM_TYPE_XBOX_SCARLETT = 21;</code>
      */
-    public static final int PLATFORM_TYPE_XBOX_SCARLETT_VALUE = 21;
+    public static final int LATFORM_TYPE_XBOX_SCARLETT_VALUE = 21;
+    /**
+     * <code>LATFORM_TYPE_OPEN_HARMONY = 22;</code>
+     */
+    public static final int LATFORM_TYPE_OPEN_HARMONY_VALUE = 22;
 
 
     public final int getNumber() {
@@ -245,7 +257,8 @@ public final class PlatformTypeOuterClass {
         case 18: return PLATFORM_TYPE_CLOUD_WEB_MAC;
         case 19: return PLATFORM_TYPE_CLOUD_WEB_TOUCH;
         case 20: return PLATFORM_TYPE_CLOUD_WEB_KEYBOARD;
-        case 21: return PLATFORM_TYPE_XBOX_SCARLETT;
+        case 21: return LATFORM_TYPE_XBOX_SCARLETT;
+        case 22: return LATFORM_TYPE_OPEN_HARMONY;
         default: return null;
       }
     }
@@ -311,7 +324,7 @@ public final class PlatformTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022PlatformType.proto*\255\005\n\014PlatformType\022\030\n" +
+      "\n\022PlatformType.proto*\313\005\n\014PlatformType\022\030\n" +
       "\024PLATFORM_TYPE_EDITOR\020\000\022\025\n\021PLATFORM_TYPE" +
       "_IOS\020\001\022\031\n\025PLATFORM_TYPE_ANDROID\020\002\022\024\n\020PLA" +
       "TFORM_TYPE_PC\020\003\022\025\n\021PLATFORM_TYPE_PS4\020\004\022\030" +
@@ -327,9 +340,10 @@ public final class PlatformTypeOuterClass {
       "E_CLOUD_WEB_IOS\020\020\022\036\n\032PLATFORM_TYPE_CLOUD" +
       "_WEB_PC\020\021\022\037\n\033PLATFORM_TYPE_CLOUD_WEB_MAC" +
       "\020\022\022!\n\035PLATFORM_TYPE_CLOUD_WEB_TOUCH\020\023\022$\n" +
-      " PLATFORM_TYPE_CLOUD_WEB_KEYBOARD\020\024\022\037\n\033P" +
-      "LATFORM_TYPE_XBOX_SCARLETT\020\025B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      " PLATFORM_TYPE_CLOUD_WEB_KEYBOARD\020\024\022\036\n\032L" +
+      "ATFORM_TYPE_XBOX_SCARLETT\020\025\022\035\n\031LATFORM_T" +
+      "YPE_OPEN_HARMONY\020\026B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -54,6 +54,7 @@ public final class PlayerPropNotifyOuterClass {
   }
   /**
    * <pre>
+   * Version: 5.4
    * CmdId: 5688
    * </pre>
    *
@@ -408,6 +409,7 @@ public final class PlayerPropNotifyOuterClass {
     }
     /**
      * <pre>
+     * Version: 5.4
      * CmdId: 5688
      * </pre>
      *

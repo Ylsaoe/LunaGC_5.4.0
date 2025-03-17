@@ -19,6 +19,11 @@ public final class GetAllUnlockNameCardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 3665
+   * </pre>
+   *
    * Protobuf type {@code GetAllUnlockNameCardReq}
    */
   public static final class GetAllUnlockNameCardReq extends
@@ -240,6 +245,11 @@ public final class GetAllUnlockNameCardReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 3665
+     * </pre>
+     *
      * Protobuf type {@code GetAllUnlockNameCardReq}
      */
     public static final class Builder extends
