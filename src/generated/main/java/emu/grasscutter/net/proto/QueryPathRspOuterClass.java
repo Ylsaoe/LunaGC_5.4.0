@@ -55,15 +55,15 @@ public final class QueryPathRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+     * <code>.PathStatusType query_status = 5;</code>
      * @return The enum numeric value on the wire for queryStatus.
      */
     int getQueryStatusValue();
     /**
-     * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+     * <code>.PathStatusType query_status = 5;</code>
      * @return The queryStatus.
      */
-    emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType getQueryStatus();
+    emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType getQueryStatus();
   }
   /**
    * <pre>
@@ -178,123 +178,6 @@ public final class QueryPathRspOuterClass {
               emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.class, emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.Builder.class);
     }
 
-    /**
-     * Protobuf enum {@code QueryPathRsp.PathStatusType}
-     */
-    public enum PathStatusType
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>PathStatusType_STATUS_FAIL = 0;</code>
-       */
-      PathStatusType_STATUS_FAIL(0),
-      /**
-       * <code>PathStatusType_STATUS_SUCC = 1;</code>
-       */
-      PathStatusType_STATUS_SUCC(1),
-      /**
-       * <code>PathStatusType_STATUS_PARTIAL = 2;</code>
-       */
-      PathStatusType_STATUS_PARTIAL(2),
-      UNRECOGNIZED(-1),
-      ;
-
-      /**
-       * <code>PathStatusType_STATUS_FAIL = 0;</code>
-       */
-      public static final int PathStatusType_STATUS_FAIL_VALUE = 0;
-      /**
-       * <code>PathStatusType_STATUS_SUCC = 1;</code>
-       */
-      public static final int PathStatusType_STATUS_SUCC_VALUE = 1;
-      /**
-       * <code>PathStatusType_STATUS_PARTIAL = 2;</code>
-       */
-      public static final int PathStatusType_STATUS_PARTIAL_VALUE = 2;
-
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static PathStatusType valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static PathStatusType forNumber(int value) {
-        switch (value) {
-          case 0: return PathStatusType_STATUS_FAIL;
-          case 1: return PathStatusType_STATUS_SUCC;
-          case 2: return PathStatusType_STATUS_PARTIAL;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<PathStatusType>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          PathStatusType> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<PathStatusType>() {
-              public PathStatusType findValueByNumber(int number) {
-                return PathStatusType.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final PathStatusType[] VALUES = values();
-
-      public static PathStatusType valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private PathStatusType(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:QueryPathRsp.PathStatusType)
-    }
-
     public static final int CORNERS_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> corners_;
     /**
@@ -360,20 +243,20 @@ public final class QueryPathRspOuterClass {
     public static final int QUERY_STATUS_FIELD_NUMBER = 5;
     private int queryStatus_;
     /**
-     * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+     * <code>.PathStatusType query_status = 5;</code>
      * @return The enum numeric value on the wire for queryStatus.
      */
     @java.lang.Override public int getQueryStatusValue() {
       return queryStatus_;
     }
     /**
-     * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+     * <code>.PathStatusType query_status = 5;</code>
      * @return The queryStatus.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType getQueryStatus() {
+    @java.lang.Override public emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType getQueryStatus() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType result = emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType.valueOf(queryStatus_);
-      return result == null ? emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType result = emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType.valueOf(queryStatus_);
+      return result == null ? emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -396,7 +279,7 @@ public final class QueryPathRspOuterClass {
       if (retcode_ != 0) {
         output.writeInt32(4, retcode_);
       }
-      if (queryStatus_ != emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType.PathStatusType_STATUS_FAIL.getNumber()) {
+      if (queryStatus_ != emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType.PATH_STATUS_TYPE_FAIL.getNumber()) {
         output.writeEnum(5, queryStatus_);
       }
       if (queryId_ != 0) {
@@ -419,7 +302,7 @@ public final class QueryPathRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, retcode_);
       }
-      if (queryStatus_ != emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType.PathStatusType_STATUS_FAIL.getNumber()) {
+      if (queryStatus_ != emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType.PATH_STATUS_TYPE_FAIL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(5, queryStatus_);
       }
@@ -1077,14 +960,14 @@ public final class QueryPathRspOuterClass {
 
       private int queryStatus_ = 0;
       /**
-       * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+       * <code>.PathStatusType query_status = 5;</code>
        * @return The enum numeric value on the wire for queryStatus.
        */
       @java.lang.Override public int getQueryStatusValue() {
         return queryStatus_;
       }
       /**
-       * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+       * <code>.PathStatusType query_status = 5;</code>
        * @param value The enum numeric value on the wire for queryStatus to set.
        * @return This builder for chaining.
        */
@@ -1095,21 +978,21 @@ public final class QueryPathRspOuterClass {
         return this;
       }
       /**
-       * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+       * <code>.PathStatusType query_status = 5;</code>
        * @return The queryStatus.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType getQueryStatus() {
+      public emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType getQueryStatus() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType result = emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType.valueOf(queryStatus_);
-        return result == null ? emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType result = emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType.valueOf(queryStatus_);
+        return result == null ? emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+       * <code>.PathStatusType query_status = 5;</code>
        * @param value The queryStatus to set.
        * @return This builder for chaining.
        */
-      public Builder setQueryStatus(emu.grasscutter.net.proto.QueryPathRspOuterClass.QueryPathRsp.PathStatusType value) {
+      public Builder setQueryStatus(emu.grasscutter.net.proto.PathStatusTypeOuterClass.PathStatusType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -1119,7 +1002,7 @@ public final class QueryPathRspOuterClass {
         return this;
       }
       /**
-       * <code>.QueryPathRsp.PathStatusType query_status = 5;</code>
+       * <code>.PathStatusType query_status = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearQueryStatus() {
@@ -1195,19 +1078,18 @@ public final class QueryPathRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022QueryPathRsp.proto\032\014Vector.proto\"\364\001\n\014Q" +
-      "ueryPathRsp\022\030\n\007corners\030\002 \003(\0132\007.Vector\022\020\n" +
-      "\010query_id\030\006 \001(\005\022\017\n\007retcode\030\004 \001(\005\0222\n\014quer" +
-      "y_status\030\005 \001(\0162\034.QueryPathRsp.PathStatus" +
-      "Type\"s\n\016PathStatusType\022\036\n\032PathStatusType" +
-      "_STATUS_FAIL\020\000\022\036\n\032PathStatusType_STATUS_" +
-      "SUCC\020\001\022!\n\035PathStatusType_STATUS_PARTIAL\020" +
-      "\002B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\022QueryPathRsp.proto\032\014Vector.proto\032\024Path" +
+      "StatusType.proto\"r\n\014QueryPathRsp\022\030\n\007corn" +
+      "ers\030\002 \003(\0132\007.Vector\022\020\n\010query_id\030\006 \001(\005\022\017\n\007" +
+      "retcode\030\004 \001(\005\022%\n\014query_status\030\005 \001(\0162\017.Pa" +
+      "thStatusTypeB\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PathStatusTypeOuterClass.getDescriptor(),
         });
     internal_static_QueryPathRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1216,6 +1098,7 @@ public final class QueryPathRspOuterClass {
         internal_static_QueryPathRsp_descriptor,
         new java.lang.String[] { "Corners", "QueryId", "Retcode", "QueryStatus", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PathStatusTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
