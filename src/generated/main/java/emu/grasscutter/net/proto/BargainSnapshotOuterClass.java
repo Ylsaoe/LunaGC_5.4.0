@@ -19,32 +19,32 @@ public final class BargainSnapshotOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IOCNPJJNHLD = 12;</code>
-     * @return The iOCNPJJNHLD.
+     * <code>uint32 bargain_id = 11;</code>
+     * @return The bargainId.
      */
-    int getIOCNPJJNHLD();
+    int getBargainId();
 
     /**
-     * <code>uint32 BALOPACHCDB = 2;</code>
-     * @return The bALOPACHCDB.
+     * <code>uint32 expected_price = 14;</code>
+     * @return The expectedPrice.
      */
-    int getBALOPACHCDB();
+    int getExpectedPrice();
 
     /**
-     * <code>int32 cur_mood = 9;</code>
+     * <code>int32 cur_mood = 3;</code>
      * @return The curMood.
      */
     int getCurMood();
 
     /**
-     * <code>uint32 bargain_id = 15;</code>
-     * @return The bargainId.
+     * <code>uint32 lowest_price = 13;</code>
+     * @return The lowestPrice.
      */
-    int getBargainId();
+    int getLowestPrice();
   }
   /**
    * <pre>
-   * Obf: KIOJOGPNAKF
+   * Version: 5.4
    * </pre>
    *
    * Protobuf type {@code BargainSnapshot}
@@ -91,24 +91,24 @@ public final class BargainSnapshotOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              bALOPACHCDB_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 24: {
 
               curMood_ = input.readInt32();
               break;
             }
-            case 96: {
-
-              iOCNPJJNHLD_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 88: {
 
               bargainId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              lowestPrice_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              expectedPrice_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,32 +143,32 @@ public final class BargainSnapshotOuterClass {
               emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.class, emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder.class);
     }
 
-    public static final int IOCNPJJNHLD_FIELD_NUMBER = 12;
-    private int iOCNPJJNHLD_;
+    public static final int BARGAIN_ID_FIELD_NUMBER = 11;
+    private int bargainId_;
     /**
-     * <code>uint32 IOCNPJJNHLD = 12;</code>
-     * @return The iOCNPJJNHLD.
+     * <code>uint32 bargain_id = 11;</code>
+     * @return The bargainId.
      */
     @java.lang.Override
-    public int getIOCNPJJNHLD() {
-      return iOCNPJJNHLD_;
+    public int getBargainId() {
+      return bargainId_;
     }
 
-    public static final int BALOPACHCDB_FIELD_NUMBER = 2;
-    private int bALOPACHCDB_;
+    public static final int EXPECTED_PRICE_FIELD_NUMBER = 14;
+    private int expectedPrice_;
     /**
-     * <code>uint32 BALOPACHCDB = 2;</code>
-     * @return The bALOPACHCDB.
+     * <code>uint32 expected_price = 14;</code>
+     * @return The expectedPrice.
      */
     @java.lang.Override
-    public int getBALOPACHCDB() {
-      return bALOPACHCDB_;
+    public int getExpectedPrice() {
+      return expectedPrice_;
     }
 
-    public static final int CUR_MOOD_FIELD_NUMBER = 9;
+    public static final int CUR_MOOD_FIELD_NUMBER = 3;
     private int curMood_;
     /**
-     * <code>int32 cur_mood = 9;</code>
+     * <code>int32 cur_mood = 3;</code>
      * @return The curMood.
      */
     @java.lang.Override
@@ -176,15 +176,15 @@ public final class BargainSnapshotOuterClass {
       return curMood_;
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 15;
-    private int bargainId_;
+    public static final int LOWEST_PRICE_FIELD_NUMBER = 13;
+    private int lowestPrice_;
     /**
-     * <code>uint32 bargain_id = 15;</code>
-     * @return The bargainId.
+     * <code>uint32 lowest_price = 13;</code>
+     * @return The lowestPrice.
      */
     @java.lang.Override
-    public int getBargainId() {
-      return bargainId_;
+    public int getLowestPrice() {
+      return lowestPrice_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class BargainSnapshotOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bALOPACHCDB_ != 0) {
-        output.writeUInt32(2, bALOPACHCDB_);
-      }
       if (curMood_ != 0) {
-        output.writeInt32(9, curMood_);
-      }
-      if (iOCNPJJNHLD_ != 0) {
-        output.writeUInt32(12, iOCNPJJNHLD_);
+        output.writeInt32(3, curMood_);
       }
       if (bargainId_ != 0) {
-        output.writeUInt32(15, bargainId_);
+        output.writeUInt32(11, bargainId_);
+      }
+      if (lowestPrice_ != 0) {
+        output.writeUInt32(13, lowestPrice_);
+      }
+      if (expectedPrice_ != 0) {
+        output.writeUInt32(14, expectedPrice_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class BargainSnapshotOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bALOPACHCDB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bALOPACHCDB_);
-      }
       if (curMood_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, curMood_);
-      }
-      if (iOCNPJJNHLD_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, iOCNPJJNHLD_);
+          .computeInt32Size(3, curMood_);
       }
       if (bargainId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, bargainId_);
+          .computeUInt32Size(11, bargainId_);
+      }
+      if (lowestPrice_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, lowestPrice_);
+      }
+      if (expectedPrice_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, expectedPrice_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class BargainSnapshotOuterClass {
       }
       emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot other = (emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot) obj;
 
-      if (getIOCNPJJNHLD()
-          != other.getIOCNPJJNHLD()) return false;
-      if (getBALOPACHCDB()
-          != other.getBALOPACHCDB()) return false;
-      if (getCurMood()
-          != other.getCurMood()) return false;
       if (getBargainId()
           != other.getBargainId()) return false;
+      if (getExpectedPrice()
+          != other.getExpectedPrice()) return false;
+      if (getCurMood()
+          != other.getCurMood()) return false;
+      if (getLowestPrice()
+          != other.getLowestPrice()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +272,14 @@ public final class BargainSnapshotOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IOCNPJJNHLD_FIELD_NUMBER;
-      hash = (53 * hash) + getIOCNPJJNHLD();
-      hash = (37 * hash) + BALOPACHCDB_FIELD_NUMBER;
-      hash = (53 * hash) + getBALOPACHCDB();
-      hash = (37 * hash) + CUR_MOOD_FIELD_NUMBER;
-      hash = (53 * hash) + getCurMood();
       hash = (37 * hash) + BARGAIN_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBargainId();
+      hash = (37 * hash) + EXPECTED_PRICE_FIELD_NUMBER;
+      hash = (53 * hash) + getExpectedPrice();
+      hash = (37 * hash) + CUR_MOOD_FIELD_NUMBER;
+      hash = (53 * hash) + getCurMood();
+      hash = (37 * hash) + LOWEST_PRICE_FIELD_NUMBER;
+      hash = (53 * hash) + getLowestPrice();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,7 +377,7 @@ public final class BargainSnapshotOuterClass {
     }
     /**
      * <pre>
-     * Obf: KIOJOGPNAKF
+     * Version: 5.4
      * </pre>
      *
      * Protobuf type {@code BargainSnapshot}
@@ -417,13 +417,13 @@ public final class BargainSnapshotOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iOCNPJJNHLD_ = 0;
+        bargainId_ = 0;
 
-        bALOPACHCDB_ = 0;
+        expectedPrice_ = 0;
 
         curMood_ = 0;
 
-        bargainId_ = 0;
+        lowestPrice_ = 0;
 
         return this;
       }
@@ -451,10 +451,10 @@ public final class BargainSnapshotOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot buildPartial() {
         emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot result = new emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot(this);
-        result.iOCNPJJNHLD_ = iOCNPJJNHLD_;
-        result.bALOPACHCDB_ = bALOPACHCDB_;
-        result.curMood_ = curMood_;
         result.bargainId_ = bargainId_;
+        result.expectedPrice_ = expectedPrice_;
+        result.curMood_ = curMood_;
+        result.lowestPrice_ = lowestPrice_;
         onBuilt();
         return result;
       }
@@ -503,17 +503,17 @@ public final class BargainSnapshotOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot other) {
         if (other == emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.getDefaultInstance()) return this;
-        if (other.getIOCNPJJNHLD() != 0) {
-          setIOCNPJJNHLD(other.getIOCNPJJNHLD());
+        if (other.getBargainId() != 0) {
+          setBargainId(other.getBargainId());
         }
-        if (other.getBALOPACHCDB() != 0) {
-          setBALOPACHCDB(other.getBALOPACHCDB());
+        if (other.getExpectedPrice() != 0) {
+          setExpectedPrice(other.getExpectedPrice());
         }
         if (other.getCurMood() != 0) {
           setCurMood(other.getCurMood());
         }
-        if (other.getBargainId() != 0) {
-          setBargainId(other.getBargainId());
+        if (other.getLowestPrice() != 0) {
+          setLowestPrice(other.getLowestPrice());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,102 +544,9 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
 
-      private int iOCNPJJNHLD_ ;
-      /**
-       * <code>uint32 IOCNPJJNHLD = 12;</code>
-       * @return The iOCNPJJNHLD.
-       */
-      @java.lang.Override
-      public int getIOCNPJJNHLD() {
-        return iOCNPJJNHLD_;
-      }
-      /**
-       * <code>uint32 IOCNPJJNHLD = 12;</code>
-       * @param value The iOCNPJJNHLD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIOCNPJJNHLD(int value) {
-        
-        iOCNPJJNHLD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IOCNPJJNHLD = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIOCNPJJNHLD() {
-        
-        iOCNPJJNHLD_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bALOPACHCDB_ ;
-      /**
-       * <code>uint32 BALOPACHCDB = 2;</code>
-       * @return The bALOPACHCDB.
-       */
-      @java.lang.Override
-      public int getBALOPACHCDB() {
-        return bALOPACHCDB_;
-      }
-      /**
-       * <code>uint32 BALOPACHCDB = 2;</code>
-       * @param value The bALOPACHCDB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBALOPACHCDB(int value) {
-        
-        bALOPACHCDB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BALOPACHCDB = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBALOPACHCDB() {
-        
-        bALOPACHCDB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int curMood_ ;
-      /**
-       * <code>int32 cur_mood = 9;</code>
-       * @return The curMood.
-       */
-      @java.lang.Override
-      public int getCurMood() {
-        return curMood_;
-      }
-      /**
-       * <code>int32 cur_mood = 9;</code>
-       * @param value The curMood to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurMood(int value) {
-        
-        curMood_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 cur_mood = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurMood() {
-        
-        curMood_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 15;</code>
+       * <code>uint32 bargain_id = 11;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -647,7 +554,7 @@ public final class BargainSnapshotOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 15;</code>
+       * <code>uint32 bargain_id = 11;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -658,12 +565,105 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 15;</code>
+       * <code>uint32 bargain_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
         
         bargainId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int expectedPrice_ ;
+      /**
+       * <code>uint32 expected_price = 14;</code>
+       * @return The expectedPrice.
+       */
+      @java.lang.Override
+      public int getExpectedPrice() {
+        return expectedPrice_;
+      }
+      /**
+       * <code>uint32 expected_price = 14;</code>
+       * @param value The expectedPrice to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExpectedPrice(int value) {
+        
+        expectedPrice_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 expected_price = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExpectedPrice() {
+        
+        expectedPrice_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curMood_ ;
+      /**
+       * <code>int32 cur_mood = 3;</code>
+       * @return The curMood.
+       */
+      @java.lang.Override
+      public int getCurMood() {
+        return curMood_;
+      }
+      /**
+       * <code>int32 cur_mood = 3;</code>
+       * @param value The curMood to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurMood(int value) {
+        
+        curMood_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 cur_mood = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurMood() {
+        
+        curMood_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lowestPrice_ ;
+      /**
+       * <code>uint32 lowest_price = 13;</code>
+       * @return The lowestPrice.
+       */
+      @java.lang.Override
+      public int getLowestPrice() {
+        return lowestPrice_;
+      }
+      /**
+       * <code>uint32 lowest_price = 13;</code>
+       * @param value The lowestPrice to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLowestPrice(int value) {
+        
+        lowestPrice_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 lowest_price = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLowestPrice() {
+        
+        lowestPrice_ = 0;
         onChanged();
         return this;
       }
@@ -734,10 +734,11 @@ public final class BargainSnapshotOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025BargainSnapshot.proto\"a\n\017BargainSnapsh" +
-      "ot\022\023\n\013IOCNPJJNHLD\030\014 \001(\r\022\023\n\013BALOPACHCDB\030\002" +
-      " \001(\r\022\020\n\010cur_mood\030\t \001(\005\022\022\n\nbargain_id\030\017 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\025BargainSnapshot.proto\"e\n\017BargainSnapsh" +
+      "ot\022\022\n\nbargain_id\030\013 \001(\r\022\026\n\016expected_price" +
+      "\030\016 \001(\r\022\020\n\010cur_mood\030\003 \001(\005\022\024\n\014lowest_price" +
+      "\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -748,7 +749,7 @@ public final class BargainSnapshotOuterClass {
     internal_static_BargainSnapshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BargainSnapshot_descriptor,
-        new java.lang.String[] { "IOCNPJJNHLD", "BALOPACHCDB", "CurMood", "BargainId", });
+        new java.lang.String[] { "BargainId", "ExpectedPrice", "CurMood", "LowestPrice", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

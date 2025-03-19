@@ -16,7 +16,7 @@ public final class FriendOnlineStateOuterClass {
   }
   /**
    * <pre>
-   * Version: 5.0
+   * Version: 5.4
    * </pre>
    *
    * Protobuf enum {@code FriendOnlineState}

@@ -34,14 +34,13 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
      * @return The eventIdList at the given index.
      */
     int getEventIdList(int index);
-
-    /**
-     * <code>bool PFOKFHLOKEJ = 11;</code>
-     * @return The pFOKFHLOKEJ.
-     */
-    boolean getPFOKFHLOKEJ();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 29494
+   * </pre>
+   *
    * Protobuf type {@code HomeAvatarAllFinishRewardNotify}
    */
   public static final class HomeAvatarAllFinishRewardNotify extends
@@ -109,11 +108,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
-
-              pFOKFHLOKEJ_ = input.readBool();
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -177,17 +171,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
     }
     private int eventIdListMemoizedSerializedSize = -1;
 
-    public static final int PFOKFHLOKEJ_FIELD_NUMBER = 11;
-    private boolean pFOKFHLOKEJ_;
-    /**
-     * <code>bool PFOKFHLOKEJ = 11;</code>
-     * @return The pFOKFHLOKEJ.
-     */
-    @java.lang.Override
-    public boolean getPFOKFHLOKEJ() {
-      return pFOKFHLOKEJ_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -209,9 +192,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
       }
       for (int i = 0; i < eventIdList_.size(); i++) {
         output.writeUInt32NoTag(eventIdList_.getInt(i));
-      }
-      if (pFOKFHLOKEJ_ != false) {
-        output.writeBool(11, pFOKFHLOKEJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -236,10 +216,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         }
         eventIdListMemoizedSerializedSize = dataSize;
       }
-      if (pFOKFHLOKEJ_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, pFOKFHLOKEJ_);
-      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -257,8 +233,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
 
       if (!getEventIdListList()
           .equals(other.getEventIdListList())) return false;
-      if (getPFOKFHLOKEJ()
-          != other.getPFOKFHLOKEJ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -274,9 +248,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         hash = (37 * hash) + EVENT_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getEventIdListList().hashCode();
       }
-      hash = (37 * hash) + PFOKFHLOKEJ_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPFOKFHLOKEJ());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -373,6 +344,11 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 29494
+     * </pre>
+     *
      * Protobuf type {@code HomeAvatarAllFinishRewardNotify}
      */
     public static final class Builder extends
@@ -412,8 +388,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         super.clear();
         eventIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        pFOKFHLOKEJ_ = false;
-
         return this;
       }
 
@@ -446,7 +420,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.eventIdList_ = eventIdList_;
-        result.pFOKFHLOKEJ_ = pFOKFHLOKEJ_;
         onBuilt();
         return result;
       }
@@ -504,9 +477,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
             eventIdList_.addAll(other.eventIdList_);
           }
           onChanged();
-        }
-        if (other.getPFOKFHLOKEJ() != false) {
-          setPFOKFHLOKEJ(other.getPFOKFHLOKEJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -616,37 +586,6 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         onChanged();
         return this;
       }
-
-      private boolean pFOKFHLOKEJ_ ;
-      /**
-       * <code>bool PFOKFHLOKEJ = 11;</code>
-       * @return The pFOKFHLOKEJ.
-       */
-      @java.lang.Override
-      public boolean getPFOKFHLOKEJ() {
-        return pFOKFHLOKEJ_;
-      }
-      /**
-       * <code>bool PFOKFHLOKEJ = 11;</code>
-       * @param value The pFOKFHLOKEJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPFOKFHLOKEJ(boolean value) {
-        
-        pFOKFHLOKEJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool PFOKFHLOKEJ = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPFOKFHLOKEJ() {
-        
-        pFOKFHLOKEJ_ = false;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -715,9 +654,9 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%HomeAvatarAllFinishRewardNotify.proto\"" +
-      "M\n\037HomeAvatarAllFinishRewardNotify\022\025\n\rev" +
-      "ent_id_list\030\001 \003(\r\022\023\n\013PFOKFHLOKEJ\030\013 \001(\010B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "8\n\037HomeAvatarAllFinishRewardNotify\022\025\n\rev" +
+      "ent_id_list\030\001 \003(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -728,7 +667,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
     internal_static_HomeAvatarAllFinishRewardNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeAvatarAllFinishRewardNotify_descriptor,
-        new java.lang.String[] { "EventIdList", "PFOKFHLOKEJ", });
+        new java.lang.String[] { "EventIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
