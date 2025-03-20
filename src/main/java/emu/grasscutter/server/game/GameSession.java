@@ -135,8 +135,6 @@ public class GameSession implements GameSessionManager.KcpChannel {
             }
             default -> {}
         }
-        Grasscutter.getLogger()
-            .info("SEND: " + PacketOpcodesUtils.getOpcodeName(packet.getOpcode()) + " (" + packet.getOpcode() + ")");
 
         // Invoke event.
         SendPacketEvent event = new SendPacketEvent(this, packet);
@@ -230,9 +228,6 @@ public class GameSession implements GameSessionManager.KcpChannel {
                     }
                     default -> {}
                 }
-
-                Grasscutter.getLogger()
-                    .info("Recv: " + PacketOpcodesUtils.getOpcodeName(opcode) + " (" + opcode + ")");
 
                 // Handle
                 getServer().getPacketHandler().handle(this, opcode, header, payload);
