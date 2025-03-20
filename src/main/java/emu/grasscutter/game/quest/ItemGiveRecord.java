@@ -65,7 +65,7 @@ public final class ItemGiveRecord {
                 .setLastGroupId(this.getLastGroupId())
                 .setIsFinished(this.isFinished())
                 .setIsGadgetGiving(false)
-                .putAllMaterialCntMap(this.getGivenItems())
+                .putAllMaterialCountMap(this.getGivenItems())
                 .build();
     }
 }

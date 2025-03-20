@@ -19,15 +19,15 @@ public final class GetBargainDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bargain_id = 13;</code>
+     * <code>uint32 bargain_id = 2;</code>
      * @return The bargainId.
      */
     int getBargainId();
   }
   /**
    * <pre>
-   * CmdId: 7358
-   * Obf: FPNNGBLHLDM
+   * Version: 5.4
+   * CmdId: 27829
    * </pre>
    *
    * Protobuf type {@code GetBargainDataReq}
@@ -74,7 +74,7 @@ public final class GetBargainDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 16: {
 
               bargainId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class GetBargainDataReqOuterClass {
               emu.grasscutter.net.proto.GetBargainDataReqOuterClass.GetBargainDataReq.class, emu.grasscutter.net.proto.GetBargainDataReqOuterClass.GetBargainDataReq.Builder.class);
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 13;
+    public static final int BARGAIN_ID_FIELD_NUMBER = 2;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 13;</code>
+     * <code>uint32 bargain_id = 2;</code>
      * @return The bargainId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class GetBargainDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bargainId_ != 0) {
-        output.writeUInt32(13, bargainId_);
+        output.writeUInt32(2, bargainId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class GetBargainDataReqOuterClass {
       size = 0;
       if (bargainId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, bargainId_);
+          .computeUInt32Size(2, bargainId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class GetBargainDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7358
-     * Obf: FPNNGBLHLDM
+     * Version: 5.4
+     * CmdId: 27829
      * </pre>
      *
      * Protobuf type {@code GetBargainDataReq}
@@ -431,7 +431,7 @@ public final class GetBargainDataReqOuterClass {
 
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 13;</code>
+       * <code>uint32 bargain_id = 2;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class GetBargainDataReqOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 13;</code>
+       * <code>uint32 bargain_id = 2;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class GetBargainDataReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 13;</code>
+       * <code>uint32 bargain_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
@@ -527,7 +527,7 @@ public final class GetBargainDataReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GetBargainDataReq.proto\"\'\n\021GetBargainD" +
-      "ataReq\022\022\n\nbargain_id\030\r \001(\rB\033\n\031emu.grassc" +
+      "ataReq\022\022\n\nbargain_id\030\002 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

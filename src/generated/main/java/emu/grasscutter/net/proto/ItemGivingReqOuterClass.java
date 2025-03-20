@@ -81,25 +81,6 @@ public final class ItemGivingReqOuterClass {
      * @return The givingId.
      */
     int getGivingId();
-
-    /**
-     * <pre>
-     * TODO 5.4.0
-     * </pre>
-     *
-     * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-     * @return The enum numeric value on the wire for itemGivingType.
-     */
-    int getItemGivingTypeValue();
-    /**
-     * <pre>
-     * TODO 5.4.0
-     * </pre>
-     *
-     * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-     * @return The itemGivingType.
-     */
-    emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType getItemGivingType();
   }
   /**
    * <pre>
@@ -120,7 +101,6 @@ public final class ItemGivingReqOuterClass {
     }
     private ItemGivingReq() {
       itemParamList_ = java.util.Collections.emptyList();
-      itemGivingType_ = 0;
     }
 
     @java.lang.Override
@@ -154,12 +134,6 @@ public final class ItemGivingReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              itemGivingType_ = rawValue;
-              break;
-            }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 itemGuidCountMap_ = com.google.protobuf.MapField.newMapField(
@@ -232,114 +206,6 @@ public final class ItemGivingReqOuterClass {
       return emu.grasscutter.net.proto.ItemGivingReqOuterClass.internal_static_ItemGivingReq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.class, emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.Builder.class);
-    }
-
-    /**
-     * Protobuf enum {@code ItemGivingReq.ItemGivingType}
-     */
-    public enum ItemGivingType
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>QUEST = 0;</code>
-       */
-      QUEST(0),
-      /**
-       * <code>GADGET = 1;</code>
-       */
-      GADGET(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /**
-       * <code>QUEST = 0;</code>
-       */
-      public static final int QUEST_VALUE = 0;
-      /**
-       * <code>GADGET = 1;</code>
-       */
-      public static final int GADGET_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static ItemGivingType valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static ItemGivingType forNumber(int value) {
-        switch (value) {
-          case 0: return QUEST;
-          case 1: return GADGET;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<ItemGivingType>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          ItemGivingType> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<ItemGivingType>() {
-              public ItemGivingType findValueByNumber(int number) {
-                return ItemGivingType.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final ItemGivingType[] VALUES = values();
-
-      public static ItemGivingType valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private ItemGivingType(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:ItemGivingReq.ItemGivingType)
     }
 
     public static final int ITEM_PARAM_LIST_FIELD_NUMBER = 15;
@@ -474,33 +340,6 @@ public final class ItemGivingReqOuterClass {
       return givingId_;
     }
 
-    public static final int ITEM_GIVING_TYPE_FIELD_NUMBER = 1;
-    private int itemGivingType_;
-    /**
-     * <pre>
-     * TODO 5.4.0
-     * </pre>
-     *
-     * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-     * @return The enum numeric value on the wire for itemGivingType.
-     */
-    @java.lang.Override public int getItemGivingTypeValue() {
-      return itemGivingType_;
-    }
-    /**
-     * <pre>
-     * TODO 5.4.0
-     * </pre>
-     *
-     * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-     * @return The itemGivingType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType getItemGivingType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType result = emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType.valueOf(itemGivingType_);
-      return result == null ? emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType.UNRECOGNIZED : result;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -515,9 +354,6 @@ public final class ItemGivingReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (itemGivingType_ != emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType.QUEST.getNumber()) {
-        output.writeEnum(1, itemGivingType_);
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeLongMapTo(
           output,
@@ -539,10 +375,6 @@ public final class ItemGivingReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (itemGivingType_ != emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType.QUEST.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, itemGivingType_);
-      }
       for (java.util.Map.Entry<java.lang.Long, java.lang.Integer> entry
            : internalGetItemGuidCountMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Long, java.lang.Integer>
@@ -582,7 +414,6 @@ public final class ItemGivingReqOuterClass {
           other.internalGetItemGuidCountMap())) return false;
       if (getGivingId()
           != other.getGivingId()) return false;
-      if (itemGivingType_ != other.itemGivingType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -604,8 +435,6 @@ public final class ItemGivingReqOuterClass {
       }
       hash = (37 * hash) + GIVING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGivingId();
-      hash = (37 * hash) + ITEM_GIVING_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + itemGivingType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -776,8 +605,6 @@ public final class ItemGivingReqOuterClass {
         internalGetMutableItemGuidCountMap().clear();
         givingId_ = 0;
 
-        itemGivingType_ = 0;
-
         return this;
       }
 
@@ -817,7 +644,6 @@ public final class ItemGivingReqOuterClass {
         result.itemGuidCountMap_ = internalGetItemGuidCountMap();
         result.itemGuidCountMap_.makeImmutable();
         result.givingId_ = givingId_;
-        result.itemGivingType_ = itemGivingType_;
         onBuilt();
         return result;
       }
@@ -896,9 +722,6 @@ public final class ItemGivingReqOuterClass {
             other.internalGetItemGuidCountMap());
         if (other.getGivingId() != 0) {
           setGivingId(other.getGivingId());
-        }
-        if (other.itemGivingType_ != 0) {
-          setItemGivingTypeValue(other.getItemGivingTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1328,80 +1151,6 @@ public final class ItemGivingReqOuterClass {
         onChanged();
         return this;
       }
-
-      private int itemGivingType_ = 0;
-      /**
-       * <pre>
-       * TODO 5.4.0
-       * </pre>
-       *
-       * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-       * @return The enum numeric value on the wire for itemGivingType.
-       */
-      @java.lang.Override public int getItemGivingTypeValue() {
-        return itemGivingType_;
-      }
-      /**
-       * <pre>
-       * TODO 5.4.0
-       * </pre>
-       *
-       * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-       * @param value The enum numeric value on the wire for itemGivingType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemGivingTypeValue(int value) {
-        
-        itemGivingType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * TODO 5.4.0
-       * </pre>
-       *
-       * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-       * @return The itemGivingType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType getItemGivingType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType result = emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType.valueOf(itemGivingType_);
-        return result == null ? emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType.UNRECOGNIZED : result;
-      }
-      /**
-       * <pre>
-       * TODO 5.4.0
-       * </pre>
-       *
-       * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-       * @param value The itemGivingType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemGivingType(emu.grasscutter.net.proto.ItemGivingReqOuterClass.ItemGivingReq.ItemGivingType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        itemGivingType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * TODO 5.4.0
-       * </pre>
-       *
-       * <code>.ItemGivingReq.ItemGivingType item_giving_type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemGivingType() {
-        
-        itemGivingType_ = 0;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1474,16 +1223,13 @@ public final class ItemGivingReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ItemGivingReq.proto\032\017ItemParam.proto\"\245" +
-      "\002\n\rItemGivingReq\022#\n\017item_param_list\030\017 \003(" +
+      "\n\023ItemGivingReq.proto\032\017ItemParam.proto\"\303" +
+      "\001\n\rItemGivingReq\022#\n\017item_param_list\030\017 \003(" +
       "\0132\n.ItemParam\022A\n\023item_guid_count_map\030\002 \003" +
       "(\0132$.ItemGivingReq.ItemGuidCountMapEntry" +
-      "\022\021\n\tgiving_id\030\r \001(\r\0227\n\020item_giving_type\030" +
-      "\001 \001(\0162\035.ItemGivingReq.ItemGivingType\0327\n\025" +
-      "ItemGuidCountMapEntry\022\013\n\003key\030\001 \001(\004\022\r\n\005va" +
-      "lue\030\002 \001(\r:\0028\001\"\'\n\016ItemGivingType\022\t\n\005QUEST" +
-      "\020\000\022\n\n\006GADGET\020\001B\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\022\021\n\tgiving_id\030\r \001(\r\0327\n\025ItemGuidCountMapE" +
+      "ntry\022\013\n\003key\030\001 \001(\004\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1495,7 +1241,7 @@ public final class ItemGivingReqOuterClass {
     internal_static_ItemGivingReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ItemGivingReq_descriptor,
-        new java.lang.String[] { "ItemParamList", "ItemGuidCountMap", "GivingId", "ItemGivingType", });
+        new java.lang.String[] { "ItemParamList", "ItemGuidCountMap", "GivingId", });
     internal_static_ItemGivingReq_ItemGuidCountMapEntry_descriptor =
       internal_static_ItemGivingReq_descriptor.getNestedTypes().get(0);
     internal_static_ItemGivingReq_ItemGuidCountMapEntry_fieldAccessorTable = new

@@ -30,6 +30,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 import lombok.*;
 import emu.grasscutter.database.Database;
+import org.jetbrains.annotations.NotNull;
+import org.luaj.vm2.ast.Str;
 
 @Entity
 public final class TeamManager extends BasePlayerDataManager {
@@ -84,7 +86,7 @@ public final class TeamManager extends BasePlayerDataManager {
     public AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock() {
         AbilityControlBlockOuterClass.AbilityControlBlock.Builder abilityControlBlock =
                 AbilityControlBlockOuterClass.AbilityControlBlock.newBuilder();
-        AtomicInteger embryoId = new AtomicInteger();
+        int embryoId = 0;
 
         // add from default
         if (Arrays.stream(GameConstants.DEFAULT_TEAM_ABILITY_STRINGS).count() > 0) {
@@ -93,7 +95,7 @@ public final class TeamManager extends BasePlayerDataManager {
             for (String skill : teamAbilties) {
                 AbilityEmbryoOuterClass.AbilityEmbryo emb =
                         AbilityEmbryoOuterClass.AbilityEmbryo.newBuilder()
-                                .setAbilityId(embryoId.incrementAndGet())
+                                .setAbilityId(++embryoId)
                                 .setAbilityNameHash(Utils.abilityHash(skill))
                                 .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME)
                                 .build();
@@ -107,29 +109,28 @@ public final class TeamManager extends BasePlayerDataManager {
         ConfigLevelEntity configLevelEntity = GameData.getConfigLevelEntityDataMap().get(levelEntityConfig);
 
         if (configLevelEntity != null) {
-            Optional.ofNullable(configLevelEntity.getTeamAbilities())
-                .ifPresent(abilities ->
-                    abilities.stream()
-                        .filter(Objects::nonNull)
-                        .map(ConfigAbilityData::getAbilityName)
-                        .filter(abilityName -> abilityName != null && !abilityName.isEmpty())
-                        .forEach(abilityName -> {
-                            Grasscutter.getLogger().info("Loading team ability: [{}] from config {} as embryoId {}",
-                                    abilityName, levelEntityConfig, embryoId.incrementAndGet());
+            List<ConfigAbilityData> teamAbilities = configLevelEntity.getTeamAbilities();
+            if (teamAbilities != null) {
+                for (ConfigAbilityData skill : teamAbilities) {
 
-                            try {
-                                AbilityEmbryoOuterClass.AbilityEmbryo emb =
-                                    AbilityEmbryoOuterClass.AbilityEmbryo.newBuilder()
-                                        .setAbilityId(embryoId.incrementAndGet())
-                                        .setAbilityNameHash(Utils.abilityHash(abilityName))
-                                        .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME)
-                                        .build();
-                                abilityControlBlock.addAbilityEmbryoList(emb);
-                            } catch (Exception e) {
-                                Grasscutter.getLogger().error("Failed to add ability embryo: {}", abilityName, e);
-                            }
-                        })
-                );
+                    if (skill != null && skill.abilityName != null) {
+                        Grasscutter.getLogger().info("Loading team ability: [{}] from config {} as embryoId {}",
+                            skill, levelEntityConfig, embryoId);
+
+                        AbilityEmbryoOuterClass.AbilityEmbryo emb =
+                            AbilityEmbryoOuterClass.AbilityEmbryo.newBuilder()
+                                .setAbilityId(++embryoId)
+                                .setAbilityNameHash(Utils.abilityHash(skill.abilityName))
+                                .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME)
+                                .build();
+                        abilityControlBlock.addAbilityEmbryoList(emb);
+                    } else {
+                        Grasscutter.getLogger().warn("Invalid skill config in {}", levelEntityConfig);
+                    }
+                }
+            }else {
+                Grasscutter.getLogger().warn("No team abilities found in config: {}", levelEntityConfig);
+            }
         }
 
         // same as avatar ability hash (add frm levelEntityConfig data)
@@ -137,7 +138,7 @@ public final class TeamManager extends BasePlayerDataManager {
             for (String skill : this.getTeamAbilityEmbryos()) {
                 AbilityEmbryoOuterClass.AbilityEmbryo emb =
                         AbilityEmbryoOuterClass.AbilityEmbryo.newBuilder()
-                                .setAbilityId(embryoId.incrementAndGet())
+                                .setAbilityId(++embryoId)
                                 .setAbilityNameHash(Utils.abilityHash(skill))
                                 .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME)
                                 .build();
