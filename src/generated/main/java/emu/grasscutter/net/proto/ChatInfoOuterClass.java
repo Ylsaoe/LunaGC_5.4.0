@@ -19,6 +19,18 @@ public final class ChatInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>string psn_id = 7;</code>
+     * @return The psnId.
+     */
+    java.lang.String getPsnId();
+    /**
+     * <code>string psn_id = 7;</code>
+     * @return The bytes for psnId.
+     */
+    com.google.protobuf.ByteString
+        getPsnIdBytes();
+
+    /**
      * <code>uint32 to_uid = 13;</code>
      * @return The toUid.
      */
@@ -100,6 +112,10 @@ public final class ChatInfoOuterClass {
     public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.ContentCase getContentCase();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code ChatInfo}
    */
   public static final class ChatInfo extends
@@ -112,6 +128,7 @@ public final class ChatInfoOuterClass {
       super(builder);
     }
     private ChatInfo() {
+      psnId_ = "";
     }
 
     @java.lang.Override
@@ -157,6 +174,12 @@ public final class ChatInfoOuterClass {
             case 32: {
 
               platformType_ = input.readUInt32();
+              break;
+            }
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              psnId_ = s;
               break;
             }
             case 64: {
@@ -879,6 +902,44 @@ public final class ChatInfoOuterClass {
           contentCase_);
     }
 
+    public static final int PSN_ID_FIELD_NUMBER = 7;
+    private volatile java.lang.Object psnId_;
+    /**
+     * <code>string psn_id = 7;</code>
+     * @return The psnId.
+     */
+    @java.lang.Override
+    public java.lang.String getPsnId() {
+      java.lang.Object ref = psnId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        psnId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string psn_id = 7;</code>
+     * @return The bytes for psnId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getPsnIdBytes() {
+      java.lang.Object ref = psnId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        psnId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     public static final int TO_UID_FIELD_NUMBER = 13;
     private int toUid_;
     /**
@@ -1072,6 +1133,9 @@ public final class ChatInfoOuterClass {
       if (platformType_ != 0) {
         output.writeUInt32(4, platformType_);
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, psnId_);
+      }
       if (uid_ != 0) {
         output.writeUInt32(8, uid_);
       }
@@ -1112,6 +1176,9 @@ public final class ChatInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, platformType_);
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, psnId_);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, uid_);
@@ -1151,6 +1218,8 @@ public final class ChatInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo other = (emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo) obj;
 
+      if (!getPsnId()
+          .equals(other.getPsnId())) return false;
       if (getToUid()
           != other.getToUid()) return false;
       if (getTime()
@@ -1191,6 +1260,8 @@ public final class ChatInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPsnId().hashCode();
       hash = (37 * hash) + TO_UID_FIELD_NUMBER;
       hash = (53 * hash) + getToUid();
       hash = (37 * hash) + TIME_FIELD_NUMBER;
@@ -1316,6 +1387,10 @@ public final class ChatInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code ChatInfo}
      */
     public static final class Builder extends
@@ -1353,6 +1428,8 @@ public final class ChatInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        psnId_ = "";
+
         toUid_ = 0;
 
         time_ = 0;
@@ -1393,6 +1470,7 @@ public final class ChatInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo buildPartial() {
         emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo result = new emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo(this);
+        result.psnId_ = psnId_;
         result.toUid_ = toUid_;
         result.time_ = time_;
         result.sequence_ = sequence_;
@@ -1461,6 +1539,10 @@ public final class ChatInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo other) {
         if (other == emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.getDefaultInstance()) return this;
+        if (!other.getPsnId().isEmpty()) {
+          psnId_ = other.psnId_;
+          onChanged();
+        }
         if (other.getToUid() != 0) {
           setToUid(other.getToUid());
         }
@@ -1541,6 +1623,82 @@ public final class ChatInfoOuterClass {
         return this;
       }
 
+
+      private java.lang.Object psnId_ = "";
+      /**
+       * <code>string psn_id = 7;</code>
+       * @return The psnId.
+       */
+      public java.lang.String getPsnId() {
+        java.lang.Object ref = psnId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          psnId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string psn_id = 7;</code>
+       * @return The bytes for psnId.
+       */
+      public com.google.protobuf.ByteString
+          getPsnIdBytes() {
+        java.lang.Object ref = psnId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          psnId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string psn_id = 7;</code>
+       * @param value The psnId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPsnId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        psnId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string psn_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPsnId() {
+        
+        psnId_ = getDefaultInstance().getPsnId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string psn_id = 7;</code>
+       * @param value The bytes for psnId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPsnIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        psnId_ = value;
+        onChanged();
+        return this;
+      }
 
       private int toUid_ ;
       /**
@@ -2078,17 +2236,17 @@ public final class ChatInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016ChatInfo.proto\"\344\002\n\010ChatInfo\022\016\n\006to_uid\030" +
-      "\r \001(\r\022\014\n\004time\030\016 \001(\r\022\020\n\010sequence\030\003 \001(\r\022\025\n" +
-      "\rplatform_type\030\004 \001(\r\022\017\n\007is_read\030\002 \001(\010\022\013\n" +
-      "\003uid\030\010 \001(\r\022\016\n\004text\030G \001(\tH\000\022\016\n\004icon\0300 \001(\r" +
-      "H\000\022,\n\013system_hint\030\201\003 \001(\0132\024.ChatInfo.Syst" +
-      "emHintH\000\032\032\n\nSystemHint\022\014\n\004type\030\002 \001(\r\"~\n\016" +
-      "SystemHintType\022\036\n\032SYSTEM_HINT_TYPE_CHAT_" +
-      "NONE\020\000\022%\n!SYSTEM_HINT_TYPE_CHAT_ENTER_WO" +
-      "RLD\020\001\022%\n!SYSTEM_HINT_TYPE_CHAT_LEAVE_WOR" +
-      "LD\020\002B\t\n\007contentB\033\n\031emu.grasscutter.net.p" +
-      "rotob\006proto3"
+      "\n\016ChatInfo.proto\"\364\002\n\010ChatInfo\022\016\n\006psn_id\030" +
+      "\007 \001(\t\022\016\n\006to_uid\030\r \001(\r\022\014\n\004time\030\016 \001(\r\022\020\n\010s" +
+      "equence\030\003 \001(\r\022\025\n\rplatform_type\030\004 \001(\r\022\017\n\007" +
+      "is_read\030\002 \001(\010\022\013\n\003uid\030\010 \001(\r\022\016\n\004text\030G \001(\t" +
+      "H\000\022\016\n\004icon\0300 \001(\rH\000\022,\n\013system_hint\030\201\003 \001(\013" +
+      "2\024.ChatInfo.SystemHintH\000\032\032\n\nSystemHint\022\014" +
+      "\n\004type\030\002 \001(\r\"~\n\016SystemHintType\022\036\n\032SYSTEM" +
+      "_HINT_TYPE_CHAT_NONE\020\000\022%\n!SYSTEM_HINT_TY" +
+      "PE_CHAT_ENTER_WORLD\020\001\022%\n!SYSTEM_HINT_TYP" +
+      "E_CHAT_LEAVE_WORLD\020\002B\t\n\007contentB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2099,7 +2257,7 @@ public final class ChatInfoOuterClass {
     internal_static_ChatInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChatInfo_descriptor,
-        new java.lang.String[] { "ToUid", "Time", "Sequence", "PlatformType", "IsRead", "Uid", "Text", "Icon", "SystemHint", "Content", });
+        new java.lang.String[] { "PsnId", "ToUid", "Time", "Sequence", "PlatformType", "IsRead", "Uid", "Text", "Icon", "SystemHint", "Content", });
     internal_static_ChatInfo_SystemHint_descriptor =
       internal_static_ChatInfo_descriptor.getNestedTypes().get(0);
     internal_static_ChatInfo_SystemHint_fieldAccessorTable = new

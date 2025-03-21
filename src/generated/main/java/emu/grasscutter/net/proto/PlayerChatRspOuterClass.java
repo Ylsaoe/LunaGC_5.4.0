@@ -19,7 +19,7 @@ public final class PlayerChatRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 chat_forbidden_endtime = 1;</code>
+     * <code>uint32 chat_forbidden_endtime = 6;</code>
      * @return The chatForbiddenEndtime.
      */
     int getChatForbiddenEndtime();
@@ -32,8 +32,8 @@ public final class PlayerChatRspOuterClass {
   }
   /**
    * <pre>
-   * 4.6.0
-   * CmdId: 29270
+   * Version: 5.4
+   * CmdId: 9346
    * </pre>
    *
    * Protobuf type {@code PlayerChatRsp}
@@ -80,14 +80,14 @@ public final class PlayerChatRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              chatForbiddenEndtime_ = input.readUInt32();
-              break;
-            }
             case 32: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 48: {
+
+              chatForbiddenEndtime_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class PlayerChatRspOuterClass {
               emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp.class, emu.grasscutter.net.proto.PlayerChatRspOuterClass.PlayerChatRsp.Builder.class);
     }
 
-    public static final int CHAT_FORBIDDEN_ENDTIME_FIELD_NUMBER = 1;
+    public static final int CHAT_FORBIDDEN_ENDTIME_FIELD_NUMBER = 6;
     private int chatForbiddenEndtime_;
     /**
-     * <code>uint32 chat_forbidden_endtime = 1;</code>
+     * <code>uint32 chat_forbidden_endtime = 6;</code>
      * @return The chatForbiddenEndtime.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class PlayerChatRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (chatForbiddenEndtime_ != 0) {
-        output.writeUInt32(1, chatForbiddenEndtime_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(4, retcode_);
+      }
+      if (chatForbiddenEndtime_ != 0) {
+        output.writeUInt32(6, chatForbiddenEndtime_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class PlayerChatRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (chatForbiddenEndtime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, chatForbiddenEndtime_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, retcode_);
+      }
+      if (chatForbiddenEndtime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, chatForbiddenEndtime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class PlayerChatRspOuterClass {
     }
     /**
      * <pre>
-     * 4.6.0
-     * CmdId: 29270
+     * Version: 5.4
+     * CmdId: 9346
      * </pre>
      *
      * Protobuf type {@code PlayerChatRsp}
@@ -470,7 +470,7 @@ public final class PlayerChatRspOuterClass {
 
       private int chatForbiddenEndtime_ ;
       /**
-       * <code>uint32 chat_forbidden_endtime = 1;</code>
+       * <code>uint32 chat_forbidden_endtime = 6;</code>
        * @return The chatForbiddenEndtime.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class PlayerChatRspOuterClass {
         return chatForbiddenEndtime_;
       }
       /**
-       * <code>uint32 chat_forbidden_endtime = 1;</code>
+       * <code>uint32 chat_forbidden_endtime = 6;</code>
        * @param value The chatForbiddenEndtime to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class PlayerChatRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chat_forbidden_endtime = 1;</code>
+       * <code>uint32 chat_forbidden_endtime = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearChatForbiddenEndtime() {
@@ -597,7 +597,7 @@ public final class PlayerChatRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023PlayerChatRsp.proto\"@\n\rPlayerChatRsp\022\036" +
-      "\n\026chat_forbidden_endtime\030\001 \001(\r\022\017\n\007retcod" +
+      "\n\026chat_forbidden_endtime\030\006 \001(\r\022\017\n\007retcod" +
       "e\030\004 \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
