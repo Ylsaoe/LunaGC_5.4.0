@@ -136,7 +136,7 @@ public class ConfigContainer {
         public boolean autoCreate = false;
         public boolean EXPERIMENTAL_RealPassword = false;
         public String[] defaultPermissions = {};
-        public String playerEmail = "LunaGC.io";
+        public String playerEmail = "grasscutter.io";
         public int maxPlayer = -1;
     }
 
@@ -373,6 +373,8 @@ public class ConfigContainer {
                     """;
             public String sender = "Kei-Luna";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
+                new emu.grasscutter.game.mail.Mail.MailItem(13509, 1, 1),
+                new emu.grasscutter.game.mail.Mail.MailItem(201, 99999, 1)
             };
         }
     }
