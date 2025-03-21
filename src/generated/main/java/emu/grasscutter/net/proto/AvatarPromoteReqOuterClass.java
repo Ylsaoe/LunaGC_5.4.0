@@ -25,6 +25,11 @@ public final class AvatarPromoteReqOuterClass {
     long getGuid();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 25921
+   * </pre>
+   *
    * Protobuf type {@code AvatarPromoteReq}
    */
   public static final class AvatarPromoteReq extends
@@ -274,6 +279,11 @@ public final class AvatarPromoteReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 25921
+     * </pre>
+     *
      * Protobuf type {@code AvatarPromoteReq}
      */
     public static final class Builder extends

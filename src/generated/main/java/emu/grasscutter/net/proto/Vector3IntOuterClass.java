@@ -19,16 +19,16 @@ public final class Vector3IntOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 y = 2;</code>
-     * @return The y.
-     */
-    int getY();
-
-    /**
      * <code>int32 x = 1;</code>
      * @return The x.
      */
     int getX();
+
+    /**
+     * <code>int32 y = 2;</code>
+     * @return The y.
+     */
+    int getY();
 
     /**
      * <code>int32 z = 3;</code>
@@ -37,6 +37,10 @@ public final class Vector3IntOuterClass {
     int getZ();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code Vector3Int}
    */
   public static final class Vector3Int extends
@@ -128,17 +132,6 @@ public final class Vector3IntOuterClass {
               emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.class, emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.Builder.class);
     }
 
-    public static final int Y_FIELD_NUMBER = 2;
-    private int y_;
-    /**
-     * <code>int32 y = 2;</code>
-     * @return The y.
-     */
-    @java.lang.Override
-    public int getY() {
-      return y_;
-    }
-
     public static final int X_FIELD_NUMBER = 1;
     private int x_;
     /**
@@ -148,6 +141,17 @@ public final class Vector3IntOuterClass {
     @java.lang.Override
     public int getX() {
       return x_;
+    }
+
+    public static final int Y_FIELD_NUMBER = 2;
+    private int y_;
+    /**
+     * <code>int32 y = 2;</code>
+     * @return The y.
+     */
+    @java.lang.Override
+    public int getY() {
+      return y_;
     }
 
     public static final int Z_FIELD_NUMBER = 3;
@@ -220,10 +224,10 @@ public final class Vector3IntOuterClass {
       }
       emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int other = (emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int) obj;
 
-      if (getY()
-          != other.getY()) return false;
       if (getX()
           != other.getX()) return false;
+      if (getY()
+          != other.getY()) return false;
       if (getZ()
           != other.getZ()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -237,10 +241,10 @@ public final class Vector3IntOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + Y_FIELD_NUMBER;
-      hash = (53 * hash) + getY();
       hash = (37 * hash) + X_FIELD_NUMBER;
       hash = (53 * hash) + getX();
+      hash = (37 * hash) + Y_FIELD_NUMBER;
+      hash = (53 * hash) + getY();
       hash = (37 * hash) + Z_FIELD_NUMBER;
       hash = (53 * hash) + getZ();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -339,6 +343,10 @@ public final class Vector3IntOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code Vector3Int}
      */
     public static final class Builder extends
@@ -376,9 +384,9 @@ public final class Vector3IntOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        y_ = 0;
-
         x_ = 0;
+
+        y_ = 0;
 
         z_ = 0;
 
@@ -408,8 +416,8 @@ public final class Vector3IntOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int buildPartial() {
         emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int result = new emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int(this);
-        result.y_ = y_;
         result.x_ = x_;
+        result.y_ = y_;
         result.z_ = z_;
         onBuilt();
         return result;
@@ -459,11 +467,11 @@ public final class Vector3IntOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int other) {
         if (other == emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int.getDefaultInstance()) return this;
-        if (other.getY() != 0) {
-          setY(other.getY());
-        }
         if (other.getX() != 0) {
           setX(other.getX());
+        }
+        if (other.getY() != 0) {
+          setY(other.getY());
         }
         if (other.getZ() != 0) {
           setZ(other.getZ());
@@ -497,37 +505,6 @@ public final class Vector3IntOuterClass {
         return this;
       }
 
-      private int y_ ;
-      /**
-       * <code>int32 y = 2;</code>
-       * @return The y.
-       */
-      @java.lang.Override
-      public int getY() {
-        return y_;
-      }
-      /**
-       * <code>int32 y = 2;</code>
-       * @param value The y to set.
-       * @return This builder for chaining.
-       */
-      public Builder setY(int value) {
-        
-        y_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 y = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearY() {
-        
-        y_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int x_ ;
       /**
        * <code>int32 x = 1;</code>
@@ -555,6 +532,37 @@ public final class Vector3IntOuterClass {
       public Builder clearX() {
         
         x_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int y_ ;
+      /**
+       * <code>int32 y = 2;</code>
+       * @return The y.
+       */
+      @java.lang.Override
+      public int getY() {
+        return y_;
+      }
+      /**
+       * <code>int32 y = 2;</code>
+       * @param value The y to set.
+       * @return This builder for chaining.
+       */
+      public Builder setY(int value) {
+        
+        y_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 y = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearY() {
+        
+        y_ = 0;
         onChanged();
         return this;
       }
@@ -656,8 +664,8 @@ public final class Vector3IntOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020Vector3Int.proto\"-\n\nVector3Int\022\t\n\001y\030\002 " +
-      "\001(\005\022\t\n\001x\030\001 \001(\005\022\t\n\001z\030\003 \001(\005B\033\n\031emu.grasscu" +
+      "\n\020Vector3Int.proto\"-\n\nVector3Int\022\t\n\001x\030\001 " +
+      "\001(\005\022\t\n\001y\030\002 \001(\005\022\t\n\001z\030\003 \001(\005B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -669,7 +677,7 @@ public final class Vector3IntOuterClass {
     internal_static_Vector3Int_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Vector3Int_descriptor,
-        new java.lang.String[] { "Y", "X", "Z", });
+        new java.lang.String[] { "X", "Y", "Z", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

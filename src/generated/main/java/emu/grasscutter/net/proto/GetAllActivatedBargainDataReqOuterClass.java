@@ -20,8 +20,8 @@ public final class GetAllActivatedBargainDataReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 22200
-   * Obf: KGMCPOKKAIL
+   * Version: 5.4
+   * CmdId: 167
    * </pre>
    *
    * Protobuf type {@code GetAllActivatedBargainDataReq}
@@ -246,8 +246,8 @@ public final class GetAllActivatedBargainDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 22200
-     * Obf: KGMCPOKKAIL
+     * Version: 5.4
+     * CmdId: 167
      * </pre>
      *
      * Protobuf type {@code GetAllActivatedBargainDataReq}

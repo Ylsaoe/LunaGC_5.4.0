@@ -42,6 +42,10 @@ public final class GachaUpInfoOuterClass {
     int getItemParentType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code GachaUpInfo}
    */
   public static final class GachaUpInfo extends
@@ -372,6 +376,10 @@ public final class GachaUpInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code GachaUpInfo}
      */
     public static final class Builder extends

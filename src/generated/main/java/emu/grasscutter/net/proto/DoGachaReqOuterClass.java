@@ -56,6 +56,7 @@ public final class DoGachaReqOuterClass {
   }
   /**
    * <pre>
+   * Version: 5.4
    * CmdId: 8001
    * </pre>
    *
@@ -444,6 +445,7 @@ public final class DoGachaReqOuterClass {
     }
     /**
      * <pre>
+     * Version: 5.4
      * CmdId: 8001
      * </pre>
      *

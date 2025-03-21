@@ -11,7 +11,7 @@ public class HandlerSetPlayerHeadImageReq extends PacketHandler {
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         SetPlayerHeadImageReq req = SetPlayerHeadImageReq.parseFrom(payload);
 
-        int id = req.getAvatarId();
+        int id = req.getHeadImageId();
 
         // TODO: Fix check. But the id isn't the avatar ID but the head ID.
         // Excuse for laziness by not changing the 'getAvatarId'.

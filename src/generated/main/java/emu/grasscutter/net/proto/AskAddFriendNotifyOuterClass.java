@@ -34,12 +34,17 @@ public final class AskAddFriendNotifyOuterClass {
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder();
 
     /**
-     * <code>uint32 target_uid = 3;</code>
+     * <code>uint32 target_uid = 9;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 29511
+   * </pre>
+   *
    * Protobuf type {@code AskAddFriendNotify}
    */
   public static final class AskAddFriendNotify extends
@@ -97,7 +102,7 @@ public final class AskAddFriendNotifyOuterClass {
 
               break;
             }
-            case 24: {
+            case 72: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -160,10 +165,10 @@ public final class AskAddFriendNotifyOuterClass {
       return getTargetFriendBrief();
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 3;
+    public static final int TARGET_UID_FIELD_NUMBER = 9;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 3;</code>
+     * <code>uint32 target_uid = 9;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -189,7 +194,7 @@ public final class AskAddFriendNotifyOuterClass {
         output.writeMessage(1, getTargetFriendBrief());
       }
       if (targetUid_ != 0) {
-        output.writeUInt32(3, targetUid_);
+        output.writeUInt32(9, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +211,7 @@ public final class AskAddFriendNotifyOuterClass {
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, targetUid_);
+          .computeUInt32Size(9, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -343,6 +348,11 @@ public final class AskAddFriendNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 29511
+     * </pre>
+     *
      * Protobuf type {@code AskAddFriendNotify}
      */
     public static final class Builder extends
@@ -624,7 +634,7 @@ public final class AskAddFriendNotifyOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 3;</code>
+       * <code>uint32 target_uid = 9;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -632,7 +642,7 @@ public final class AskAddFriendNotifyOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 3;</code>
+       * <code>uint32 target_uid = 9;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -643,7 +653,7 @@ public final class AskAddFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 3;</code>
+       * <code>uint32 target_uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -722,7 +732,7 @@ public final class AskAddFriendNotifyOuterClass {
       "\n\030AskAddFriendNotify.proto\032\021FriendBrief." +
       "proto\"S\n\022AskAddFriendNotify\022)\n\023target_fr" +
       "iend_brief\030\001 \001(\0132\014.FriendBrief\022\022\n\ntarget" +
-      "_uid\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "_uid\030\t \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

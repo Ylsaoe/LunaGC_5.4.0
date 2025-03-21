@@ -50,7 +50,7 @@ public final class AvatarExcelInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: HGHGOIMIAMF
+   * Version: 5.4
    * </pre>
    *
    * Protobuf type {@code AvatarExcelInfo}
@@ -415,7 +415,7 @@ public final class AvatarExcelInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: HGHGOIMIAMF
+     * Version: 5.4
      * </pre>
      *
      * Protobuf type {@code AvatarExcelInfo}

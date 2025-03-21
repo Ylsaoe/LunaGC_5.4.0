@@ -136,7 +136,7 @@ public class ConfigContainer {
         public boolean autoCreate = false;
         public boolean EXPERIMENTAL_RealPassword = false;
         public String[] defaultPermissions = {};
-        public String playerEmail = "grasscutter.io";
+        public String playerEmail = "LunaGC.io";
         public int maxPlayer = -1;
     }
 

@@ -227,8 +227,42 @@ public final class FriendBriefOuterClass {
      * @return The isDuelObservable.
      */
     boolean getIsDuelObservable();
+
+    /**
+     * <code>bool DPCOPBPIKKC = 30;</code>
+     * @return The dPCOPBPIKKC.
+     */
+    boolean getDPCOPBPIKKC();
+
+    /**
+     * <code>string HMLBFOILKKP = 31;</code>
+     * @return The hMLBFOILKKP.
+     */
+    java.lang.String getHMLBFOILKKP();
+    /**
+     * <code>string HMLBFOILKKP = 31;</code>
+     * @return The bytes for hMLBFOILKKP.
+     */
+    com.google.protobuf.ByteString
+        getHMLBFOILKKPBytes();
+
+    /**
+     * <code>string psn_id = 32;</code>
+     * @return The psnId.
+     */
+    java.lang.String getPsnId();
+    /**
+     * <code>string psn_id = 32;</code>
+     * @return The bytes for psnId.
+     */
+    com.google.protobuf.ByteString
+        getPsnIdBytes();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code FriendBrief}
    */
   public static final class FriendBrief extends
@@ -249,6 +283,8 @@ public final class FriendBriefOuterClass {
       showAvatarInfoList_ = java.util.Collections.emptyList();
       friendEnterHomeOption_ = 0;
       platformType_ = 0;
+      hMLBFOILKKP_ = "";
+      psnId_ = "";
     }
 
     @java.lang.Override
@@ -419,6 +455,23 @@ public final class FriendBriefOuterClass {
             case 232: {
 
               isDuelObservable_ = input.readBool();
+              break;
+            }
+            case 240: {
+
+              dPCOPBPIKKC_ = input.readBool();
+              break;
+            }
+            case 250: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              hMLBFOILKKP_ = s;
+              break;
+            }
+            case 258: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              psnId_ = s;
               break;
             }
             default: {
@@ -896,6 +949,93 @@ public final class FriendBriefOuterClass {
       return isDuelObservable_;
     }
 
+    public static final int DPCOPBPIKKC_FIELD_NUMBER = 30;
+    private boolean dPCOPBPIKKC_;
+    /**
+     * <code>bool DPCOPBPIKKC = 30;</code>
+     * @return The dPCOPBPIKKC.
+     */
+    @java.lang.Override
+    public boolean getDPCOPBPIKKC() {
+      return dPCOPBPIKKC_;
+    }
+
+    public static final int HMLBFOILKKP_FIELD_NUMBER = 31;
+    private volatile java.lang.Object hMLBFOILKKP_;
+    /**
+     * <code>string HMLBFOILKKP = 31;</code>
+     * @return The hMLBFOILKKP.
+     */
+    @java.lang.Override
+    public java.lang.String getHMLBFOILKKP() {
+      java.lang.Object ref = hMLBFOILKKP_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        hMLBFOILKKP_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string HMLBFOILKKP = 31;</code>
+     * @return The bytes for hMLBFOILKKP.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getHMLBFOILKKPBytes() {
+      java.lang.Object ref = hMLBFOILKKP_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        hMLBFOILKKP_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PSN_ID_FIELD_NUMBER = 32;
+    private volatile java.lang.Object psnId_;
+    /**
+     * <code>string psn_id = 32;</code>
+     * @return The psnId.
+     */
+    @java.lang.Override
+    public java.lang.String getPsnId() {
+      java.lang.Object ref = psnId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        psnId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string psn_id = 32;</code>
+     * @return The bytes for psnId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getPsnIdBytes() {
+      java.lang.Object ref = psnId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        psnId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -981,6 +1121,15 @@ public final class FriendBriefOuterClass {
       }
       if (isDuelObservable_ != false) {
         output.writeBool(29, isDuelObservable_);
+      }
+      if (dPCOPBPIKKC_ != false) {
+        output.writeBool(30, dPCOPBPIKKC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(hMLBFOILKKP_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 31, hMLBFOILKKP_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 32, psnId_);
       }
       unknownFields.writeTo(output);
     }
@@ -1083,6 +1232,16 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(29, isDuelObservable_);
       }
+      if (dPCOPBPIKKC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(30, dPCOPBPIKKC_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(hMLBFOILKKP_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(31, hMLBFOILKKP_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(32, psnId_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1146,6 +1305,12 @@ public final class FriendBriefOuterClass {
           != other.getIsInDuel()) return false;
       if (getIsDuelObservable()
           != other.getIsDuelObservable()) return false;
+      if (getDPCOPBPIKKC()
+          != other.getDPCOPBPIKKC()) return false;
+      if (!getHMLBFOILKKP()
+          .equals(other.getHMLBFOILKKP())) return false;
+      if (!getPsnId()
+          .equals(other.getPsnId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1215,6 +1380,13 @@ public final class FriendBriefOuterClass {
       hash = (37 * hash) + IS_DUEL_OBSERVABLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDuelObservable());
+      hash = (37 * hash) + DPCOPBPIKKC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getDPCOPBPIKKC());
+      hash = (37 * hash) + HMLBFOILKKP_FIELD_NUMBER;
+      hash = (53 * hash) + getHMLBFOILKKP().hashCode();
+      hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPsnId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1311,6 +1483,10 @@ public final class FriendBriefOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code FriendBrief}
      */
     public static final class Builder extends
@@ -1405,6 +1581,12 @@ public final class FriendBriefOuterClass {
 
         isDuelObservable_ = false;
 
+        dPCOPBPIKKC_ = false;
+
+        hMLBFOILKKP_ = "";
+
+        psnId_ = "";
+
         return this;
       }
 
@@ -1468,6 +1650,9 @@ public final class FriendBriefOuterClass {
         result.platformType_ = platformType_;
         result.isInDuel_ = isInDuel_;
         result.isDuelObservable_ = isDuelObservable_;
+        result.dPCOPBPIKKC_ = dPCOPBPIKKC_;
+        result.hMLBFOILKKP_ = hMLBFOILKKP_;
+        result.psnId_ = psnId_;
         onBuilt();
         return result;
       }
@@ -1614,6 +1799,17 @@ public final class FriendBriefOuterClass {
         }
         if (other.getIsDuelObservable() != false) {
           setIsDuelObservable(other.getIsDuelObservable());
+        }
+        if (other.getDPCOPBPIKKC() != false) {
+          setDPCOPBPIKKC(other.getDPCOPBPIKKC());
+        }
+        if (!other.getHMLBFOILKKP().isEmpty()) {
+          hMLBFOILKKP_ = other.hMLBFOILKKP_;
+          onChanged();
+        }
+        if (!other.getPsnId().isEmpty()) {
+          psnId_ = other.psnId_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2934,6 +3130,189 @@ public final class FriendBriefOuterClass {
         onChanged();
         return this;
       }
+
+      private boolean dPCOPBPIKKC_ ;
+      /**
+       * <code>bool DPCOPBPIKKC = 30;</code>
+       * @return The dPCOPBPIKKC.
+       */
+      @java.lang.Override
+      public boolean getDPCOPBPIKKC() {
+        return dPCOPBPIKKC_;
+      }
+      /**
+       * <code>bool DPCOPBPIKKC = 30;</code>
+       * @param value The dPCOPBPIKKC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDPCOPBPIKKC(boolean value) {
+        
+        dPCOPBPIKKC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool DPCOPBPIKKC = 30;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDPCOPBPIKKC() {
+        
+        dPCOPBPIKKC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object hMLBFOILKKP_ = "";
+      /**
+       * <code>string HMLBFOILKKP = 31;</code>
+       * @return The hMLBFOILKKP.
+       */
+      public java.lang.String getHMLBFOILKKP() {
+        java.lang.Object ref = hMLBFOILKKP_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          hMLBFOILKKP_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string HMLBFOILKKP = 31;</code>
+       * @return The bytes for hMLBFOILKKP.
+       */
+      public com.google.protobuf.ByteString
+          getHMLBFOILKKPBytes() {
+        java.lang.Object ref = hMLBFOILKKP_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          hMLBFOILKKP_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string HMLBFOILKKP = 31;</code>
+       * @param value The hMLBFOILKKP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHMLBFOILKKP(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        hMLBFOILKKP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string HMLBFOILKKP = 31;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHMLBFOILKKP() {
+        
+        hMLBFOILKKP_ = getDefaultInstance().getHMLBFOILKKP();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string HMLBFOILKKP = 31;</code>
+       * @param value The bytes for hMLBFOILKKP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHMLBFOILKKPBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        hMLBFOILKKP_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object psnId_ = "";
+      /**
+       * <code>string psn_id = 32;</code>
+       * @return The psnId.
+       */
+      public java.lang.String getPsnId() {
+        java.lang.Object ref = psnId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          psnId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string psn_id = 32;</code>
+       * @return The bytes for psnId.
+       */
+      public com.google.protobuf.ByteString
+          getPsnIdBytes() {
+        java.lang.Object ref = psnId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          psnId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string psn_id = 32;</code>
+       * @param value The psnId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPsnId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        psnId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string psn_id = 32;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPsnId() {
+        
+        psnId_ = getDefaultInstance().getPsnId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string psn_id = 32;</code>
+       * @param value The bytes for psnId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPsnIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        psnId_ = value;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -3004,7 +3383,7 @@ public final class FriendBriefOuterClass {
       "\n\021FriendBrief.proto\032\027FriendOnlineState.p" +
       "roto\032\032SocialShowAvatarInfo.proto\032\033Friend" +
       "EnterHomeOption.proto\032\024ProfilePicture.pr" +
-      "oto\032\022PlatformType.proto\"\216\005\n\013FriendBrief\022" +
+      "oto\032\022PlatformType.proto\"\310\005\n\013FriendBrief\022" +
       "\013\n\003uid\030\001 \001(\r\022\020\n\010nickname\030\002 \001(\t\022\r\n\005level\030" +
       "\003 \001(\r\022\021\n\tavatar_id\030\004 \001(\r\022\023\n\013world_level\030" +
       "\005 \001(\r\022\021\n\tsignature\030\006 \001(\t\022(\n\014online_state" +
@@ -3021,7 +3400,9 @@ public final class FriendBriefOuterClass {
       "ource\030\031 \001(\010\022\025\n\ris_psn_source\030\032 \001(\010\022$\n\rpl" +
       "atform_type\030\033 \001(\0162\r.PlatformType\022\022\n\nis_i" +
       "n_duel\030\034 \001(\010\022\032\n\022is_duel_observable\030\035 \001(\010" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\022\023\n\013DPCOPBPIKKC\030\036 \001(\010\022\023\n\013HMLBFOILKKP\030\037 \001" +
+      "(\t\022\016\n\006psn_id\030  \001(\tB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3037,7 +3418,7 @@ public final class FriendBriefOuterClass {
     internal_static_FriendBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FriendBrief_descriptor,
-        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "WorldLevel", "Signature", "OnlineState", "Param", "IsMpModeAvailable", "OnlineId", "LastActiveTime", "NameCardId", "MpPlayerNum", "IsChatNoDisturb", "ChatSequence", "RemarkName", "ShowAvatarInfoList", "FriendEnterHomeOption", "ProfilePicture", "IsGameSource", "IsPsnSource", "PlatformType", "IsInDuel", "IsDuelObservable", });
+        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "WorldLevel", "Signature", "OnlineState", "Param", "IsMpModeAvailable", "OnlineId", "LastActiveTime", "NameCardId", "MpPlayerNum", "IsChatNoDisturb", "ChatSequence", "RemarkName", "ShowAvatarInfoList", "FriendEnterHomeOption", "ProfilePicture", "IsGameSource", "IsPsnSource", "PlatformType", "IsInDuel", "IsDuelObservable", "DPCOPBPIKKC", "HMLBFOILKKP", "PsnId", });
     emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor();
