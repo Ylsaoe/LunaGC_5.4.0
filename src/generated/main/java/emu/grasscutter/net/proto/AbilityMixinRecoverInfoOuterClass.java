@@ -34,23 +34,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
     emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder();
 
     /**
-     * <code>repeated uint32 data_list = 4;</code>
-     * @return A list containing the dataList.
-     */
-    java.util.List<java.lang.Integer> getDataListList();
-    /**
-     * <code>repeated uint32 data_list = 4;</code>
-     * @return The count of dataList.
-     */
-    int getDataListCount();
-    /**
-     * <code>repeated uint32 data_list = 4;</code>
-     * @param index The index of the element to return.
-     * @return The dataList at the given index.
-     */
-    int getDataList(int index);
-
-    /**
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo> 
@@ -76,9 +59,34 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
     /**
      * <pre>
-     *LAMOMNEEAPK OMPAHPEAMOI = 8;
+     *HKEAEJEIANJ LOAMCJNAIEB = 8;
      * </pre>
      *
+     * <code>repeated uint32 data_list = 4;</code>
+     * @return A list containing the dataList.
+     */
+    java.util.List<java.lang.Integer> getDataListList();
+    /**
+     * <pre>
+     *HKEAEJEIANJ LOAMCJNAIEB = 8;
+     * </pre>
+     *
+     * <code>repeated uint32 data_list = 4;</code>
+     * @return The count of dataList.
+     */
+    int getDataListCount();
+    /**
+     * <pre>
+     *HKEAEJEIANJ LOAMCJNAIEB = 8;
+     * </pre>
+     *
+     * <code>repeated uint32 data_list = 4;</code>
+     * @param index The index of the element to return.
+     * @return The dataList at the given index.
+     */
+    int getDataList(int index);
+
+    /**
      * <code>uint32 local_id = 3;</code>
      * @return The localId.
      */
@@ -115,6 +123,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.SourceCase getSourceCase();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code AbilityMixinRecoverInfo}
    */
   public static final class AbilityMixinRecoverInfo extends
@@ -127,8 +139,8 @@ public final class AbilityMixinRecoverInfoOuterClass {
       super(builder);
     }
     private AbilityMixinRecoverInfo() {
-      dataList_ = emptyIntList();
       massivePropList_ = java.util.Collections.emptyList();
+      dataList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -178,9 +190,9 @@ public final class AbilityMixinRecoverInfoOuterClass {
               break;
             }
             case 32: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 dataList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               dataList_.addInt(input.readUInt32());
               break;
@@ -188,9 +200,9 @@ public final class AbilityMixinRecoverInfoOuterClass {
             case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 dataList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 dataList_.addInt(input.readUInt32());
@@ -204,9 +216,9 @@ public final class AbilityMixinRecoverInfoOuterClass {
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 massivePropList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               massivePropList_.add(
                   input.readMessage(emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo.parser(), extensionRegistry));
@@ -240,10 +252,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           dataList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           massivePropList_ = java.util.Collections.unmodifiableList(massivePropList_);
         }
         this.unknownFields = unknownFields.build();
@@ -330,34 +342,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return getBreakoutSnapShot();
     }
 
-    public static final int DATA_LIST_FIELD_NUMBER = 4;
-    private com.google.protobuf.Internal.IntList dataList_;
-    /**
-     * <code>repeated uint32 data_list = 4;</code>
-     * @return A list containing the dataList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getDataListList() {
-      return dataList_;
-    }
-    /**
-     * <code>repeated uint32 data_list = 4;</code>
-     * @return The count of dataList.
-     */
-    public int getDataListCount() {
-      return dataList_.size();
-    }
-    /**
-     * <code>repeated uint32 data_list = 4;</code>
-     * @param index The index of the element to return.
-     * @return The dataList at the given index.
-     */
-    public int getDataList(int index) {
-      return dataList_.getInt(index);
-    }
-    private int dataListMemoizedSerializedSize = -1;
-
     public static final int MASSIVE_PROP_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo> massivePropList_;
     /**
@@ -398,13 +382,49 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return massivePropList_.get(index);
     }
 
+    public static final int DATA_LIST_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList dataList_;
+    /**
+     * <pre>
+     *HKEAEJEIANJ LOAMCJNAIEB = 8;
+     * </pre>
+     *
+     * <code>repeated uint32 data_list = 4;</code>
+     * @return A list containing the dataList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getDataListList() {
+      return dataList_;
+    }
+    /**
+     * <pre>
+     *HKEAEJEIANJ LOAMCJNAIEB = 8;
+     * </pre>
+     *
+     * <code>repeated uint32 data_list = 4;</code>
+     * @return The count of dataList.
+     */
+    public int getDataListCount() {
+      return dataList_.size();
+    }
+    /**
+     * <pre>
+     *HKEAEJEIANJ LOAMCJNAIEB = 8;
+     * </pre>
+     *
+     * <code>repeated uint32 data_list = 4;</code>
+     * @param index The index of the element to return.
+     * @return The dataList at the given index.
+     */
+    public int getDataList(int index) {
+      return dataList_.getInt(index);
+    }
+    private int dataListMemoizedSerializedSize = -1;
+
     public static final int LOCAL_ID_FIELD_NUMBER = 3;
     private int localId_;
     /**
-     * <pre>
-     *LAMOMNEEAPK OMPAHPEAMOI = 8;
-     * </pre>
-     *
      * <code>uint32 local_id = 3;</code>
      * @return The localId.
      */
@@ -577,10 +597,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
         if (!getBreakoutSnapShot()
             .equals(other.getBreakoutSnapShot())) return false;
       }
-      if (!getDataListList()
-          .equals(other.getDataListList())) return false;
       if (!getMassivePropListList()
           .equals(other.getMassivePropListList())) return false;
+      if (!getDataListList()
+          .equals(other.getDataListList())) return false;
       if (getLocalId()
           != other.getLocalId()) return false;
       if (getIsServerbuffModifier()
@@ -613,13 +633,13 @@ public final class AbilityMixinRecoverInfoOuterClass {
         hash = (37 * hash) + BREAKOUT_SNAP_SHOT_FIELD_NUMBER;
         hash = (53 * hash) + getBreakoutSnapShot().hashCode();
       }
-      if (getDataListCount() > 0) {
-        hash = (37 * hash) + DATA_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDataListList().hashCode();
-      }
       if (getMassivePropListCount() > 0) {
         hash = (37 * hash) + MASSIVE_PROP_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMassivePropListList().hashCode();
+      }
+      if (getDataListCount() > 0) {
+        hash = (37 * hash) + DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getDataListList().hashCode();
       }
       hash = (37 * hash) + LOCAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLocalId();
@@ -734,6 +754,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code AbilityMixinRecoverInfo}
      */
     public static final class Builder extends
@@ -778,14 +802,14 @@ public final class AbilityMixinRecoverInfoOuterClass {
           breakoutSnapShot_ = null;
           breakoutSnapShotBuilder_ = null;
         }
-        dataList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (massivePropListBuilder_ == null) {
           massivePropList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           massivePropListBuilder_.clear();
         }
+        dataList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         localId_ = 0;
 
         isServerbuffModifier_ = false;
@@ -824,20 +848,20 @@ public final class AbilityMixinRecoverInfoOuterClass {
         } else {
           result.breakoutSnapShot_ = breakoutSnapShotBuilder_.build();
         }
-        if (((bitField0_ & 0x00000001) != 0)) {
-          dataList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.dataList_ = dataList_;
         if (massivePropListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             massivePropList_ = java.util.Collections.unmodifiableList(massivePropList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.massivePropList_ = massivePropList_;
         } else {
           result.massivePropList_ = massivePropListBuilder_.build();
         }
+        if (((bitField0_ & 0x00000002) != 0)) {
+          dataList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.dataList_ = dataList_;
         result.localId_ = localId_;
         result.isServerbuffModifier_ = isServerbuffModifier_;
         if (sourceCase_ == 1) {
@@ -898,21 +922,11 @@ public final class AbilityMixinRecoverInfoOuterClass {
         if (other.hasBreakoutSnapShot()) {
           mergeBreakoutSnapShot(other.getBreakoutSnapShot());
         }
-        if (!other.dataList_.isEmpty()) {
-          if (dataList_.isEmpty()) {
-            dataList_ = other.dataList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureDataListIsMutable();
-            dataList_.addAll(other.dataList_);
-          }
-          onChanged();
-        }
         if (massivePropListBuilder_ == null) {
           if (!other.massivePropList_.isEmpty()) {
             if (massivePropList_.isEmpty()) {
               massivePropList_ = other.massivePropList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureMassivePropListIsMutable();
               massivePropList_.addAll(other.massivePropList_);
@@ -925,7 +939,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
               massivePropListBuilder_.dispose();
               massivePropListBuilder_ = null;
               massivePropList_ = other.massivePropList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               massivePropListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getMassivePropListFieldBuilder() : null;
@@ -933,6 +947,16 @@ public final class AbilityMixinRecoverInfoOuterClass {
               massivePropListBuilder_.addAllMessages(other.massivePropList_);
             }
           }
+        }
+        if (!other.dataList_.isEmpty()) {
+          if (dataList_.isEmpty()) {
+            dataList_ = other.dataList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureDataListIsMutable();
+            dataList_.addAll(other.dataList_);
+          }
+          onChanged();
         }
         if (other.getLocalId() != 0) {
           setLocalId(other.getLocalId());
@@ -1117,91 +1141,12 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return breakoutSnapShotBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList dataList_ = emptyIntList();
-      private void ensureDataListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          dataList_ = mutableCopy(dataList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @return A list containing the dataList.
-       */
-      public java.util.List<java.lang.Integer>
-          getDataListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(dataList_) : dataList_;
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @return The count of dataList.
-       */
-      public int getDataListCount() {
-        return dataList_.size();
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @param index The index of the element to return.
-       * @return The dataList at the given index.
-       */
-      public int getDataList(int index) {
-        return dataList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @param index The index to set the value at.
-       * @param value The dataList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataList(
-          int index, int value) {
-        ensureDataListIsMutable();
-        dataList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @param value The dataList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addDataList(int value) {
-        ensureDataListIsMutable();
-        dataList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @param values The dataList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllDataList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDataListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, dataList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 data_list = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDataList() {
-        dataList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo> massivePropList_ =
         java.util.Collections.emptyList();
       private void ensureMassivePropListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           massivePropList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo>(massivePropList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -1351,7 +1296,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       public Builder clearMassivePropList() {
         if (massivePropListBuilder_ == null) {
           massivePropList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           massivePropListBuilder_.clear();
@@ -1428,7 +1373,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
           massivePropListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo, emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo.Builder, emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfoOrBuilder>(
                   massivePropList_,
-                  ((bitField0_ & 0x00000002) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           massivePropList_ = null;
@@ -1436,12 +1381,115 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return massivePropListBuilder_;
       }
 
-      private int localId_ ;
+      private com.google.protobuf.Internal.IntList dataList_ = emptyIntList();
+      private void ensureDataListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          dataList_ = mutableCopy(dataList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
       /**
        * <pre>
-       *LAMOMNEEAPK OMPAHPEAMOI = 8;
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
        * </pre>
        *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @return A list containing the dataList.
+       */
+      public java.util.List<java.lang.Integer>
+          getDataListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(dataList_) : dataList_;
+      }
+      /**
+       * <pre>
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
+       * </pre>
+       *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @return The count of dataList.
+       */
+      public int getDataListCount() {
+        return dataList_.size();
+      }
+      /**
+       * <pre>
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
+       * </pre>
+       *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @param index The index of the element to return.
+       * @return The dataList at the given index.
+       */
+      public int getDataList(int index) {
+        return dataList_.getInt(index);
+      }
+      /**
+       * <pre>
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
+       * </pre>
+       *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @param index The index to set the value at.
+       * @param value The dataList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDataList(
+          int index, int value) {
+        ensureDataListIsMutable();
+        dataList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
+       * </pre>
+       *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @param value The dataList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addDataList(int value) {
+        ensureDataListIsMutable();
+        dataList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
+       * </pre>
+       *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @param values The dataList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllDataList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureDataListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, dataList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *HKEAEJEIANJ LOAMCJNAIEB = 8;
+       * </pre>
+       *
+       * <code>repeated uint32 data_list = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDataList() {
+        dataList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int localId_ ;
+      /**
        * <code>uint32 local_id = 3;</code>
        * @return The localId.
        */
@@ -1450,10 +1498,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return localId_;
       }
       /**
-       * <pre>
-       *LAMOMNEEAPK OMPAHPEAMOI = 8;
-       * </pre>
-       *
        * <code>uint32 local_id = 3;</code>
        * @param value The localId to set.
        * @return This builder for chaining.
@@ -1465,10 +1509,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *LAMOMNEEAPK OMPAHPEAMOI = 8;
-       * </pre>
-       *
        * <code>uint32 local_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -1658,31 +1698,31 @@ public final class AbilityMixinRecoverInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AbilityMixinRecoverInfo.proto\032\026Breakou" +
-      "tSnapShot.proto\032\031MassivePropSyncInfo.pro" +
+      "\n\035AbilityMixinRecoverInfo.proto\032\031Massive" +
+      "PropSyncInfo.proto\032\026BreakoutSnapShot.pro" +
       "to\"\211\002\n\027AbilityMixinRecoverInfo\022-\n\022breako" +
-      "ut_snap_shot\030\007 \001(\0132\021.BreakoutSnapShot\022\021\n" +
-      "\tdata_list\030\004 \003(\r\022/\n\021massive_prop_list\030\006 " +
-      "\003(\0132\024.MassivePropSyncInfo\022\020\n\010local_id\030\003 " +
+      "ut_snap_shot\030\007 \001(\0132\021.BreakoutSnapShot\022/\n" +
+      "\021massive_prop_list\030\006 \003(\0132\024.MassivePropSy" +
+      "ncInfo\022\021\n\tdata_list\030\004 \003(\r\022\020\n\010local_id\030\003 " +
       "\001(\r\022\036\n\026is_serverbuff_modifier\030\005 \001(\010\022\036\n\024i" +
       "nstanced_ability_id\030\001 \001(\rH\000\022\037\n\025instanced" +
-      "_modifier_id\030\002 \001(\rH\000B\010\n\006SourceB\033\n\031emu.gr" +
+      "_modifier_id\030\002 \001(\rH\000B\010\n\006sourceB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor(),
         });
     internal_static_AbilityMixinRecoverInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilityMixinRecoverInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinRecoverInfo_descriptor,
-        new java.lang.String[] { "BreakoutSnapShot", "DataList", "MassivePropList", "LocalId", "IsServerbuffModifier", "InstancedAbilityId", "InstancedModifierId", "Source", });
-    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor();
+        new java.lang.String[] { "BreakoutSnapShot", "MassivePropList", "DataList", "LocalId", "IsServerbuffModifier", "InstancedAbilityId", "InstancedModifierId", "Source", });
     emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

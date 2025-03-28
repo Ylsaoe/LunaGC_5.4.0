@@ -53,18 +53,22 @@ public final class MassivePropParamOuterClass {
     float getParamList(int index);
 
     /**
-     * <code>uint32 sync_flag = 4;</code>
-     * @return The syncFlag.
-     */
-    int getSyncFlag();
-
-    /**
      * <code>int32 type = 1;</code>
      * @return The type.
      */
     int getType();
+
+    /**
+     * <code>uint32 sync_flag = 4;</code>
+     * @return The syncFlag.
+     */
+    int getSyncFlag();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code MassivePropParam}
    */
   public static final class MassivePropParam extends
@@ -258,17 +262,6 @@ public final class MassivePropParamOuterClass {
     }
     private int paramListMemoizedSerializedSize = -1;
 
-    public static final int SYNC_FLAG_FIELD_NUMBER = 4;
-    private int syncFlag_;
-    /**
-     * <code>uint32 sync_flag = 4;</code>
-     * @return The syncFlag.
-     */
-    @java.lang.Override
-    public int getSyncFlag() {
-      return syncFlag_;
-    }
-
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -278,6 +271,17 @@ public final class MassivePropParamOuterClass {
     @java.lang.Override
     public int getType() {
       return type_;
+    }
+
+    public static final int SYNC_FLAG_FIELD_NUMBER = 4;
+    private int syncFlag_;
+    /**
+     * <code>uint32 sync_flag = 4;</code>
+     * @return The syncFlag.
+     */
+    @java.lang.Override
+    public int getSyncFlag() {
+      return syncFlag_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -376,10 +380,10 @@ public final class MassivePropParamOuterClass {
           .equals(other.getReactionInfoListList())) return false;
       if (!getParamListList()
           .equals(other.getParamListList())) return false;
-      if (getSyncFlag()
-          != other.getSyncFlag()) return false;
       if (getType()
           != other.getType()) return false;
+      if (getSyncFlag()
+          != other.getSyncFlag()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -399,10 +403,10 @@ public final class MassivePropParamOuterClass {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
-      hash = (37 * hash) + SYNC_FLAG_FIELD_NUMBER;
-      hash = (53 * hash) + getSyncFlag();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType();
+      hash = (37 * hash) + SYNC_FLAG_FIELD_NUMBER;
+      hash = (53 * hash) + getSyncFlag();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -499,6 +503,10 @@ public final class MassivePropParamOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code MassivePropParam}
      */
     public static final class Builder extends
@@ -540,9 +548,9 @@ public final class MassivePropParamOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         paramList_ = emptyFloatList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        syncFlag_ = 0;
-
         type_ = 0;
+
+        syncFlag_ = 0;
 
         return this;
       }
@@ -581,8 +589,8 @@ public final class MassivePropParamOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.paramList_ = paramList_;
-        result.syncFlag_ = syncFlag_;
         result.type_ = type_;
+        result.syncFlag_ = syncFlag_;
         onBuilt();
         return result;
       }
@@ -651,11 +659,11 @@ public final class MassivePropParamOuterClass {
           }
           onChanged();
         }
-        if (other.getSyncFlag() != 0) {
-          setSyncFlag(other.getSyncFlag());
-        }
         if (other.getType() != 0) {
           setType(other.getType());
+        }
+        if (other.getSyncFlag() != 0) {
+          setSyncFlag(other.getSyncFlag());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -845,37 +853,6 @@ public final class MassivePropParamOuterClass {
         return this;
       }
 
-      private int syncFlag_ ;
-      /**
-       * <code>uint32 sync_flag = 4;</code>
-       * @return The syncFlag.
-       */
-      @java.lang.Override
-      public int getSyncFlag() {
-        return syncFlag_;
-      }
-      /**
-       * <code>uint32 sync_flag = 4;</code>
-       * @param value The syncFlag to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSyncFlag(int value) {
-        
-        syncFlag_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 sync_flag = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSyncFlag() {
-        
-        syncFlag_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int type_ ;
       /**
        * <code>int32 type = 1;</code>
@@ -903,6 +880,37 @@ public final class MassivePropParamOuterClass {
       public Builder clearType() {
         
         type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int syncFlag_ ;
+      /**
+       * <code>uint32 sync_flag = 4;</code>
+       * @return The syncFlag.
+       */
+      @java.lang.Override
+      public int getSyncFlag() {
+        return syncFlag_;
+      }
+      /**
+       * <code>uint32 sync_flag = 4;</code>
+       * @param value The syncFlag to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSyncFlag(int value) {
+        
+        syncFlag_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 sync_flag = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSyncFlag() {
+        
+        syncFlag_ = 0;
         onChanged();
         return this;
       }
@@ -975,8 +983,8 @@ public final class MassivePropParamOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026MassivePropParam.proto\"c\n\020MassivePropP" +
       "aram\022\032\n\022reaction_info_list\030\002 \003(\r\022\022\n\npara" +
-      "m_list\030\003 \003(\002\022\021\n\tsync_flag\030\004 \001(\r\022\014\n\004type\030" +
-      "\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "m_list\030\003 \003(\002\022\014\n\004type\030\001 \001(\005\022\021\n\tsync_flag\030" +
+      "\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -988,7 +996,7 @@ public final class MassivePropParamOuterClass {
     internal_static_MassivePropParam_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MassivePropParam_descriptor,
-        new java.lang.String[] { "ReactionInfoList", "ParamList", "SyncFlag", "Type", });
+        new java.lang.String[] { "ReactionInfoList", "ParamList", "Type", "SyncFlag", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

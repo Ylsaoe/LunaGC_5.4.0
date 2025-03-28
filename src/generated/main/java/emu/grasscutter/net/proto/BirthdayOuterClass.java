@@ -19,18 +19,22 @@ public final class BirthdayOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day = 2;</code>
+     * <code>uint32 day = 1;</code>
      * @return The day.
      */
     int getDay();
 
     /**
-     * <code>uint32 month = 1;</code>
+     * <code>uint32 month = 2;</code>
      * @return The month.
      */
     int getMonth();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code Birthday}
    */
   public static final class Birthday extends
@@ -77,12 +81,12 @@ public final class BirthdayOuterClass {
               break;
             case 8: {
 
-              month_ = input.readUInt32();
+              day_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              day_ = input.readUInt32();
+              month_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +121,10 @@ public final class BirthdayOuterClass {
               emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.class, emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder.class);
     }
 
-    public static final int DAY_FIELD_NUMBER = 2;
+    public static final int DAY_FIELD_NUMBER = 1;
     private int day_;
     /**
-     * <code>uint32 day = 2;</code>
+     * <code>uint32 day = 1;</code>
      * @return The day.
      */
     @java.lang.Override
@@ -128,10 +132,10 @@ public final class BirthdayOuterClass {
       return day_;
     }
 
-    public static final int MONTH_FIELD_NUMBER = 1;
+    public static final int MONTH_FIELD_NUMBER = 2;
     private int month_;
     /**
-     * <code>uint32 month = 1;</code>
+     * <code>uint32 month = 2;</code>
      * @return The month.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class BirthdayOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (month_ != 0) {
-        output.writeUInt32(1, month_);
-      }
       if (day_ != 0) {
-        output.writeUInt32(2, day_);
+        output.writeUInt32(1, day_);
+      }
+      if (month_ != 0) {
+        output.writeUInt32(2, month_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class BirthdayOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (month_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, month_);
-      }
       if (day_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, day_);
+          .computeUInt32Size(1, day_);
+      }
+      if (month_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, month_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class BirthdayOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code Birthday}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class BirthdayOuterClass {
 
       private int day_ ;
       /**
-       * <code>uint32 day = 2;</code>
+       * <code>uint32 day = 1;</code>
        * @return The day.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class BirthdayOuterClass {
         return day_;
       }
       /**
-       * <code>uint32 day = 2;</code>
+       * <code>uint32 day = 1;</code>
        * @param value The day to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class BirthdayOuterClass {
         return this;
       }
       /**
-       * <code>uint32 day = 2;</code>
+       * <code>uint32 day = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDay() {
@@ -491,7 +499,7 @@ public final class BirthdayOuterClass {
 
       private int month_ ;
       /**
-       * <code>uint32 month = 1;</code>
+       * <code>uint32 month = 2;</code>
        * @return The month.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class BirthdayOuterClass {
         return month_;
       }
       /**
-       * <code>uint32 month = 1;</code>
+       * <code>uint32 month = 2;</code>
        * @param value The month to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class BirthdayOuterClass {
         return this;
       }
       /**
-       * <code>uint32 month = 1;</code>
+       * <code>uint32 month = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonth() {
@@ -586,8 +594,8 @@ public final class BirthdayOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016Birthday.proto\"&\n\010Birthday\022\013\n\003day\030\002 \001(" +
-      "\r\022\r\n\005month\030\001 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\016Birthday.proto\"&\n\010Birthday\022\013\n\003day\030\001 \001(" +
+      "\r\022\r\n\005month\030\002 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

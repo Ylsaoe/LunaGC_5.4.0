@@ -49,6 +49,10 @@ public final class MassivePropSyncInfoOuterClass {
     long getId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code MassivePropSyncInfo}
    */
   public static final class MassivePropSyncInfo extends
@@ -365,6 +369,10 @@ public final class MassivePropSyncInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code MassivePropSyncInfo}
      */
     public static final class Builder extends

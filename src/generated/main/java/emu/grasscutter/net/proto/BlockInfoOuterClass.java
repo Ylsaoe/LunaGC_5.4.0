@@ -19,18 +19,6 @@ public final class BlockInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bytes bin_data = 3;</code>
-     * @return The binData.
-     */
-    com.google.protobuf.ByteString getBinData();
-
-    /**
-     * <code>bool is_dirty = 4;</code>
-     * @return The isDirty.
-     */
-    boolean getIsDirty();
-
-    /**
      * <code>uint32 block_id = 1;</code>
      * @return The blockId.
      */
@@ -41,8 +29,24 @@ public final class BlockInfoOuterClass {
      * @return The dataVersion.
      */
     int getDataVersion();
+
+    /**
+     * <code>bytes bin_data = 3;</code>
+     * @return The binData.
+     */
+    com.google.protobuf.ByteString getBinData();
+
+    /**
+     * <code>bool is_dirty = 4;</code>
+     * @return The isDirty.
+     */
+    boolean getIsDirty();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BlockInfo}
    */
   public static final class BlockInfo extends
@@ -140,28 +144,6 @@ public final class BlockInfoOuterClass {
               emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo.class, emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo.Builder.class);
     }
 
-    public static final int BIN_DATA_FIELD_NUMBER = 3;
-    private com.google.protobuf.ByteString binData_;
-    /**
-     * <code>bytes bin_data = 3;</code>
-     * @return The binData.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getBinData() {
-      return binData_;
-    }
-
-    public static final int IS_DIRTY_FIELD_NUMBER = 4;
-    private boolean isDirty_;
-    /**
-     * <code>bool is_dirty = 4;</code>
-     * @return The isDirty.
-     */
-    @java.lang.Override
-    public boolean getIsDirty() {
-      return isDirty_;
-    }
-
     public static final int BLOCK_ID_FIELD_NUMBER = 1;
     private int blockId_;
     /**
@@ -182,6 +164,28 @@ public final class BlockInfoOuterClass {
     @java.lang.Override
     public int getDataVersion() {
       return dataVersion_;
+    }
+
+    public static final int BIN_DATA_FIELD_NUMBER = 3;
+    private com.google.protobuf.ByteString binData_;
+    /**
+     * <code>bytes bin_data = 3;</code>
+     * @return The binData.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getBinData() {
+      return binData_;
+    }
+
+    public static final int IS_DIRTY_FIELD_NUMBER = 4;
+    private boolean isDirty_;
+    /**
+     * <code>bool is_dirty = 4;</code>
+     * @return The isDirty.
+     */
+    @java.lang.Override
+    public boolean getIsDirty() {
+      return isDirty_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -250,14 +254,14 @@ public final class BlockInfoOuterClass {
       }
       emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo other = (emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo) obj;
 
-      if (!getBinData()
-          .equals(other.getBinData())) return false;
-      if (getIsDirty()
-          != other.getIsDirty()) return false;
       if (getBlockId()
           != other.getBlockId()) return false;
       if (getDataVersion()
           != other.getDataVersion()) return false;
+      if (!getBinData()
+          .equals(other.getBinData())) return false;
+      if (getIsDirty()
+          != other.getIsDirty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -269,15 +273,15 @@ public final class BlockInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBlockId();
+      hash = (37 * hash) + DATA_VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getDataVersion();
       hash = (37 * hash) + BIN_DATA_FIELD_NUMBER;
       hash = (53 * hash) + getBinData().hashCode();
       hash = (37 * hash) + IS_DIRTY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDirty());
-      hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBlockId();
-      hash = (37 * hash) + DATA_VERSION_FIELD_NUMBER;
-      hash = (53 * hash) + getDataVersion();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -374,6 +378,10 @@ public final class BlockInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BlockInfo}
      */
     public static final class Builder extends
@@ -411,13 +419,13 @@ public final class BlockInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        binData_ = com.google.protobuf.ByteString.EMPTY;
-
-        isDirty_ = false;
-
         blockId_ = 0;
 
         dataVersion_ = 0;
+
+        binData_ = com.google.protobuf.ByteString.EMPTY;
+
+        isDirty_ = false;
 
         return this;
       }
@@ -445,10 +453,10 @@ public final class BlockInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo buildPartial() {
         emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo result = new emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo(this);
-        result.binData_ = binData_;
-        result.isDirty_ = isDirty_;
         result.blockId_ = blockId_;
         result.dataVersion_ = dataVersion_;
+        result.binData_ = binData_;
+        result.isDirty_ = isDirty_;
         onBuilt();
         return result;
       }
@@ -497,17 +505,17 @@ public final class BlockInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo other) {
         if (other == emu.grasscutter.net.proto.BlockInfoOuterClass.BlockInfo.getDefaultInstance()) return this;
-        if (other.getBinData() != com.google.protobuf.ByteString.EMPTY) {
-          setBinData(other.getBinData());
-        }
-        if (other.getIsDirty() != false) {
-          setIsDirty(other.getIsDirty());
-        }
         if (other.getBlockId() != 0) {
           setBlockId(other.getBlockId());
         }
         if (other.getDataVersion() != 0) {
           setDataVersion(other.getDataVersion());
+        }
+        if (other.getBinData() != com.google.protobuf.ByteString.EMPTY) {
+          setBinData(other.getBinData());
+        }
+        if (other.getIsDirty() != false) {
+          setIsDirty(other.getIsDirty());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -535,6 +543,68 @@ public final class BlockInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int blockId_ ;
+      /**
+       * <code>uint32 block_id = 1;</code>
+       * @return The blockId.
+       */
+      @java.lang.Override
+      public int getBlockId() {
+        return blockId_;
+      }
+      /**
+       * <code>uint32 block_id = 1;</code>
+       * @param value The blockId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBlockId(int value) {
+        
+        blockId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 block_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBlockId() {
+        
+        blockId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dataVersion_ ;
+      /**
+       * <code>uint32 data_version = 2;</code>
+       * @return The dataVersion.
+       */
+      @java.lang.Override
+      public int getDataVersion() {
+        return dataVersion_;
+      }
+      /**
+       * <code>uint32 data_version = 2;</code>
+       * @param value The dataVersion to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDataVersion(int value) {
+        
+        dataVersion_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 data_version = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDataVersion() {
+        
+        dataVersion_ = 0;
+        onChanged();
         return this;
       }
 
@@ -599,68 +669,6 @@ public final class BlockInfoOuterClass {
       public Builder clearIsDirty() {
         
         isDirty_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int blockId_ ;
-      /**
-       * <code>uint32 block_id = 1;</code>
-       * @return The blockId.
-       */
-      @java.lang.Override
-      public int getBlockId() {
-        return blockId_;
-      }
-      /**
-       * <code>uint32 block_id = 1;</code>
-       * @param value The blockId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBlockId(int value) {
-        
-        blockId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 block_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBlockId() {
-        
-        blockId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dataVersion_ ;
-      /**
-       * <code>uint32 data_version = 2;</code>
-       * @return The dataVersion.
-       */
-      @java.lang.Override
-      public int getDataVersion() {
-        return dataVersion_;
-      }
-      /**
-       * <code>uint32 data_version = 2;</code>
-       * @param value The dataVersion to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDataVersion(int value) {
-        
-        dataVersion_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 data_version = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDataVersion() {
-        
-        dataVersion_ = 0;
         onChanged();
         return this;
       }
@@ -731,9 +739,9 @@ public final class BlockInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017BlockInfo.proto\"W\n\tBlockInfo\022\020\n\010bin_da" +
-      "ta\030\003 \001(\014\022\020\n\010is_dirty\030\004 \001(\010\022\020\n\010block_id\030\001" +
-      " \001(\r\022\024\n\014data_version\030\002 \001(\rB\033\n\031emu.grassc" +
+      "\n\017BlockInfo.proto\"W\n\tBlockInfo\022\020\n\010block_" +
+      "id\030\001 \001(\r\022\024\n\014data_version\030\002 \001(\r\022\020\n\010bin_da" +
+      "ta\030\003 \001(\014\022\020\n\010is_dirty\030\004 \001(\010B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -745,7 +753,7 @@ public final class BlockInfoOuterClass {
     internal_static_BlockInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlockInfo_descriptor,
-        new java.lang.String[] { "BinData", "IsDirty", "BlockId", "DataVersion", });
+        new java.lang.String[] { "BlockId", "DataVersion", "BinData", "IsDirty", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

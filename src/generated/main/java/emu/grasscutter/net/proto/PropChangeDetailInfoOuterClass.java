@@ -36,6 +36,10 @@ public final class PropChangeDetailInfoOuterClass {
     public emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo.DetailInfoCase getDetailInfoCase();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code PropChangeDetailInfo}
    */
   public static final class PropChangeDetailInfo extends
@@ -365,6 +369,10 @@ public final class PropChangeDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code PropChangeDetailInfo}
      */
     public static final class Builder extends

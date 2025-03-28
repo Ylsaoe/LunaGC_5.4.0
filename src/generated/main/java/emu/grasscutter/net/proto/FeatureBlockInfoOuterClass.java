@@ -31,6 +31,10 @@ public final class FeatureBlockInfoOuterClass {
     int getEndTime();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code FeatureBlockInfo}
    */
   public static final class FeatureBlockInfo extends
@@ -306,6 +310,10 @@ public final class FeatureBlockInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code FeatureBlockInfo}
      */
     public static final class Builder extends

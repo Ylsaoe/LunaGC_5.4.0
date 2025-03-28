@@ -25,6 +25,10 @@ public final class AbilityMixinChangePhlogistonOuterClass {
     float getValue();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code AbilityMixinChangePhlogiston}
    */
   public static final class AbilityMixinChangePhlogiston extends
@@ -275,6 +279,10 @@ public final class AbilityMixinChangePhlogistonOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code AbilityMixinChangePhlogiston}
      */
     public static final class Builder extends

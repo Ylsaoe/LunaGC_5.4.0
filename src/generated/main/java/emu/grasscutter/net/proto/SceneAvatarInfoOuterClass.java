@@ -19,6 +19,21 @@ public final class SceneAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.SceneWeaponInfo weapon = 8;</code>
+     * @return Whether the weapon field is set.
+     */
+    boolean hasWeapon();
+    /**
+     * <code>.SceneWeaponInfo weapon = 8;</code>
+     * @return The weapon.
+     */
+    emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo getWeapon();
+    /**
+     * <code>.SceneWeaponInfo weapon = 8;</code>
+     */
+    emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder();
+
+    /**
      * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 14;</code>
      */
     int getProudSkillExtraLevelMapCount();
@@ -51,6 +66,70 @@ public final class SceneAvatarInfoOuterClass {
 
     int getProudSkillExtraLevelMapOrThrow(
         int key);
+
+    /**
+     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * @return Whether the excelInfo field is set.
+     */
+    boolean hasExcelInfo();
+    /**
+     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * @return The excelInfo.
+     */
+    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo getExcelInfo();
+    /**
+     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     */
+    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder();
+
+    /**
+     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * @return Whether the curVehicleInfo field is set.
+     */
+    boolean hasCurVehicleInfo();
+    /**
+     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * @return The curVehicleInfo.
+     */
+    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo getCurVehicleInfo();
+    /**
+     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     */
+    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder();
+
+    /**
+     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * @return A list containing the inherentProudSkillList.
+     */
+    java.util.List<java.lang.Integer> getInherentProudSkillListList();
+    /**
+     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * @return The count of inherentProudSkillList.
+     */
+    int getInherentProudSkillListCount();
+    /**
+     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The inherentProudSkillList at the given index.
+     */
+    int getInherentProudSkillList(int index);
+
+    /**
+     * <code>repeated uint32 equip_id_list = 5;</code>
+     * @return A list containing the equipIdList.
+     */
+    java.util.List<java.lang.Integer> getEquipIdListList();
+    /**
+     * <code>repeated uint32 equip_id_list = 5;</code>
+     * @return The count of equipIdList.
+     */
+    int getEquipIdListCount();
+    /**
+     * <code>repeated uint32 equip_id_list = 5;</code>
+     * @param index The index of the element to return.
+     * @return The equipIdList at the given index.
+     */
+    int getEquipIdList(int index);
 
     /**
      * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
@@ -87,124 +166,21 @@ public final class SceneAvatarInfoOuterClass {
         int key);
 
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated uint32 talent_id_list = 7;</code>
+     * @return A list containing the talentIdList.
      */
-    java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> 
-        getReliquaryListList();
+    java.util.List<java.lang.Integer> getTalentIdListList();
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     * <code>repeated uint32 talent_id_list = 7;</code>
+     * @return The count of talentIdList.
      */
-    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index);
+    int getTalentIdListCount();
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    int getReliquaryListCount();
-    /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
-        getReliquaryListOrBuilderList();
-    /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
-        int index);
-
-    /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
-     * @return Whether the excelInfo field is set.
-     */
-    boolean hasExcelInfo();
-    /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
-     * @return The excelInfo.
-     */
-    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo getExcelInfo();
-    /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
-     */
-    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder();
-
-    /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
-     * @return Whether the curVehicleInfo field is set.
-     */
-    boolean hasCurVehicleInfo();
-    /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
-     * @return The curVehicleInfo.
-     */
-    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo getCurVehicleInfo();
-    /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
-     */
-    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder();
-
-    /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
-     * @return A list containing the equipIdList.
-     */
-    java.util.List<java.lang.Integer> getEquipIdListList();
-    /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
-     * @return The count of equipIdList.
-     */
-    int getEquipIdListCount();
-    /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 talent_id_list = 7;</code>
      * @param index The index of the element to return.
-     * @return The equipIdList at the given index.
+     * @return The talentIdList at the given index.
      */
-    int getEquipIdList(int index);
-
-    /**
-     * <code>.SceneWeaponInfo weapon = 8;</code>
-     * @return Whether the weapon field is set.
-     */
-    boolean hasWeapon();
-    /**
-     * <code>.SceneWeaponInfo weapon = 8;</code>
-     * @return The weapon.
-     */
-    emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo getWeapon();
-    /**
-     * <code>.SceneWeaponInfo weapon = 8;</code>
-     */
-    emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder();
-
-    /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
-     * @return A list containing the inherentProudSkillList.
-     */
-    java.util.List<java.lang.Integer> getInherentProudSkillListList();
-    /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
-     * @return The count of inherentProudSkillList.
-     */
-    int getInherentProudSkillListCount();
-    /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
-     * @param index The index of the element to return.
-     * @return The inherentProudSkillList at the given index.
-     */
-    int getInherentProudSkillList(int index);
-
-    /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
-     * @return A list containing the teamResonanceList.
-     */
-    java.util.List<java.lang.Integer> getTeamResonanceListList();
-    /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
-     * @return The count of teamResonanceList.
-     */
-    int getTeamResonanceListCount();
-    /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
-     * @param index The index of the element to return.
-     * @return The teamResonanceList at the given index.
-     */
-    int getTeamResonanceList(int index);
+    int getTalentIdList(int index);
 
     /**
      * <code>repeated .ServerBuff server_buff_list = 15;</code>
@@ -231,39 +207,51 @@ public final class SceneAvatarInfoOuterClass {
         int index);
 
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
-     * @return A list containing the talentIdList.
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
      */
-    java.util.List<java.lang.Integer> getTalentIdListList();
+    java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> 
+        getReliquaryListList();
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
-     * @return The count of talentIdList.
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
      */
-    int getTalentIdListCount();
+    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index);
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    int getReliquaryListCount();
+    /**
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
+        getReliquaryListOrBuilderList();
+    /**
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * @return A list containing the teamResonanceList.
+     */
+    java.util.List<java.lang.Integer> getTeamResonanceListList();
+    /**
+     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * @return The count of teamResonanceList.
+     */
+    int getTeamResonanceListCount();
+    /**
+     * <code>repeated uint32 team_resonance_list = 16;</code>
      * @param index The index of the element to return.
-     * @return The talentIdList at the given index.
+     * @return The teamResonanceList at the given index.
      */
-    int getTalentIdList(int index);
+    int getTeamResonanceList(int index);
 
     /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
+     * <code>uint64 guid = 3;</code>
+     * @return The guid.
      */
-    int getUid();
-
-    /**
-     * <code>uint32 wearing_flycloak_id = 17;</code>
-     * @return The wearingFlycloakId.
-     */
-    int getWearingFlycloakId();
-
-    /**
-     * <code>uint32 anim_hash = 22;</code>
-     * @return The animHash.
-     */
-    int getAnimHash();
+    long getGuid();
 
     /**
      * <code>uint32 avatar_id = 2;</code>
@@ -272,16 +260,16 @@ public final class SceneAvatarInfoOuterClass {
     int getAvatarId();
 
     /**
-     * <code>uint32 skill_depot_id = 6;</code>
-     * @return The skillDepotId.
+     * <code>uint32 core_proud_skill_level = 11;</code>
+     * @return The coreProudSkillLevel.
      */
-    int getSkillDepotId();
+    int getCoreProudSkillLevel();
 
     /**
-     * <code>uint32 costume_id = 19;</code>
-     * @return The costumeId.
+     * <code>uint32 wearing_flycloak_id = 17;</code>
+     * @return The wearingFlycloakId.
      */
-    int getCostumeId();
+    int getWearingFlycloakId();
 
     /**
      * <code>uint32 trace_effect_id = 23;</code>
@@ -290,16 +278,28 @@ public final class SceneAvatarInfoOuterClass {
     int getTraceEffectId();
 
     /**
-     * <code>uint32 core_proud_skill_level = 11;</code>
-     * @return The coreProudSkillLevel.
-     */
-    int getCoreProudSkillLevel();
-
-    /**
      * <code>uint32 born_time = 18;</code>
      * @return The bornTime.
      */
     int getBornTime();
+
+    /**
+     * <code>uint32 anim_hash = 22;</code>
+     * @return The animHash.
+     */
+    int getAnimHash();
+
+    /**
+     * <code>uint32 uid = 1;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>uint32 costume_id = 19;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
 
     /**
      * <code>uint32 peer_id = 4;</code>
@@ -308,12 +308,16 @@ public final class SceneAvatarInfoOuterClass {
     int getPeerId();
 
     /**
-     * <code>uint64 guid = 3;</code>
-     * @return The guid.
+     * <code>uint32 skill_depot_id = 6;</code>
+     * @return The skillDepotId.
      */
-    long getGuid();
+    int getSkillDepotId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code SceneAvatarInfo}
    */
   public static final class SceneAvatarInfo extends
@@ -326,12 +330,12 @@ public final class SceneAvatarInfoOuterClass {
       super(builder);
     }
     private SceneAvatarInfo() {
-      reliquaryList_ = java.util.Collections.emptyList();
-      equipIdList_ = emptyIntList();
       inherentProudSkillList_ = emptyIntList();
-      teamResonanceList_ = emptyIntList();
-      serverBuffList_ = java.util.Collections.emptyList();
+      equipIdList_ = emptyIntList();
       talentIdList_ = emptyIntList();
+      serverBuffList_ = java.util.Collections.emptyList();
+      reliquaryList_ = java.util.Collections.emptyList();
+      teamResonanceList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -386,9 +390,9 @@ public final class SceneAvatarInfoOuterClass {
               break;
             }
             case 40: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 equipIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000004;
               }
               equipIdList_.addInt(input.readUInt32());
               break;
@@ -396,9 +400,9 @@ public final class SceneAvatarInfoOuterClass {
             case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
                 equipIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
                 equipIdList_.addInt(input.readUInt32());
@@ -412,9 +416,9 @@ public final class SceneAvatarInfoOuterClass {
               break;
             }
             case 56: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00000010;
               }
               talentIdList_.addInt(input.readUInt32());
               break;
@@ -422,9 +426,9 @@ public final class SceneAvatarInfoOuterClass {
             case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000080) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
                 talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00000010;
               }
               while (input.getBytesUntilLimit() > 0) {
                 talentIdList_.addInt(input.readUInt32());
@@ -446,9 +450,9 @@ public final class SceneAvatarInfoOuterClass {
               break;
             }
             case 74: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                 reliquaryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000040;
               }
               reliquaryList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.parser(), extensionRegistry));
@@ -460,9 +464,9 @@ public final class SceneAvatarInfoOuterClass {
               break;
             }
             case 96: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 inherentProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000002;
               }
               inherentProudSkillList_.addInt(input.readUInt32());
               break;
@@ -470,9 +474,9 @@ public final class SceneAvatarInfoOuterClass {
             case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 inherentProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 inherentProudSkillList_.addInt(input.readUInt32());
@@ -481,10 +485,10 @@ public final class SceneAvatarInfoOuterClass {
               break;
             }
             case 106: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 skillLevelMap_ = com.google.protobuf.MapField.newMapField(
                     SkillLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000008;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               skillLevelMap__ = input.readMessage(
@@ -507,18 +511,18 @@ public final class SceneAvatarInfoOuterClass {
               break;
             }
             case 122: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>();
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00000020;
               }
               serverBuffList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.parser(), extensionRegistry));
               break;
             }
             case 128: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                 teamResonanceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000080;
               }
               teamResonanceList_.addInt(input.readUInt32());
               break;
@@ -526,9 +530,9 @@ public final class SceneAvatarInfoOuterClass {
             case 130: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000020) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0) && input.getBytesUntilLimit() > 0) {
                 teamResonanceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000080;
               }
               while (input.getBytesUntilLimit() > 0) {
                 teamResonanceList_.addInt(input.readUInt32());
@@ -602,22 +606,22 @@ public final class SceneAvatarInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           equipIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000080) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           talentIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
           reliquaryList_ = java.util.Collections.unmodifiableList(reliquaryList_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           inherentProudSkillList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000040) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
           teamResonanceList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -649,6 +653,32 @@ public final class SceneAvatarInfoOuterClass {
       return emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.internal_static_SceneAvatarInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo.class, emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo.Builder.class);
+    }
+
+    public static final int WEAPON_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo weapon_;
+    /**
+     * <code>.SceneWeaponInfo weapon = 8;</code>
+     * @return Whether the weapon field is set.
+     */
+    @java.lang.Override
+    public boolean hasWeapon() {
+      return weapon_ != null;
+    }
+    /**
+     * <code>.SceneWeaponInfo weapon = 8;</code>
+     * @return The weapon.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo getWeapon() {
+      return weapon_ == null ? emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
+    }
+    /**
+     * <code>.SceneWeaponInfo weapon = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder() {
+      return getWeapon();
     }
 
     public static final int PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER = 14;
@@ -732,6 +762,114 @@ public final class SceneAvatarInfoOuterClass {
       return map.get(key);
     }
 
+    public static final int EXCEL_INFO_FIELD_NUMBER = 21;
+    private emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo excelInfo_;
+    /**
+     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * @return Whether the excelInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasExcelInfo() {
+      return excelInfo_ != null;
+    }
+    /**
+     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     * @return The excelInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo getExcelInfo() {
+      return excelInfo_ == null ? emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.getDefaultInstance() : excelInfo_;
+    }
+    /**
+     * <code>.AvatarExcelInfo excel_info = 21;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder() {
+      return getExcelInfo();
+    }
+
+    public static final int CUR_VEHICLE_INFO_FIELD_NUMBER = 20;
+    private emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo curVehicleInfo_;
+    /**
+     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * @return Whether the curVehicleInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasCurVehicleInfo() {
+      return curVehicleInfo_ != null;
+    }
+    /**
+     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     * @return The curVehicleInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo getCurVehicleInfo() {
+      return curVehicleInfo_ == null ? emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.getDefaultInstance() : curVehicleInfo_;
+    }
+    /**
+     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder() {
+      return getCurVehicleInfo();
+    }
+
+    public static final int INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList inherentProudSkillList_;
+    /**
+     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * @return A list containing the inherentProudSkillList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getInherentProudSkillListList() {
+      return inherentProudSkillList_;
+    }
+    /**
+     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * @return The count of inherentProudSkillList.
+     */
+    public int getInherentProudSkillListCount() {
+      return inherentProudSkillList_.size();
+    }
+    /**
+     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The inherentProudSkillList at the given index.
+     */
+    public int getInherentProudSkillList(int index) {
+      return inherentProudSkillList_.getInt(index);
+    }
+    private int inherentProudSkillListMemoizedSerializedSize = -1;
+
+    public static final int EQUIP_ID_LIST_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.IntList equipIdList_;
+    /**
+     * <code>repeated uint32 equip_id_list = 5;</code>
+     * @return A list containing the equipIdList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getEquipIdListList() {
+      return equipIdList_;
+    }
+    /**
+     * <code>repeated uint32 equip_id_list = 5;</code>
+     * @return The count of equipIdList.
+     */
+    public int getEquipIdListCount() {
+      return equipIdList_.size();
+    }
+    /**
+     * <code>repeated uint32 equip_id_list = 5;</code>
+     * @param index The index of the element to return.
+     * @return The equipIdList at the given index.
+     */
+    public int getEquipIdList(int index) {
+      return equipIdList_.getInt(index);
+    }
+    private int equipIdListMemoizedSerializedSize = -1;
+
     public static final int SKILL_LEVEL_MAP_FIELD_NUMBER = 13;
     private static final class SkillLevelMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
@@ -813,207 +951,33 @@ public final class SceneAvatarInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int RELIQUARY_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> reliquaryList_;
+    public static final int TALENT_ID_LIST_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList talentIdList_;
     /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> getReliquaryListList() {
-      return reliquaryList_;
-    }
-    /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
-        getReliquaryListOrBuilderList() {
-      return reliquaryList_;
-    }
-    /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getReliquaryListCount() {
-      return reliquaryList_.size();
-    }
-    /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index) {
-      return reliquaryList_.get(index);
-    }
-    /**
-     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
-        int index) {
-      return reliquaryList_.get(index);
-    }
-
-    public static final int EXCEL_INFO_FIELD_NUMBER = 21;
-    private emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo excelInfo_;
-    /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
-     * @return Whether the excelInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasExcelInfo() {
-      return excelInfo_ != null;
-    }
-    /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
-     * @return The excelInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo getExcelInfo() {
-      return excelInfo_ == null ? emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo.getDefaultInstance() : excelInfo_;
-    }
-    /**
-     * <code>.AvatarExcelInfo excel_info = 21;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder() {
-      return getExcelInfo();
-    }
-
-    public static final int CUR_VEHICLE_INFO_FIELD_NUMBER = 20;
-    private emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo curVehicleInfo_;
-    /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
-     * @return Whether the curVehicleInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasCurVehicleInfo() {
-      return curVehicleInfo_ != null;
-    }
-    /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
-     * @return The curVehicleInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo getCurVehicleInfo() {
-      return curVehicleInfo_ == null ? emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfo.getDefaultInstance() : curVehicleInfo_;
-    }
-    /**
-     * <code>.CurVehicleInfo cur_vehicle_info = 20;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CurVehicleInfoOuterClass.CurVehicleInfoOrBuilder getCurVehicleInfoOrBuilder() {
-      return getCurVehicleInfo();
-    }
-
-    public static final int EQUIP_ID_LIST_FIELD_NUMBER = 5;
-    private com.google.protobuf.Internal.IntList equipIdList_;
-    /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
-     * @return A list containing the equipIdList.
+     * <code>repeated uint32 talent_id_list = 7;</code>
+     * @return A list containing the talentIdList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getEquipIdListList() {
-      return equipIdList_;
+        getTalentIdListList() {
+      return talentIdList_;
     }
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
-     * @return The count of equipIdList.
+     * <code>repeated uint32 talent_id_list = 7;</code>
+     * @return The count of talentIdList.
      */
-    public int getEquipIdListCount() {
-      return equipIdList_.size();
+    public int getTalentIdListCount() {
+      return talentIdList_.size();
     }
     /**
-     * <code>repeated uint32 equip_id_list = 5;</code>
+     * <code>repeated uint32 talent_id_list = 7;</code>
      * @param index The index of the element to return.
-     * @return The equipIdList at the given index.
+     * @return The talentIdList at the given index.
      */
-    public int getEquipIdList(int index) {
-      return equipIdList_.getInt(index);
+    public int getTalentIdList(int index) {
+      return talentIdList_.getInt(index);
     }
-    private int equipIdListMemoizedSerializedSize = -1;
-
-    public static final int WEAPON_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo weapon_;
-    /**
-     * <code>.SceneWeaponInfo weapon = 8;</code>
-     * @return Whether the weapon field is set.
-     */
-    @java.lang.Override
-    public boolean hasWeapon() {
-      return weapon_ != null;
-    }
-    /**
-     * <code>.SceneWeaponInfo weapon = 8;</code>
-     * @return The weapon.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo getWeapon() {
-      return weapon_ == null ? emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
-    }
-    /**
-     * <code>.SceneWeaponInfo weapon = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder() {
-      return getWeapon();
-    }
-
-    public static final int INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER = 12;
-    private com.google.protobuf.Internal.IntList inherentProudSkillList_;
-    /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
-     * @return A list containing the inherentProudSkillList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getInherentProudSkillListList() {
-      return inherentProudSkillList_;
-    }
-    /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
-     * @return The count of inherentProudSkillList.
-     */
-    public int getInherentProudSkillListCount() {
-      return inherentProudSkillList_.size();
-    }
-    /**
-     * <code>repeated uint32 inherent_proud_skill_list = 12;</code>
-     * @param index The index of the element to return.
-     * @return The inherentProudSkillList at the given index.
-     */
-    public int getInherentProudSkillList(int index) {
-      return inherentProudSkillList_.getInt(index);
-    }
-    private int inherentProudSkillListMemoizedSerializedSize = -1;
-
-    public static final int TEAM_RESONANCE_LIST_FIELD_NUMBER = 16;
-    private com.google.protobuf.Internal.IntList teamResonanceList_;
-    /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
-     * @return A list containing the teamResonanceList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTeamResonanceListList() {
-      return teamResonanceList_;
-    }
-    /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
-     * @return The count of teamResonanceList.
-     */
-    public int getTeamResonanceListCount() {
-      return teamResonanceList_.size();
-    }
-    /**
-     * <code>repeated uint32 team_resonance_list = 16;</code>
-     * @param index The index of the element to return.
-     * @return The teamResonanceList at the given index.
-     */
-    public int getTeamResonanceList(int index) {
-      return teamResonanceList_.getInt(index);
-    }
-    private int teamResonanceListMemoizedSerializedSize = -1;
+    private int talentIdListMemoizedSerializedSize = -1;
 
     public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_;
@@ -1055,65 +1019,83 @@ public final class SceneAvatarInfoOuterClass {
       return serverBuffList_.get(index);
     }
 
-    public static final int TALENT_ID_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList talentIdList_;
+    public static final int RELIQUARY_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> reliquaryList_;
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
-     * @return A list containing the talentIdList.
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> getReliquaryListList() {
+      return reliquaryList_;
+    }
+    /**
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
+        getReliquaryListOrBuilderList() {
+      return reliquaryList_;
+    }
+    /**
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    @java.lang.Override
+    public int getReliquaryListCount() {
+      return reliquaryList_.size();
+    }
+    /**
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index) {
+      return reliquaryList_.get(index);
+    }
+    /**
+     * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
+        int index) {
+      return reliquaryList_.get(index);
+    }
+
+    public static final int TEAM_RESONANCE_LIST_FIELD_NUMBER = 16;
+    private com.google.protobuf.Internal.IntList teamResonanceList_;
+    /**
+     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * @return A list containing the teamResonanceList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getTalentIdListList() {
-      return talentIdList_;
+        getTeamResonanceListList() {
+      return teamResonanceList_;
     }
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
-     * @return The count of talentIdList.
+     * <code>repeated uint32 team_resonance_list = 16;</code>
+     * @return The count of teamResonanceList.
      */
-    public int getTalentIdListCount() {
-      return talentIdList_.size();
+    public int getTeamResonanceListCount() {
+      return teamResonanceList_.size();
     }
     /**
-     * <code>repeated uint32 talent_id_list = 7;</code>
+     * <code>repeated uint32 team_resonance_list = 16;</code>
      * @param index The index of the element to return.
-     * @return The talentIdList at the given index.
+     * @return The teamResonanceList at the given index.
      */
-    public int getTalentIdList(int index) {
-      return talentIdList_.getInt(index);
+    public int getTeamResonanceList(int index) {
+      return teamResonanceList_.getInt(index);
     }
-    private int talentIdListMemoizedSerializedSize = -1;
+    private int teamResonanceListMemoizedSerializedSize = -1;
 
-    public static final int UID_FIELD_NUMBER = 1;
-    private int uid_;
+    public static final int GUID_FIELD_NUMBER = 3;
+    private long guid_;
     /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
+     * <code>uint64 guid = 3;</code>
+     * @return The guid.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int WEARING_FLYCLOAK_ID_FIELD_NUMBER = 17;
-    private int wearingFlycloakId_;
-    /**
-     * <code>uint32 wearing_flycloak_id = 17;</code>
-     * @return The wearingFlycloakId.
-     */
-    @java.lang.Override
-    public int getWearingFlycloakId() {
-      return wearingFlycloakId_;
-    }
-
-    public static final int ANIM_HASH_FIELD_NUMBER = 22;
-    private int animHash_;
-    /**
-     * <code>uint32 anim_hash = 22;</code>
-     * @return The animHash.
-     */
-    @java.lang.Override
-    public int getAnimHash() {
-      return animHash_;
+    public long getGuid() {
+      return guid_;
     }
 
     public static final int AVATAR_ID_FIELD_NUMBER = 2;
@@ -1127,26 +1109,26 @@ public final class SceneAvatarInfoOuterClass {
       return avatarId_;
     }
 
-    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 6;
-    private int skillDepotId_;
+    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 11;
+    private int coreProudSkillLevel_;
     /**
-     * <code>uint32 skill_depot_id = 6;</code>
-     * @return The skillDepotId.
+     * <code>uint32 core_proud_skill_level = 11;</code>
+     * @return The coreProudSkillLevel.
      */
     @java.lang.Override
-    public int getSkillDepotId() {
-      return skillDepotId_;
+    public int getCoreProudSkillLevel() {
+      return coreProudSkillLevel_;
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 19;
-    private int costumeId_;
+    public static final int WEARING_FLYCLOAK_ID_FIELD_NUMBER = 17;
+    private int wearingFlycloakId_;
     /**
-     * <code>uint32 costume_id = 19;</code>
-     * @return The costumeId.
+     * <code>uint32 wearing_flycloak_id = 17;</code>
+     * @return The wearingFlycloakId.
      */
     @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
+    public int getWearingFlycloakId() {
+      return wearingFlycloakId_;
     }
 
     public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 23;
@@ -1160,17 +1142,6 @@ public final class SceneAvatarInfoOuterClass {
       return traceEffectId_;
     }
 
-    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 11;
-    private int coreProudSkillLevel_;
-    /**
-     * <code>uint32 core_proud_skill_level = 11;</code>
-     * @return The coreProudSkillLevel.
-     */
-    @java.lang.Override
-    public int getCoreProudSkillLevel() {
-      return coreProudSkillLevel_;
-    }
-
     public static final int BORN_TIME_FIELD_NUMBER = 18;
     private int bornTime_;
     /**
@@ -1180,6 +1151,39 @@ public final class SceneAvatarInfoOuterClass {
     @java.lang.Override
     public int getBornTime() {
       return bornTime_;
+    }
+
+    public static final int ANIM_HASH_FIELD_NUMBER = 22;
+    private int animHash_;
+    /**
+     * <code>uint32 anim_hash = 22;</code>
+     * @return The animHash.
+     */
+    @java.lang.Override
+    public int getAnimHash() {
+      return animHash_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 1;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 1;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int COSTUME_ID_FIELD_NUMBER = 19;
+    private int costumeId_;
+    /**
+     * <code>uint32 costume_id = 19;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
     }
 
     public static final int PEER_ID_FIELD_NUMBER = 4;
@@ -1193,15 +1197,15 @@ public final class SceneAvatarInfoOuterClass {
       return peerId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 3;
-    private long guid_;
+    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 6;
+    private int skillDepotId_;
     /**
-     * <code>uint64 guid = 3;</code>
-     * @return The guid.
+     * <code>uint32 skill_depot_id = 6;</code>
+     * @return The skillDepotId.
      */
     @java.lang.Override
-    public long getGuid() {
-      return guid_;
+    public int getSkillDepotId() {
+      return skillDepotId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1471,12 +1475,13 @@ public final class SceneAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo other = (emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo) obj;
 
+      if (hasWeapon() != other.hasWeapon()) return false;
+      if (hasWeapon()) {
+        if (!getWeapon()
+            .equals(other.getWeapon())) return false;
+      }
       if (!internalGetProudSkillExtraLevelMap().equals(
           other.internalGetProudSkillExtraLevelMap())) return false;
-      if (!internalGetSkillLevelMap().equals(
-          other.internalGetSkillLevelMap())) return false;
-      if (!getReliquaryListList()
-          .equals(other.getReliquaryListList())) return false;
       if (hasExcelInfo() != other.hasExcelInfo()) return false;
       if (hasExcelInfo()) {
         if (!getExcelInfo()
@@ -1487,43 +1492,42 @@ public final class SceneAvatarInfoOuterClass {
         if (!getCurVehicleInfo()
             .equals(other.getCurVehicleInfo())) return false;
       }
-      if (!getEquipIdListList()
-          .equals(other.getEquipIdListList())) return false;
-      if (hasWeapon() != other.hasWeapon()) return false;
-      if (hasWeapon()) {
-        if (!getWeapon()
-            .equals(other.getWeapon())) return false;
-      }
       if (!getInherentProudSkillListList()
           .equals(other.getInherentProudSkillListList())) return false;
-      if (!getTeamResonanceListList()
-          .equals(other.getTeamResonanceListList())) return false;
-      if (!getServerBuffListList()
-          .equals(other.getServerBuffListList())) return false;
+      if (!getEquipIdListList()
+          .equals(other.getEquipIdListList())) return false;
+      if (!internalGetSkillLevelMap().equals(
+          other.internalGetSkillLevelMap())) return false;
       if (!getTalentIdListList()
           .equals(other.getTalentIdListList())) return false;
-      if (getUid()
-          != other.getUid()) return false;
-      if (getWearingFlycloakId()
-          != other.getWearingFlycloakId()) return false;
-      if (getAnimHash()
-          != other.getAnimHash()) return false;
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
-      if (getSkillDepotId()
-          != other.getSkillDepotId()) return false;
-      if (getCostumeId()
-          != other.getCostumeId()) return false;
-      if (getTraceEffectId()
-          != other.getTraceEffectId()) return false;
-      if (getCoreProudSkillLevel()
-          != other.getCoreProudSkillLevel()) return false;
-      if (getBornTime()
-          != other.getBornTime()) return false;
-      if (getPeerId()
-          != other.getPeerId()) return false;
+      if (!getServerBuffListList()
+          .equals(other.getServerBuffListList())) return false;
+      if (!getReliquaryListList()
+          .equals(other.getReliquaryListList())) return false;
+      if (!getTeamResonanceListList()
+          .equals(other.getTeamResonanceListList())) return false;
       if (getGuid()
           != other.getGuid()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
+      if (getCoreProudSkillLevel()
+          != other.getCoreProudSkillLevel()) return false;
+      if (getWearingFlycloakId()
+          != other.getWearingFlycloakId()) return false;
+      if (getTraceEffectId()
+          != other.getTraceEffectId()) return false;
+      if (getBornTime()
+          != other.getBornTime()) return false;
+      if (getAnimHash()
+          != other.getAnimHash()) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getCostumeId()
+          != other.getCostumeId()) return false;
+      if (getPeerId()
+          != other.getPeerId()) return false;
+      if (getSkillDepotId()
+          != other.getSkillDepotId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1535,17 +1539,13 @@ public final class SceneAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasWeapon()) {
+        hash = (37 * hash) + WEAPON_FIELD_NUMBER;
+        hash = (53 * hash) + getWeapon().hashCode();
+      }
       if (!internalGetProudSkillExtraLevelMap().getMap().isEmpty()) {
         hash = (37 * hash) + PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetProudSkillExtraLevelMap().hashCode();
-      }
-      if (!internalGetSkillLevelMap().getMap().isEmpty()) {
-        hash = (37 * hash) + SKILL_LEVEL_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetSkillLevelMap().hashCode();
-      }
-      if (getReliquaryListCount() > 0) {
-        hash = (37 * hash) + RELIQUARY_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getReliquaryListList().hashCode();
       }
       if (hasExcelInfo()) {
         hash = (37 * hash) + EXCEL_INFO_FIELD_NUMBER;
@@ -1555,53 +1555,57 @@ public final class SceneAvatarInfoOuterClass {
         hash = (37 * hash) + CUR_VEHICLE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getCurVehicleInfo().hashCode();
       }
-      if (getEquipIdListCount() > 0) {
-        hash = (37 * hash) + EQUIP_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEquipIdListList().hashCode();
-      }
-      if (hasWeapon()) {
-        hash = (37 * hash) + WEAPON_FIELD_NUMBER;
-        hash = (53 * hash) + getWeapon().hashCode();
-      }
       if (getInherentProudSkillListCount() > 0) {
         hash = (37 * hash) + INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getInherentProudSkillListList().hashCode();
       }
-      if (getTeamResonanceListCount() > 0) {
-        hash = (37 * hash) + TEAM_RESONANCE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTeamResonanceListList().hashCode();
+      if (getEquipIdListCount() > 0) {
+        hash = (37 * hash) + EQUIP_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEquipIdListList().hashCode();
       }
-      if (getServerBuffListCount() > 0) {
-        hash = (37 * hash) + SERVER_BUFF_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getServerBuffListList().hashCode();
+      if (!internalGetSkillLevelMap().getMap().isEmpty()) {
+        hash = (37 * hash) + SKILL_LEVEL_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetSkillLevelMap().hashCode();
       }
       if (getTalentIdListCount() > 0) {
         hash = (37 * hash) + TALENT_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTalentIdListList().hashCode();
       }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      hash = (37 * hash) + WEARING_FLYCLOAK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWearingFlycloakId();
-      hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
-      hash = (53 * hash) + getAnimHash();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
-      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillDepotId();
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeId();
-      hash = (37 * hash) + TRACE_EFFECT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTraceEffectId();
-      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getCoreProudSkillLevel();
-      hash = (37 * hash) + BORN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBornTime();
-      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPeerId();
+      if (getServerBuffListCount() > 0) {
+        hash = (37 * hash) + SERVER_BUFF_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getServerBuffListList().hashCode();
+      }
+      if (getReliquaryListCount() > 0) {
+        hash = (37 * hash) + RELIQUARY_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getReliquaryListList().hashCode();
+      }
+      if (getTeamResonanceListCount() > 0) {
+        hash = (37 * hash) + TEAM_RESONANCE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTeamResonanceListList().hashCode();
+      }
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getGuid());
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getCoreProudSkillLevel();
+      hash = (37 * hash) + WEARING_FLYCLOAK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWearingFlycloakId();
+      hash = (37 * hash) + TRACE_EFFECT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTraceEffectId();
+      hash = (37 * hash) + BORN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBornTime();
+      hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
+      hash = (53 * hash) + getAnimHash();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPeerId();
+      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillDepotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1698,6 +1702,10 @@ public final class SceneAvatarInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code SceneAvatarInfo}
      */
     public static final class Builder extends
@@ -1756,21 +1764,20 @@ public final class SceneAvatarInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getReliquaryListFieldBuilder();
           getServerBuffListFieldBuilder();
+          getReliquaryListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableProudSkillExtraLevelMap().clear();
-        internalGetMutableSkillLevelMap().clear();
-        if (reliquaryListBuilder_ == null) {
-          reliquaryList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+        if (weaponBuilder_ == null) {
+          weapon_ = null;
         } else {
-          reliquaryListBuilder_.clear();
+          weapon_ = null;
+          weaponBuilder_ = null;
         }
+        internalGetMutableProudSkillExtraLevelMap().clear();
         if (excelInfoBuilder_ == null) {
           excelInfo_ = null;
         } else {
@@ -1783,47 +1790,48 @@ public final class SceneAvatarInfoOuterClass {
           curVehicleInfo_ = null;
           curVehicleInfoBuilder_ = null;
         }
-        equipIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        if (weaponBuilder_ == null) {
-          weapon_ = null;
-        } else {
-          weapon_ = null;
-          weaponBuilder_ = null;
-        }
         inherentProudSkillList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        equipIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        internalGetMutableSkillLevelMap().clear();
+        talentIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000010);
-        teamResonanceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
         if (serverBuffListBuilder_ == null) {
           serverBuffList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
           serverBuffListBuilder_.clear();
         }
-        talentIdList_ = emptyIntList();
+        if (reliquaryListBuilder_ == null) {
+          reliquaryList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        } else {
+          reliquaryListBuilder_.clear();
+        }
+        teamResonanceList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000080);
-        uid_ = 0;
-
-        wearingFlycloakId_ = 0;
-
-        animHash_ = 0;
+        guid_ = 0L;
 
         avatarId_ = 0;
 
-        skillDepotId_ = 0;
+        coreProudSkillLevel_ = 0;
 
-        costumeId_ = 0;
+        wearingFlycloakId_ = 0;
 
         traceEffectId_ = 0;
 
-        coreProudSkillLevel_ = 0;
-
         bornTime_ = 0;
+
+        animHash_ = 0;
+
+        uid_ = 0;
+
+        costumeId_ = 0;
 
         peerId_ = 0;
 
-        guid_ = 0L;
+        skillDepotId_ = 0;
 
         return this;
       }
@@ -1852,19 +1860,13 @@ public final class SceneAvatarInfoOuterClass {
       public emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo result = new emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo(this);
         int from_bitField0_ = bitField0_;
+        if (weaponBuilder_ == null) {
+          result.weapon_ = weapon_;
+        } else {
+          result.weapon_ = weaponBuilder_.build();
+        }
         result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
         result.proudSkillExtraLevelMap_.makeImmutable();
-        result.skillLevelMap_ = internalGetSkillLevelMap();
-        result.skillLevelMap_.makeImmutable();
-        if (reliquaryListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            reliquaryList_ = java.util.Collections.unmodifiableList(reliquaryList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.reliquaryList_ = reliquaryList_;
-        } else {
-          result.reliquaryList_ = reliquaryListBuilder_.build();
-        }
         if (excelInfoBuilder_ == null) {
           result.excelInfo_ = excelInfo_;
         } else {
@@ -1875,51 +1877,57 @@ public final class SceneAvatarInfoOuterClass {
         } else {
           result.curVehicleInfo_ = curVehicleInfoBuilder_.build();
         }
-        if (((bitField0_ & 0x00000008) != 0)) {
-          equipIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        }
-        result.equipIdList_ = equipIdList_;
-        if (weaponBuilder_ == null) {
-          result.weapon_ = weapon_;
-        } else {
-          result.weapon_ = weaponBuilder_.build();
-        }
-        if (((bitField0_ & 0x00000010) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           inherentProudSkillList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.inherentProudSkillList_ = inherentProudSkillList_;
-        if (((bitField0_ & 0x00000020) != 0)) {
-          teamResonanceList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000020);
+        if (((bitField0_ & 0x00000004) != 0)) {
+          equipIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.teamResonanceList_ = teamResonanceList_;
+        result.equipIdList_ = equipIdList_;
+        result.skillLevelMap_ = internalGetSkillLevelMap();
+        result.skillLevelMap_.makeImmutable();
+        if (((bitField0_ & 0x00000010) != 0)) {
+          talentIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.talentIdList_ = talentIdList_;
         if (serverBuffListBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.serverBuffList_ = serverBuffList_;
         } else {
           result.serverBuffList_ = serverBuffListBuilder_.build();
         }
+        if (reliquaryListBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) != 0)) {
+            reliquaryList_ = java.util.Collections.unmodifiableList(reliquaryList_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.reliquaryList_ = reliquaryList_;
+        } else {
+          result.reliquaryList_ = reliquaryListBuilder_.build();
+        }
         if (((bitField0_ & 0x00000080) != 0)) {
-          talentIdList_.makeImmutable();
+          teamResonanceList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000080);
         }
-        result.talentIdList_ = talentIdList_;
-        result.uid_ = uid_;
-        result.wearingFlycloakId_ = wearingFlycloakId_;
-        result.animHash_ = animHash_;
-        result.avatarId_ = avatarId_;
-        result.skillDepotId_ = skillDepotId_;
-        result.costumeId_ = costumeId_;
-        result.traceEffectId_ = traceEffectId_;
-        result.coreProudSkillLevel_ = coreProudSkillLevel_;
-        result.bornTime_ = bornTime_;
-        result.peerId_ = peerId_;
+        result.teamResonanceList_ = teamResonanceList_;
         result.guid_ = guid_;
+        result.avatarId_ = avatarId_;
+        result.coreProudSkillLevel_ = coreProudSkillLevel_;
+        result.wearingFlycloakId_ = wearingFlycloakId_;
+        result.traceEffectId_ = traceEffectId_;
+        result.bornTime_ = bornTime_;
+        result.animHash_ = animHash_;
+        result.uid_ = uid_;
+        result.costumeId_ = costumeId_;
+        result.peerId_ = peerId_;
+        result.skillDepotId_ = skillDepotId_;
         onBuilt();
         return result;
       }
@@ -1968,72 +1976,46 @@ public final class SceneAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo.getDefaultInstance()) return this;
+        if (other.hasWeapon()) {
+          mergeWeapon(other.getWeapon());
+        }
         internalGetMutableProudSkillExtraLevelMap().mergeFrom(
             other.internalGetProudSkillExtraLevelMap());
-        internalGetMutableSkillLevelMap().mergeFrom(
-            other.internalGetSkillLevelMap());
-        if (reliquaryListBuilder_ == null) {
-          if (!other.reliquaryList_.isEmpty()) {
-            if (reliquaryList_.isEmpty()) {
-              reliquaryList_ = other.reliquaryList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureReliquaryListIsMutable();
-              reliquaryList_.addAll(other.reliquaryList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.reliquaryList_.isEmpty()) {
-            if (reliquaryListBuilder_.isEmpty()) {
-              reliquaryListBuilder_.dispose();
-              reliquaryListBuilder_ = null;
-              reliquaryList_ = other.reliquaryList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              reliquaryListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getReliquaryListFieldBuilder() : null;
-            } else {
-              reliquaryListBuilder_.addAllMessages(other.reliquaryList_);
-            }
-          }
-        }
         if (other.hasExcelInfo()) {
           mergeExcelInfo(other.getExcelInfo());
         }
         if (other.hasCurVehicleInfo()) {
           mergeCurVehicleInfo(other.getCurVehicleInfo());
         }
-        if (!other.equipIdList_.isEmpty()) {
-          if (equipIdList_.isEmpty()) {
-            equipIdList_ = other.equipIdList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
-          } else {
-            ensureEquipIdListIsMutable();
-            equipIdList_.addAll(other.equipIdList_);
-          }
-          onChanged();
-        }
-        if (other.hasWeapon()) {
-          mergeWeapon(other.getWeapon());
-        }
         if (!other.inherentProudSkillList_.isEmpty()) {
           if (inherentProudSkillList_.isEmpty()) {
             inherentProudSkillList_ = other.inherentProudSkillList_;
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureInherentProudSkillListIsMutable();
             inherentProudSkillList_.addAll(other.inherentProudSkillList_);
           }
           onChanged();
         }
-        if (!other.teamResonanceList_.isEmpty()) {
-          if (teamResonanceList_.isEmpty()) {
-            teamResonanceList_ = other.teamResonanceList_;
-            bitField0_ = (bitField0_ & ~0x00000020);
+        if (!other.equipIdList_.isEmpty()) {
+          if (equipIdList_.isEmpty()) {
+            equipIdList_ = other.equipIdList_;
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
-            ensureTeamResonanceListIsMutable();
-            teamResonanceList_.addAll(other.teamResonanceList_);
+            ensureEquipIdListIsMutable();
+            equipIdList_.addAll(other.equipIdList_);
+          }
+          onChanged();
+        }
+        internalGetMutableSkillLevelMap().mergeFrom(
+            other.internalGetSkillLevelMap());
+        if (!other.talentIdList_.isEmpty()) {
+          if (talentIdList_.isEmpty()) {
+            talentIdList_ = other.talentIdList_;
+            bitField0_ = (bitField0_ & ~0x00000010);
+          } else {
+            ensureTalentIdListIsMutable();
+            talentIdList_.addAll(other.talentIdList_);
           }
           onChanged();
         }
@@ -2041,7 +2023,7 @@ public final class SceneAvatarInfoOuterClass {
           if (!other.serverBuffList_.isEmpty()) {
             if (serverBuffList_.isEmpty()) {
               serverBuffList_ = other.serverBuffList_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00000020);
             } else {
               ensureServerBuffListIsMutable();
               serverBuffList_.addAll(other.serverBuffList_);
@@ -2054,7 +2036,7 @@ public final class SceneAvatarInfoOuterClass {
               serverBuffListBuilder_.dispose();
               serverBuffListBuilder_ = null;
               serverBuffList_ = other.serverBuffList_;
-              bitField0_ = (bitField0_ & ~0x00000040);
+              bitField0_ = (bitField0_ & ~0x00000020);
               serverBuffListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getServerBuffListFieldBuilder() : null;
@@ -2063,48 +2045,74 @@ public final class SceneAvatarInfoOuterClass {
             }
           }
         }
-        if (!other.talentIdList_.isEmpty()) {
-          if (talentIdList_.isEmpty()) {
-            talentIdList_ = other.talentIdList_;
+        if (reliquaryListBuilder_ == null) {
+          if (!other.reliquaryList_.isEmpty()) {
+            if (reliquaryList_.isEmpty()) {
+              reliquaryList_ = other.reliquaryList_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensureReliquaryListIsMutable();
+              reliquaryList_.addAll(other.reliquaryList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.reliquaryList_.isEmpty()) {
+            if (reliquaryListBuilder_.isEmpty()) {
+              reliquaryListBuilder_.dispose();
+              reliquaryListBuilder_ = null;
+              reliquaryList_ = other.reliquaryList_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              reliquaryListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getReliquaryListFieldBuilder() : null;
+            } else {
+              reliquaryListBuilder_.addAllMessages(other.reliquaryList_);
+            }
+          }
+        }
+        if (!other.teamResonanceList_.isEmpty()) {
+          if (teamResonanceList_.isEmpty()) {
+            teamResonanceList_ = other.teamResonanceList_;
             bitField0_ = (bitField0_ & ~0x00000080);
           } else {
-            ensureTalentIdListIsMutable();
-            talentIdList_.addAll(other.talentIdList_);
+            ensureTeamResonanceListIsMutable();
+            teamResonanceList_.addAll(other.teamResonanceList_);
           }
           onChanged();
         }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
-        if (other.getWearingFlycloakId() != 0) {
-          setWearingFlycloakId(other.getWearingFlycloakId());
-        }
-        if (other.getAnimHash() != 0) {
-          setAnimHash(other.getAnimHash());
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
-        if (other.getSkillDepotId() != 0) {
-          setSkillDepotId(other.getSkillDepotId());
+        if (other.getCoreProudSkillLevel() != 0) {
+          setCoreProudSkillLevel(other.getCoreProudSkillLevel());
         }
-        if (other.getCostumeId() != 0) {
-          setCostumeId(other.getCostumeId());
+        if (other.getWearingFlycloakId() != 0) {
+          setWearingFlycloakId(other.getWearingFlycloakId());
         }
         if (other.getTraceEffectId() != 0) {
           setTraceEffectId(other.getTraceEffectId());
         }
-        if (other.getCoreProudSkillLevel() != 0) {
-          setCoreProudSkillLevel(other.getCoreProudSkillLevel());
-        }
         if (other.getBornTime() != 0) {
           setBornTime(other.getBornTime());
+        }
+        if (other.getAnimHash() != 0) {
+          setAnimHash(other.getAnimHash());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.getCostumeId() != 0) {
+          setCostumeId(other.getCostumeId());
         }
         if (other.getPeerId() != 0) {
           setPeerId(other.getPeerId());
         }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
+        if (other.getSkillDepotId() != 0) {
+          setSkillDepotId(other.getSkillDepotId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2135,6 +2143,125 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo weapon_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder> weaponBuilder_;
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       * @return Whether the weapon field is set.
+       */
+      public boolean hasWeapon() {
+        return weaponBuilder_ != null || weapon_ != null;
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       * @return The weapon.
+       */
+      public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo getWeapon() {
+        if (weaponBuilder_ == null) {
+          return weapon_ == null ? emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
+        } else {
+          return weaponBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      public Builder setWeapon(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo value) {
+        if (weaponBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          weapon_ = value;
+          onChanged();
+        } else {
+          weaponBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      public Builder setWeapon(
+          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder builderForValue) {
+        if (weaponBuilder_ == null) {
+          weapon_ = builderForValue.build();
+          onChanged();
+        } else {
+          weaponBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      public Builder mergeWeapon(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo value) {
+        if (weaponBuilder_ == null) {
+          if (weapon_ != null) {
+            weapon_ =
+              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.newBuilder(weapon_).mergeFrom(value).buildPartial();
+          } else {
+            weapon_ = value;
+          }
+          onChanged();
+        } else {
+          weaponBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      public Builder clearWeapon() {
+        if (weaponBuilder_ == null) {
+          weapon_ = null;
+          onChanged();
+        } else {
+          weapon_ = null;
+          weaponBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder getWeaponBuilder() {
+        
+        onChanged();
+        return getWeaponFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder() {
+        if (weaponBuilder_ != null) {
+          return weaponBuilder_.getMessageOrBuilder();
+        } else {
+          return weapon_ == null ?
+              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
+        }
+      }
+      /**
+       * <code>.SceneWeaponInfo weapon = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder> 
+          getWeaponFieldBuilder() {
+        if (weaponBuilder_ == null) {
+          weaponBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder>(
+                  getWeapon(),
+                  getParentForChildren(),
+                  isClean());
+          weapon_ = null;
+        }
+        return weaponBuilder_;
+      }
 
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
@@ -2262,374 +2389,6 @@ public final class SceneAvatarInfoOuterClass {
         internalGetMutableProudSkillExtraLevelMap().getMutableMap()
             .putAll(values);
         return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> skillLevelMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetSkillLevelMap() {
-        if (skillLevelMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              SkillLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        return skillLevelMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableSkillLevelMap() {
-        onChanged();;
-        if (skillLevelMap_ == null) {
-          skillLevelMap_ = com.google.protobuf.MapField.newMapField(
-              SkillLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!skillLevelMap_.isMutable()) {
-          skillLevelMap_ = skillLevelMap_.copy();
-        }
-        return skillLevelMap_;
-      }
-
-      public int getSkillLevelMapCount() {
-        return internalGetSkillLevelMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsSkillLevelMap(
-          int key) {
-        
-        return internalGetSkillLevelMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getSkillLevelMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMap() {
-        return getSkillLevelMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
-        return internalGetSkillLevelMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-      @java.lang.Override
-
-      public int getSkillLevelMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetSkillLevelMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-      @java.lang.Override
-
-      public int getSkillLevelMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetSkillLevelMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearSkillLevelMap() {
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-
-      public Builder removeSkillLevelMap(
-          int key) {
-        
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableSkillLevelMap() {
-        return internalGetMutableSkillLevelMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-      public Builder putSkillLevelMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
-       */
-
-      public Builder putAllSkillLevelMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> reliquaryList_ =
-        java.util.Collections.emptyList();
-      private void ensureReliquaryListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          reliquaryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo>(reliquaryList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> reliquaryListBuilder_;
-
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> getReliquaryListList() {
-        if (reliquaryListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(reliquaryList_);
-        } else {
-          return reliquaryListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public int getReliquaryListCount() {
-        if (reliquaryListBuilder_ == null) {
-          return reliquaryList_.size();
-        } else {
-          return reliquaryListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index) {
-        if (reliquaryListBuilder_ == null) {
-          return reliquaryList_.get(index);
-        } else {
-          return reliquaryListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder setReliquaryList(
-          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
-        if (reliquaryListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureReliquaryListIsMutable();
-          reliquaryList_.set(index, value);
-          onChanged();
-        } else {
-          reliquaryListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder setReliquaryList(
-          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
-        if (reliquaryListBuilder_ == null) {
-          ensureReliquaryListIsMutable();
-          reliquaryList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          reliquaryListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder addReliquaryList(emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
-        if (reliquaryListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureReliquaryListIsMutable();
-          reliquaryList_.add(value);
-          onChanged();
-        } else {
-          reliquaryListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder addReliquaryList(
-          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
-        if (reliquaryListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureReliquaryListIsMutable();
-          reliquaryList_.add(index, value);
-          onChanged();
-        } else {
-          reliquaryListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder addReliquaryList(
-          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
-        if (reliquaryListBuilder_ == null) {
-          ensureReliquaryListIsMutable();
-          reliquaryList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          reliquaryListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder addReliquaryList(
-          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
-        if (reliquaryListBuilder_ == null) {
-          ensureReliquaryListIsMutable();
-          reliquaryList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          reliquaryListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder addAllReliquaryList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> values) {
-        if (reliquaryListBuilder_ == null) {
-          ensureReliquaryListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, reliquaryList_);
-          onChanged();
-        } else {
-          reliquaryListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder clearReliquaryList() {
-        if (reliquaryListBuilder_ == null) {
-          reliquaryList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          reliquaryListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public Builder removeReliquaryList(int index) {
-        if (reliquaryListBuilder_ == null) {
-          ensureReliquaryListIsMutable();
-          reliquaryList_.remove(index);
-          onChanged();
-        } else {
-          reliquaryListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder getReliquaryListBuilder(
-          int index) {
-        return getReliquaryListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
-          int index) {
-        if (reliquaryListBuilder_ == null) {
-          return reliquaryList_.get(index);  } else {
-          return reliquaryListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
-           getReliquaryListOrBuilderList() {
-        if (reliquaryListBuilder_ != null) {
-          return reliquaryListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(reliquaryList_);
-        }
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder addReliquaryListBuilder() {
-        return getReliquaryListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder addReliquaryListBuilder(
-          int index) {
-        return getReliquaryListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder> 
-           getReliquaryListBuilderList() {
-        return getReliquaryListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
-          getReliquaryListFieldBuilder() {
-        if (reliquaryListBuilder_ == null) {
-          reliquaryListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder>(
-                  reliquaryList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          reliquaryList_ = null;
-        }
-        return reliquaryListBuilder_;
       }
 
       private emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo excelInfo_;
@@ -2870,209 +2629,11 @@ public final class SceneAvatarInfoOuterClass {
         return curVehicleInfoBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList equipIdList_ = emptyIntList();
-      private void ensureEquipIdListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
-          equipIdList_ = mutableCopy(equipIdList_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @return A list containing the equipIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getEquipIdListList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(equipIdList_) : equipIdList_;
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @return The count of equipIdList.
-       */
-      public int getEquipIdListCount() {
-        return equipIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @param index The index of the element to return.
-       * @return The equipIdList at the given index.
-       */
-      public int getEquipIdList(int index) {
-        return equipIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @param index The index to set the value at.
-       * @param value The equipIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEquipIdList(
-          int index, int value) {
-        ensureEquipIdListIsMutable();
-        equipIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @param value The equipIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addEquipIdList(int value) {
-        ensureEquipIdListIsMutable();
-        equipIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @param values The equipIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllEquipIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureEquipIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, equipIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 equip_id_list = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEquipIdList() {
-        equipIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo weapon_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder> weaponBuilder_;
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       * @return Whether the weapon field is set.
-       */
-      public boolean hasWeapon() {
-        return weaponBuilder_ != null || weapon_ != null;
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       * @return The weapon.
-       */
-      public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo getWeapon() {
-        if (weaponBuilder_ == null) {
-          return weapon_ == null ? emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
-        } else {
-          return weaponBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      public Builder setWeapon(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo value) {
-        if (weaponBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          weapon_ = value;
-          onChanged();
-        } else {
-          weaponBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      public Builder setWeapon(
-          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder builderForValue) {
-        if (weaponBuilder_ == null) {
-          weapon_ = builderForValue.build();
-          onChanged();
-        } else {
-          weaponBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      public Builder mergeWeapon(emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo value) {
-        if (weaponBuilder_ == null) {
-          if (weapon_ != null) {
-            weapon_ =
-              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.newBuilder(weapon_).mergeFrom(value).buildPartial();
-          } else {
-            weapon_ = value;
-          }
-          onChanged();
-        } else {
-          weaponBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      public Builder clearWeapon() {
-        if (weaponBuilder_ == null) {
-          weapon_ = null;
-          onChanged();
-        } else {
-          weapon_ = null;
-          weaponBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder getWeaponBuilder() {
-        
-        onChanged();
-        return getWeaponFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      public emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder getWeaponOrBuilder() {
-        if (weaponBuilder_ != null) {
-          return weaponBuilder_.getMessageOrBuilder();
-        } else {
-          return weapon_ == null ?
-              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.getDefaultInstance() : weapon_;
-        }
-      }
-      /**
-       * <code>.SceneWeaponInfo weapon = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder> 
-          getWeaponFieldBuilder() {
-        if (weaponBuilder_ == null) {
-          weaponBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo.Builder, emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfoOrBuilder>(
-                  getWeapon(),
-                  getParentForChildren(),
-                  isClean());
-          weapon_ = null;
-        }
-        return weaponBuilder_;
-      }
-
       private com.google.protobuf.Internal.IntList inherentProudSkillList_ = emptyIntList();
       private void ensureInherentProudSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           inherentProudSkillList_ = mutableCopy(inherentProudSkillList_);
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000002;
          }
       }
       /**
@@ -3081,7 +2642,7 @@ public final class SceneAvatarInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getInherentProudSkillListList() {
-        return ((bitField0_ & 0x00000010) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(inherentProudSkillList_) : inherentProudSkillList_;
       }
       /**
@@ -3142,86 +2703,293 @@ public final class SceneAvatarInfoOuterClass {
        */
       public Builder clearInherentProudSkillList() {
         inherentProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList teamResonanceList_ = emptyIntList();
-      private void ensureTeamResonanceListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          teamResonanceList_ = mutableCopy(teamResonanceList_);
-          bitField0_ |= 0x00000020;
+      private com.google.protobuf.Internal.IntList equipIdList_ = emptyIntList();
+      private void ensureEquipIdListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          equipIdList_ = mutableCopy(equipIdList_);
+          bitField0_ |= 0x00000004;
          }
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
-       * @return A list containing the teamResonanceList.
+       * <code>repeated uint32 equip_id_list = 5;</code>
+       * @return A list containing the equipIdList.
        */
       public java.util.List<java.lang.Integer>
-          getTeamResonanceListList() {
-        return ((bitField0_ & 0x00000020) != 0) ?
-                 java.util.Collections.unmodifiableList(teamResonanceList_) : teamResonanceList_;
+          getEquipIdListList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(equipIdList_) : equipIdList_;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
-       * @return The count of teamResonanceList.
+       * <code>repeated uint32 equip_id_list = 5;</code>
+       * @return The count of equipIdList.
        */
-      public int getTeamResonanceListCount() {
-        return teamResonanceList_.size();
+      public int getEquipIdListCount() {
+        return equipIdList_.size();
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 equip_id_list = 5;</code>
        * @param index The index of the element to return.
-       * @return The teamResonanceList at the given index.
+       * @return The equipIdList at the given index.
        */
-      public int getTeamResonanceList(int index) {
-        return teamResonanceList_.getInt(index);
+      public int getEquipIdList(int index) {
+        return equipIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 equip_id_list = 5;</code>
        * @param index The index to set the value at.
-       * @param value The teamResonanceList to set.
+       * @param value The equipIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setTeamResonanceList(
+      public Builder setEquipIdList(
           int index, int value) {
-        ensureTeamResonanceListIsMutable();
-        teamResonanceList_.setInt(index, value);
+        ensureEquipIdListIsMutable();
+        equipIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
-       * @param value The teamResonanceList to add.
+       * <code>repeated uint32 equip_id_list = 5;</code>
+       * @param value The equipIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addTeamResonanceList(int value) {
-        ensureTeamResonanceListIsMutable();
-        teamResonanceList_.addInt(value);
+      public Builder addEquipIdList(int value) {
+        ensureEquipIdListIsMutable();
+        equipIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
-       * @param values The teamResonanceList to add.
+       * <code>repeated uint32 equip_id_list = 5;</code>
+       * @param values The equipIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllTeamResonanceList(
+      public Builder addAllEquipIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTeamResonanceListIsMutable();
+        ensureEquipIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, teamResonanceList_);
+            values, equipIdList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * <code>repeated uint32 equip_id_list = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTeamResonanceList() {
-        teamResonanceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+      public Builder clearEquipIdList() {
+        equipIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> skillLevelMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetSkillLevelMap() {
+        if (skillLevelMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              SkillLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        return skillLevelMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableSkillLevelMap() {
+        onChanged();;
+        if (skillLevelMap_ == null) {
+          skillLevelMap_ = com.google.protobuf.MapField.newMapField(
+              SkillLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!skillLevelMap_.isMutable()) {
+          skillLevelMap_ = skillLevelMap_.copy();
+        }
+        return skillLevelMap_;
+      }
+
+      public int getSkillLevelMapCount() {
+        return internalGetSkillLevelMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsSkillLevelMap(
+          int key) {
+        
+        return internalGetSkillLevelMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getSkillLevelMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMap() {
+        return getSkillLevelMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
+        return internalGetSkillLevelMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+      @java.lang.Override
+
+      public int getSkillLevelMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetSkillLevelMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+      @java.lang.Override
+
+      public int getSkillLevelMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetSkillLevelMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearSkillLevelMap() {
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+
+      public Builder removeSkillLevelMap(
+          int key) {
+        
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableSkillLevelMap() {
+        return internalGetMutableSkillLevelMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+      public Builder putSkillLevelMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 13;</code>
+       */
+
+      public Builder putAllSkillLevelMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
+      private void ensureTalentIdListIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          talentIdList_ = mutableCopy(talentIdList_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @return A list containing the talentIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getTalentIdListList() {
+        return ((bitField0_ & 0x00000010) != 0) ?
+                 java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @return The count of talentIdList.
+       */
+      public int getTalentIdListCount() {
+        return talentIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @param index The index of the element to return.
+       * @return The talentIdList at the given index.
+       */
+      public int getTalentIdList(int index) {
+        return talentIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The talentIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTalentIdList(
+          int index, int value) {
+        ensureTalentIdListIsMutable();
+        talentIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @param value The talentIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addTalentIdList(int value) {
+        ensureTalentIdListIsMutable();
+        talentIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @param values The talentIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllTalentIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureTalentIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, talentIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTalentIdList() {
+        talentIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000010);
         onChanged();
         return this;
       }
@@ -3229,9 +2997,9 @@ public final class SceneAvatarInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_ =
         java.util.Collections.emptyList();
       private void ensureServerBuffListIsMutable() {
-        if (!((bitField0_ & 0x00000040) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>(serverBuffList_);
-          bitField0_ |= 0x00000040;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -3381,7 +3149,7 @@ public final class SceneAvatarInfoOuterClass {
       public Builder clearServerBuffList() {
         if (serverBuffListBuilder_ == null) {
           serverBuffList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           serverBuffListBuilder_.clear();
@@ -3458,7 +3226,7 @@ public final class SceneAvatarInfoOuterClass {
           serverBuffListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder>(
                   serverBuffList_,
-                  ((bitField0_ & 0x00000040) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           serverBuffList_ = null;
@@ -3466,174 +3234,352 @@ public final class SceneAvatarInfoOuterClass {
         return serverBuffListBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
-      private void ensureTalentIdListIsMutable() {
+      private java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> reliquaryList_ =
+        java.util.Collections.emptyList();
+      private void ensureReliquaryListIsMutable() {
+        if (!((bitField0_ & 0x00000040) != 0)) {
+          reliquaryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo>(reliquaryList_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> reliquaryListBuilder_;
+
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> getReliquaryListList() {
+        if (reliquaryListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(reliquaryList_);
+        } else {
+          return reliquaryListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public int getReliquaryListCount() {
+        if (reliquaryListBuilder_ == null) {
+          return reliquaryList_.size();
+        } else {
+          return reliquaryListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo getReliquaryList(int index) {
+        if (reliquaryListBuilder_ == null) {
+          return reliquaryList_.get(index);
+        } else {
+          return reliquaryListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder setReliquaryList(
+          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
+        if (reliquaryListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureReliquaryListIsMutable();
+          reliquaryList_.set(index, value);
+          onChanged();
+        } else {
+          reliquaryListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder setReliquaryList(
+          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
+        if (reliquaryListBuilder_ == null) {
+          ensureReliquaryListIsMutable();
+          reliquaryList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          reliquaryListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder addReliquaryList(emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
+        if (reliquaryListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureReliquaryListIsMutable();
+          reliquaryList_.add(value);
+          onChanged();
+        } else {
+          reliquaryListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder addReliquaryList(
+          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo value) {
+        if (reliquaryListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureReliquaryListIsMutable();
+          reliquaryList_.add(index, value);
+          onChanged();
+        } else {
+          reliquaryListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder addReliquaryList(
+          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
+        if (reliquaryListBuilder_ == null) {
+          ensureReliquaryListIsMutable();
+          reliquaryList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          reliquaryListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder addReliquaryList(
+          int index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder builderForValue) {
+        if (reliquaryListBuilder_ == null) {
+          ensureReliquaryListIsMutable();
+          reliquaryList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          reliquaryListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder addAllReliquaryList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo> values) {
+        if (reliquaryListBuilder_ == null) {
+          ensureReliquaryListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, reliquaryList_);
+          onChanged();
+        } else {
+          reliquaryListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder clearReliquaryList() {
+        if (reliquaryListBuilder_ == null) {
+          reliquaryList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          reliquaryListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public Builder removeReliquaryList(int index) {
+        if (reliquaryListBuilder_ == null) {
+          ensureReliquaryListIsMutable();
+          reliquaryList_.remove(index);
+          onChanged();
+        } else {
+          reliquaryListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder getReliquaryListBuilder(
+          int index) {
+        return getReliquaryListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder getReliquaryListOrBuilder(
+          int index) {
+        if (reliquaryListBuilder_ == null) {
+          return reliquaryList_.get(index);  } else {
+          return reliquaryListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
+           getReliquaryListOrBuilderList() {
+        if (reliquaryListBuilder_ != null) {
+          return reliquaryListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(reliquaryList_);
+        }
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder addReliquaryListBuilder() {
+        return getReliquaryListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder addReliquaryListBuilder(
+          int index) {
+        return getReliquaryListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .SceneReliquaryInfo reliquary_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder> 
+           getReliquaryListBuilderList() {
+        return getReliquaryListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder> 
+          getReliquaryListFieldBuilder() {
+        if (reliquaryListBuilder_ == null) {
+          reliquaryListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo.Builder, emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfoOrBuilder>(
+                  reliquaryList_,
+                  ((bitField0_ & 0x00000040) != 0),
+                  getParentForChildren(),
+                  isClean());
+          reliquaryList_ = null;
+        }
+        return reliquaryListBuilder_;
+      }
+
+      private com.google.protobuf.Internal.IntList teamResonanceList_ = emptyIntList();
+      private void ensureTeamResonanceListIsMutable() {
         if (!((bitField0_ & 0x00000080) != 0)) {
-          talentIdList_ = mutableCopy(talentIdList_);
+          teamResonanceList_ = mutableCopy(teamResonanceList_);
           bitField0_ |= 0x00000080;
          }
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
-       * @return A list containing the talentIdList.
+       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * @return A list containing the teamResonanceList.
        */
       public java.util.List<java.lang.Integer>
-          getTalentIdListList() {
+          getTeamResonanceListList() {
         return ((bitField0_ & 0x00000080) != 0) ?
-                 java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
+                 java.util.Collections.unmodifiableList(teamResonanceList_) : teamResonanceList_;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
-       * @return The count of talentIdList.
+       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * @return The count of teamResonanceList.
        */
-      public int getTalentIdListCount() {
-        return talentIdList_.size();
+      public int getTeamResonanceListCount() {
+        return teamResonanceList_.size();
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 team_resonance_list = 16;</code>
        * @param index The index of the element to return.
-       * @return The talentIdList at the given index.
+       * @return The teamResonanceList at the given index.
        */
-      public int getTalentIdList(int index) {
-        return talentIdList_.getInt(index);
+      public int getTeamResonanceList(int index) {
+        return teamResonanceList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 team_resonance_list = 16;</code>
        * @param index The index to set the value at.
-       * @param value The talentIdList to set.
+       * @param value The teamResonanceList to set.
        * @return This builder for chaining.
        */
-      public Builder setTalentIdList(
+      public Builder setTeamResonanceList(
           int index, int value) {
-        ensureTalentIdListIsMutable();
-        talentIdList_.setInt(index, value);
+        ensureTeamResonanceListIsMutable();
+        teamResonanceList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
-       * @param value The talentIdList to add.
+       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * @param value The teamResonanceList to add.
        * @return This builder for chaining.
        */
-      public Builder addTalentIdList(int value) {
-        ensureTalentIdListIsMutable();
-        talentIdList_.addInt(value);
+      public Builder addTeamResonanceList(int value) {
+        ensureTeamResonanceListIsMutable();
+        teamResonanceList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
-       * @param values The talentIdList to add.
+       * <code>repeated uint32 team_resonance_list = 16;</code>
+       * @param values The teamResonanceList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllTalentIdList(
+      public Builder addAllTeamResonanceList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTalentIdListIsMutable();
+        ensureTeamResonanceListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, talentIdList_);
+            values, teamResonanceList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 talent_id_list = 7;</code>
+       * <code>repeated uint32 team_resonance_list = 16;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTalentIdList() {
-        talentIdList_ = emptyIntList();
+      public Builder clearTeamResonanceList() {
+        teamResonanceList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
         return this;
       }
 
-      private int uid_ ;
+      private long guid_ ;
       /**
-       * <code>uint32 uid = 1;</code>
-       * @return The uid.
+       * <code>uint64 guid = 3;</code>
+       * @return The guid.
        */
       @java.lang.Override
-      public int getUid() {
-        return uid_;
+      public long getGuid() {
+        return guid_;
       }
       /**
-       * <code>uint32 uid = 1;</code>
-       * @param value The uid to set.
+       * <code>uint64 guid = 3;</code>
+       * @param value The guid to set.
        * @return This builder for chaining.
        */
-      public Builder setUid(int value) {
+      public Builder setGuid(long value) {
         
-        uid_ = value;
+        guid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint64 guid = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUid() {
+      public Builder clearGuid() {
         
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int wearingFlycloakId_ ;
-      /**
-       * <code>uint32 wearing_flycloak_id = 17;</code>
-       * @return The wearingFlycloakId.
-       */
-      @java.lang.Override
-      public int getWearingFlycloakId() {
-        return wearingFlycloakId_;
-      }
-      /**
-       * <code>uint32 wearing_flycloak_id = 17;</code>
-       * @param value The wearingFlycloakId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWearingFlycloakId(int value) {
-        
-        wearingFlycloakId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 wearing_flycloak_id = 17;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWearingFlycloakId() {
-        
-        wearingFlycloakId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int animHash_ ;
-      /**
-       * <code>uint32 anim_hash = 22;</code>
-       * @return The animHash.
-       */
-      @java.lang.Override
-      public int getAnimHash() {
-        return animHash_;
-      }
-      /**
-       * <code>uint32 anim_hash = 22;</code>
-       * @param value The animHash to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAnimHash(int value) {
-        
-        animHash_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 anim_hash = 22;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAnimHash() {
-        
-        animHash_ = 0;
+        guid_ = 0L;
         onChanged();
         return this;
       }
@@ -3669,64 +3615,64 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
 
-      private int skillDepotId_ ;
+      private int coreProudSkillLevel_ ;
       /**
-       * <code>uint32 skill_depot_id = 6;</code>
-       * @return The skillDepotId.
+       * <code>uint32 core_proud_skill_level = 11;</code>
+       * @return The coreProudSkillLevel.
        */
       @java.lang.Override
-      public int getSkillDepotId() {
-        return skillDepotId_;
+      public int getCoreProudSkillLevel() {
+        return coreProudSkillLevel_;
       }
       /**
-       * <code>uint32 skill_depot_id = 6;</code>
-       * @param value The skillDepotId to set.
+       * <code>uint32 core_proud_skill_level = 11;</code>
+       * @param value The coreProudSkillLevel to set.
        * @return This builder for chaining.
        */
-      public Builder setSkillDepotId(int value) {
+      public Builder setCoreProudSkillLevel(int value) {
         
-        skillDepotId_ = value;
+        coreProudSkillLevel_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 skill_depot_id = 6;</code>
+       * <code>uint32 core_proud_skill_level = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSkillDepotId() {
+      public Builder clearCoreProudSkillLevel() {
         
-        skillDepotId_ = 0;
+        coreProudSkillLevel_ = 0;
         onChanged();
         return this;
       }
 
-      private int costumeId_ ;
+      private int wearingFlycloakId_ ;
       /**
-       * <code>uint32 costume_id = 19;</code>
-       * @return The costumeId.
+       * <code>uint32 wearing_flycloak_id = 17;</code>
+       * @return The wearingFlycloakId.
        */
       @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
+      public int getWearingFlycloakId() {
+        return wearingFlycloakId_;
       }
       /**
-       * <code>uint32 costume_id = 19;</code>
-       * @param value The costumeId to set.
+       * <code>uint32 wearing_flycloak_id = 17;</code>
+       * @param value The wearingFlycloakId to set.
        * @return This builder for chaining.
        */
-      public Builder setCostumeId(int value) {
+      public Builder setWearingFlycloakId(int value) {
         
-        costumeId_ = value;
+        wearingFlycloakId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 costume_id = 19;</code>
+       * <code>uint32 wearing_flycloak_id = 17;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCostumeId() {
+      public Builder clearWearingFlycloakId() {
         
-        costumeId_ = 0;
+        wearingFlycloakId_ = 0;
         onChanged();
         return this;
       }
@@ -3762,37 +3708,6 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
 
-      private int coreProudSkillLevel_ ;
-      /**
-       * <code>uint32 core_proud_skill_level = 11;</code>
-       * @return The coreProudSkillLevel.
-       */
-      @java.lang.Override
-      public int getCoreProudSkillLevel() {
-        return coreProudSkillLevel_;
-      }
-      /**
-       * <code>uint32 core_proud_skill_level = 11;</code>
-       * @param value The coreProudSkillLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoreProudSkillLevel(int value) {
-        
-        coreProudSkillLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 core_proud_skill_level = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoreProudSkillLevel() {
-        
-        coreProudSkillLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int bornTime_ ;
       /**
        * <code>uint32 born_time = 18;</code>
@@ -3820,6 +3735,99 @@ public final class SceneAvatarInfoOuterClass {
       public Builder clearBornTime() {
         
         bornTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int animHash_ ;
+      /**
+       * <code>uint32 anim_hash = 22;</code>
+       * @return The animHash.
+       */
+      @java.lang.Override
+      public int getAnimHash() {
+        return animHash_;
+      }
+      /**
+       * <code>uint32 anim_hash = 22;</code>
+       * @param value The animHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAnimHash(int value) {
+        
+        animHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 anim_hash = 22;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAnimHash() {
+        
+        animHash_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costumeId_ ;
+      /**
+       * <code>uint32 costume_id = 19;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <code>uint32 costume_id = 19;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_id = 19;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
         onChanged();
         return this;
       }
@@ -3855,33 +3863,33 @@ public final class SceneAvatarInfoOuterClass {
         return this;
       }
 
-      private long guid_ ;
+      private int skillDepotId_ ;
       /**
-       * <code>uint64 guid = 3;</code>
-       * @return The guid.
+       * <code>uint32 skill_depot_id = 6;</code>
+       * @return The skillDepotId.
        */
       @java.lang.Override
-      public long getGuid() {
-        return guid_;
+      public int getSkillDepotId() {
+        return skillDepotId_;
       }
       /**
-       * <code>uint64 guid = 3;</code>
-       * @param value The guid to set.
+       * <code>uint32 skill_depot_id = 6;</code>
+       * @param value The skillDepotId to set.
        * @return This builder for chaining.
        */
-      public Builder setGuid(long value) {
+      public Builder setSkillDepotId(int value) {
         
-        guid_ = value;
+        skillDepotId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 guid = 3;</code>
+       * <code>uint32 skill_depot_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGuid() {
+      public Builder clearSkillDepotId() {
         
-        guid_ = 0L;
+        skillDepotId_ = 0;
         onChanged();
         return this;
       }
@@ -3962,28 +3970,28 @@ public final class SceneAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SceneAvatarInfo.proto\032\030SceneReliquaryI" +
-      "nfo.proto\032\025AvatarExcelInfo.proto\032\024CurVeh" +
-      "icleInfo.proto\032\025SceneWeaponInfo.proto\032\020S" +
-      "erverBuff.proto\"\266\006\n\017SceneAvatarInfo\022R\n\033p" +
-      "roud_skill_extra_level_map\030\016 \003(\0132-.Scene" +
-      "AvatarInfo.ProudSkillExtraLevelMapEntry\022" +
-      "<\n\017skill_level_map\030\r \003(\0132#.SceneAvatarIn" +
-      "fo.SkillLevelMapEntry\022+\n\016reliquary_list\030" +
-      "\t \003(\0132\023.SceneReliquaryInfo\022$\n\nexcel_info" +
-      "\030\025 \001(\0132\020.AvatarExcelInfo\022)\n\020cur_vehicle_" +
-      "info\030\024 \001(\0132\017.CurVehicleInfo\022\025\n\requip_id_" +
-      "list\030\005 \003(\r\022 \n\006weapon\030\010 \001(\0132\020.SceneWeapon" +
-      "Info\022!\n\031inherent_proud_skill_list\030\014 \003(\r\022" +
-      "\033\n\023team_resonance_list\030\020 \003(\r\022%\n\020server_b" +
-      "uff_list\030\017 \003(\0132\013.ServerBuff\022\026\n\016talent_id" +
-      "_list\030\007 \003(\r\022\013\n\003uid\030\001 \001(\r\022\033\n\023wearing_flyc" +
-      "loak_id\030\021 \001(\r\022\021\n\tanim_hash\030\026 \001(\r\022\021\n\tavat" +
-      "ar_id\030\002 \001(\r\022\026\n\016skill_depot_id\030\006 \001(\r\022\022\n\nc" +
-      "ostume_id\030\023 \001(\r\022\027\n\017trace_effect_id\030\027 \001(\r" +
-      "\022\036\n\026core_proud_skill_level\030\013 \001(\r\022\021\n\tborn" +
-      "_time\030\022 \001(\r\022\017\n\007peer_id\030\004 \001(\r\022\014\n\004guid\030\003 \001" +
-      "(\004\032>\n\034ProudSkillExtraLevelMapEntry\022\013\n\003ke" +
+      "\n\025SceneAvatarInfo.proto\032\025SceneWeaponInfo" +
+      ".proto\032\030SceneReliquaryInfo.proto\032\020Server" +
+      "Buff.proto\032\024CurVehicleInfo.proto\032\025Avatar" +
+      "ExcelInfo.proto\"\266\006\n\017SceneAvatarInfo\022 \n\006w" +
+      "eapon\030\010 \001(\0132\020.SceneWeaponInfo\022R\n\033proud_s" +
+      "kill_extra_level_map\030\016 \003(\0132-.SceneAvatar" +
+      "Info.ProudSkillExtraLevelMapEntry\022$\n\nexc" +
+      "el_info\030\025 \001(\0132\020.AvatarExcelInfo\022)\n\020cur_v" +
+      "ehicle_info\030\024 \001(\0132\017.CurVehicleInfo\022!\n\031in" +
+      "herent_proud_skill_list\030\014 \003(\r\022\025\n\requip_i" +
+      "d_list\030\005 \003(\r\022<\n\017skill_level_map\030\r \003(\0132#." +
+      "SceneAvatarInfo.SkillLevelMapEntry\022\026\n\016ta" +
+      "lent_id_list\030\007 \003(\r\022%\n\020server_buff_list\030\017" +
+      " \003(\0132\013.ServerBuff\022+\n\016reliquary_list\030\t \003(" +
+      "\0132\023.SceneReliquaryInfo\022\033\n\023team_resonance" +
+      "_list\030\020 \003(\r\022\014\n\004guid\030\003 \001(\004\022\021\n\tavatar_id\030\002" +
+      " \001(\r\022\036\n\026core_proud_skill_level\030\013 \001(\r\022\033\n\023" +
+      "wearing_flycloak_id\030\021 \001(\r\022\027\n\017trace_effec" +
+      "t_id\030\027 \001(\r\022\021\n\tborn_time\030\022 \001(\r\022\021\n\tanim_ha" +
+      "sh\030\026 \001(\r\022\013\n\003uid\030\001 \001(\r\022\022\n\ncostume_id\030\023 \001(" +
+      "\r\022\017\n\007peer_id\030\004 \001(\r\022\026\n\016skill_depot_id\030\006 \001" +
+      "(\r\032>\n\034ProudSkillExtraLevelMapEntry\022\013\n\003ke" +
       "y\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0324\n\022SkillLevel" +
       "MapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
@@ -3991,18 +3999,18 @@ public final class SceneAvatarInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneAvatarInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAvatarInfo_descriptor,
-        new java.lang.String[] { "ProudSkillExtraLevelMap", "SkillLevelMap", "ReliquaryList", "ExcelInfo", "CurVehicleInfo", "EquipIdList", "Weapon", "InherentProudSkillList", "TeamResonanceList", "ServerBuffList", "TalentIdList", "Uid", "WearingFlycloakId", "AnimHash", "AvatarId", "SkillDepotId", "CostumeId", "TraceEffectId", "CoreProudSkillLevel", "BornTime", "PeerId", "Guid", });
+        new java.lang.String[] { "Weapon", "ProudSkillExtraLevelMap", "ExcelInfo", "CurVehicleInfo", "InherentProudSkillList", "EquipIdList", "SkillLevelMap", "TalentIdList", "ServerBuffList", "ReliquaryList", "TeamResonanceList", "Guid", "AvatarId", "CoreProudSkillLevel", "WearingFlycloakId", "TraceEffectId", "BornTime", "AnimHash", "Uid", "CostumeId", "PeerId", "SkillDepotId", });
     internal_static_SceneAvatarInfo_ProudSkillExtraLevelMapEntry_descriptor =
       internal_static_SceneAvatarInfo_descriptor.getNestedTypes().get(0);
     internal_static_SceneAvatarInfo_ProudSkillExtraLevelMapEntry_fieldAccessorTable = new
@@ -4015,11 +4023,11 @@ public final class SceneAvatarInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAvatarInfo_SkillLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

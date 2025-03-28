@@ -17,6 +17,7 @@ import emu.grasscutter.net.proto.ItemOuterClass.Item;
 import emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam;
 import emu.grasscutter.net.proto.MaterialOuterClass.Material;
 import emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary;
+import emu.grasscutter.net.proto.RewardItemInfoOuterClass.RewardItemInfo;
 import emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.SceneReliquaryInfo;
 import emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo;
 import emu.grasscutter.net.proto.WeaponOuterClass.Weapon;
@@ -365,5 +366,9 @@ public class GameItem {
 
     public ItemParam toItemParam() {
         return ItemParam.newBuilder().setItemId(this.getItemId()).setCount(this.getCount()).build();
+    }
+
+    public RewardItemInfo toRewardItemInfo() {
+        return RewardItemInfo.newBuilder().addItemList(toItemParam()).build();
     }
 }

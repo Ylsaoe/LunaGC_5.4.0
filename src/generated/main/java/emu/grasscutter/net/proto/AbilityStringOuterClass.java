@@ -50,7 +50,7 @@ public final class AbilityStringOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
+   * Version: 5.4
    * </pre>
    *
    * Protobuf type {@code AbilityString}
@@ -440,7 +440,7 @@ public final class AbilityStringOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
+     * Version: 5.4
      * </pre>
      *
      * Protobuf type {@code AbilityString}

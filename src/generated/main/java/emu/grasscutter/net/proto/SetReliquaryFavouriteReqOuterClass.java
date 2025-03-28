@@ -19,18 +19,23 @@ public final class SetReliquaryFavouriteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_favourite = 1;</code>
-     * @return The isFavourite.
-     */
-    boolean getIsFavourite();
-
-    /**
      * <code>uint64 target_reliquary_guid = 5;</code>
      * @return The targetReliquaryGuid.
      */
     long getTargetReliquaryGuid();
+
+    /**
+     * <code>bool is_favourite = 1;</code>
+     * @return The isFavourite.
+     */
+    boolean getIsFavourite();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 2419
+   * </pre>
+   *
    * Protobuf type {@code SetReliquaryFavouriteReq}
    */
   public static final class SetReliquaryFavouriteReq extends
@@ -117,17 +122,6 @@ public final class SetReliquaryFavouriteReqOuterClass {
               emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq.class, emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq.Builder.class);
     }
 
-    public static final int IS_FAVOURITE_FIELD_NUMBER = 1;
-    private boolean isFavourite_;
-    /**
-     * <code>bool is_favourite = 1;</code>
-     * @return The isFavourite.
-     */
-    @java.lang.Override
-    public boolean getIsFavourite() {
-      return isFavourite_;
-    }
-
     public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 5;
     private long targetReliquaryGuid_;
     /**
@@ -137,6 +131,17 @@ public final class SetReliquaryFavouriteReqOuterClass {
     @java.lang.Override
     public long getTargetReliquaryGuid() {
       return targetReliquaryGuid_;
+    }
+
+    public static final int IS_FAVOURITE_FIELD_NUMBER = 1;
+    private boolean isFavourite_;
+    /**
+     * <code>bool is_favourite = 1;</code>
+     * @return The isFavourite.
+     */
+    @java.lang.Override
+    public boolean getIsFavourite() {
+      return isFavourite_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +196,10 @@ public final class SetReliquaryFavouriteReqOuterClass {
       }
       emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq other = (emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq) obj;
 
-      if (getIsFavourite()
-          != other.getIsFavourite()) return false;
       if (getTargetReliquaryGuid()
           != other.getTargetReliquaryGuid()) return false;
+      if (getIsFavourite()
+          != other.getIsFavourite()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,12 +211,12 @@ public final class SetReliquaryFavouriteReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_FAVOURITE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFavourite());
       hash = (37 * hash) + TARGET_RELIQUARY_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTargetReliquaryGuid());
+      hash = (37 * hash) + IS_FAVOURITE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFavourite());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -308,6 +313,11 @@ public final class SetReliquaryFavouriteReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 2419
+     * </pre>
+     *
      * Protobuf type {@code SetReliquaryFavouriteReq}
      */
     public static final class Builder extends
@@ -345,9 +355,9 @@ public final class SetReliquaryFavouriteReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFavourite_ = false;
-
         targetReliquaryGuid_ = 0L;
+
+        isFavourite_ = false;
 
         return this;
       }
@@ -375,8 +385,8 @@ public final class SetReliquaryFavouriteReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq buildPartial() {
         emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq result = new emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq(this);
-        result.isFavourite_ = isFavourite_;
         result.targetReliquaryGuid_ = targetReliquaryGuid_;
+        result.isFavourite_ = isFavourite_;
         onBuilt();
         return result;
       }
@@ -425,11 +435,11 @@ public final class SetReliquaryFavouriteReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq other) {
         if (other == emu.grasscutter.net.proto.SetReliquaryFavouriteReqOuterClass.SetReliquaryFavouriteReq.getDefaultInstance()) return this;
-        if (other.getIsFavourite() != false) {
-          setIsFavourite(other.getIsFavourite());
-        }
         if (other.getTargetReliquaryGuid() != 0L) {
           setTargetReliquaryGuid(other.getTargetReliquaryGuid());
+        }
+        if (other.getIsFavourite() != false) {
+          setIsFavourite(other.getIsFavourite());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,37 +470,6 @@ public final class SetReliquaryFavouriteReqOuterClass {
         return this;
       }
 
-      private boolean isFavourite_ ;
-      /**
-       * <code>bool is_favourite = 1;</code>
-       * @return The isFavourite.
-       */
-      @java.lang.Override
-      public boolean getIsFavourite() {
-        return isFavourite_;
-      }
-      /**
-       * <code>bool is_favourite = 1;</code>
-       * @param value The isFavourite to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFavourite(boolean value) {
-        
-        isFavourite_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_favourite = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFavourite() {
-        
-        isFavourite_ = false;
-        onChanged();
-        return this;
-      }
-
       private long targetReliquaryGuid_ ;
       /**
        * <code>uint64 target_reliquary_guid = 5;</code>
@@ -518,6 +497,37 @@ public final class SetReliquaryFavouriteReqOuterClass {
       public Builder clearTargetReliquaryGuid() {
         
         targetReliquaryGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFavourite_ ;
+      /**
+       * <code>bool is_favourite = 1;</code>
+       * @return The isFavourite.
+       */
+      @java.lang.Override
+      public boolean getIsFavourite() {
+        return isFavourite_;
+      }
+      /**
+       * <code>bool is_favourite = 1;</code>
+       * @param value The isFavourite to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFavourite(boolean value) {
+        
+        isFavourite_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_favourite = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFavourite() {
+        
+        isFavourite_ = false;
         onChanged();
         return this;
       }
@@ -589,8 +599,8 @@ public final class SetReliquaryFavouriteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SetReliquaryFavouriteReq.proto\"O\n\030SetR" +
-      "eliquaryFavouriteReq\022\024\n\014is_favourite\030\001 \001" +
-      "(\010\022\035\n\025target_reliquary_guid\030\005 \001(\004B\033\n\031emu" +
+      "eliquaryFavouriteReq\022\035\n\025target_reliquary" +
+      "_guid\030\005 \001(\004\022\024\n\014is_favourite\030\001 \001(\010B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -602,7 +612,7 @@ public final class SetReliquaryFavouriteReqOuterClass {
     internal_static_SetReliquaryFavouriteReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SetReliquaryFavouriteReq_descriptor,
-        new java.lang.String[] { "IsFavourite", "TargetReliquaryGuid", });
+        new java.lang.String[] { "TargetReliquaryGuid", "IsFavourite", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

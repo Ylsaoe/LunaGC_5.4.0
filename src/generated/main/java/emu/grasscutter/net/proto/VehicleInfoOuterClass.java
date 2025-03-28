@@ -43,22 +43,22 @@ public final class VehicleInfoOuterClass {
         int index);
 
     /**
-     * <code>uint32 owner_uid = 2;</code>
-     * @return The ownerUid.
-     */
-    int getOwnerUid();
-
-    /**
-     * <code>float cur_stamina = 3;</code>
-     * @return The curStamina.
-     */
-    float getCurStamina();
-
-    /**
      * <code>uint32 transform_entity_id = 4;</code>
      * @return The transformEntityId.
      */
     int getTransformEntityId();
+
+    /**
+     * <code>uint32 anim_hash = 6;</code>
+     * @return The animHash.
+     */
+    int getAnimHash();
+
+    /**
+     * <code>uint32 owner_uid = 2;</code>
+     * @return The ownerUid.
+     */
+    int getOwnerUid();
 
     /**
      * <code>float cur_phlogiston = 5;</code>
@@ -67,12 +67,16 @@ public final class VehicleInfoOuterClass {
     float getCurPhlogiston();
 
     /**
-     * <code>uint32 anim_hash = 6;</code>
-     * @return The animHash.
+     * <code>float cur_stamina = 3;</code>
+     * @return The curStamina.
      */
-    int getAnimHash();
+    float getCurStamina();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code VehicleInfo}
    */
   public static final class VehicleInfo extends
@@ -228,28 +232,6 @@ public final class VehicleInfoOuterClass {
       return memberList_.get(index);
     }
 
-    public static final int OWNER_UID_FIELD_NUMBER = 2;
-    private int ownerUid_;
-    /**
-     * <code>uint32 owner_uid = 2;</code>
-     * @return The ownerUid.
-     */
-    @java.lang.Override
-    public int getOwnerUid() {
-      return ownerUid_;
-    }
-
-    public static final int CUR_STAMINA_FIELD_NUMBER = 3;
-    private float curStamina_;
-    /**
-     * <code>float cur_stamina = 3;</code>
-     * @return The curStamina.
-     */
-    @java.lang.Override
-    public float getCurStamina() {
-      return curStamina_;
-    }
-
     public static final int TRANSFORM_ENTITY_ID_FIELD_NUMBER = 4;
     private int transformEntityId_;
     /**
@@ -259,6 +241,28 @@ public final class VehicleInfoOuterClass {
     @java.lang.Override
     public int getTransformEntityId() {
       return transformEntityId_;
+    }
+
+    public static final int ANIM_HASH_FIELD_NUMBER = 6;
+    private int animHash_;
+    /**
+     * <code>uint32 anim_hash = 6;</code>
+     * @return The animHash.
+     */
+    @java.lang.Override
+    public int getAnimHash() {
+      return animHash_;
+    }
+
+    public static final int OWNER_UID_FIELD_NUMBER = 2;
+    private int ownerUid_;
+    /**
+     * <code>uint32 owner_uid = 2;</code>
+     * @return The ownerUid.
+     */
+    @java.lang.Override
+    public int getOwnerUid() {
+      return ownerUid_;
     }
 
     public static final int CUR_PHLOGISTON_FIELD_NUMBER = 5;
@@ -272,15 +276,15 @@ public final class VehicleInfoOuterClass {
       return curPhlogiston_;
     }
 
-    public static final int ANIM_HASH_FIELD_NUMBER = 6;
-    private int animHash_;
+    public static final int CUR_STAMINA_FIELD_NUMBER = 3;
+    private float curStamina_;
     /**
-     * <code>uint32 anim_hash = 6;</code>
-     * @return The animHash.
+     * <code>float cur_stamina = 3;</code>
+     * @return The curStamina.
      */
     @java.lang.Override
-    public int getAnimHash() {
-      return animHash_;
+    public float getCurStamina() {
+      return curStamina_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -365,18 +369,18 @@ public final class VehicleInfoOuterClass {
 
       if (!getMemberListList()
           .equals(other.getMemberListList())) return false;
-      if (getOwnerUid()
-          != other.getOwnerUid()) return false;
-      if (java.lang.Float.floatToIntBits(getCurStamina())
-          != java.lang.Float.floatToIntBits(
-              other.getCurStamina())) return false;
       if (getTransformEntityId()
           != other.getTransformEntityId()) return false;
+      if (getAnimHash()
+          != other.getAnimHash()) return false;
+      if (getOwnerUid()
+          != other.getOwnerUid()) return false;
       if (java.lang.Float.floatToIntBits(getCurPhlogiston())
           != java.lang.Float.floatToIntBits(
               other.getCurPhlogiston())) return false;
-      if (getAnimHash()
-          != other.getAnimHash()) return false;
+      if (java.lang.Float.floatToIntBits(getCurStamina())
+          != java.lang.Float.floatToIntBits(
+              other.getCurStamina())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -392,18 +396,18 @@ public final class VehicleInfoOuterClass {
         hash = (37 * hash) + MEMBER_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMemberListList().hashCode();
       }
-      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerUid();
-      hash = (37 * hash) + CUR_STAMINA_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCurStamina());
       hash = (37 * hash) + TRANSFORM_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTransformEntityId();
+      hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
+      hash = (53 * hash) + getAnimHash();
+      hash = (37 * hash) + OWNER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerUid();
       hash = (37 * hash) + CUR_PHLOGISTON_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getCurPhlogiston());
-      hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
-      hash = (53 * hash) + getAnimHash();
+      hash = (37 * hash) + CUR_STAMINA_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCurStamina());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -500,6 +504,10 @@ public final class VehicleInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code VehicleInfo}
      */
     public static final class Builder extends
@@ -544,15 +552,15 @@ public final class VehicleInfoOuterClass {
         } else {
           memberListBuilder_.clear();
         }
-        ownerUid_ = 0;
-
-        curStamina_ = 0F;
-
         transformEntityId_ = 0;
+
+        animHash_ = 0;
+
+        ownerUid_ = 0;
 
         curPhlogiston_ = 0F;
 
-        animHash_ = 0;
+        curStamina_ = 0F;
 
         return this;
       }
@@ -590,11 +598,11 @@ public final class VehicleInfoOuterClass {
         } else {
           result.memberList_ = memberListBuilder_.build();
         }
-        result.ownerUid_ = ownerUid_;
-        result.curStamina_ = curStamina_;
         result.transformEntityId_ = transformEntityId_;
-        result.curPhlogiston_ = curPhlogiston_;
         result.animHash_ = animHash_;
+        result.ownerUid_ = ownerUid_;
+        result.curPhlogiston_ = curPhlogiston_;
+        result.curStamina_ = curStamina_;
         onBuilt();
         return result;
       }
@@ -669,20 +677,20 @@ public final class VehicleInfoOuterClass {
             }
           }
         }
-        if (other.getOwnerUid() != 0) {
-          setOwnerUid(other.getOwnerUid());
-        }
-        if (other.getCurStamina() != 0F) {
-          setCurStamina(other.getCurStamina());
-        }
         if (other.getTransformEntityId() != 0) {
           setTransformEntityId(other.getTransformEntityId());
+        }
+        if (other.getAnimHash() != 0) {
+          setAnimHash(other.getAnimHash());
+        }
+        if (other.getOwnerUid() != 0) {
+          setOwnerUid(other.getOwnerUid());
         }
         if (other.getCurPhlogiston() != 0F) {
           setCurPhlogiston(other.getCurPhlogiston());
         }
-        if (other.getAnimHash() != 0) {
-          setAnimHash(other.getAnimHash());
+        if (other.getCurStamina() != 0F) {
+          setCurStamina(other.getCurStamina());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -954,68 +962,6 @@ public final class VehicleInfoOuterClass {
         return memberListBuilder_;
       }
 
-      private int ownerUid_ ;
-      /**
-       * <code>uint32 owner_uid = 2;</code>
-       * @return The ownerUid.
-       */
-      @java.lang.Override
-      public int getOwnerUid() {
-        return ownerUid_;
-      }
-      /**
-       * <code>uint32 owner_uid = 2;</code>
-       * @param value The ownerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOwnerUid(int value) {
-        
-        ownerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 owner_uid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOwnerUid() {
-        
-        ownerUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float curStamina_ ;
-      /**
-       * <code>float cur_stamina = 3;</code>
-       * @return The curStamina.
-       */
-      @java.lang.Override
-      public float getCurStamina() {
-        return curStamina_;
-      }
-      /**
-       * <code>float cur_stamina = 3;</code>
-       * @param value The curStamina to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurStamina(float value) {
-        
-        curStamina_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float cur_stamina = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurStamina() {
-        
-        curStamina_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private int transformEntityId_ ;
       /**
        * <code>uint32 transform_entity_id = 4;</code>
@@ -1043,6 +989,68 @@ public final class VehicleInfoOuterClass {
       public Builder clearTransformEntityId() {
         
         transformEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int animHash_ ;
+      /**
+       * <code>uint32 anim_hash = 6;</code>
+       * @return The animHash.
+       */
+      @java.lang.Override
+      public int getAnimHash() {
+        return animHash_;
+      }
+      /**
+       * <code>uint32 anim_hash = 6;</code>
+       * @param value The animHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAnimHash(int value) {
+        
+        animHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 anim_hash = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAnimHash() {
+        
+        animHash_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ownerUid_ ;
+      /**
+       * <code>uint32 owner_uid = 2;</code>
+       * @return The ownerUid.
+       */
+      @java.lang.Override
+      public int getOwnerUid() {
+        return ownerUid_;
+      }
+      /**
+       * <code>uint32 owner_uid = 2;</code>
+       * @param value The ownerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOwnerUid(int value) {
+        
+        ownerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 owner_uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOwnerUid() {
+        
+        ownerUid_ = 0;
         onChanged();
         return this;
       }
@@ -1078,33 +1086,33 @@ public final class VehicleInfoOuterClass {
         return this;
       }
 
-      private int animHash_ ;
+      private float curStamina_ ;
       /**
-       * <code>uint32 anim_hash = 6;</code>
-       * @return The animHash.
+       * <code>float cur_stamina = 3;</code>
+       * @return The curStamina.
        */
       @java.lang.Override
-      public int getAnimHash() {
-        return animHash_;
+      public float getCurStamina() {
+        return curStamina_;
       }
       /**
-       * <code>uint32 anim_hash = 6;</code>
-       * @param value The animHash to set.
+       * <code>float cur_stamina = 3;</code>
+       * @param value The curStamina to set.
        * @return This builder for chaining.
        */
-      public Builder setAnimHash(int value) {
+      public Builder setCurStamina(float value) {
         
-        animHash_ = value;
+        curStamina_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 anim_hash = 6;</code>
+       * <code>float cur_stamina = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAnimHash() {
+      public Builder clearCurStamina() {
         
-        animHash_ = 0;
+        curStamina_ = 0F;
         onChanged();
         return this;
       }
@@ -1177,10 +1185,10 @@ public final class VehicleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021VehicleInfo.proto\032\023VehicleMember.proto" +
       "\"\242\001\n\013VehicleInfo\022#\n\013member_list\030\001 \003(\0132\016." +
-      "VehicleMember\022\021\n\towner_uid\030\002 \001(\r\022\023\n\013cur_" +
-      "stamina\030\003 \001(\002\022\033\n\023transform_entity_id\030\004 \001" +
-      "(\r\022\026\n\016cur_phlogiston\030\005 \001(\002\022\021\n\tanim_hash\030" +
-      "\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "VehicleMember\022\033\n\023transform_entity_id\030\004 \001" +
+      "(\r\022\021\n\tanim_hash\030\006 \001(\r\022\021\n\towner_uid\030\002 \001(\r" +
+      "\022\026\n\016cur_phlogiston\030\005 \001(\002\022\023\n\013cur_stamina\030" +
+      "\003 \001(\002B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1193,7 +1201,7 @@ public final class VehicleInfoOuterClass {
     internal_static_VehicleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleInfo_descriptor,
-        new java.lang.String[] { "MemberList", "OwnerUid", "CurStamina", "TransformEntityId", "CurPhlogiston", "AnimHash", });
+        new java.lang.String[] { "MemberList", "TransformEntityId", "AnimHash", "OwnerUid", "CurPhlogiston", "CurStamina", });
     emu.grasscutter.net.proto.VehicleMemberOuterClass.getDescriptor();
   }
 

@@ -34,38 +34,20 @@ public final class RoutePointOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder();
 
     /**
-     * <code>bool has_reach_event = 3;</code>
-     * @return The hasReachEvent.
-     */
-    boolean getHasReachEvent();
-
-    /**
-     * <code>float velocity = 11;</code>
-     * @return Whether the velocity field is set.
-     */
-    boolean hasVelocity();
-    /**
-     * <code>float velocity = 11;</code>
-     * @return The velocity.
-     */
-    float getVelocity();
-
-    /**
-     * <code>float time = 12;</code>
-     * @return Whether the time field is set.
-     */
-    boolean hasTime();
-    /**
-     * <code>float time = 12;</code>
-     * @return The time.
-     */
-    float getTime();
-
-    /**
+     * <pre>
+     *EIGKKLPGCHD point_type = 24;
+     * </pre>
+     *
      * <code>float arrive_range = 2;</code>
      * @return The arriveRange.
      */
     float getArriveRange();
+
+    /**
+     * <code>bool has_reach_event = 3;</code>
+     * @return The hasReachEvent.
+     */
+    boolean getHasReachEvent();
 
     /**
      * <code>.Vector rotation = 21;</code>
@@ -112,11 +94,37 @@ public final class RoutePointOuterClass {
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getAxisSpeedOrBuilder();
 
-    public emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.MoveParamsCase getMoveParamsCase();
+    /**
+     * <code>float velocity = 11;</code>
+     * @return Whether the velocity field is set.
+     */
+    boolean hasVelocity();
+    /**
+     * <code>float velocity = 11;</code>
+     * @return The velocity.
+     */
+    float getVelocity();
+
+    /**
+     * <code>float time = 12;</code>
+     * @return Whether the time field is set.
+     */
+    boolean hasTime();
+    /**
+     * <code>float time = 12;</code>
+     * @return The time.
+     */
+    float getTime();
 
     public emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.RotateParamsCase getRotateParamsCase();
+
+    public emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.MoveParamsCase getMoveParamsCase();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code RoutePoint}
    */
   public static final class RoutePoint extends
@@ -268,47 +276,6 @@ public final class RoutePointOuterClass {
               emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.class, emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.Builder.class);
     }
 
-    private int moveParamsCase_ = 0;
-    private java.lang.Object moveParams_;
-    public enum MoveParamsCase
-        implements com.google.protobuf.Internal.EnumLite,
-            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      VELOCITY(11),
-      TIME(12),
-      MOVEPARAMS_NOT_SET(0);
-      private final int value;
-      private MoveParamsCase(int value) {
-        this.value = value;
-      }
-      /**
-       * @param value The number of the enum to look for.
-       * @return The enum associated with the given number.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static MoveParamsCase valueOf(int value) {
-        return forNumber(value);
-      }
-
-      public static MoveParamsCase forNumber(int value) {
-        switch (value) {
-          case 11: return VELOCITY;
-          case 12: return TIME;
-          case 0: return MOVEPARAMS_NOT_SET;
-          default: return null;
-        }
-      }
-      public int getNumber() {
-        return this.value;
-      }
-    };
-
-    public MoveParamsCase
-    getMoveParamsCase() {
-      return MoveParamsCase.forNumber(
-          moveParamsCase_);
-    }
-
     private int rotateParamsCase_ = 0;
     private java.lang.Object rotateParams_;
     public enum RotateParamsCase
@@ -352,6 +319,47 @@ public final class RoutePointOuterClass {
           rotateParamsCase_);
     }
 
+    private int moveParamsCase_ = 0;
+    private java.lang.Object moveParams_;
+    public enum MoveParamsCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      VELOCITY(11),
+      TIME(12),
+      MOVEPARAMS_NOT_SET(0);
+      private final int value;
+      private MoveParamsCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static MoveParamsCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static MoveParamsCase forNumber(int value) {
+        switch (value) {
+          case 11: return VELOCITY;
+          case 12: return TIME;
+          case 0: return MOVEPARAMS_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public MoveParamsCase
+    getMoveParamsCase() {
+      return MoveParamsCase.forNumber(
+          moveParamsCase_);
+    }
+
     public static final int POSITION_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector position_;
     /**
@@ -378,6 +386,21 @@ public final class RoutePointOuterClass {
       return getPosition();
     }
 
+    public static final int ARRIVE_RANGE_FIELD_NUMBER = 2;
+    private float arriveRange_;
+    /**
+     * <pre>
+     *EIGKKLPGCHD point_type = 24;
+     * </pre>
+     *
+     * <code>float arrive_range = 2;</code>
+     * @return The arriveRange.
+     */
+    @java.lang.Override
+    public float getArriveRange() {
+      return arriveRange_;
+    }
+
     public static final int HAS_REACH_EVENT_FIELD_NUMBER = 3;
     private boolean hasReachEvent_;
     /**
@@ -387,59 +410,6 @@ public final class RoutePointOuterClass {
     @java.lang.Override
     public boolean getHasReachEvent() {
       return hasReachEvent_;
-    }
-
-    public static final int VELOCITY_FIELD_NUMBER = 11;
-    /**
-     * <code>float velocity = 11;</code>
-     * @return Whether the velocity field is set.
-     */
-    @java.lang.Override
-    public boolean hasVelocity() {
-      return moveParamsCase_ == 11;
-    }
-    /**
-     * <code>float velocity = 11;</code>
-     * @return The velocity.
-     */
-    @java.lang.Override
-    public float getVelocity() {
-      if (moveParamsCase_ == 11) {
-        return (java.lang.Float) moveParams_;
-      }
-      return 0F;
-    }
-
-    public static final int TIME_FIELD_NUMBER = 12;
-    /**
-     * <code>float time = 12;</code>
-     * @return Whether the time field is set.
-     */
-    @java.lang.Override
-    public boolean hasTime() {
-      return moveParamsCase_ == 12;
-    }
-    /**
-     * <code>float time = 12;</code>
-     * @return The time.
-     */
-    @java.lang.Override
-    public float getTime() {
-      if (moveParamsCase_ == 12) {
-        return (java.lang.Float) moveParams_;
-      }
-      return 0F;
-    }
-
-    public static final int ARRIVE_RANGE_FIELD_NUMBER = 2;
-    private float arriveRange_;
-    /**
-     * <code>float arrive_range = 2;</code>
-     * @return The arriveRange.
-     */
-    @java.lang.Override
-    public float getArriveRange() {
-      return arriveRange_;
     }
 
     public static final int ROTATION_FIELD_NUMBER = 21;
@@ -533,6 +503,48 @@ public final class RoutePointOuterClass {
          return (emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion) rotateParams_;
       }
       return emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance();
+    }
+
+    public static final int VELOCITY_FIELD_NUMBER = 11;
+    /**
+     * <code>float velocity = 11;</code>
+     * @return Whether the velocity field is set.
+     */
+    @java.lang.Override
+    public boolean hasVelocity() {
+      return moveParamsCase_ == 11;
+    }
+    /**
+     * <code>float velocity = 11;</code>
+     * @return The velocity.
+     */
+    @java.lang.Override
+    public float getVelocity() {
+      if (moveParamsCase_ == 11) {
+        return (java.lang.Float) moveParams_;
+      }
+      return 0F;
+    }
+
+    public static final int TIME_FIELD_NUMBER = 12;
+    /**
+     * <code>float time = 12;</code>
+     * @return Whether the time field is set.
+     */
+    @java.lang.Override
+    public boolean hasTime() {
+      return moveParamsCase_ == 12;
+    }
+    /**
+     * <code>float time = 12;</code>
+     * @return The time.
+     */
+    @java.lang.Override
+    public float getTime() {
+      if (moveParamsCase_ == 12) {
+        return (java.lang.Float) moveParams_;
+      }
+      return 0F;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -638,26 +650,11 @@ public final class RoutePointOuterClass {
         if (!getPosition()
             .equals(other.getPosition())) return false;
       }
-      if (getHasReachEvent()
-          != other.getHasReachEvent()) return false;
       if (java.lang.Float.floatToIntBits(getArriveRange())
           != java.lang.Float.floatToIntBits(
               other.getArriveRange())) return false;
-      if (!getMoveParamsCase().equals(other.getMoveParamsCase())) return false;
-      switch (moveParamsCase_) {
-        case 11:
-          if (java.lang.Float.floatToIntBits(getVelocity())
-              != java.lang.Float.floatToIntBits(
-                  other.getVelocity())) return false;
-          break;
-        case 12:
-          if (java.lang.Float.floatToIntBits(getTime())
-              != java.lang.Float.floatToIntBits(
-                  other.getTime())) return false;
-          break;
-        case 0:
-        default:
-      }
+      if (getHasReachEvent()
+          != other.getHasReachEvent()) return false;
       if (!getRotateParamsCase().equals(other.getRotateParamsCase())) return false;
       switch (rotateParamsCase_) {
         case 21:
@@ -671,6 +668,21 @@ public final class RoutePointOuterClass {
         case 23:
           if (!getAxisSpeed()
               .equals(other.getAxisSpeed())) return false;
+          break;
+        case 0:
+        default:
+      }
+      if (!getMoveParamsCase().equals(other.getMoveParamsCase())) return false;
+      switch (moveParamsCase_) {
+        case 11:
+          if (java.lang.Float.floatToIntBits(getVelocity())
+              != java.lang.Float.floatToIntBits(
+                  other.getVelocity())) return false;
+          break;
+        case 12:
+          if (java.lang.Float.floatToIntBits(getTime())
+              != java.lang.Float.floatToIntBits(
+                  other.getTime())) return false;
           break;
         case 0:
         default:
@@ -690,26 +702,12 @@ public final class RoutePointOuterClass {
         hash = (37 * hash) + POSITION_FIELD_NUMBER;
         hash = (53 * hash) + getPosition().hashCode();
       }
-      hash = (37 * hash) + HAS_REACH_EVENT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHasReachEvent());
       hash = (37 * hash) + ARRIVE_RANGE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getArriveRange());
-      switch (moveParamsCase_) {
-        case 11:
-          hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
-          hash = (53 * hash) + java.lang.Float.floatToIntBits(
-              getVelocity());
-          break;
-        case 12:
-          hash = (37 * hash) + TIME_FIELD_NUMBER;
-          hash = (53 * hash) + java.lang.Float.floatToIntBits(
-              getTime());
-          break;
-        case 0:
-        default:
-      }
+      hash = (37 * hash) + HAS_REACH_EVENT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHasReachEvent());
       switch (rotateParamsCase_) {
         case 21:
           hash = (37 * hash) + ROTATION_FIELD_NUMBER;
@@ -722,6 +720,20 @@ public final class RoutePointOuterClass {
         case 23:
           hash = (37 * hash) + AXIS_SPEED_FIELD_NUMBER;
           hash = (53 * hash) + getAxisSpeed().hashCode();
+          break;
+        case 0:
+        default:
+      }
+      switch (moveParamsCase_) {
+        case 11:
+          hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
+          hash = (53 * hash) + java.lang.Float.floatToIntBits(
+              getVelocity());
+          break;
+        case 12:
+          hash = (37 * hash) + TIME_FIELD_NUMBER;
+          hash = (53 * hash) + java.lang.Float.floatToIntBits(
+              getTime());
           break;
         case 0:
         default:
@@ -822,6 +834,10 @@ public final class RoutePointOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code RoutePoint}
      */
     public static final class Builder extends
@@ -865,14 +881,14 @@ public final class RoutePointOuterClass {
           position_ = null;
           positionBuilder_ = null;
         }
-        hasReachEvent_ = false;
-
         arriveRange_ = 0F;
 
-        moveParamsCase_ = 0;
-        moveParams_ = null;
+        hasReachEvent_ = false;
+
         rotateParamsCase_ = 0;
         rotateParams_ = null;
+        moveParamsCase_ = 0;
+        moveParams_ = null;
         return this;
       }
 
@@ -904,14 +920,8 @@ public final class RoutePointOuterClass {
         } else {
           result.position_ = positionBuilder_.build();
         }
-        result.hasReachEvent_ = hasReachEvent_;
-        if (moveParamsCase_ == 11) {
-          result.moveParams_ = moveParams_;
-        }
-        if (moveParamsCase_ == 12) {
-          result.moveParams_ = moveParams_;
-        }
         result.arriveRange_ = arriveRange_;
+        result.hasReachEvent_ = hasReachEvent_;
         if (rotateParamsCase_ == 21) {
           if (rotationBuilder_ == null) {
             result.rotateParams_ = rotateParams_;
@@ -933,8 +943,14 @@ public final class RoutePointOuterClass {
             result.rotateParams_ = axisSpeedBuilder_.build();
           }
         }
-        result.moveParamsCase_ = moveParamsCase_;
+        if (moveParamsCase_ == 11) {
+          result.moveParams_ = moveParams_;
+        }
+        if (moveParamsCase_ == 12) {
+          result.moveParams_ = moveParams_;
+        }
         result.rotateParamsCase_ = rotateParamsCase_;
+        result.moveParamsCase_ = moveParamsCase_;
         onBuilt();
         return result;
       }
@@ -986,24 +1002,11 @@ public final class RoutePointOuterClass {
         if (other.hasPosition()) {
           mergePosition(other.getPosition());
         }
-        if (other.getHasReachEvent() != false) {
-          setHasReachEvent(other.getHasReachEvent());
-        }
         if (other.getArriveRange() != 0F) {
           setArriveRange(other.getArriveRange());
         }
-        switch (other.getMoveParamsCase()) {
-          case VELOCITY: {
-            setVelocity(other.getVelocity());
-            break;
-          }
-          case TIME: {
-            setTime(other.getTime());
-            break;
-          }
-          case MOVEPARAMS_NOT_SET: {
-            break;
-          }
+        if (other.getHasReachEvent() != false) {
+          setHasReachEvent(other.getHasReachEvent());
         }
         switch (other.getRotateParamsCase()) {
           case ROTATION: {
@@ -1019,6 +1022,19 @@ public final class RoutePointOuterClass {
             break;
           }
           case ROTATEPARAMS_NOT_SET: {
+            break;
+          }
+        }
+        switch (other.getMoveParamsCase()) {
+          case VELOCITY: {
+            setVelocity(other.getVelocity());
+            break;
+          }
+          case TIME: {
+            setTime(other.getTime());
+            break;
+          }
+          case MOVEPARAMS_NOT_SET: {
             break;
           }
         }
@@ -1050,21 +1066,6 @@ public final class RoutePointOuterClass {
         }
         return this;
       }
-      private int moveParamsCase_ = 0;
-      private java.lang.Object moveParams_;
-      public MoveParamsCase
-          getMoveParamsCase() {
-        return MoveParamsCase.forNumber(
-            moveParamsCase_);
-      }
-
-      public Builder clearMoveParams() {
-        moveParamsCase_ = 0;
-        moveParams_ = null;
-        onChanged();
-        return this;
-      }
-
       private int rotateParamsCase_ = 0;
       private java.lang.Object rotateParams_;
       public RotateParamsCase
@@ -1076,6 +1077,21 @@ public final class RoutePointOuterClass {
       public Builder clearRotateParams() {
         rotateParamsCase_ = 0;
         rotateParams_ = null;
+        onChanged();
+        return this;
+      }
+
+      private int moveParamsCase_ = 0;
+      private java.lang.Object moveParams_;
+      public MoveParamsCase
+          getMoveParamsCase() {
+        return MoveParamsCase.forNumber(
+            moveParamsCase_);
+      }
+
+      public Builder clearMoveParams() {
+        moveParamsCase_ = 0;
+        moveParams_ = null;
         onChanged();
         return this;
       }
@@ -1200,6 +1216,49 @@ public final class RoutePointOuterClass {
         return positionBuilder_;
       }
 
+      private float arriveRange_ ;
+      /**
+       * <pre>
+       *EIGKKLPGCHD point_type = 24;
+       * </pre>
+       *
+       * <code>float arrive_range = 2;</code>
+       * @return The arriveRange.
+       */
+      @java.lang.Override
+      public float getArriveRange() {
+        return arriveRange_;
+      }
+      /**
+       * <pre>
+       *EIGKKLPGCHD point_type = 24;
+       * </pre>
+       *
+       * <code>float arrive_range = 2;</code>
+       * @param value The arriveRange to set.
+       * @return This builder for chaining.
+       */
+      public Builder setArriveRange(float value) {
+        
+        arriveRange_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *EIGKKLPGCHD point_type = 24;
+       * </pre>
+       *
+       * <code>float arrive_range = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearArriveRange() {
+        
+        arriveRange_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private boolean hasReachEvent_ ;
       /**
        * <code>bool has_reach_event = 3;</code>
@@ -1227,119 +1286,6 @@ public final class RoutePointOuterClass {
       public Builder clearHasReachEvent() {
         
         hasReachEvent_ = false;
-        onChanged();
-        return this;
-      }
-
-      /**
-       * <code>float velocity = 11;</code>
-       * @return Whether the velocity field is set.
-       */
-      public boolean hasVelocity() {
-        return moveParamsCase_ == 11;
-      }
-      /**
-       * <code>float velocity = 11;</code>
-       * @return The velocity.
-       */
-      public float getVelocity() {
-        if (moveParamsCase_ == 11) {
-          return (java.lang.Float) moveParams_;
-        }
-        return 0F;
-      }
-      /**
-       * <code>float velocity = 11;</code>
-       * @param value The velocity to set.
-       * @return This builder for chaining.
-       */
-      public Builder setVelocity(float value) {
-        moveParamsCase_ = 11;
-        moveParams_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float velocity = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearVelocity() {
-        if (moveParamsCase_ == 11) {
-          moveParamsCase_ = 0;
-          moveParams_ = null;
-          onChanged();
-        }
-        return this;
-      }
-
-      /**
-       * <code>float time = 12;</code>
-       * @return Whether the time field is set.
-       */
-      public boolean hasTime() {
-        return moveParamsCase_ == 12;
-      }
-      /**
-       * <code>float time = 12;</code>
-       * @return The time.
-       */
-      public float getTime() {
-        if (moveParamsCase_ == 12) {
-          return (java.lang.Float) moveParams_;
-        }
-        return 0F;
-      }
-      /**
-       * <code>float time = 12;</code>
-       * @param value The time to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTime(float value) {
-        moveParamsCase_ = 12;
-        moveParams_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTime() {
-        if (moveParamsCase_ == 12) {
-          moveParamsCase_ = 0;
-          moveParams_ = null;
-          onChanged();
-        }
-        return this;
-      }
-
-      private float arriveRange_ ;
-      /**
-       * <code>float arrive_range = 2;</code>
-       * @return The arriveRange.
-       */
-      @java.lang.Override
-      public float getArriveRange() {
-        return arriveRange_;
-      }
-      /**
-       * <code>float arrive_range = 2;</code>
-       * @param value The arriveRange to set.
-       * @return This builder for chaining.
-       */
-      public Builder setArriveRange(float value) {
-        
-        arriveRange_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float arrive_range = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearArriveRange() {
-        
-        arriveRange_ = 0F;
         onChanged();
         return this;
       }
@@ -1766,6 +1712,88 @@ public final class RoutePointOuterClass {
         onChanged();;
         return axisSpeedBuilder_;
       }
+
+      /**
+       * <code>float velocity = 11;</code>
+       * @return Whether the velocity field is set.
+       */
+      public boolean hasVelocity() {
+        return moveParamsCase_ == 11;
+      }
+      /**
+       * <code>float velocity = 11;</code>
+       * @return The velocity.
+       */
+      public float getVelocity() {
+        if (moveParamsCase_ == 11) {
+          return (java.lang.Float) moveParams_;
+        }
+        return 0F;
+      }
+      /**
+       * <code>float velocity = 11;</code>
+       * @param value The velocity to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVelocity(float value) {
+        moveParamsCase_ = 11;
+        moveParams_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float velocity = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVelocity() {
+        if (moveParamsCase_ == 11) {
+          moveParamsCase_ = 0;
+          moveParams_ = null;
+          onChanged();
+        }
+        return this;
+      }
+
+      /**
+       * <code>float time = 12;</code>
+       * @return Whether the time field is set.
+       */
+      public boolean hasTime() {
+        return moveParamsCase_ == 12;
+      }
+      /**
+       * <code>float time = 12;</code>
+       * @return The time.
+       */
+      public float getTime() {
+        if (moveParamsCase_ == 12) {
+          return (java.lang.Float) moveParams_;
+        }
+        return 0F;
+      }
+      /**
+       * <code>float time = 12;</code>
+       * @param value The time to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTime(float value) {
+        moveParamsCase_ = 12;
+        moveParams_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float time = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTime() {
+        if (moveParamsCase_ == 12) {
+          moveParamsCase_ = 0;
+          moveParams_ = null;
+          onChanged();
+        }
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1835,12 +1863,12 @@ public final class RoutePointOuterClass {
     java.lang.String[] descriptorData = {
       "\n\020RoutePoint.proto\032\014Vector.proto\032\024MathQu" +
       "aternion.proto\"\211\002\n\nRoutePoint\022\031\n\010positio" +
-      "n\030\001 \001(\0132\007.Vector\022\027\n\017has_reach_event\030\003 \001(" +
-      "\010\022\022\n\010velocity\030\013 \001(\002H\000\022\016\n\004time\030\014 \001(\002H\000\022\024\n" +
-      "\014arrive_range\030\002 \001(\002\022\033\n\010rotation\030\025 \001(\0132\007." +
-      "VectorH\001\022)\n\016rotation_speed\030\026 \001(\0132\017.MathQ" +
-      "uaternionH\001\022%\n\naxis_speed\030\027 \001(\0132\017.MathQu" +
-      "aternionH\001B\r\n\013move_paramsB\017\n\rrotate_para" +
+      "n\030\001 \001(\0132\007.Vector\022\024\n\014arrive_range\030\002 \001(\002\022\027" +
+      "\n\017has_reach_event\030\003 \001(\010\022\033\n\010rotation\030\025 \001(" +
+      "\0132\007.VectorH\000\022)\n\016rotation_speed\030\026 \001(\0132\017.M" +
+      "athQuaternionH\000\022%\n\naxis_speed\030\027 \001(\0132\017.Ma" +
+      "thQuaternionH\000\022\022\n\010velocity\030\013 \001(\002H\001\022\016\n\004ti" +
+      "me\030\014 \001(\002H\001B\017\n\rrotate_paramsB\r\n\013move_para" +
       "msB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1854,7 +1882,7 @@ public final class RoutePointOuterClass {
     internal_static_RoutePoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoutePoint_descriptor,
-        new java.lang.String[] { "Position", "HasReachEvent", "Velocity", "Time", "ArriveRange", "Rotation", "RotationSpeed", "AxisSpeed", "MoveParams", "RotateParams", });
+        new java.lang.String[] { "Position", "ArriveRange", "HasReachEvent", "Rotation", "RotationSpeed", "AxisSpeed", "Velocity", "Time", "RotateParams", "MoveParams", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MathQuaternionOuterClass.getDescriptor();
   }

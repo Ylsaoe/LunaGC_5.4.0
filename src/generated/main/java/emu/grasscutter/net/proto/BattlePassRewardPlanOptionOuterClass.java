@@ -37,6 +37,10 @@ public final class BattlePassRewardPlanOptionOuterClass {
     boolean getIsOriginal();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BattlePassRewardPlanOption}
    */
   public static final class BattlePassRewardPlanOption extends
@@ -340,6 +344,10 @@ public final class BattlePassRewardPlanOptionOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BattlePassRewardPlanOption}
      */
     public static final class Builder extends

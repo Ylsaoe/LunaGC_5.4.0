@@ -31,6 +31,10 @@ public final class BreakoutVector2OuterClass {
     int getY();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BreakoutVector2}
    */
   public static final class BreakoutVector2 extends
@@ -306,6 +310,10 @@ public final class BreakoutVector2OuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BreakoutVector2}
      */
     public static final class Builder extends

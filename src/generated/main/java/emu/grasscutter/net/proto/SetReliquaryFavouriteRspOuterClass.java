@@ -19,6 +19,12 @@ public final class SetReliquaryFavouriteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint64 target_reliquary_guid = 15;</code>
+     * @return The targetReliquaryGuid.
+     */
+    long getTargetReliquaryGuid();
+
+    /**
      * <code>bool is_favourite = 6;</code>
      * @return The isFavourite.
      */
@@ -29,14 +35,13 @@ public final class SetReliquaryFavouriteRspOuterClass {
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>uint64 target_reliquary_guid = 15;</code>
-     * @return The targetReliquaryGuid.
-     */
-    long getTargetReliquaryGuid();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 3080
+   * </pre>
+   *
    * Protobuf type {@code SetReliquaryFavouriteRsp}
    */
   public static final class SetReliquaryFavouriteRsp extends
@@ -128,6 +133,17 @@ public final class SetReliquaryFavouriteRspOuterClass {
               emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp.class, emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp.Builder.class);
     }
 
+    public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 15;
+    private long targetReliquaryGuid_;
+    /**
+     * <code>uint64 target_reliquary_guid = 15;</code>
+     * @return The targetReliquaryGuid.
+     */
+    @java.lang.Override
+    public long getTargetReliquaryGuid() {
+      return targetReliquaryGuid_;
+    }
+
     public static final int IS_FAVOURITE_FIELD_NUMBER = 6;
     private boolean isFavourite_;
     /**
@@ -148,17 +164,6 @@ public final class SetReliquaryFavouriteRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int TARGET_RELIQUARY_GUID_FIELD_NUMBER = 15;
-    private long targetReliquaryGuid_;
-    /**
-     * <code>uint64 target_reliquary_guid = 15;</code>
-     * @return The targetReliquaryGuid.
-     */
-    @java.lang.Override
-    public long getTargetReliquaryGuid() {
-      return targetReliquaryGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -220,12 +225,12 @@ public final class SetReliquaryFavouriteRspOuterClass {
       }
       emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp other = (emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp) obj;
 
+      if (getTargetReliquaryGuid()
+          != other.getTargetReliquaryGuid()) return false;
       if (getIsFavourite()
           != other.getIsFavourite()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getTargetReliquaryGuid()
-          != other.getTargetReliquaryGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,14 +242,14 @@ public final class SetReliquaryFavouriteRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TARGET_RELIQUARY_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTargetReliquaryGuid());
       hash = (37 * hash) + IS_FAVOURITE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFavourite());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + TARGET_RELIQUARY_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getTargetReliquaryGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -341,6 +346,11 @@ public final class SetReliquaryFavouriteRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 3080
+     * </pre>
+     *
      * Protobuf type {@code SetReliquaryFavouriteRsp}
      */
     public static final class Builder extends
@@ -378,11 +388,11 @@ public final class SetReliquaryFavouriteRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        targetReliquaryGuid_ = 0L;
+
         isFavourite_ = false;
 
         retcode_ = 0;
-
-        targetReliquaryGuid_ = 0L;
 
         return this;
       }
@@ -410,9 +420,9 @@ public final class SetReliquaryFavouriteRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp buildPartial() {
         emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp result = new emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp(this);
+        result.targetReliquaryGuid_ = targetReliquaryGuid_;
         result.isFavourite_ = isFavourite_;
         result.retcode_ = retcode_;
-        result.targetReliquaryGuid_ = targetReliquaryGuid_;
         onBuilt();
         return result;
       }
@@ -461,14 +471,14 @@ public final class SetReliquaryFavouriteRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp other) {
         if (other == emu.grasscutter.net.proto.SetReliquaryFavouriteRspOuterClass.SetReliquaryFavouriteRsp.getDefaultInstance()) return this;
+        if (other.getTargetReliquaryGuid() != 0L) {
+          setTargetReliquaryGuid(other.getTargetReliquaryGuid());
+        }
         if (other.getIsFavourite() != false) {
           setIsFavourite(other.getIsFavourite());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getTargetReliquaryGuid() != 0L) {
-          setTargetReliquaryGuid(other.getTargetReliquaryGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -496,6 +506,37 @@ public final class SetReliquaryFavouriteRspOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private long targetReliquaryGuid_ ;
+      /**
+       * <code>uint64 target_reliquary_guid = 15;</code>
+       * @return The targetReliquaryGuid.
+       */
+      @java.lang.Override
+      public long getTargetReliquaryGuid() {
+        return targetReliquaryGuid_;
+      }
+      /**
+       * <code>uint64 target_reliquary_guid = 15;</code>
+       * @param value The targetReliquaryGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetReliquaryGuid(long value) {
+        
+        targetReliquaryGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 target_reliquary_guid = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetReliquaryGuid() {
+        
+        targetReliquaryGuid_ = 0L;
+        onChanged();
         return this;
       }
 
@@ -557,37 +598,6 @@ public final class SetReliquaryFavouriteRspOuterClass {
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long targetReliquaryGuid_ ;
-      /**
-       * <code>uint64 target_reliquary_guid = 15;</code>
-       * @return The targetReliquaryGuid.
-       */
-      @java.lang.Override
-      public long getTargetReliquaryGuid() {
-        return targetReliquaryGuid_;
-      }
-      /**
-       * <code>uint64 target_reliquary_guid = 15;</code>
-       * @param value The targetReliquaryGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetReliquaryGuid(long value) {
-        
-        targetReliquaryGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 target_reliquary_guid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetReliquaryGuid() {
-        
-        targetReliquaryGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -659,9 +669,9 @@ public final class SetReliquaryFavouriteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SetReliquaryFavouriteRsp.proto\"`\n\030SetR" +
-      "eliquaryFavouriteRsp\022\024\n\014is_favourite\030\006 \001" +
-      "(\010\022\017\n\007retcode\030\n \001(\005\022\035\n\025target_reliquary_" +
-      "guid\030\017 \001(\004B\033\n\031emu.grasscutter.net.protob" +
+      "eliquaryFavouriteRsp\022\035\n\025target_reliquary" +
+      "_guid\030\017 \001(\004\022\024\n\014is_favourite\030\006 \001(\010\022\017\n\007ret" +
+      "code\030\n \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -673,7 +683,7 @@ public final class SetReliquaryFavouriteRspOuterClass {
     internal_static_SetReliquaryFavouriteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SetReliquaryFavouriteRsp_descriptor,
-        new java.lang.String[] { "IsFavourite", "Retcode", "TargetReliquaryGuid", });
+        new java.lang.String[] { "TargetReliquaryGuid", "IsFavourite", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

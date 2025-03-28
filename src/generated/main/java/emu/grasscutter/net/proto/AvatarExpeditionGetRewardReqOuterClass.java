@@ -19,15 +19,21 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 11;</code>
+     * <code>bool JEHBGLJHJGA = 11;</code>
+     * @return The jEHBGLJHJGA.
+     */
+    boolean getJEHBGLJHJGA();
+
+    /**
+     * <code>uint64 avatar_guid = 9;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 4847
-   * Obf: PPKAGNHEIBA
+   * Version: 5.4
+   * CmdId: 2486
    * </pre>
    *
    * Protobuf type {@code AvatarExpeditionGetRewardReq}
@@ -74,9 +80,14 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 72: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 88: {
+
+              jEHBGLJHJGA_ = input.readBool();
               break;
             }
             default: {
@@ -111,10 +122,21 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
               emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq.class, emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
+    public static final int JEHBGLJHJGA_FIELD_NUMBER = 11;
+    private boolean jEHBGLJHJGA_;
+    /**
+     * <code>bool JEHBGLJHJGA = 11;</code>
+     * @return The jEHBGLJHJGA.
+     */
+    @java.lang.Override
+    public boolean getJEHBGLJHJGA() {
+      return jEHBGLJHJGA_;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 9;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 11;</code>
+     * <code>uint64 avatar_guid = 9;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -137,7 +159,10 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(11, avatarGuid_);
+        output.writeUInt64(9, avatarGuid_);
+      }
+      if (jEHBGLJHJGA_ != false) {
+        output.writeBool(11, jEHBGLJHJGA_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +175,11 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       size = 0;
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, avatarGuid_);
+          .computeUInt64Size(9, avatarGuid_);
+      }
+      if (jEHBGLJHJGA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, jEHBGLJHJGA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,6 +196,8 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       }
       emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq other = (emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq) obj;
 
+      if (getJEHBGLJHJGA()
+          != other.getJEHBGLJHJGA()) return false;
       if (getAvatarGuid()
           != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -180,6 +211,9 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + JEHBGLJHJGA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getJEHBGLJHJGA());
       hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getAvatarGuid());
@@ -280,8 +314,8 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4847
-     * Obf: PPKAGNHEIBA
+     * Version: 5.4
+     * CmdId: 2486
      * </pre>
      *
      * Protobuf type {@code AvatarExpeditionGetRewardReq}
@@ -321,6 +355,8 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        jEHBGLJHJGA_ = false;
+
         avatarGuid_ = 0L;
 
         return this;
@@ -349,6 +385,7 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq buildPartial() {
         emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq result = new emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq(this);
+        result.jEHBGLJHJGA_ = jEHBGLJHJGA_;
         result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
@@ -398,6 +435,9 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq other) {
         if (other == emu.grasscutter.net.proto.AvatarExpeditionGetRewardReqOuterClass.AvatarExpeditionGetRewardReq.getDefaultInstance()) return this;
+        if (other.getJEHBGLJHJGA() != false) {
+          setJEHBGLJHJGA(other.getJEHBGLJHJGA());
+        }
         if (other.getAvatarGuid() != 0L) {
           setAvatarGuid(other.getAvatarGuid());
         }
@@ -430,9 +470,40 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
         return this;
       }
 
+      private boolean jEHBGLJHJGA_ ;
+      /**
+       * <code>bool JEHBGLJHJGA = 11;</code>
+       * @return The jEHBGLJHJGA.
+       */
+      @java.lang.Override
+      public boolean getJEHBGLJHJGA() {
+        return jEHBGLJHJGA_;
+      }
+      /**
+       * <code>bool JEHBGLJHJGA = 11;</code>
+       * @param value The jEHBGLJHJGA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJEHBGLJHJGA(boolean value) {
+        
+        jEHBGLJHJGA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool JEHBGLJHJGA = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJEHBGLJHJGA() {
+        
+        jEHBGLJHJGA_ = false;
+        onChanged();
+        return this;
+      }
+
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 11;</code>
+       * <code>uint64 avatar_guid = 9;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -440,7 +511,7 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 11;</code>
+       * <code>uint64 avatar_guid = 9;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -451,7 +522,7 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 11;</code>
+       * <code>uint64 avatar_guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -527,10 +598,10 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"AvatarExpeditionGetRewardReq.proto\"3\n\034" +
-      "AvatarExpeditionGetRewardReq\022\023\n\013avatar_g" +
-      "uid\030\013 \001(\004B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\"AvatarExpeditionGetRewardReq.proto\"H\n\034" +
+      "AvatarExpeditionGetRewardReq\022\023\n\013JEHBGLJH" +
+      "JGA\030\013 \001(\010\022\023\n\013avatar_guid\030\t \001(\004B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -541,7 +612,7 @@ public final class AvatarExpeditionGetRewardReqOuterClass {
     internal_static_AvatarExpeditionGetRewardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarExpeditionGetRewardReq_descriptor,
-        new java.lang.String[] { "AvatarGuid", });
+        new java.lang.String[] { "JEHBGLJHJGA", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

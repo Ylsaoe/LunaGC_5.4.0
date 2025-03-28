@@ -19,6 +19,12 @@ public final class FishPoolInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 pool_id = 1;</code>
+     * @return The poolId.
+     */
+    int getPoolId();
+
+    /**
      * <code>repeated uint32 fish_area_list = 2;</code>
      * @return A list containing the fishAreaList.
      */
@@ -40,12 +46,6 @@ public final class FishPoolInfoOuterClass {
      * @return The todayFishNum.
      */
     int getTodayFishNum();
-
-    /**
-     * <code>uint32 pool_id = 1;</code>
-     * @return The poolId.
-     */
-    int getPoolId();
   }
   /**
    * Protobuf type {@code FishPoolInfo}
@@ -160,6 +160,17 @@ public final class FishPoolInfoOuterClass {
               emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo.class, emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo.Builder.class);
     }
 
+    public static final int POOL_ID_FIELD_NUMBER = 1;
+    private int poolId_;
+    /**
+     * <code>uint32 pool_id = 1;</code>
+     * @return The poolId.
+     */
+    @java.lang.Override
+    public int getPoolId() {
+      return poolId_;
+    }
+
     public static final int FISH_AREA_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList fishAreaList_;
     /**
@@ -197,17 +208,6 @@ public final class FishPoolInfoOuterClass {
     @java.lang.Override
     public int getTodayFishNum() {
       return todayFishNum_;
-    }
-
-    public static final int POOL_ID_FIELD_NUMBER = 1;
-    private int poolId_;
-    /**
-     * <code>uint32 pool_id = 1;</code>
-     * @return The poolId.
-     */
-    @java.lang.Override
-    public int getPoolId() {
-      return poolId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -284,12 +284,12 @@ public final class FishPoolInfoOuterClass {
       }
       emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo other = (emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo) obj;
 
+      if (getPoolId()
+          != other.getPoolId()) return false;
       if (!getFishAreaListList()
           .equals(other.getFishAreaListList())) return false;
       if (getTodayFishNum()
           != other.getTodayFishNum()) return false;
-      if (getPoolId()
-          != other.getPoolId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -301,14 +301,14 @@ public final class FishPoolInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + POOL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPoolId();
       if (getFishAreaListCount() > 0) {
         hash = (37 * hash) + FISH_AREA_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFishAreaListList().hashCode();
       }
       hash = (37 * hash) + TODAY_FISH_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getTodayFishNum();
-      hash = (37 * hash) + POOL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPoolId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,11 +442,11 @@ public final class FishPoolInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        poolId_ = 0;
+
         fishAreaList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         todayFishNum_ = 0;
-
-        poolId_ = 0;
 
         return this;
       }
@@ -475,13 +475,13 @@ public final class FishPoolInfoOuterClass {
       public emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo buildPartial() {
         emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo result = new emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo(this);
         int from_bitField0_ = bitField0_;
+        result.poolId_ = poolId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           fishAreaList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.fishAreaList_ = fishAreaList_;
         result.todayFishNum_ = todayFishNum_;
-        result.poolId_ = poolId_;
         onBuilt();
         return result;
       }
@@ -530,6 +530,9 @@ public final class FishPoolInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo other) {
         if (other == emu.grasscutter.net.proto.FishPoolInfoOuterClass.FishPoolInfo.getDefaultInstance()) return this;
+        if (other.getPoolId() != 0) {
+          setPoolId(other.getPoolId());
+        }
         if (!other.fishAreaList_.isEmpty()) {
           if (fishAreaList_.isEmpty()) {
             fishAreaList_ = other.fishAreaList_;
@@ -542,9 +545,6 @@ public final class FishPoolInfoOuterClass {
         }
         if (other.getTodayFishNum() != 0) {
           setTodayFishNum(other.getTodayFishNum());
-        }
-        if (other.getPoolId() != 0) {
-          setPoolId(other.getPoolId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -575,6 +575,37 @@ public final class FishPoolInfoOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int poolId_ ;
+      /**
+       * <code>uint32 pool_id = 1;</code>
+       * @return The poolId.
+       */
+      @java.lang.Override
+      public int getPoolId() {
+        return poolId_;
+      }
+      /**
+       * <code>uint32 pool_id = 1;</code>
+       * @param value The poolId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPoolId(int value) {
+        
+        poolId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 pool_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPoolId() {
+        
+        poolId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private com.google.protobuf.Internal.IntList fishAreaList_ = emptyIntList();
       private void ensureFishAreaListIsMutable() {
@@ -685,37 +716,6 @@ public final class FishPoolInfoOuterClass {
         onChanged();
         return this;
       }
-
-      private int poolId_ ;
-      /**
-       * <code>uint32 pool_id = 1;</code>
-       * @return The poolId.
-       */
-      @java.lang.Override
-      public int getPoolId() {
-        return poolId_;
-      }
-      /**
-       * <code>uint32 pool_id = 1;</code>
-       * @param value The poolId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPoolId(int value) {
-        
-        poolId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 pool_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPoolId() {
-        
-        poolId_ = 0;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -783,9 +783,9 @@ public final class FishPoolInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022FishPoolInfo.proto\"O\n\014FishPoolInfo\022\026\n\016" +
-      "fish_area_list\030\002 \003(\r\022\026\n\016today_fish_num\030\003" +
-      " \001(\r\022\017\n\007pool_id\030\001 \001(\rB\033\n\031emu.grasscutter" +
+      "\n\022FishPoolInfo.proto\"O\n\014FishPoolInfo\022\017\n\007" +
+      "pool_id\030\001 \001(\r\022\026\n\016fish_area_list\030\002 \003(\r\022\026\n" +
+      "\016today_fish_num\030\003 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -797,7 +797,7 @@ public final class FishPoolInfoOuterClass {
     internal_static_FishPoolInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishPoolInfo_descriptor,
-        new java.lang.String[] { "FishAreaList", "TodayFishNum", "PoolId", });
+        new java.lang.String[] { "PoolId", "FishAreaList", "TodayFishNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -25,18 +25,22 @@ public final class BattlePassCycleOuterClass {
     int getCycleIdx();
 
     /**
-     * <code>uint32 beginTime = 13;</code>
+     * <code>uint32 begin_time = 13;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>uint32 endTime = 4;</code>
+     * <code>uint32 end_time = 4;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BattlePassCycle}
    */
   public static final class BattlePassCycle extends
@@ -139,10 +143,10 @@ public final class BattlePassCycleOuterClass {
       return cycleIdx_;
     }
 
-    public static final int BEGINTIME_FIELD_NUMBER = 13;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 13;
     private int beginTime_;
     /**
-     * <code>uint32 beginTime = 13;</code>
+     * <code>uint32 begin_time = 13;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class BattlePassCycleOuterClass {
       return beginTime_;
     }
 
-    public static final int ENDTIME_FIELD_NUMBER = 4;
+    public static final int END_TIME_FIELD_NUMBER = 4;
     private int endTime_;
     /**
-     * <code>uint32 endTime = 4;</code>
+     * <code>uint32 end_time = 4;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -239,9 +243,9 @@ public final class BattlePassCycleOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CYCLE_IDX_FIELD_NUMBER;
       hash = (53 * hash) + getCycleIdx();
-      hash = (37 * hash) + BEGINTIME_FIELD_NUMBER;
+      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getBeginTime();
-      hash = (37 * hash) + ENDTIME_FIELD_NUMBER;
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -339,6 +343,10 @@ public final class BattlePassCycleOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BattlePassCycle}
      */
     public static final class Builder extends
@@ -530,7 +538,7 @@ public final class BattlePassCycleOuterClass {
 
       private int beginTime_ ;
       /**
-       * <code>uint32 beginTime = 13;</code>
+       * <code>uint32 begin_time = 13;</code>
        * @return The beginTime.
        */
       @java.lang.Override
@@ -538,7 +546,7 @@ public final class BattlePassCycleOuterClass {
         return beginTime_;
       }
       /**
-       * <code>uint32 beginTime = 13;</code>
+       * <code>uint32 begin_time = 13;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
        */
@@ -549,7 +557,7 @@ public final class BattlePassCycleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 beginTime = 13;</code>
+       * <code>uint32 begin_time = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
@@ -561,7 +569,7 @@ public final class BattlePassCycleOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 endTime = 4;</code>
+       * <code>uint32 end_time = 4;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -569,7 +577,7 @@ public final class BattlePassCycleOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 endTime = 4;</code>
+       * <code>uint32 end_time = 4;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -580,7 +588,7 @@ public final class BattlePassCycleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 endTime = 4;</code>
+       * <code>uint32 end_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -656,10 +664,10 @@ public final class BattlePassCycleOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025BattlePassCycle.proto\"H\n\017BattlePassCyc" +
-      "le\022\021\n\tcycle_idx\030\010 \001(\r\022\021\n\tbeginTime\030\r \001(\r" +
-      "\022\017\n\007endTime\030\004 \001(\rB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\025BattlePassCycle.proto\"J\n\017BattlePassCyc" +
+      "le\022\021\n\tcycle_idx\030\010 \001(\r\022\022\n\nbegin_time\030\r \001(" +
+      "\r\022\020\n\010end_time\030\004 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

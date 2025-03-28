@@ -43,18 +43,22 @@ public final class BreakoutSpawnPointOuterClass {
         int index);
 
     /**
-     * <code>uint32 brick_suite_id = 2;</code>
-     * @return The brickSuiteId.
-     */
-    int getBrickSuiteId();
-
-    /**
      * <code>uint32 id = 1;</code>
      * @return The id.
      */
     int getId();
+
+    /**
+     * <code>uint32 brick_suite_id = 2;</code>
+     * @return The brickSuiteId.
+     */
+    int getBrickSuiteId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BreakoutSpawnPoint}
    */
   public static final class BreakoutSpawnPoint extends
@@ -195,17 +199,6 @@ public final class BreakoutSpawnPointOuterClass {
       return spawnedBrickList_.get(index);
     }
 
-    public static final int BRICK_SUITE_ID_FIELD_NUMBER = 2;
-    private int brickSuiteId_;
-    /**
-     * <code>uint32 brick_suite_id = 2;</code>
-     * @return The brickSuiteId.
-     */
-    @java.lang.Override
-    public int getBrickSuiteId() {
-      return brickSuiteId_;
-    }
-
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
@@ -215,6 +208,17 @@ public final class BreakoutSpawnPointOuterClass {
     @java.lang.Override
     public int getId() {
       return id_;
+    }
+
+    public static final int BRICK_SUITE_ID_FIELD_NUMBER = 2;
+    private int brickSuiteId_;
+    /**
+     * <code>uint32 brick_suite_id = 2;</code>
+     * @return The brickSuiteId.
+     */
+    @java.lang.Override
+    public int getBrickSuiteId() {
+      return brickSuiteId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -278,10 +282,10 @@ public final class BreakoutSpawnPointOuterClass {
 
       if (!getSpawnedBrickListList()
           .equals(other.getSpawnedBrickListList())) return false;
-      if (getBrickSuiteId()
-          != other.getBrickSuiteId()) return false;
       if (getId()
           != other.getId()) return false;
+      if (getBrickSuiteId()
+          != other.getBrickSuiteId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -297,10 +301,10 @@ public final class BreakoutSpawnPointOuterClass {
         hash = (37 * hash) + SPAWNED_BRICK_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSpawnedBrickListList().hashCode();
       }
-      hash = (37 * hash) + BRICK_SUITE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBrickSuiteId();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
+      hash = (37 * hash) + BRICK_SUITE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBrickSuiteId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -397,6 +401,10 @@ public final class BreakoutSpawnPointOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BreakoutSpawnPoint}
      */
     public static final class Builder extends
@@ -441,9 +449,9 @@ public final class BreakoutSpawnPointOuterClass {
         } else {
           spawnedBrickListBuilder_.clear();
         }
-        brickSuiteId_ = 0;
-
         id_ = 0;
+
+        brickSuiteId_ = 0;
 
         return this;
       }
@@ -481,8 +489,8 @@ public final class BreakoutSpawnPointOuterClass {
         } else {
           result.spawnedBrickList_ = spawnedBrickListBuilder_.build();
         }
-        result.brickSuiteId_ = brickSuiteId_;
         result.id_ = id_;
+        result.brickSuiteId_ = brickSuiteId_;
         onBuilt();
         return result;
       }
@@ -557,11 +565,11 @@ public final class BreakoutSpawnPointOuterClass {
             }
           }
         }
-        if (other.getBrickSuiteId() != 0) {
-          setBrickSuiteId(other.getBrickSuiteId());
-        }
         if (other.getId() != 0) {
           setId(other.getId());
+        }
+        if (other.getBrickSuiteId() != 0) {
+          setBrickSuiteId(other.getBrickSuiteId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -833,37 +841,6 @@ public final class BreakoutSpawnPointOuterClass {
         return spawnedBrickListBuilder_;
       }
 
-      private int brickSuiteId_ ;
-      /**
-       * <code>uint32 brick_suite_id = 2;</code>
-       * @return The brickSuiteId.
-       */
-      @java.lang.Override
-      public int getBrickSuiteId() {
-        return brickSuiteId_;
-      }
-      /**
-       * <code>uint32 brick_suite_id = 2;</code>
-       * @param value The brickSuiteId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBrickSuiteId(int value) {
-        
-        brickSuiteId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 brick_suite_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBrickSuiteId() {
-        
-        brickSuiteId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int id_ ;
       /**
        * <code>uint32 id = 1;</code>
@@ -891,6 +868,37 @@ public final class BreakoutSpawnPointOuterClass {
       public Builder clearId() {
         
         id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int brickSuiteId_ ;
+      /**
+       * <code>uint32 brick_suite_id = 2;</code>
+       * @return The brickSuiteId.
+       */
+      @java.lang.Override
+      public int getBrickSuiteId() {
+        return brickSuiteId_;
+      }
+      /**
+       * <code>uint32 brick_suite_id = 2;</code>
+       * @param value The brickSuiteId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBrickSuiteId(int value) {
+        
+        brickSuiteId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 brick_suite_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBrickSuiteId() {
+        
+        brickSuiteId_ = 0;
         onChanged();
         return this;
       }
@@ -964,8 +972,8 @@ public final class BreakoutSpawnPointOuterClass {
       "\n\030BreakoutSpawnPoint.proto\032\034BreakoutPhys" +
       "icalObject.proto\"m\n\022BreakoutSpawnPoint\0223" +
       "\n\022spawned_brick_list\030\003 \003(\0132\027.BreakoutPhy" +
-      "sicalObject\022\026\n\016brick_suite_id\030\002 \001(\r\022\n\n\002i" +
-      "d\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "sicalObject\022\n\n\002id\030\001 \001(\r\022\026\n\016brick_suite_i" +
+      "d\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -978,7 +986,7 @@ public final class BreakoutSpawnPointOuterClass {
     internal_static_BreakoutSpawnPoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutSpawnPoint_descriptor,
-        new java.lang.String[] { "SpawnedBrickList", "BrickSuiteId", "Id", });
+        new java.lang.String[] { "SpawnedBrickList", "Id", "BrickSuiteId", });
     emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.getDescriptor();
   }
 

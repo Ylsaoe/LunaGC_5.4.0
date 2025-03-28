@@ -15,6 +15,10 @@ public final class ShapeTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf enum {@code ShapeType}
    */
   public enum ShapeType

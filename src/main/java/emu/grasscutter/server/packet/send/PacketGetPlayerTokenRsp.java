@@ -18,15 +18,15 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
             GetPlayerTokenRsp.newBuilder()
                 .setUid(session.getPlayer().getUid())
                 .setToken(session.getAccount().getToken())
-                //.setAccountType(1)
-                //.setIsProficientPlayer(
-                //    session.getPlayer().getAvatars().getAvatarCount() > 0) // Not sure where this goes
+                .setAccountType(1)
+                .setIsProficientPlayer(
+                    session.getPlayer().getAvatars().getAvatarCount() > 0) // Not sure where this goes
                 .setPlatformType(3)
-                //.setChannelId(1)
+                .setChannelId(1)
                 .setCountryCode("US")
-                //.setRegPlatform(3)
+                .setRegPlatform(3)
                 .setKeyId(keyId)
-                //.setTag(5)
+                .setTag(5)
                 .setServerRandKey("CfO2d7eEYha5bJRXdCfoiemPNAtXDpyNTQ3ObeTt5a7SSHz6GAEO1WPiTQ7fR6OG8LqhVN3ZTxH9Bnkc09BnCxud+kn0+PiGv1PTOuWK0LkQQ1xmg89zA9IHS+OJd1yKT2BBmJf4sN61gi+WtT7aFwRlzku3kGCk6p2wiPo2enE7UwCFi/GiD4vq/m3hNZiKBjitAvheaqbSLjMpBax+c8HXoY5G09ap1PjEnUQPIK0xZRRQKpnrWcCyP4j8N3WwYYQGDW+OYOJjBvJdv+D6XSdEi+4IsZASYVpu9V8UZ570Cakbc+IjUm0UZJXghcR7izIjKtoNHf2Fmc26DEp1Jw==")
                 .setSign("mMx/Klovbzq1QxQvVgm30nYhj0jDOykyo9aparyWRNz3ACxV/2gIdLpyM/SMerWMTcx26NapQ9HsKK7BRK7Yx+nMR0O83BkBlxfl+NEarYr6kj9lBKAxZYXTXFRYA4sRynvwa/MOPmGwYMNl6aVvMohhvrsTopsRvIuGFtnCVL2wBfbxcNnbVfP5k+DxPuQnxa/vi+ju8TogW2R+r0p9zQ5NJe1oaYe4xYbyhefFVv11FA/JQHwMHLEyrEdPqTzdN75CUmE09yLuAoeJzoJ1vwwjwfcH9dMDPxsewNJBGiylVHYf56kF4HypNkYNjtxbghgLBaHg0ZoeYHTOJ7YUTQ==")
                 .build();
@@ -42,13 +42,13 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
         GetPlayerTokenRsp p =
             GetPlayerTokenRsp.newBuilder()
                 .setUid(session.getPlayer().getUid())
-                //.setIsProficientPlayer(session.getPlayer().getAvatars().getAvatarCount() > 0)
-                //.setRetcode(retcode)
-                //.setMsg(msg)
-                //.setBlackUidEndTime(blackEndTime)
-                //.setRegPlatform(3)
+                .setIsProficientPlayer(session.getPlayer().getAvatars().getAvatarCount() > 0)
+                .setRetcode(retcode)
+                .setMsg(msg)
+                .setBlackUidEndTime(blackEndTime)
+                .setRegPlatform(3)
                 .setCountryCode("US")
-                //.setTag(5)
+                .setTag(5)
                 .build();
 
         this.setData(p.toByteArray());
@@ -64,17 +64,17 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
             GetPlayerTokenRsp.newBuilder()
                 .setUid(session.getPlayer().getUid())
                 .setToken(session.getAccount().getToken())
-                //.setAccountType(1)
-                //.setIsProficientPlayer(
-                //    session.getPlayer().getAvatars().getAvatarCount() > 0) // Not sure where this goes
-                //.setSecretKeySeed(session.getEncryptSeed())
+                .setAccountType(1)
+                .setIsProficientPlayer(
+                    session.getPlayer().getAvatars().getAvatarCount() > 0) // Not sure where this goes
+                .setSecretKeySeed(session.getEncryptSeed())
                 .setSecurityCmdBuffer(ByteString.copyFrom(Crypto.ENCRYPT_SEED_BUFFER))
                 .setKeyId(keyId)
                 .setPlatformType(3)
-                //.setChannelId(1)
+                .setChannelId(1)
                 .setCountryCode("US")
                 .setClientVersionRandomKey("c25-314dd05b0b5f")
-                //.setRegPlatform(3)
+                .setRegPlatform(3)
                 .setClientIpStr(session.getAddress().getAddress().getHostAddress())
                 .setServerRandKey(encryptedSeed)
                 .setSign(encryptedSeedSign)

@@ -43,22 +43,22 @@ public final class MonsterRouteOuterClass {
         int index);
 
     /**
-     * <code>bool ANIGKNIBBFJ = 6;</code>
-     * @return The aNIGKNIBBFJ.
-     */
-    boolean getANIGKNIBBFJ();
-
-    /**
-     * <code>bool KODMOHACLFC = 5;</code>
-     * @return The kODMOHACLFC.
-     */
-    boolean getKODMOHACLFC();
-
-    /**
      * <code>float arrive_range = 4;</code>
      * @return The arriveRange.
      */
     float getArriveRange();
+
+    /**
+     * <code>bool ANPHBECGDOO = 5;</code>
+     * @return The aNPHBECGDOO.
+     */
+    boolean getANPHBECGDOO();
+
+    /**
+     * <code>bool GHIMGCLJIIA = 6;</code>
+     * @return The gHIMGCLJIIA.
+     */
+    boolean getGHIMGCLJIIA();
 
     /**
      * <code>uint32 speed_level = 2;</code>
@@ -73,6 +73,10 @@ public final class MonsterRouteOuterClass {
     int getRouteType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code MonsterRoute}
    */
   public static final class MonsterRoute extends
@@ -145,12 +149,12 @@ public final class MonsterRouteOuterClass {
             }
             case 40: {
 
-              kODMOHACLFC_ = input.readBool();
+              aNPHBECGDOO_ = input.readBool();
               break;
             }
             case 48: {
 
-              aNIGKNIBBFJ_ = input.readBool();
+              gHIMGCLJIIA_ = input.readBool();
               break;
             }
             default: {
@@ -228,28 +232,6 @@ public final class MonsterRouteOuterClass {
       return routePoints_.get(index);
     }
 
-    public static final int ANIGKNIBBFJ_FIELD_NUMBER = 6;
-    private boolean aNIGKNIBBFJ_;
-    /**
-     * <code>bool ANIGKNIBBFJ = 6;</code>
-     * @return The aNIGKNIBBFJ.
-     */
-    @java.lang.Override
-    public boolean getANIGKNIBBFJ() {
-      return aNIGKNIBBFJ_;
-    }
-
-    public static final int KODMOHACLFC_FIELD_NUMBER = 5;
-    private boolean kODMOHACLFC_;
-    /**
-     * <code>bool KODMOHACLFC = 5;</code>
-     * @return The kODMOHACLFC.
-     */
-    @java.lang.Override
-    public boolean getKODMOHACLFC() {
-      return kODMOHACLFC_;
-    }
-
     public static final int ARRIVE_RANGE_FIELD_NUMBER = 4;
     private float arriveRange_;
     /**
@@ -259,6 +241,28 @@ public final class MonsterRouteOuterClass {
     @java.lang.Override
     public float getArriveRange() {
       return arriveRange_;
+    }
+
+    public static final int ANPHBECGDOO_FIELD_NUMBER = 5;
+    private boolean aNPHBECGDOO_;
+    /**
+     * <code>bool ANPHBECGDOO = 5;</code>
+     * @return The aNPHBECGDOO.
+     */
+    @java.lang.Override
+    public boolean getANPHBECGDOO() {
+      return aNPHBECGDOO_;
+    }
+
+    public static final int GHIMGCLJIIA_FIELD_NUMBER = 6;
+    private boolean gHIMGCLJIIA_;
+    /**
+     * <code>bool GHIMGCLJIIA = 6;</code>
+     * @return The gHIMGCLJIIA.
+     */
+    @java.lang.Override
+    public boolean getGHIMGCLJIIA() {
+      return gHIMGCLJIIA_;
     }
 
     public static final int SPEED_LEVEL_FIELD_NUMBER = 2;
@@ -309,11 +313,11 @@ public final class MonsterRouteOuterClass {
       if (arriveRange_ != 0F) {
         output.writeFloat(4, arriveRange_);
       }
-      if (kODMOHACLFC_ != false) {
-        output.writeBool(5, kODMOHACLFC_);
+      if (aNPHBECGDOO_ != false) {
+        output.writeBool(5, aNPHBECGDOO_);
       }
-      if (aNIGKNIBBFJ_ != false) {
-        output.writeBool(6, aNIGKNIBBFJ_);
+      if (gHIMGCLJIIA_ != false) {
+        output.writeBool(6, gHIMGCLJIIA_);
       }
       unknownFields.writeTo(output);
     }
@@ -340,13 +344,13 @@ public final class MonsterRouteOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(4, arriveRange_);
       }
-      if (kODMOHACLFC_ != false) {
+      if (aNPHBECGDOO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, kODMOHACLFC_);
+          .computeBoolSize(5, aNPHBECGDOO_);
       }
-      if (aNIGKNIBBFJ_ != false) {
+      if (gHIMGCLJIIA_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, aNIGKNIBBFJ_);
+          .computeBoolSize(6, gHIMGCLJIIA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -365,13 +369,13 @@ public final class MonsterRouteOuterClass {
 
       if (!getRoutePointsList()
           .equals(other.getRoutePointsList())) return false;
-      if (getANIGKNIBBFJ()
-          != other.getANIGKNIBBFJ()) return false;
-      if (getKODMOHACLFC()
-          != other.getKODMOHACLFC()) return false;
       if (java.lang.Float.floatToIntBits(getArriveRange())
           != java.lang.Float.floatToIntBits(
               other.getArriveRange())) return false;
+      if (getANPHBECGDOO()
+          != other.getANPHBECGDOO()) return false;
+      if (getGHIMGCLJIIA()
+          != other.getGHIMGCLJIIA()) return false;
       if (getSpeedLevel()
           != other.getSpeedLevel()) return false;
       if (getRouteType()
@@ -391,15 +395,15 @@ public final class MonsterRouteOuterClass {
         hash = (37 * hash) + ROUTE_POINTS_FIELD_NUMBER;
         hash = (53 * hash) + getRoutePointsList().hashCode();
       }
-      hash = (37 * hash) + ANIGKNIBBFJ_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getANIGKNIBBFJ());
-      hash = (37 * hash) + KODMOHACLFC_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKODMOHACLFC());
       hash = (37 * hash) + ARRIVE_RANGE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getArriveRange());
+      hash = (37 * hash) + ANPHBECGDOO_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getANPHBECGDOO());
+      hash = (37 * hash) + GHIMGCLJIIA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGHIMGCLJIIA());
       hash = (37 * hash) + SPEED_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getSpeedLevel();
       hash = (37 * hash) + ROUTE_TYPE_FIELD_NUMBER;
@@ -500,6 +504,10 @@ public final class MonsterRouteOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code MonsterRoute}
      */
     public static final class Builder extends
@@ -544,11 +552,11 @@ public final class MonsterRouteOuterClass {
         } else {
           routePointsBuilder_.clear();
         }
-        aNIGKNIBBFJ_ = false;
-
-        kODMOHACLFC_ = false;
-
         arriveRange_ = 0F;
+
+        aNPHBECGDOO_ = false;
+
+        gHIMGCLJIIA_ = false;
 
         speedLevel_ = 0;
 
@@ -590,9 +598,9 @@ public final class MonsterRouteOuterClass {
         } else {
           result.routePoints_ = routePointsBuilder_.build();
         }
-        result.aNIGKNIBBFJ_ = aNIGKNIBBFJ_;
-        result.kODMOHACLFC_ = kODMOHACLFC_;
         result.arriveRange_ = arriveRange_;
+        result.aNPHBECGDOO_ = aNPHBECGDOO_;
+        result.gHIMGCLJIIA_ = gHIMGCLJIIA_;
         result.speedLevel_ = speedLevel_;
         result.routeType_ = routeType_;
         onBuilt();
@@ -669,14 +677,14 @@ public final class MonsterRouteOuterClass {
             }
           }
         }
-        if (other.getANIGKNIBBFJ() != false) {
-          setANIGKNIBBFJ(other.getANIGKNIBBFJ());
-        }
-        if (other.getKODMOHACLFC() != false) {
-          setKODMOHACLFC(other.getKODMOHACLFC());
-        }
         if (other.getArriveRange() != 0F) {
           setArriveRange(other.getArriveRange());
+        }
+        if (other.getANPHBECGDOO() != false) {
+          setANPHBECGDOO(other.getANPHBECGDOO());
+        }
+        if (other.getGHIMGCLJIIA() != false) {
+          setGHIMGCLJIIA(other.getGHIMGCLJIIA());
         }
         if (other.getSpeedLevel() != 0) {
           setSpeedLevel(other.getSpeedLevel());
@@ -954,68 +962,6 @@ public final class MonsterRouteOuterClass {
         return routePointsBuilder_;
       }
 
-      private boolean aNIGKNIBBFJ_ ;
-      /**
-       * <code>bool ANIGKNIBBFJ = 6;</code>
-       * @return The aNIGKNIBBFJ.
-       */
-      @java.lang.Override
-      public boolean getANIGKNIBBFJ() {
-        return aNIGKNIBBFJ_;
-      }
-      /**
-       * <code>bool ANIGKNIBBFJ = 6;</code>
-       * @param value The aNIGKNIBBFJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setANIGKNIBBFJ(boolean value) {
-        
-        aNIGKNIBBFJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool ANIGKNIBBFJ = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearANIGKNIBBFJ() {
-        
-        aNIGKNIBBFJ_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean kODMOHACLFC_ ;
-      /**
-       * <code>bool KODMOHACLFC = 5;</code>
-       * @return The kODMOHACLFC.
-       */
-      @java.lang.Override
-      public boolean getKODMOHACLFC() {
-        return kODMOHACLFC_;
-      }
-      /**
-       * <code>bool KODMOHACLFC = 5;</code>
-       * @param value The kODMOHACLFC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKODMOHACLFC(boolean value) {
-        
-        kODMOHACLFC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool KODMOHACLFC = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKODMOHACLFC() {
-        
-        kODMOHACLFC_ = false;
-        onChanged();
-        return this;
-      }
-
       private float arriveRange_ ;
       /**
        * <code>float arrive_range = 4;</code>
@@ -1043,6 +989,68 @@ public final class MonsterRouteOuterClass {
       public Builder clearArriveRange() {
         
         arriveRange_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private boolean aNPHBECGDOO_ ;
+      /**
+       * <code>bool ANPHBECGDOO = 5;</code>
+       * @return The aNPHBECGDOO.
+       */
+      @java.lang.Override
+      public boolean getANPHBECGDOO() {
+        return aNPHBECGDOO_;
+      }
+      /**
+       * <code>bool ANPHBECGDOO = 5;</code>
+       * @param value The aNPHBECGDOO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setANPHBECGDOO(boolean value) {
+        
+        aNPHBECGDOO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool ANPHBECGDOO = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearANPHBECGDOO() {
+        
+        aNPHBECGDOO_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean gHIMGCLJIIA_ ;
+      /**
+       * <code>bool GHIMGCLJIIA = 6;</code>
+       * @return The gHIMGCLJIIA.
+       */
+      @java.lang.Override
+      public boolean getGHIMGCLJIIA() {
+        return gHIMGCLJIIA_;
+      }
+      /**
+       * <code>bool GHIMGCLJIIA = 6;</code>
+       * @param value The gHIMGCLJIIA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGHIMGCLJIIA(boolean value) {
+        
+        gHIMGCLJIIA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool GHIMGCLJIIA = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGHIMGCLJIIA() {
+        
+        gHIMGCLJIIA_ = false;
         onChanged();
         return this;
       }
@@ -1177,8 +1185,8 @@ public final class MonsterRouteOuterClass {
     java.lang.String[] descriptorData = {
       "\n\022MonsterRoute.proto\032\020RoutePoint.proto\"\232" +
       "\001\n\014MonsterRoute\022!\n\014route_points\030\001 \003(\0132\013." +
-      "RoutePoint\022\023\n\013ANIGKNIBBFJ\030\006 \001(\010\022\023\n\013KODMO" +
-      "HACLFC\030\005 \001(\010\022\024\n\014arrive_range\030\004 \001(\002\022\023\n\013sp" +
+      "RoutePoint\022\024\n\014arrive_range\030\004 \001(\002\022\023\n\013ANPH" +
+      "BECGDOO\030\005 \001(\010\022\023\n\013GHIMGCLJIIA\030\006 \001(\010\022\023\n\013sp" +
       "eed_level\030\002 \001(\r\022\022\n\nroute_type\030\003 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
@@ -1192,7 +1200,7 @@ public final class MonsterRouteOuterClass {
     internal_static_MonsterRoute_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MonsterRoute_descriptor,
-        new java.lang.String[] { "RoutePoints", "ANIGKNIBBFJ", "KODMOHACLFC", "ArriveRange", "SpeedLevel", "RouteType", });
+        new java.lang.String[] { "RoutePoints", "ArriveRange", "ANPHBECGDOO", "GHIMGCLJIIA", "SpeedLevel", "RouteType", });
     emu.grasscutter.net.proto.RoutePointOuterClass.getDescriptor();
   }
 

@@ -34,13 +34,13 @@ public final class DetailAbilityInfoOuterClass {
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder();
 
     /**
-     * <code>uint32 instancedModifierId = 2;</code>
+     * <code>uint32 instanced_modifier_id = 2;</code>
      * @return The instancedModifierId.
      */
     int getInstancedModifierId();
 
     /**
-     * <code>int32 localId = 8;</code>
+     * <code>int32 local_id = 8;</code>
      * @return The localId.
      */
     int getLocalId();
@@ -64,6 +64,10 @@ public final class DetailAbilityInfoOuterClass {
     int getCasterId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code DetailAbilityInfo}
    */
   public static final class DetailAbilityInfo extends
@@ -204,10 +208,10 @@ public final class DetailAbilityInfoOuterClass {
       return getParentAbilityName();
     }
 
-    public static final int INSTANCEDMODIFIERID_FIELD_NUMBER = 2;
+    public static final int INSTANCED_MODIFIER_ID_FIELD_NUMBER = 2;
     private int instancedModifierId_;
     /**
-     * <code>uint32 instancedModifierId = 2;</code>
+     * <code>uint32 instanced_modifier_id = 2;</code>
      * @return The instancedModifierId.
      */
     @java.lang.Override
@@ -215,10 +219,10 @@ public final class DetailAbilityInfoOuterClass {
       return instancedModifierId_;
     }
 
-    public static final int LOCALID_FIELD_NUMBER = 8;
+    public static final int LOCAL_ID_FIELD_NUMBER = 8;
     private int localId_;
     /**
-     * <code>int32 localId = 8;</code>
+     * <code>int32 local_id = 8;</code>
      * @return The localId.
      */
     @java.lang.Override
@@ -369,9 +373,9 @@ public final class DetailAbilityInfoOuterClass {
         hash = (37 * hash) + PARENT_ABILITY_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getParentAbilityName().hashCode();
       }
-      hash = (37 * hash) + INSTANCEDMODIFIERID_FIELD_NUMBER;
+      hash = (37 * hash) + INSTANCED_MODIFIER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getInstancedModifierId();
-      hash = (37 * hash) + LOCALID_FIELD_NUMBER;
+      hash = (37 * hash) + LOCAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLocalId();
       hash = (37 * hash) + INSTANCED_ABILITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getInstancedAbilityId();
@@ -475,6 +479,10 @@ public final class DetailAbilityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code DetailAbilityInfo}
      */
     public static final class Builder extends
@@ -780,7 +788,7 @@ public final class DetailAbilityInfoOuterClass {
 
       private int instancedModifierId_ ;
       /**
-       * <code>uint32 instancedModifierId = 2;</code>
+       * <code>uint32 instanced_modifier_id = 2;</code>
        * @return The instancedModifierId.
        */
       @java.lang.Override
@@ -788,7 +796,7 @@ public final class DetailAbilityInfoOuterClass {
         return instancedModifierId_;
       }
       /**
-       * <code>uint32 instancedModifierId = 2;</code>
+       * <code>uint32 instanced_modifier_id = 2;</code>
        * @param value The instancedModifierId to set.
        * @return This builder for chaining.
        */
@@ -799,7 +807,7 @@ public final class DetailAbilityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 instancedModifierId = 2;</code>
+       * <code>uint32 instanced_modifier_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearInstancedModifierId() {
@@ -811,7 +819,7 @@ public final class DetailAbilityInfoOuterClass {
 
       private int localId_ ;
       /**
-       * <code>int32 localId = 8;</code>
+       * <code>int32 local_id = 8;</code>
        * @return The localId.
        */
       @java.lang.Override
@@ -819,7 +827,7 @@ public final class DetailAbilityInfoOuterClass {
         return localId_;
       }
       /**
-       * <code>int32 localId = 8;</code>
+       * <code>int32 local_id = 8;</code>
        * @param value The localId to set.
        * @return This builder for chaining.
        */
@@ -830,7 +838,7 @@ public final class DetailAbilityInfoOuterClass {
         return this;
       }
       /**
-       * <code>int32 localId = 8;</code>
+       * <code>int32 local_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLocalId() {
@@ -1000,12 +1008,12 @@ public final class DetailAbilityInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027DetailAbilityInfo.proto\032\023AbilityString" +
-      ".proto\"\272\001\n\021DetailAbilityInfo\022+\n\023parent_a" +
-      "bility_name\030\013 \001(\0132\016.AbilityString\022\033\n\023ins" +
-      "tancedModifierId\030\002 \001(\r\022\017\n\007localId\030\010 \001(\005\022" +
-      "\034\n\024instanced_ability_id\030\006 \001(\r\022\031\n\021modifie" +
-      "r_local_id\030\t \001(\005\022\021\n\tcaster_id\030\005 \001(\rB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      ".proto\"\275\001\n\021DetailAbilityInfo\022+\n\023parent_a" +
+      "bility_name\030\013 \001(\0132\016.AbilityString\022\035\n\025ins" +
+      "tanced_modifier_id\030\002 \001(\r\022\020\n\010local_id\030\010 \001" +
+      "(\005\022\034\n\024instanced_ability_id\030\006 \001(\r\022\031\n\021modi" +
+      "fier_local_id\030\t \001(\005\022\021\n\tcaster_id\030\005 \001(\rB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

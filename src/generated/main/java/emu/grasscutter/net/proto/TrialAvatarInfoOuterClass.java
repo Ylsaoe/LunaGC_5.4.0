@@ -64,6 +64,10 @@ public final class TrialAvatarInfoOuterClass {
     int getTrialAvatarId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code TrialAvatarInfo}
    */
   public static final class TrialAvatarInfo extends
@@ -434,6 +438,10 @@ public final class TrialAvatarInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code TrialAvatarInfo}
      */
     public static final class Builder extends

@@ -42,6 +42,10 @@ public final class GameplayRecommendationSkillResponseOuterClass {
     int getSkillDepotId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code GameplayRecommendationSkillResponse}
    */
   public static final class GameplayRecommendationSkillResponse extends
@@ -372,6 +376,10 @@ public final class GameplayRecommendationSkillResponseOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code GameplayRecommendationSkillResponse}
      */
     public static final class Builder extends

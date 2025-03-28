@@ -19,19 +19,16 @@ public final class GadgetGeneralRewardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return Whether the itemParam field is set.
+     * <code>uint32 resin = 1;</code>
+     * @return The resin.
      */
-    boolean hasItemParam();
+    int getResin();
+
     /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return The itemParam.
+     * <code>uint32 dead_time = 2;</code>
+     * @return The deadTime.
      */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam();
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     */
-    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder();
+    int getDeadTime();
 
     /**
      * <code>repeated uint32 remain_uid_list = 3;</code>
@@ -68,16 +65,19 @@ public final class GadgetGeneralRewardInfoOuterClass {
     int getQualifyUidList(int index);
 
     /**
-     * <code>uint32 dead_time = 2;</code>
-     * @return The deadTime.
+     * <code>.ItemParam item_param = 5;</code>
+     * @return Whether the itemParam field is set.
      */
-    int getDeadTime();
-
+    boolean hasItemParam();
     /**
-     * <code>uint32 resin = 1;</code>
-     * @return The resin.
+     * <code>.ItemParam item_param = 5;</code>
+     * @return The itemParam.
      */
-    int getResin();
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam();
+    /**
+     * <code>.ItemParam item_param = 5;</code>
+     */
+    emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder();
   }
   /**
    * Protobuf type {@code GadgetGeneralRewardInfo}
@@ -230,30 +230,26 @@ public final class GadgetGeneralRewardInfoOuterClass {
               emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.class, emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.Builder.class);
     }
 
-    public static final int ITEM_PARAM_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
+    public static final int RESIN_FIELD_NUMBER = 1;
+    private int resin_;
     /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return Whether the itemParam field is set.
+     * <code>uint32 resin = 1;</code>
+     * @return The resin.
      */
     @java.lang.Override
-    public boolean hasItemParam() {
-      return itemParam_ != null;
+    public int getResin() {
+      return resin_;
     }
+
+    public static final int DEAD_TIME_FIELD_NUMBER = 2;
+    private int deadTime_;
     /**
-     * <code>.ItemParam item_param = 5;</code>
-     * @return The itemParam.
+     * <code>uint32 dead_time = 2;</code>
+     * @return The deadTime.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
-      return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
-    }
-    /**
-     * <code>.ItemParam item_param = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
-      return getItemParam();
+    public int getDeadTime() {
+      return deadTime_;
     }
 
     public static final int REMAIN_UID_LIST_FIELD_NUMBER = 3;
@@ -312,26 +308,30 @@ public final class GadgetGeneralRewardInfoOuterClass {
     }
     private int qualifyUidListMemoizedSerializedSize = -1;
 
-    public static final int DEAD_TIME_FIELD_NUMBER = 2;
-    private int deadTime_;
+    public static final int ITEM_PARAM_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
     /**
-     * <code>uint32 dead_time = 2;</code>
-     * @return The deadTime.
+     * <code>.ItemParam item_param = 5;</code>
+     * @return Whether the itemParam field is set.
      */
     @java.lang.Override
-    public int getDeadTime() {
-      return deadTime_;
+    public boolean hasItemParam() {
+      return itemParam_ != null;
     }
-
-    public static final int RESIN_FIELD_NUMBER = 1;
-    private int resin_;
     /**
-     * <code>uint32 resin = 1;</code>
-     * @return The resin.
+     * <code>.ItemParam item_param = 5;</code>
+     * @return The itemParam.
      */
     @java.lang.Override
-    public int getResin() {
-      return resin_;
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
+      return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
+    }
+    /**
+     * <code>.ItemParam item_param = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
+      return getItemParam();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -436,19 +436,19 @@ public final class GadgetGeneralRewardInfoOuterClass {
       }
       emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo other = (emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo) obj;
 
+      if (getResin()
+          != other.getResin()) return false;
+      if (getDeadTime()
+          != other.getDeadTime()) return false;
+      if (!getRemainUidListList()
+          .equals(other.getRemainUidListList())) return false;
+      if (!getQualifyUidListList()
+          .equals(other.getQualifyUidListList())) return false;
       if (hasItemParam() != other.hasItemParam()) return false;
       if (hasItemParam()) {
         if (!getItemParam()
             .equals(other.getItemParam())) return false;
       }
-      if (!getRemainUidListList()
-          .equals(other.getRemainUidListList())) return false;
-      if (!getQualifyUidListList()
-          .equals(other.getQualifyUidListList())) return false;
-      if (getDeadTime()
-          != other.getDeadTime()) return false;
-      if (getResin()
-          != other.getResin()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,10 +460,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasItemParam()) {
-        hash = (37 * hash) + ITEM_PARAM_FIELD_NUMBER;
-        hash = (53 * hash) + getItemParam().hashCode();
-      }
+      hash = (37 * hash) + RESIN_FIELD_NUMBER;
+      hash = (53 * hash) + getResin();
+      hash = (37 * hash) + DEAD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getDeadTime();
       if (getRemainUidListCount() > 0) {
         hash = (37 * hash) + REMAIN_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRemainUidListList().hashCode();
@@ -472,10 +472,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
         hash = (37 * hash) + QUALIFY_UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getQualifyUidListList().hashCode();
       }
-      hash = (37 * hash) + DEAD_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getDeadTime();
-      hash = (37 * hash) + RESIN_FIELD_NUMBER;
-      hash = (53 * hash) + getResin();
+      if (hasItemParam()) {
+        hash = (37 * hash) + ITEM_PARAM_FIELD_NUMBER;
+        hash = (53 * hash) + getItemParam().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -609,20 +609,20 @@ public final class GadgetGeneralRewardInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        resin_ = 0;
+
+        deadTime_ = 0;
+
+        remainUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        qualifyUidList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         if (itemParamBuilder_ == null) {
           itemParam_ = null;
         } else {
           itemParam_ = null;
           itemParamBuilder_ = null;
         }
-        remainUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        qualifyUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        deadTime_ = 0;
-
-        resin_ = 0;
-
         return this;
       }
 
@@ -650,11 +650,8 @@ public final class GadgetGeneralRewardInfoOuterClass {
       public emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo buildPartial() {
         emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo result = new emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo(this);
         int from_bitField0_ = bitField0_;
-        if (itemParamBuilder_ == null) {
-          result.itemParam_ = itemParam_;
-        } else {
-          result.itemParam_ = itemParamBuilder_.build();
-        }
+        result.resin_ = resin_;
+        result.deadTime_ = deadTime_;
         if (((bitField0_ & 0x00000001) != 0)) {
           remainUidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -665,8 +662,11 @@ public final class GadgetGeneralRewardInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.qualifyUidList_ = qualifyUidList_;
-        result.deadTime_ = deadTime_;
-        result.resin_ = resin_;
+        if (itemParamBuilder_ == null) {
+          result.itemParam_ = itemParam_;
+        } else {
+          result.itemParam_ = itemParamBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -715,8 +715,11 @@ public final class GadgetGeneralRewardInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo other) {
         if (other == emu.grasscutter.net.proto.GadgetGeneralRewardInfoOuterClass.GadgetGeneralRewardInfo.getDefaultInstance()) return this;
-        if (other.hasItemParam()) {
-          mergeItemParam(other.getItemParam());
+        if (other.getResin() != 0) {
+          setResin(other.getResin());
+        }
+        if (other.getDeadTime() != 0) {
+          setDeadTime(other.getDeadTime());
         }
         if (!other.remainUidList_.isEmpty()) {
           if (remainUidList_.isEmpty()) {
@@ -738,11 +741,8 @@ public final class GadgetGeneralRewardInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getDeadTime() != 0) {
-          setDeadTime(other.getDeadTime());
-        }
-        if (other.getResin() != 0) {
-          setResin(other.getResin());
+        if (other.hasItemParam()) {
+          mergeItemParam(other.getItemParam());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -774,123 +774,66 @@ public final class GadgetGeneralRewardInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemParamBuilder_;
+      private int resin_ ;
       /**
-       * <code>.ItemParam item_param = 5;</code>
-       * @return Whether the itemParam field is set.
+       * <code>uint32 resin = 1;</code>
+       * @return The resin.
        */
-      public boolean hasItemParam() {
-        return itemParamBuilder_ != null || itemParam_ != null;
+      @java.lang.Override
+      public int getResin() {
+        return resin_;
       }
       /**
-       * <code>.ItemParam item_param = 5;</code>
-       * @return The itemParam.
+       * <code>uint32 resin = 1;</code>
+       * @param value The resin to set.
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
-        if (itemParamBuilder_ == null) {
-          return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
-        } else {
-          return itemParamBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder setItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemParamBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          itemParam_ = value;
-          onChanged();
-        } else {
-          itemParamBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder setItemParam(
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
-        if (itemParamBuilder_ == null) {
-          itemParam_ = builderForValue.build();
-          onChanged();
-        } else {
-          itemParamBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder mergeItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
-        if (itemParamBuilder_ == null) {
-          if (itemParam_ != null) {
-            itemParam_ =
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.newBuilder(itemParam_).mergeFrom(value).buildPartial();
-          } else {
-            itemParam_ = value;
-          }
-          onChanged();
-        } else {
-          itemParamBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public Builder clearItemParam() {
-        if (itemParamBuilder_ == null) {
-          itemParam_ = null;
-          onChanged();
-        } else {
-          itemParam_ = null;
-          itemParamBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ItemParam item_param = 5;</code>
-       */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemParamBuilder() {
+      public Builder setResin(int value) {
         
+        resin_ = value;
         onChanged();
-        return getItemParamFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.ItemParam item_param = 5;</code>
+       * <code>uint32 resin = 1;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
-        if (itemParamBuilder_ != null) {
-          return itemParamBuilder_.getMessageOrBuilder();
-        } else {
-          return itemParam_ == null ?
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
-        }
+      public Builder clearResin() {
+        
+        resin_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int deadTime_ ;
+      /**
+       * <code>uint32 dead_time = 2;</code>
+       * @return The deadTime.
+       */
+      @java.lang.Override
+      public int getDeadTime() {
+        return deadTime_;
       }
       /**
-       * <code>.ItemParam item_param = 5;</code>
+       * <code>uint32 dead_time = 2;</code>
+       * @param value The deadTime to set.
+       * @return This builder for chaining.
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
-          getItemParamFieldBuilder() {
-        if (itemParamBuilder_ == null) {
-          itemParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
-                  getItemParam(),
-                  getParentForChildren(),
-                  isClean());
-          itemParam_ = null;
-        }
-        return itemParamBuilder_;
+      public Builder setDeadTime(int value) {
+        
+        deadTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dead_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeadTime() {
+        
+        deadTime_ = 0;
+        onChanged();
+        return this;
       }
 
       private com.google.protobuf.Internal.IntList remainUidList_ = emptyIntList();
@@ -1051,66 +994,123 @@ public final class GadgetGeneralRewardInfoOuterClass {
         return this;
       }
 
-      private int deadTime_ ;
+      private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam itemParam_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemParamBuilder_;
       /**
-       * <code>uint32 dead_time = 2;</code>
-       * @return The deadTime.
+       * <code>.ItemParam item_param = 5;</code>
+       * @return Whether the itemParam field is set.
        */
-      @java.lang.Override
-      public int getDeadTime() {
-        return deadTime_;
+      public boolean hasItemParam() {
+        return itemParamBuilder_ != null || itemParam_ != null;
       }
       /**
-       * <code>uint32 dead_time = 2;</code>
-       * @param value The deadTime to set.
-       * @return This builder for chaining.
+       * <code>.ItemParam item_param = 5;</code>
+       * @return The itemParam.
        */
-      public Builder setDeadTime(int value) {
-        
-        deadTime_ = value;
-        onChanged();
-        return this;
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemParam() {
+        if (itemParamBuilder_ == null) {
+          return itemParam_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
+        } else {
+          return itemParamBuilder_.getMessage();
+        }
       }
       /**
-       * <code>uint32 dead_time = 2;</code>
-       * @return This builder for chaining.
+       * <code>.ItemParam item_param = 5;</code>
        */
-      public Builder clearDeadTime() {
-        
-        deadTime_ = 0;
-        onChanged();
-        return this;
-      }
+      public Builder setItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemParamBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          itemParam_ = value;
+          onChanged();
+        } else {
+          itemParamBuilder_.setMessage(value);
+        }
 
-      private int resin_ ;
-      /**
-       * <code>uint32 resin = 1;</code>
-       * @return The resin.
-       */
-      @java.lang.Override
-      public int getResin() {
-        return resin_;
-      }
-      /**
-       * <code>uint32 resin = 1;</code>
-       * @param value The resin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setResin(int value) {
-        
-        resin_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>uint32 resin = 1;</code>
-       * @return This builder for chaining.
+       * <code>.ItemParam item_param = 5;</code>
        */
-      public Builder clearResin() {
-        
-        resin_ = 0;
-        onChanged();
+      public Builder setItemParam(
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
+        if (itemParamBuilder_ == null) {
+          itemParam_ = builderForValue.build();
+          onChanged();
+        } else {
+          itemParamBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public Builder mergeItemParam(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
+        if (itemParamBuilder_ == null) {
+          if (itemParam_ != null) {
+            itemParam_ =
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.newBuilder(itemParam_).mergeFrom(value).buildPartial();
+          } else {
+            itemParam_ = value;
+          }
+          onChanged();
+        } else {
+          itemParamBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public Builder clearItemParam() {
+        if (itemParamBuilder_ == null) {
+          itemParam_ = null;
+          onChanged();
+        } else {
+          itemParam_ = null;
+          itemParamBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemParamBuilder() {
+        
+        onChanged();
+        return getItemParamFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemParamOrBuilder() {
+        if (itemParamBuilder_ != null) {
+          return itemParamBuilder_.getMessageOrBuilder();
+        } else {
+          return itemParam_ == null ?
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : itemParam_;
+        }
+      }
+      /**
+       * <code>.ItemParam item_param = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
+          getItemParamFieldBuilder() {
+        if (itemParamBuilder_ == null) {
+          itemParamBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
+                  getItemParam(),
+                  getParentForChildren(),
+                  isClean());
+          itemParam_ = null;
+        }
+        return itemParamBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1180,10 +1180,10 @@ public final class GadgetGeneralRewardInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GadgetGeneralRewardInfo.proto\032\017ItemPar" +
-      "am.proto\"\216\001\n\027GadgetGeneralRewardInfo\022\036\n\n" +
-      "item_param\030\005 \001(\0132\n.ItemParam\022\027\n\017remain_u" +
-      "id_list\030\003 \003(\r\022\030\n\020qualify_uid_list\030\004 \003(\r\022" +
-      "\021\n\tdead_time\030\002 \001(\r\022\r\n\005resin\030\001 \001(\rB\033\n\031emu" +
+      "am.proto\"\216\001\n\027GadgetGeneralRewardInfo\022\r\n\005" +
+      "resin\030\001 \001(\r\022\021\n\tdead_time\030\002 \001(\r\022\027\n\017remain" +
+      "_uid_list\030\003 \003(\r\022\030\n\020qualify_uid_list\030\004 \003(" +
+      "\r\022\036\n\nitem_param\030\005 \001(\0132\n.ItemParamB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1196,7 +1196,7 @@ public final class GadgetGeneralRewardInfoOuterClass {
     internal_static_GadgetGeneralRewardInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetGeneralRewardInfo_descriptor,
-        new java.lang.String[] { "ItemParam", "RemainUidList", "QualifyUidList", "DeadTime", "Resin", });
+        new java.lang.String[] { "Resin", "DeadTime", "RemainUidList", "QualifyUidList", "ItemParam", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 
