@@ -25,12 +25,16 @@ public final class BreakoutBrickInfoOuterClass {
     int getElementType();
 
     /**
-     * <code>uint32 DFJPDKGOMKL = 1;</code>
-     * @return The dFJPDKGOMKL.
+     * <code>uint32 hp = 1;</code>
+     * @return The hp.
      */
-    int getDFJPDKGOMKL();
+    int getHp();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BreakoutBrickInfo}
    */
   public static final class BreakoutBrickInfo extends
@@ -77,7 +81,7 @@ public final class BreakoutBrickInfoOuterClass {
               break;
             case 8: {
 
-              dFJPDKGOMKL_ = input.readUInt32();
+              hp_ = input.readUInt32();
               break;
             }
             case 16: {
@@ -128,15 +132,15 @@ public final class BreakoutBrickInfoOuterClass {
       return elementType_;
     }
 
-    public static final int DFJPDKGOMKL_FIELD_NUMBER = 1;
-    private int dFJPDKGOMKL_;
+    public static final int HP_FIELD_NUMBER = 1;
+    private int hp_;
     /**
-     * <code>uint32 DFJPDKGOMKL = 1;</code>
-     * @return The dFJPDKGOMKL.
+     * <code>uint32 hp = 1;</code>
+     * @return The hp.
      */
     @java.lang.Override
-    public int getDFJPDKGOMKL() {
-      return dFJPDKGOMKL_;
+    public int getHp() {
+      return hp_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,8 +157,8 @@ public final class BreakoutBrickInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dFJPDKGOMKL_ != 0) {
-        output.writeUInt32(1, dFJPDKGOMKL_);
+      if (hp_ != 0) {
+        output.writeUInt32(1, hp_);
       }
       if (elementType_ != 0) {
         output.writeUInt32(2, elementType_);
@@ -168,9 +172,9 @@ public final class BreakoutBrickInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dFJPDKGOMKL_ != 0) {
+      if (hp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dFJPDKGOMKL_);
+          .computeUInt32Size(1, hp_);
       }
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -193,8 +197,8 @@ public final class BreakoutBrickInfoOuterClass {
 
       if (getElementType()
           != other.getElementType()) return false;
-      if (getDFJPDKGOMKL()
-          != other.getDFJPDKGOMKL()) return false;
+      if (getHp()
+          != other.getHp()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,8 +212,8 @@ public final class BreakoutBrickInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getElementType();
-      hash = (37 * hash) + DFJPDKGOMKL_FIELD_NUMBER;
-      hash = (53 * hash) + getDFJPDKGOMKL();
+      hash = (37 * hash) + HP_FIELD_NUMBER;
+      hash = (53 * hash) + getHp();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -306,6 +310,10 @@ public final class BreakoutBrickInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BreakoutBrickInfo}
      */
     public static final class Builder extends
@@ -345,7 +353,7 @@ public final class BreakoutBrickInfoOuterClass {
         super.clear();
         elementType_ = 0;
 
-        dFJPDKGOMKL_ = 0;
+        hp_ = 0;
 
         return this;
       }
@@ -374,7 +382,7 @@ public final class BreakoutBrickInfoOuterClass {
       public emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo buildPartial() {
         emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo result = new emu.grasscutter.net.proto.BreakoutBrickInfoOuterClass.BreakoutBrickInfo(this);
         result.elementType_ = elementType_;
-        result.dFJPDKGOMKL_ = dFJPDKGOMKL_;
+        result.hp_ = hp_;
         onBuilt();
         return result;
       }
@@ -426,8 +434,8 @@ public final class BreakoutBrickInfoOuterClass {
         if (other.getElementType() != 0) {
           setElementType(other.getElementType());
         }
-        if (other.getDFJPDKGOMKL() != 0) {
-          setDFJPDKGOMKL(other.getDFJPDKGOMKL());
+        if (other.getHp() != 0) {
+          setHp(other.getHp());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -489,33 +497,33 @@ public final class BreakoutBrickInfoOuterClass {
         return this;
       }
 
-      private int dFJPDKGOMKL_ ;
+      private int hp_ ;
       /**
-       * <code>uint32 DFJPDKGOMKL = 1;</code>
-       * @return The dFJPDKGOMKL.
+       * <code>uint32 hp = 1;</code>
+       * @return The hp.
        */
       @java.lang.Override
-      public int getDFJPDKGOMKL() {
-        return dFJPDKGOMKL_;
+      public int getHp() {
+        return hp_;
       }
       /**
-       * <code>uint32 DFJPDKGOMKL = 1;</code>
-       * @param value The dFJPDKGOMKL to set.
+       * <code>uint32 hp = 1;</code>
+       * @param value The hp to set.
        * @return This builder for chaining.
        */
-      public Builder setDFJPDKGOMKL(int value) {
+      public Builder setHp(int value) {
         
-        dFJPDKGOMKL_ = value;
+        hp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DFJPDKGOMKL = 1;</code>
+       * <code>uint32 hp = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDFJPDKGOMKL() {
+      public Builder clearHp() {
         
-        dFJPDKGOMKL_ = 0;
+        hp_ = 0;
         onChanged();
         return this;
       }
@@ -586,10 +594,9 @@ public final class BreakoutBrickInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027BreakoutBrickInfo.proto\">\n\021BreakoutBri" +
-      "ckInfo\022\024\n\014element_type\030\002 \001(\r\022\023\n\013DFJPDKGO" +
-      "MKL\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\027BreakoutBrickInfo.proto\"5\n\021BreakoutBri" +
+      "ckInfo\022\024\n\014element_type\030\002 \001(\r\022\n\n\002hp\030\001 \001(\r" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +607,7 @@ public final class BreakoutBrickInfoOuterClass {
     internal_static_BreakoutBrickInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutBrickInfo_descriptor,
-        new java.lang.String[] { "ElementType", "DFJPDKGOMKL", });
+        new java.lang.String[] { "ElementType", "Hp", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

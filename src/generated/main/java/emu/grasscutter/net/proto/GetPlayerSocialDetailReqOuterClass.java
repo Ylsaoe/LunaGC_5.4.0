@@ -31,6 +31,11 @@ public final class GetPlayerSocialDetailReqOuterClass {
     int getParam();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 21226
+   * </pre>
+   *
    * Protobuf type {@code GetPlayerSocialDetailReq}
    */
   public static final class GetPlayerSocialDetailReq extends
@@ -306,6 +311,11 @@ public final class GetPlayerSocialDetailReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 21226
+     * </pre>
+     *
      * Protobuf type {@code GetPlayerSocialDetailReq}
      */
     public static final class Builder extends

@@ -15,6 +15,10 @@ public final class BattlePassUnlockStatusOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf enum {@code BattlePassUnlockStatus}
    */
   public enum BattlePassUnlockStatus

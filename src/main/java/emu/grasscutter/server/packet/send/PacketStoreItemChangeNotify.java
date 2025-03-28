@@ -18,7 +18,8 @@ public class PacketStoreItemChangeNotify extends BasePacket {
         StoreItemChangeNotify.Builder proto =
                 StoreItemChangeNotify.newBuilder()
                         .setStoreType(StoreType.STORE_TYPE_PACK)
-                        .addItemList(item.toProto());
+                        .addItemList(item.toProto())
+                        .setReason(StoreItemChangeNotify.ItemChangeReason.ItemChangeReason_LOCK_OR_STAR);
 
         this.setData(proto);
     }

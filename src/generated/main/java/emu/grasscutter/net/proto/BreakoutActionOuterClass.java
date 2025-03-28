@@ -19,6 +19,21 @@ public final class BreakoutActionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.BreakoutVector2 move_dir = 8;</code>
+     * @return Whether the moveDir field is set.
+     */
+    boolean hasMoveDir();
+    /**
+     * <code>.BreakoutVector2 move_dir = 8;</code>
+     * @return The moveDir.
+     */
+    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getMoveDir();
+    /**
+     * <code>.BreakoutVector2 move_dir = 8;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getMoveDirOrBuilder();
+
+    /**
      * <code>.BreakoutVector2 pos = 7;</code>
      * @return Whether the pos field is set.
      */
@@ -49,67 +64,10 @@ public final class BreakoutActionOuterClass {
     emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getExtraBallDirOrBuilder();
 
     /**
-     * <code>.BreakoutVector2 move_dir = 8;</code>
-     * @return Whether the moveDir field is set.
+     * <code>uint32 peer_id = 10;</code>
+     * @return The peerId.
      */
-    boolean hasMoveDir();
-    /**
-     * <code>.BreakoutVector2 move_dir = 8;</code>
-     * @return The moveDir.
-     */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getMoveDir();
-    /**
-     * <code>.BreakoutVector2 move_dir = 8;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getMoveDirOrBuilder();
-
-    /**
-     * <code>uint32 element_type = 11;</code>
-     * @return The elementType.
-     */
-    int getElementType();
-
-    /**
-     * <code>bool is_failed = 4;</code>
-     * @return The isFailed.
-     */
-    boolean getIsFailed();
-
-    /**
-     * <code>bool has_extra_ball = 14;</code>
-     * @return The hasExtraBall.
-     */
-    boolean getHasExtraBall();
-
-    /**
-     * <code>uint64 server_game_time = 3;</code>
-     * @return The serverGameTime.
-     */
-    long getServerGameTime();
-
-    /**
-     * <code>int32 speed = 9;</code>
-     * @return The speed.
-     */
-    int getSpeed();
-
-    /**
-     * <code>uint32 new_index = 6;</code>
-     * @return The newIndex.
-     */
-    int getNewIndex();
-
-    /**
-     * <code>uint64 client_game_time = 2;</code>
-     * @return The clientGameTime.
-     */
-    long getClientGameTime();
-
-    /**
-     * <code>uint64 CNEHDEMBOPB = 18;</code>
-     * @return The cNEHDEMBOPB.
-     */
-    long getCNEHDEMBOPB();
+    int getPeerId();
 
     /**
      * <code>uint32 extra_ball_index = 16;</code>
@@ -118,33 +76,46 @@ public final class BreakoutActionOuterClass {
     int getExtraBallIndex();
 
     /**
+     * <code>uint64 KBBLKFNEJAG = 18;</code>
+     * @return The kBBLKFNEJAG.
+     */
+    long getKBBLKFNEJAG();
+
+    /**
+     * <code>uint64 server_game_time = 3;</code>
+     * @return The serverGameTime.
+     */
+    long getServerGameTime();
+
+    /**
      * <code>uint32 element_reaction_buff = 12;</code>
      * @return The elementReactionBuff.
      */
     int getElementReactionBuff();
 
     /**
-     * <code>uint32 peer_id = 10;</code>
-     * @return The peerId.
+     * <code>int32 speed = 9;</code>
+     * @return The speed.
      */
-    int getPeerId();
+    int getSpeed();
 
     /**
-     * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
-     * @return The enum numeric value on the wire for actionType.
+     * <code>bool is_faile = 4;</code>
+     * @return The isFaile.
      */
-    int getActionTypeValue();
-    /**
-     * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
-     * @return The actionType.
-     */
-    emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType getActionType();
+    boolean getIsFaile();
 
     /**
-     * <code>int32 offset = 17;</code>
-     * @return The offset.
+     * <code>bool has_extra_ball = 14;</code>
+     * @return The hasExtraBall.
      */
-    int getOffset();
+    boolean getHasExtraBall();
+
+    /**
+     * <code>uint64 client_game_time = 2;</code>
+     * @return The clientGameTime.
+     */
+    long getClientGameTime();
 
     /**
      * <code>uint32 pre_index = 5;</code>
@@ -153,12 +124,45 @@ public final class BreakoutActionOuterClass {
     int getPreIndex();
 
     /**
+     * <code>.BreakoutActionType action_type = 1;</code>
+     * @return The enum numeric value on the wire for actionType.
+     */
+    int getActionTypeValue();
+    /**
+     * <code>.BreakoutActionType action_type = 1;</code>
+     * @return The actionType.
+     */
+    emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType getActionType();
+
+    /**
+     * <code>int32 offset = 17;</code>
+     * @return The offset.
+     */
+    int getOffset();
+
+    /**
+     * <code>uint32 new_index = 6;</code>
+     * @return The newIndex.
+     */
+    int getNewIndex();
+
+    /**
      * <code>uint32 speed_increase_count = 13;</code>
      * @return The speedIncreaseCount.
      */
     int getSpeedIncreaseCount();
+
+    /**
+     * <code>uint32 element_type = 11;</code>
+     * @return The elementType.
+     */
+    int getElementType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BreakoutAction}
    */
   public static final class BreakoutAction extends
@@ -222,7 +226,7 @@ public final class BreakoutActionOuterClass {
             }
             case 32: {
 
-              isFailed_ = input.readBool();
+              isFaile_ = input.readBool();
               break;
             }
             case 40: {
@@ -316,7 +320,7 @@ public final class BreakoutActionOuterClass {
             }
             case 144: {
 
-              cNEHDEMBOPB_ = input.readUInt64();
+              kBBLKFNEJAG_ = input.readUInt64();
               break;
             }
             default: {
@@ -351,139 +355,30 @@ public final class BreakoutActionOuterClass {
               emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.class, emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.Builder.class);
     }
 
+    public static final int MOVE_DIR_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 moveDir_;
     /**
-     * Protobuf enum {@code BreakoutAction.BreakoutActionType}
+     * <code>.BreakoutVector2 move_dir = 8;</code>
+     * @return Whether the moveDir field is set.
      */
-    public enum BreakoutActionType
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_NONE = 0;</code>
-       */
-      BreakoutActionType_ACTION_TYPE_NONE(0),
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_LAUNCH_BALL = 1;</code>
-       */
-      BreakoutActionType_ACTION_TYPE_LAUNCH_BALL(1),
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_DESTROY_BALL = 2;</code>
-       */
-      BreakoutActionType_ACTION_TYPE_DESTROY_BALL(2),
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_FALLING_OBJECT = 3;</code>
-       */
-      BreakoutActionType_ACTION_TYPE_FALLING_OBJECT(3),
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_MISSILE = 4;</code>
-       */
-      BreakoutActionType_ACTION_TYPE_MISSILE(4),
-      UNRECOGNIZED(-1),
-      ;
-
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_NONE = 0;</code>
-       */
-      public static final int BreakoutActionType_ACTION_TYPE_NONE_VALUE = 0;
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_LAUNCH_BALL = 1;</code>
-       */
-      public static final int BreakoutActionType_ACTION_TYPE_LAUNCH_BALL_VALUE = 1;
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_DESTROY_BALL = 2;</code>
-       */
-      public static final int BreakoutActionType_ACTION_TYPE_DESTROY_BALL_VALUE = 2;
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_FALLING_OBJECT = 3;</code>
-       */
-      public static final int BreakoutActionType_ACTION_TYPE_FALLING_OBJECT_VALUE = 3;
-      /**
-       * <code>BreakoutActionType_ACTION_TYPE_MISSILE = 4;</code>
-       */
-      public static final int BreakoutActionType_ACTION_TYPE_MISSILE_VALUE = 4;
-
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static BreakoutActionType valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static BreakoutActionType forNumber(int value) {
-        switch (value) {
-          case 0: return BreakoutActionType_ACTION_TYPE_NONE;
-          case 1: return BreakoutActionType_ACTION_TYPE_LAUNCH_BALL;
-          case 2: return BreakoutActionType_ACTION_TYPE_DESTROY_BALL;
-          case 3: return BreakoutActionType_ACTION_TYPE_FALLING_OBJECT;
-          case 4: return BreakoutActionType_ACTION_TYPE_MISSILE;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<BreakoutActionType>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          BreakoutActionType> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<BreakoutActionType>() {
-              public BreakoutActionType findValueByNumber(int number) {
-                return BreakoutActionType.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final BreakoutActionType[] VALUES = values();
-
-      public static BreakoutActionType valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private BreakoutActionType(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:BreakoutAction.BreakoutActionType)
+    @java.lang.Override
+    public boolean hasMoveDir() {
+      return moveDir_ != null;
+    }
+    /**
+     * <code>.BreakoutVector2 move_dir = 8;</code>
+     * @return The moveDir.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getMoveDir() {
+      return moveDir_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : moveDir_;
+    }
+    /**
+     * <code>.BreakoutVector2 move_dir = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getMoveDirOrBuilder() {
+      return getMoveDir();
     }
 
     public static final int POS_FIELD_NUMBER = 7;
@@ -538,118 +433,15 @@ public final class BreakoutActionOuterClass {
       return getExtraBallDir();
     }
 
-    public static final int MOVE_DIR_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 moveDir_;
+    public static final int PEER_ID_FIELD_NUMBER = 10;
+    private int peerId_;
     /**
-     * <code>.BreakoutVector2 move_dir = 8;</code>
-     * @return Whether the moveDir field is set.
+     * <code>uint32 peer_id = 10;</code>
+     * @return The peerId.
      */
     @java.lang.Override
-    public boolean hasMoveDir() {
-      return moveDir_ != null;
-    }
-    /**
-     * <code>.BreakoutVector2 move_dir = 8;</code>
-     * @return The moveDir.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getMoveDir() {
-      return moveDir_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : moveDir_;
-    }
-    /**
-     * <code>.BreakoutVector2 move_dir = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getMoveDirOrBuilder() {
-      return getMoveDir();
-    }
-
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 11;
-    private int elementType_;
-    /**
-     * <code>uint32 element_type = 11;</code>
-     * @return The elementType.
-     */
-    @java.lang.Override
-    public int getElementType() {
-      return elementType_;
-    }
-
-    public static final int IS_FAILED_FIELD_NUMBER = 4;
-    private boolean isFailed_;
-    /**
-     * <code>bool is_failed = 4;</code>
-     * @return The isFailed.
-     */
-    @java.lang.Override
-    public boolean getIsFailed() {
-      return isFailed_;
-    }
-
-    public static final int HAS_EXTRA_BALL_FIELD_NUMBER = 14;
-    private boolean hasExtraBall_;
-    /**
-     * <code>bool has_extra_ball = 14;</code>
-     * @return The hasExtraBall.
-     */
-    @java.lang.Override
-    public boolean getHasExtraBall() {
-      return hasExtraBall_;
-    }
-
-    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 3;
-    private long serverGameTime_;
-    /**
-     * <code>uint64 server_game_time = 3;</code>
-     * @return The serverGameTime.
-     */
-    @java.lang.Override
-    public long getServerGameTime() {
-      return serverGameTime_;
-    }
-
-    public static final int SPEED_FIELD_NUMBER = 9;
-    private int speed_;
-    /**
-     * <code>int32 speed = 9;</code>
-     * @return The speed.
-     */
-    @java.lang.Override
-    public int getSpeed() {
-      return speed_;
-    }
-
-    public static final int NEW_INDEX_FIELD_NUMBER = 6;
-    private int newIndex_;
-    /**
-     * <code>uint32 new_index = 6;</code>
-     * @return The newIndex.
-     */
-    @java.lang.Override
-    public int getNewIndex() {
-      return newIndex_;
-    }
-
-    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 2;
-    private long clientGameTime_;
-    /**
-     * <code>uint64 client_game_time = 2;</code>
-     * @return The clientGameTime.
-     */
-    @java.lang.Override
-    public long getClientGameTime() {
-      return clientGameTime_;
-    }
-
-    public static final int CNEHDEMBOPB_FIELD_NUMBER = 18;
-    private long cNEHDEMBOPB_;
-    /**
-     * <code>uint64 CNEHDEMBOPB = 18;</code>
-     * @return The cNEHDEMBOPB.
-     */
-    @java.lang.Override
-    public long getCNEHDEMBOPB() {
-      return cNEHDEMBOPB_;
+    public int getPeerId() {
+      return peerId_;
     }
 
     public static final int EXTRA_BALL_INDEX_FIELD_NUMBER = 16;
@@ -663,6 +455,28 @@ public final class BreakoutActionOuterClass {
       return extraBallIndex_;
     }
 
+    public static final int KBBLKFNEJAG_FIELD_NUMBER = 18;
+    private long kBBLKFNEJAG_;
+    /**
+     * <code>uint64 KBBLKFNEJAG = 18;</code>
+     * @return The kBBLKFNEJAG.
+     */
+    @java.lang.Override
+    public long getKBBLKFNEJAG() {
+      return kBBLKFNEJAG_;
+    }
+
+    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 3;
+    private long serverGameTime_;
+    /**
+     * <code>uint64 server_game_time = 3;</code>
+     * @return The serverGameTime.
+     */
+    @java.lang.Override
+    public long getServerGameTime() {
+      return serverGameTime_;
+    }
+
     public static final int ELEMENT_REACTION_BUFF_FIELD_NUMBER = 12;
     private int elementReactionBuff_;
     /**
@@ -674,45 +488,48 @@ public final class BreakoutActionOuterClass {
       return elementReactionBuff_;
     }
 
-    public static final int PEER_ID_FIELD_NUMBER = 10;
-    private int peerId_;
+    public static final int SPEED_FIELD_NUMBER = 9;
+    private int speed_;
     /**
-     * <code>uint32 peer_id = 10;</code>
-     * @return The peerId.
+     * <code>int32 speed = 9;</code>
+     * @return The speed.
      */
     @java.lang.Override
-    public int getPeerId() {
-      return peerId_;
+    public int getSpeed() {
+      return speed_;
     }
 
-    public static final int ACTION_TYPE_FIELD_NUMBER = 1;
-    private int actionType_;
+    public static final int IS_FAILE_FIELD_NUMBER = 4;
+    private boolean isFaile_;
     /**
-     * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
-     * @return The enum numeric value on the wire for actionType.
-     */
-    @java.lang.Override public int getActionTypeValue() {
-      return actionType_;
-    }
-    /**
-     * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
-     * @return The actionType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType getActionType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType result = emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType.valueOf(actionType_);
-      return result == null ? emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType.UNRECOGNIZED : result;
-    }
-
-    public static final int OFFSET_FIELD_NUMBER = 17;
-    private int offset_;
-    /**
-     * <code>int32 offset = 17;</code>
-     * @return The offset.
+     * <code>bool is_faile = 4;</code>
+     * @return The isFaile.
      */
     @java.lang.Override
-    public int getOffset() {
-      return offset_;
+    public boolean getIsFaile() {
+      return isFaile_;
+    }
+
+    public static final int HAS_EXTRA_BALL_FIELD_NUMBER = 14;
+    private boolean hasExtraBall_;
+    /**
+     * <code>bool has_extra_ball = 14;</code>
+     * @return The hasExtraBall.
+     */
+    @java.lang.Override
+    public boolean getHasExtraBall() {
+      return hasExtraBall_;
+    }
+
+    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 2;
+    private long clientGameTime_;
+    /**
+     * <code>uint64 client_game_time = 2;</code>
+     * @return The clientGameTime.
+     */
+    @java.lang.Override
+    public long getClientGameTime() {
+      return clientGameTime_;
     }
 
     public static final int PRE_INDEX_FIELD_NUMBER = 5;
@@ -726,6 +543,47 @@ public final class BreakoutActionOuterClass {
       return preIndex_;
     }
 
+    public static final int ACTION_TYPE_FIELD_NUMBER = 1;
+    private int actionType_;
+    /**
+     * <code>.BreakoutActionType action_type = 1;</code>
+     * @return The enum numeric value on the wire for actionType.
+     */
+    @java.lang.Override public int getActionTypeValue() {
+      return actionType_;
+    }
+    /**
+     * <code>.BreakoutActionType action_type = 1;</code>
+     * @return The actionType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType getActionType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType result = emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.valueOf(actionType_);
+      return result == null ? emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.UNRECOGNIZED : result;
+    }
+
+    public static final int OFFSET_FIELD_NUMBER = 17;
+    private int offset_;
+    /**
+     * <code>int32 offset = 17;</code>
+     * @return The offset.
+     */
+    @java.lang.Override
+    public int getOffset() {
+      return offset_;
+    }
+
+    public static final int NEW_INDEX_FIELD_NUMBER = 6;
+    private int newIndex_;
+    /**
+     * <code>uint32 new_index = 6;</code>
+     * @return The newIndex.
+     */
+    @java.lang.Override
+    public int getNewIndex() {
+      return newIndex_;
+    }
+
     public static final int SPEED_INCREASE_COUNT_FIELD_NUMBER = 13;
     private int speedIncreaseCount_;
     /**
@@ -735,6 +593,17 @@ public final class BreakoutActionOuterClass {
     @java.lang.Override
     public int getSpeedIncreaseCount() {
       return speedIncreaseCount_;
+    }
+
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 11;
+    private int elementType_;
+    /**
+     * <code>uint32 element_type = 11;</code>
+     * @return The elementType.
+     */
+    @java.lang.Override
+    public int getElementType() {
+      return elementType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -751,7 +620,7 @@ public final class BreakoutActionOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType.BreakoutActionType_ACTION_TYPE_NONE.getNumber()) {
+      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.BREAKOUT_ACTION_TYPE_ACTION_TYPE_NONE.getNumber()) {
         output.writeEnum(1, actionType_);
       }
       if (clientGameTime_ != 0L) {
@@ -760,8 +629,8 @@ public final class BreakoutActionOuterClass {
       if (serverGameTime_ != 0L) {
         output.writeUInt64(3, serverGameTime_);
       }
-      if (isFailed_ != false) {
-        output.writeBool(4, isFailed_);
+      if (isFaile_ != false) {
+        output.writeBool(4, isFaile_);
       }
       if (preIndex_ != 0) {
         output.writeUInt32(5, preIndex_);
@@ -802,8 +671,8 @@ public final class BreakoutActionOuterClass {
       if (offset_ != 0) {
         output.writeInt32(17, offset_);
       }
-      if (cNEHDEMBOPB_ != 0L) {
-        output.writeUInt64(18, cNEHDEMBOPB_);
+      if (kBBLKFNEJAG_ != 0L) {
+        output.writeUInt64(18, kBBLKFNEJAG_);
       }
       unknownFields.writeTo(output);
     }
@@ -814,7 +683,7 @@ public final class BreakoutActionOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType.BreakoutActionType_ACTION_TYPE_NONE.getNumber()) {
+      if (actionType_ != emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.BREAKOUT_ACTION_TYPE_ACTION_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, actionType_);
       }
@@ -826,9 +695,9 @@ public final class BreakoutActionOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(3, serverGameTime_);
       }
-      if (isFailed_ != false) {
+      if (isFaile_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isFailed_);
+          .computeBoolSize(4, isFaile_);
       }
       if (preIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -882,9 +751,9 @@ public final class BreakoutActionOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(17, offset_);
       }
-      if (cNEHDEMBOPB_ != 0L) {
+      if (kBBLKFNEJAG_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(18, cNEHDEMBOPB_);
+          .computeUInt64Size(18, kBBLKFNEJAG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -901,6 +770,11 @@ public final class BreakoutActionOuterClass {
       }
       emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction other = (emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction) obj;
 
+      if (hasMoveDir() != other.hasMoveDir()) return false;
+      if (hasMoveDir()) {
+        if (!getMoveDir()
+            .equals(other.getMoveDir())) return false;
+      }
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
@@ -911,40 +785,35 @@ public final class BreakoutActionOuterClass {
         if (!getExtraBallDir()
             .equals(other.getExtraBallDir())) return false;
       }
-      if (hasMoveDir() != other.hasMoveDir()) return false;
-      if (hasMoveDir()) {
-        if (!getMoveDir()
-            .equals(other.getMoveDir())) return false;
-      }
-      if (getElementType()
-          != other.getElementType()) return false;
-      if (getIsFailed()
-          != other.getIsFailed()) return false;
-      if (getHasExtraBall()
-          != other.getHasExtraBall()) return false;
-      if (getServerGameTime()
-          != other.getServerGameTime()) return false;
-      if (getSpeed()
-          != other.getSpeed()) return false;
-      if (getNewIndex()
-          != other.getNewIndex()) return false;
-      if (getClientGameTime()
-          != other.getClientGameTime()) return false;
-      if (getCNEHDEMBOPB()
-          != other.getCNEHDEMBOPB()) return false;
-      if (getExtraBallIndex()
-          != other.getExtraBallIndex()) return false;
-      if (getElementReactionBuff()
-          != other.getElementReactionBuff()) return false;
       if (getPeerId()
           != other.getPeerId()) return false;
+      if (getExtraBallIndex()
+          != other.getExtraBallIndex()) return false;
+      if (getKBBLKFNEJAG()
+          != other.getKBBLKFNEJAG()) return false;
+      if (getServerGameTime()
+          != other.getServerGameTime()) return false;
+      if (getElementReactionBuff()
+          != other.getElementReactionBuff()) return false;
+      if (getSpeed()
+          != other.getSpeed()) return false;
+      if (getIsFaile()
+          != other.getIsFaile()) return false;
+      if (getHasExtraBall()
+          != other.getHasExtraBall()) return false;
+      if (getClientGameTime()
+          != other.getClientGameTime()) return false;
+      if (getPreIndex()
+          != other.getPreIndex()) return false;
       if (actionType_ != other.actionType_) return false;
       if (getOffset()
           != other.getOffset()) return false;
-      if (getPreIndex()
-          != other.getPreIndex()) return false;
+      if (getNewIndex()
+          != other.getNewIndex()) return false;
       if (getSpeedIncreaseCount()
           != other.getSpeedIncreaseCount()) return false;
+      if (getElementType()
+          != other.getElementType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -956,6 +825,10 @@ public final class BreakoutActionOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasMoveDir()) {
+        hash = (37 * hash) + MOVE_DIR_FIELD_NUMBER;
+        hash = (53 * hash) + getMoveDir().hashCode();
+      }
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
@@ -964,45 +837,41 @@ public final class BreakoutActionOuterClass {
         hash = (37 * hash) + EXTRA_BALL_DIR_FIELD_NUMBER;
         hash = (53 * hash) + getExtraBallDir().hashCode();
       }
-      if (hasMoveDir()) {
-        hash = (37 * hash) + MOVE_DIR_FIELD_NUMBER;
-        hash = (53 * hash) + getMoveDir().hashCode();
-      }
-      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getElementType();
-      hash = (37 * hash) + IS_FAILED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFailed());
-      hash = (37 * hash) + HAS_EXTRA_BALL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHasExtraBall());
+      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPeerId();
+      hash = (37 * hash) + EXTRA_BALL_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getExtraBallIndex();
+      hash = (37 * hash) + KBBLKFNEJAG_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getKBBLKFNEJAG());
       hash = (37 * hash) + SERVER_GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getServerGameTime());
+      hash = (37 * hash) + ELEMENT_REACTION_BUFF_FIELD_NUMBER;
+      hash = (53 * hash) + getElementReactionBuff();
       hash = (37 * hash) + SPEED_FIELD_NUMBER;
       hash = (53 * hash) + getSpeed();
-      hash = (37 * hash) + NEW_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getNewIndex();
+      hash = (37 * hash) + IS_FAILE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFaile());
+      hash = (37 * hash) + HAS_EXTRA_BALL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHasExtraBall());
       hash = (37 * hash) + CLIENT_GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getClientGameTime());
-      hash = (37 * hash) + CNEHDEMBOPB_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCNEHDEMBOPB());
-      hash = (37 * hash) + EXTRA_BALL_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getExtraBallIndex();
-      hash = (37 * hash) + ELEMENT_REACTION_BUFF_FIELD_NUMBER;
-      hash = (53 * hash) + getElementReactionBuff();
-      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPeerId();
+      hash = (37 * hash) + PRE_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPreIndex();
       hash = (37 * hash) + ACTION_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + actionType_;
       hash = (37 * hash) + OFFSET_FIELD_NUMBER;
       hash = (53 * hash) + getOffset();
-      hash = (37 * hash) + PRE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPreIndex();
+      hash = (37 * hash) + NEW_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getNewIndex();
       hash = (37 * hash) + SPEED_INCREASE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getSpeedIncreaseCount();
+      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1099,6 +968,10 @@ public final class BreakoutActionOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BreakoutAction}
      */
     public static final class Builder extends
@@ -1136,6 +1009,12 @@ public final class BreakoutActionOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (moveDirBuilder_ == null) {
+          moveDir_ = null;
+        } else {
+          moveDir_ = null;
+          moveDirBuilder_ = null;
+        }
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
@@ -1148,41 +1027,35 @@ public final class BreakoutActionOuterClass {
           extraBallDir_ = null;
           extraBallDirBuilder_ = null;
         }
-        if (moveDirBuilder_ == null) {
-          moveDir_ = null;
-        } else {
-          moveDir_ = null;
-          moveDirBuilder_ = null;
-        }
-        elementType_ = 0;
-
-        isFailed_ = false;
-
-        hasExtraBall_ = false;
-
-        serverGameTime_ = 0L;
-
-        speed_ = 0;
-
-        newIndex_ = 0;
-
-        clientGameTime_ = 0L;
-
-        cNEHDEMBOPB_ = 0L;
+        peerId_ = 0;
 
         extraBallIndex_ = 0;
 
+        kBBLKFNEJAG_ = 0L;
+
+        serverGameTime_ = 0L;
+
         elementReactionBuff_ = 0;
 
-        peerId_ = 0;
+        speed_ = 0;
+
+        isFaile_ = false;
+
+        hasExtraBall_ = false;
+
+        clientGameTime_ = 0L;
+
+        preIndex_ = 0;
 
         actionType_ = 0;
 
         offset_ = 0;
 
-        preIndex_ = 0;
+        newIndex_ = 0;
 
         speedIncreaseCount_ = 0;
+
+        elementType_ = 0;
 
         return this;
       }
@@ -1210,6 +1083,11 @@ public final class BreakoutActionOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction buildPartial() {
         emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction result = new emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction(this);
+        if (moveDirBuilder_ == null) {
+          result.moveDir_ = moveDir_;
+        } else {
+          result.moveDir_ = moveDirBuilder_.build();
+        }
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
@@ -1220,26 +1098,21 @@ public final class BreakoutActionOuterClass {
         } else {
           result.extraBallDir_ = extraBallDirBuilder_.build();
         }
-        if (moveDirBuilder_ == null) {
-          result.moveDir_ = moveDir_;
-        } else {
-          result.moveDir_ = moveDirBuilder_.build();
-        }
-        result.elementType_ = elementType_;
-        result.isFailed_ = isFailed_;
-        result.hasExtraBall_ = hasExtraBall_;
-        result.serverGameTime_ = serverGameTime_;
-        result.speed_ = speed_;
-        result.newIndex_ = newIndex_;
-        result.clientGameTime_ = clientGameTime_;
-        result.cNEHDEMBOPB_ = cNEHDEMBOPB_;
-        result.extraBallIndex_ = extraBallIndex_;
-        result.elementReactionBuff_ = elementReactionBuff_;
         result.peerId_ = peerId_;
+        result.extraBallIndex_ = extraBallIndex_;
+        result.kBBLKFNEJAG_ = kBBLKFNEJAG_;
+        result.serverGameTime_ = serverGameTime_;
+        result.elementReactionBuff_ = elementReactionBuff_;
+        result.speed_ = speed_;
+        result.isFaile_ = isFaile_;
+        result.hasExtraBall_ = hasExtraBall_;
+        result.clientGameTime_ = clientGameTime_;
+        result.preIndex_ = preIndex_;
         result.actionType_ = actionType_;
         result.offset_ = offset_;
-        result.preIndex_ = preIndex_;
+        result.newIndex_ = newIndex_;
         result.speedIncreaseCount_ = speedIncreaseCount_;
+        result.elementType_ = elementType_;
         onBuilt();
         return result;
       }
@@ -1288,47 +1161,44 @@ public final class BreakoutActionOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction other) {
         if (other == emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.getDefaultInstance()) return this;
+        if (other.hasMoveDir()) {
+          mergeMoveDir(other.getMoveDir());
+        }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
         if (other.hasExtraBallDir()) {
           mergeExtraBallDir(other.getExtraBallDir());
         }
-        if (other.hasMoveDir()) {
-          mergeMoveDir(other.getMoveDir());
-        }
-        if (other.getElementType() != 0) {
-          setElementType(other.getElementType());
-        }
-        if (other.getIsFailed() != false) {
-          setIsFailed(other.getIsFailed());
-        }
-        if (other.getHasExtraBall() != false) {
-          setHasExtraBall(other.getHasExtraBall());
-        }
-        if (other.getServerGameTime() != 0L) {
-          setServerGameTime(other.getServerGameTime());
-        }
-        if (other.getSpeed() != 0) {
-          setSpeed(other.getSpeed());
-        }
-        if (other.getNewIndex() != 0) {
-          setNewIndex(other.getNewIndex());
-        }
-        if (other.getClientGameTime() != 0L) {
-          setClientGameTime(other.getClientGameTime());
-        }
-        if (other.getCNEHDEMBOPB() != 0L) {
-          setCNEHDEMBOPB(other.getCNEHDEMBOPB());
+        if (other.getPeerId() != 0) {
+          setPeerId(other.getPeerId());
         }
         if (other.getExtraBallIndex() != 0) {
           setExtraBallIndex(other.getExtraBallIndex());
         }
+        if (other.getKBBLKFNEJAG() != 0L) {
+          setKBBLKFNEJAG(other.getKBBLKFNEJAG());
+        }
+        if (other.getServerGameTime() != 0L) {
+          setServerGameTime(other.getServerGameTime());
+        }
         if (other.getElementReactionBuff() != 0) {
           setElementReactionBuff(other.getElementReactionBuff());
         }
-        if (other.getPeerId() != 0) {
-          setPeerId(other.getPeerId());
+        if (other.getSpeed() != 0) {
+          setSpeed(other.getSpeed());
+        }
+        if (other.getIsFaile() != false) {
+          setIsFaile(other.getIsFaile());
+        }
+        if (other.getHasExtraBall() != false) {
+          setHasExtraBall(other.getHasExtraBall());
+        }
+        if (other.getClientGameTime() != 0L) {
+          setClientGameTime(other.getClientGameTime());
+        }
+        if (other.getPreIndex() != 0) {
+          setPreIndex(other.getPreIndex());
         }
         if (other.actionType_ != 0) {
           setActionTypeValue(other.getActionTypeValue());
@@ -1336,11 +1206,14 @@ public final class BreakoutActionOuterClass {
         if (other.getOffset() != 0) {
           setOffset(other.getOffset());
         }
-        if (other.getPreIndex() != 0) {
-          setPreIndex(other.getPreIndex());
+        if (other.getNewIndex() != 0) {
+          setNewIndex(other.getNewIndex());
         }
         if (other.getSpeedIncreaseCount() != 0) {
           setSpeedIncreaseCount(other.getSpeedIncreaseCount());
+        }
+        if (other.getElementType() != 0) {
+          setElementType(other.getElementType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1369,6 +1242,125 @@ public final class BreakoutActionOuterClass {
           }
         }
         return this;
+      }
+
+      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 moveDir_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> moveDirBuilder_;
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       * @return Whether the moveDir field is set.
+       */
+      public boolean hasMoveDir() {
+        return moveDirBuilder_ != null || moveDir_ != null;
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       * @return The moveDir.
+       */
+      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getMoveDir() {
+        if (moveDirBuilder_ == null) {
+          return moveDir_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : moveDir_;
+        } else {
+          return moveDirBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      public Builder setMoveDir(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+        if (moveDirBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          moveDir_ = value;
+          onChanged();
+        } else {
+          moveDirBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      public Builder setMoveDir(
+          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
+        if (moveDirBuilder_ == null) {
+          moveDir_ = builderForValue.build();
+          onChanged();
+        } else {
+          moveDirBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      public Builder mergeMoveDir(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
+        if (moveDirBuilder_ == null) {
+          if (moveDir_ != null) {
+            moveDir_ =
+              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(moveDir_).mergeFrom(value).buildPartial();
+          } else {
+            moveDir_ = value;
+          }
+          onChanged();
+        } else {
+          moveDirBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      public Builder clearMoveDir() {
+        if (moveDirBuilder_ == null) {
+          moveDir_ = null;
+          onChanged();
+        } else {
+          moveDir_ = null;
+          moveDirBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getMoveDirBuilder() {
+        
+        onChanged();
+        return getMoveDirFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getMoveDirOrBuilder() {
+        if (moveDirBuilder_ != null) {
+          return moveDirBuilder_.getMessageOrBuilder();
+        } else {
+          return moveDir_ == null ?
+              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : moveDir_;
+        }
+      }
+      /**
+       * <code>.BreakoutVector2 move_dir = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
+          getMoveDirFieldBuilder() {
+        if (moveDirBuilder_ == null) {
+          moveDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
+                  getMoveDir(),
+                  getParentForChildren(),
+                  isClean());
+          moveDir_ = null;
+        }
+        return moveDirBuilder_;
       }
 
       private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 pos_;
@@ -1609,369 +1601,33 @@ public final class BreakoutActionOuterClass {
         return extraBallDirBuilder_;
       }
 
-      private emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 moveDir_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> moveDirBuilder_;
+      private int peerId_ ;
       /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       * @return Whether the moveDir field is set.
-       */
-      public boolean hasMoveDir() {
-        return moveDirBuilder_ != null || moveDir_ != null;
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       * @return The moveDir.
-       */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 getMoveDir() {
-        if (moveDirBuilder_ == null) {
-          return moveDir_ == null ? emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : moveDir_;
-        } else {
-          return moveDirBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      public Builder setMoveDir(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
-        if (moveDirBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          moveDir_ = value;
-          onChanged();
-        } else {
-          moveDirBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      public Builder setMoveDir(
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder builderForValue) {
-        if (moveDirBuilder_ == null) {
-          moveDir_ = builderForValue.build();
-          onChanged();
-        } else {
-          moveDirBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      public Builder mergeMoveDir(emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2 value) {
-        if (moveDirBuilder_ == null) {
-          if (moveDir_ != null) {
-            moveDir_ =
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.newBuilder(moveDir_).mergeFrom(value).buildPartial();
-          } else {
-            moveDir_ = value;
-          }
-          onChanged();
-        } else {
-          moveDirBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      public Builder clearMoveDir() {
-        if (moveDirBuilder_ == null) {
-          moveDir_ = null;
-          onChanged();
-        } else {
-          moveDir_ = null;
-          moveDirBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder getMoveDirBuilder() {
-        
-        onChanged();
-        return getMoveDirFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder getMoveDirOrBuilder() {
-        if (moveDirBuilder_ != null) {
-          return moveDirBuilder_.getMessageOrBuilder();
-        } else {
-          return moveDir_ == null ?
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.getDefaultInstance() : moveDir_;
-        }
-      }
-      /**
-       * <code>.BreakoutVector2 move_dir = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder> 
-          getMoveDirFieldBuilder() {
-        if (moveDirBuilder_ == null) {
-          moveDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2.Builder, emu.grasscutter.net.proto.BreakoutVector2OuterClass.BreakoutVector2OrBuilder>(
-                  getMoveDir(),
-                  getParentForChildren(),
-                  isClean());
-          moveDir_ = null;
-        }
-        return moveDirBuilder_;
-      }
-
-      private int elementType_ ;
-      /**
-       * <code>uint32 element_type = 11;</code>
-       * @return The elementType.
+       * <code>uint32 peer_id = 10;</code>
+       * @return The peerId.
        */
       @java.lang.Override
-      public int getElementType() {
-        return elementType_;
+      public int getPeerId() {
+        return peerId_;
       }
       /**
-       * <code>uint32 element_type = 11;</code>
-       * @param value The elementType to set.
+       * <code>uint32 peer_id = 10;</code>
+       * @param value The peerId to set.
        * @return This builder for chaining.
        */
-      public Builder setElementType(int value) {
+      public Builder setPeerId(int value) {
         
-        elementType_ = value;
+        peerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 element_type = 11;</code>
+       * <code>uint32 peer_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearElementType() {
+      public Builder clearPeerId() {
         
-        elementType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFailed_ ;
-      /**
-       * <code>bool is_failed = 4;</code>
-       * @return The isFailed.
-       */
-      @java.lang.Override
-      public boolean getIsFailed() {
-        return isFailed_;
-      }
-      /**
-       * <code>bool is_failed = 4;</code>
-       * @param value The isFailed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFailed(boolean value) {
-        
-        isFailed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_failed = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFailed() {
-        
-        isFailed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean hasExtraBall_ ;
-      /**
-       * <code>bool has_extra_ball = 14;</code>
-       * @return The hasExtraBall.
-       */
-      @java.lang.Override
-      public boolean getHasExtraBall() {
-        return hasExtraBall_;
-      }
-      /**
-       * <code>bool has_extra_ball = 14;</code>
-       * @param value The hasExtraBall to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHasExtraBall(boolean value) {
-        
-        hasExtraBall_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool has_extra_ball = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHasExtraBall() {
-        
-        hasExtraBall_ = false;
-        onChanged();
-        return this;
-      }
-
-      private long serverGameTime_ ;
-      /**
-       * <code>uint64 server_game_time = 3;</code>
-       * @return The serverGameTime.
-       */
-      @java.lang.Override
-      public long getServerGameTime() {
-        return serverGameTime_;
-      }
-      /**
-       * <code>uint64 server_game_time = 3;</code>
-       * @param value The serverGameTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setServerGameTime(long value) {
-        
-        serverGameTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 server_game_time = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearServerGameTime() {
-        
-        serverGameTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int speed_ ;
-      /**
-       * <code>int32 speed = 9;</code>
-       * @return The speed.
-       */
-      @java.lang.Override
-      public int getSpeed() {
-        return speed_;
-      }
-      /**
-       * <code>int32 speed = 9;</code>
-       * @param value The speed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSpeed(int value) {
-        
-        speed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 speed = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSpeed() {
-        
-        speed_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int newIndex_ ;
-      /**
-       * <code>uint32 new_index = 6;</code>
-       * @return The newIndex.
-       */
-      @java.lang.Override
-      public int getNewIndex() {
-        return newIndex_;
-      }
-      /**
-       * <code>uint32 new_index = 6;</code>
-       * @param value The newIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNewIndex(int value) {
-        
-        newIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 new_index = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNewIndex() {
-        
-        newIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long clientGameTime_ ;
-      /**
-       * <code>uint64 client_game_time = 2;</code>
-       * @return The clientGameTime.
-       */
-      @java.lang.Override
-      public long getClientGameTime() {
-        return clientGameTime_;
-      }
-      /**
-       * <code>uint64 client_game_time = 2;</code>
-       * @param value The clientGameTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientGameTime(long value) {
-        
-        clientGameTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 client_game_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientGameTime() {
-        
-        clientGameTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long cNEHDEMBOPB_ ;
-      /**
-       * <code>uint64 CNEHDEMBOPB = 18;</code>
-       * @return The cNEHDEMBOPB.
-       */
-      @java.lang.Override
-      public long getCNEHDEMBOPB() {
-        return cNEHDEMBOPB_;
-      }
-      /**
-       * <code>uint64 CNEHDEMBOPB = 18;</code>
-       * @param value The cNEHDEMBOPB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCNEHDEMBOPB(long value) {
-        
-        cNEHDEMBOPB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 CNEHDEMBOPB = 18;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCNEHDEMBOPB() {
-        
-        cNEHDEMBOPB_ = 0L;
+        peerId_ = 0;
         onChanged();
         return this;
       }
@@ -2007,6 +1663,68 @@ public final class BreakoutActionOuterClass {
         return this;
       }
 
+      private long kBBLKFNEJAG_ ;
+      /**
+       * <code>uint64 KBBLKFNEJAG = 18;</code>
+       * @return The kBBLKFNEJAG.
+       */
+      @java.lang.Override
+      public long getKBBLKFNEJAG() {
+        return kBBLKFNEJAG_;
+      }
+      /**
+       * <code>uint64 KBBLKFNEJAG = 18;</code>
+       * @param value The kBBLKFNEJAG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKBBLKFNEJAG(long value) {
+        
+        kBBLKFNEJAG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 KBBLKFNEJAG = 18;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKBBLKFNEJAG() {
+        
+        kBBLKFNEJAG_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long serverGameTime_ ;
+      /**
+       * <code>uint64 server_game_time = 3;</code>
+       * @return The serverGameTime.
+       */
+      @java.lang.Override
+      public long getServerGameTime() {
+        return serverGameTime_;
+      }
+      /**
+       * <code>uint64 server_game_time = 3;</code>
+       * @param value The serverGameTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setServerGameTime(long value) {
+        
+        serverGameTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 server_game_time = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearServerGameTime() {
+        
+        serverGameTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int elementReactionBuff_ ;
       /**
        * <code>uint32 element_reaction_buff = 12;</code>
@@ -2038,47 +1756,171 @@ public final class BreakoutActionOuterClass {
         return this;
       }
 
-      private int peerId_ ;
+      private int speed_ ;
       /**
-       * <code>uint32 peer_id = 10;</code>
-       * @return The peerId.
+       * <code>int32 speed = 9;</code>
+       * @return The speed.
        */
       @java.lang.Override
-      public int getPeerId() {
-        return peerId_;
+      public int getSpeed() {
+        return speed_;
       }
       /**
-       * <code>uint32 peer_id = 10;</code>
-       * @param value The peerId to set.
+       * <code>int32 speed = 9;</code>
+       * @param value The speed to set.
        * @return This builder for chaining.
        */
-      public Builder setPeerId(int value) {
+      public Builder setSpeed(int value) {
         
-        peerId_ = value;
+        speed_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 peer_id = 10;</code>
+       * <code>int32 speed = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPeerId() {
+      public Builder clearSpeed() {
         
-        peerId_ = 0;
+        speed_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFaile_ ;
+      /**
+       * <code>bool is_faile = 4;</code>
+       * @return The isFaile.
+       */
+      @java.lang.Override
+      public boolean getIsFaile() {
+        return isFaile_;
+      }
+      /**
+       * <code>bool is_faile = 4;</code>
+       * @param value The isFaile to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFaile(boolean value) {
+        
+        isFaile_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_faile = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFaile() {
+        
+        isFaile_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean hasExtraBall_ ;
+      /**
+       * <code>bool has_extra_ball = 14;</code>
+       * @return The hasExtraBall.
+       */
+      @java.lang.Override
+      public boolean getHasExtraBall() {
+        return hasExtraBall_;
+      }
+      /**
+       * <code>bool has_extra_ball = 14;</code>
+       * @param value The hasExtraBall to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHasExtraBall(boolean value) {
+        
+        hasExtraBall_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool has_extra_ball = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHasExtraBall() {
+        
+        hasExtraBall_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long clientGameTime_ ;
+      /**
+       * <code>uint64 client_game_time = 2;</code>
+       * @return The clientGameTime.
+       */
+      @java.lang.Override
+      public long getClientGameTime() {
+        return clientGameTime_;
+      }
+      /**
+       * <code>uint64 client_game_time = 2;</code>
+       * @param value The clientGameTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientGameTime(long value) {
+        
+        clientGameTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 client_game_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientGameTime() {
+        
+        clientGameTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int preIndex_ ;
+      /**
+       * <code>uint32 pre_index = 5;</code>
+       * @return The preIndex.
+       */
+      @java.lang.Override
+      public int getPreIndex() {
+        return preIndex_;
+      }
+      /**
+       * <code>uint32 pre_index = 5;</code>
+       * @param value The preIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPreIndex(int value) {
+        
+        preIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 pre_index = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPreIndex() {
+        
+        preIndex_ = 0;
         onChanged();
         return this;
       }
 
       private int actionType_ = 0;
       /**
-       * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
+       * <code>.BreakoutActionType action_type = 1;</code>
        * @return The enum numeric value on the wire for actionType.
        */
       @java.lang.Override public int getActionTypeValue() {
         return actionType_;
       }
       /**
-       * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
+       * <code>.BreakoutActionType action_type = 1;</code>
        * @param value The enum numeric value on the wire for actionType to set.
        * @return This builder for chaining.
        */
@@ -2089,21 +1931,21 @@ public final class BreakoutActionOuterClass {
         return this;
       }
       /**
-       * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
+       * <code>.BreakoutActionType action_type = 1;</code>
        * @return The actionType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType getActionType() {
+      public emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType getActionType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType result = emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType.valueOf(actionType_);
-        return result == null ? emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType result = emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.valueOf(actionType_);
+        return result == null ? emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
+       * <code>.BreakoutActionType action_type = 1;</code>
        * @param value The actionType to set.
        * @return This builder for chaining.
        */
-      public Builder setActionType(emu.grasscutter.net.proto.BreakoutActionOuterClass.BreakoutAction.BreakoutActionType value) {
+      public Builder setActionType(emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.BreakoutActionType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2113,7 +1955,7 @@ public final class BreakoutActionOuterClass {
         return this;
       }
       /**
-       * <code>.BreakoutAction.BreakoutActionType action_type = 1;</code>
+       * <code>.BreakoutActionType action_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearActionType() {
@@ -2154,33 +1996,33 @@ public final class BreakoutActionOuterClass {
         return this;
       }
 
-      private int preIndex_ ;
+      private int newIndex_ ;
       /**
-       * <code>uint32 pre_index = 5;</code>
-       * @return The preIndex.
+       * <code>uint32 new_index = 6;</code>
+       * @return The newIndex.
        */
       @java.lang.Override
-      public int getPreIndex() {
-        return preIndex_;
+      public int getNewIndex() {
+        return newIndex_;
       }
       /**
-       * <code>uint32 pre_index = 5;</code>
-       * @param value The preIndex to set.
+       * <code>uint32 new_index = 6;</code>
+       * @param value The newIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setPreIndex(int value) {
+      public Builder setNewIndex(int value) {
         
-        preIndex_ = value;
+        newIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 pre_index = 5;</code>
+       * <code>uint32 new_index = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPreIndex() {
+      public Builder clearNewIndex() {
         
-        preIndex_ = 0;
+        newIndex_ = 0;
         onChanged();
         return this;
       }
@@ -2212,6 +2054,37 @@ public final class BreakoutActionOuterClass {
       public Builder clearSpeedIncreaseCount() {
         
         speedIncreaseCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int elementType_ ;
+      /**
+       * <code>uint32 element_type = 11;</code>
+       * @return The elementType.
+       */
+      @java.lang.Override
+      public int getElementType() {
+        return elementType_;
+      }
+      /**
+       * <code>uint32 element_type = 11;</code>
+       * @param value The elementType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setElementType(int value) {
+        
+        elementType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 element_type = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearElementType() {
+        
+        elementType_ = 0;
         onChanged();
         return this;
       }
@@ -2282,31 +2155,26 @@ public final class BreakoutActionOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024BreakoutAction.proto\032\025BreakoutVector2." +
-      "proto\"\355\005\n\016BreakoutAction\022\035\n\003pos\030\007 \001(\0132\020." +
-      "BreakoutVector2\022(\n\016extra_ball_dir\030\017 \001(\0132" +
-      "\020.BreakoutVector2\022\"\n\010move_dir\030\010 \001(\0132\020.Br" +
-      "eakoutVector2\022\024\n\014element_type\030\013 \001(\r\022\021\n\ti" +
-      "s_failed\030\004 \001(\010\022\026\n\016has_extra_ball\030\016 \001(\010\022\030" +
-      "\n\020server_game_time\030\003 \001(\004\022\r\n\005speed\030\t \001(\005\022" +
-      "\021\n\tnew_index\030\006 \001(\r\022\030\n\020client_game_time\030\002" +
-      " \001(\004\022\023\n\013CNEHDEMBOPB\030\022 \001(\004\022\030\n\020extra_ball_" +
-      "index\030\020 \001(\r\022\035\n\025element_reaction_buff\030\014 \001" +
-      "(\r\022\017\n\007peer_id\030\n \001(\r\0227\n\013action_type\030\001 \001(\016" +
-      "2\".BreakoutAction.BreakoutActionType\022\016\n\006" +
-      "offset\030\021 \001(\005\022\021\n\tpre_index\030\005 \001(\r\022\034\n\024speed" +
-      "_increase_count\030\r \001(\r\"\375\001\n\022BreakoutAction" +
-      "Type\022\'\n#BreakoutActionType_ACTION_TYPE_N" +
-      "ONE\020\000\022.\n*BreakoutActionType_ACTION_TYPE_" +
-      "LAUNCH_BALL\020\001\022/\n+BreakoutActionType_ACTI" +
-      "ON_TYPE_DESTROY_BALL\020\002\0221\n-BreakoutAction" +
-      "Type_ACTION_TYPE_FALLING_OBJECT\020\003\022*\n&Bre" +
-      "akoutActionType_ACTION_TYPE_MISSILE\020\004B\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\024BreakoutAction.proto\032\030BreakoutActionTy" +
+      "pe.proto\032\025BreakoutVector2.proto\"\335\003\n\016Brea" +
+      "koutAction\022\"\n\010move_dir\030\010 \001(\0132\020.BreakoutV" +
+      "ector2\022\035\n\003pos\030\007 \001(\0132\020.BreakoutVector2\022(\n" +
+      "\016extra_ball_dir\030\017 \001(\0132\020.BreakoutVector2\022" +
+      "\017\n\007peer_id\030\n \001(\r\022\030\n\020extra_ball_index\030\020 \001" +
+      "(\r\022\023\n\013KBBLKFNEJAG\030\022 \001(\004\022\030\n\020server_game_t" +
+      "ime\030\003 \001(\004\022\035\n\025element_reaction_buff\030\014 \001(\r" +
+      "\022\r\n\005speed\030\t \001(\005\022\020\n\010is_faile\030\004 \001(\010\022\026\n\016has" +
+      "_extra_ball\030\016 \001(\010\022\030\n\020client_game_time\030\002 " +
+      "\001(\004\022\021\n\tpre_index\030\005 \001(\r\022(\n\013action_type\030\001 " +
+      "\001(\0162\023.BreakoutActionType\022\016\n\006offset\030\021 \001(\005" +
+      "\022\021\n\tnew_index\030\006 \001(\r\022\034\n\024speed_increase_co" +
+      "unt\030\r \001(\r\022\024\n\014element_type\030\013 \001(\rB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor(),
         });
     internal_static_BreakoutAction_descriptor =
@@ -2314,7 +2182,8 @@ public final class BreakoutActionOuterClass {
     internal_static_BreakoutAction_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutAction_descriptor,
-        new java.lang.String[] { "Pos", "ExtraBallDir", "MoveDir", "ElementType", "IsFailed", "HasExtraBall", "ServerGameTime", "Speed", "NewIndex", "ClientGameTime", "CNEHDEMBOPB", "ExtraBallIndex", "ElementReactionBuff", "PeerId", "ActionType", "Offset", "PreIndex", "SpeedIncreaseCount", });
+        new java.lang.String[] { "MoveDir", "Pos", "ExtraBallDir", "PeerId", "ExtraBallIndex", "KBBLKFNEJAG", "ServerGameTime", "ElementReactionBuff", "Speed", "IsFaile", "HasExtraBall", "ClientGameTime", "PreIndex", "ActionType", "Offset", "NewIndex", "SpeedIncreaseCount", "ElementType", });
+    emu.grasscutter.net.proto.BreakoutActionTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BreakoutVector2OuterClass.getDescriptor();
   }
 

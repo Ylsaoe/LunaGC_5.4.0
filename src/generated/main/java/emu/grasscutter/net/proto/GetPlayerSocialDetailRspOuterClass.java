@@ -46,6 +46,11 @@ public final class GetPlayerSocialDetailRspOuterClass {
     int getRetcode();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 9035
+   * </pre>
+   *
    * Protobuf type {@code GetPlayerSocialDetailRsp}
    */
   public static final class GetPlayerSocialDetailRsp extends
@@ -376,6 +381,11 @@ public final class GetPlayerSocialDetailRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 9035
+     * </pre>
+     *
      * Protobuf type {@code GetPlayerSocialDetailRsp}
      */
     public static final class Builder extends

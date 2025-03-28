@@ -25,6 +25,10 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
     int getEquipType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code GameplayRecommendationReliquaryRequest}
    */
   public static final class GameplayRecommendationReliquaryRequest extends
@@ -273,6 +277,10 @@ public final class GameplayRecommendationReliquaryRequestOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code GameplayRecommendationReliquaryRequest}
      */
     public static final class Builder extends

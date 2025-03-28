@@ -26,7 +26,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
   }
   /**
    * <pre>
-   *5.3.0
+   * Version: 5.4
    * </pre>
    *
    * Protobuf type {@code AbilityMetaSpecialEnergy}
@@ -280,7 +280,7 @@ public final class AbilityMetaSpecialEnergyOuterClass {
     }
     /**
      * <pre>
-     *5.3.0
+     * Version: 5.4
      * </pre>
      *
      * Protobuf type {@code AbilityMetaSpecialEnergy}

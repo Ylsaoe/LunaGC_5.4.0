@@ -180,10 +180,6 @@ public final class EvtCreateGadgetNotifyOuterClass {
     boolean getIsPeerIdFromPlayer();
 
     /**
-     * <pre>
-     *guessed
-     * </pre>
-     *
      * <code>bool is_async_load = 8;</code>
      * @return The isAsyncLoad.
      */
@@ -191,7 +187,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
 
     /**
      * <pre>
-     *guessed
+     *?? 6
      * </pre>
      *
      * <code>bool is_true_life_time_by_owner = 1085;</code>
@@ -201,7 +197,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
 
     /**
      * <pre>
-     *guessed
+     *?? 1085
      * </pre>
      *
      * <code>bool sight_group_with_owner = 6;</code>
@@ -234,6 +230,11 @@ public final class EvtCreateGadgetNotifyOuterClass {
     int getInitPoseId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 5111
+   * </pre>
+   *
    * Protobuf type {@code EvtCreateGadgetNotify}
    */
   public static final class EvtCreateGadgetNotify extends
@@ -784,10 +785,6 @@ public final class EvtCreateGadgetNotifyOuterClass {
     public static final int IS_ASYNC_LOAD_FIELD_NUMBER = 8;
     private boolean isAsyncLoad_;
     /**
-     * <pre>
-     *guessed
-     * </pre>
-     *
      * <code>bool is_async_load = 8;</code>
      * @return The isAsyncLoad.
      */
@@ -800,7 +797,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
     private boolean isTrueLifeTimeByOwner_;
     /**
      * <pre>
-     *guessed
+     *?? 6
      * </pre>
      *
      * <code>bool is_true_life_time_by_owner = 1085;</code>
@@ -815,7 +812,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
     private boolean sightGroupWithOwner_;
     /**
      * <pre>
-     *guessed
+     *?? 1085
      * </pre>
      *
      * <code>bool sight_group_with_owner = 6;</code>
@@ -930,7 +927,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       if (ownerEntityId_ != 0) {
         output.writeUInt32(15, ownerEntityId_);
       }
-      if (lifeByOwnerType_ != emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType.LIFE_BY_OWNER_TYPE_NONE.getNumber()) {
+      if (lifeByOwnerType_ != emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType.LIFE_BY_OWNER_NONE.getNumber()) {
         output.writeEnum(433, lifeByOwnerType_);
       }
       if (initPoseId_ != 0) {
@@ -1034,7 +1031,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, ownerEntityId_);
       }
-      if (lifeByOwnerType_ != emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType.LIFE_BY_OWNER_TYPE_NONE.getNumber()) {
+      if (lifeByOwnerType_ != emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.LifeByOwnerType.LIFE_BY_OWNER_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(433, lifeByOwnerType_);
       }
@@ -1330,6 +1327,11 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 5111
+     * </pre>
+     *
      * Protobuf type {@code EvtCreateGadgetNotify}
      */
     public static final class Builder extends
@@ -2597,10 +2599,6 @@ public final class EvtCreateGadgetNotifyOuterClass {
 
       private boolean isAsyncLoad_ ;
       /**
-       * <pre>
-       *guessed
-       * </pre>
-       *
        * <code>bool is_async_load = 8;</code>
        * @return The isAsyncLoad.
        */
@@ -2609,10 +2607,6 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return isAsyncLoad_;
       }
       /**
-       * <pre>
-       *guessed
-       * </pre>
-       *
        * <code>bool is_async_load = 8;</code>
        * @param value The isAsyncLoad to set.
        * @return This builder for chaining.
@@ -2624,10 +2618,6 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *guessed
-       * </pre>
-       *
        * <code>bool is_async_load = 8;</code>
        * @return This builder for chaining.
        */
@@ -2641,7 +2631,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       private boolean isTrueLifeTimeByOwner_ ;
       /**
        * <pre>
-       *guessed
+       *?? 6
        * </pre>
        *
        * <code>bool is_true_life_time_by_owner = 1085;</code>
@@ -2653,7 +2643,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       }
       /**
        * <pre>
-       *guessed
+       *?? 6
        * </pre>
        *
        * <code>bool is_true_life_time_by_owner = 1085;</code>
@@ -2668,7 +2658,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       }
       /**
        * <pre>
-       *guessed
+       *?? 6
        * </pre>
        *
        * <code>bool is_true_life_time_by_owner = 1085;</code>
@@ -2684,7 +2674,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       private boolean sightGroupWithOwner_ ;
       /**
        * <pre>
-       *guessed
+       *?? 1085
        * </pre>
        *
        * <code>bool sight_group_with_owner = 6;</code>
@@ -2696,7 +2686,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       }
       /**
        * <pre>
-       *guessed
+       *?? 1085
        * </pre>
        *
        * <code>bool sight_group_with_owner = 6;</code>
@@ -2711,7 +2701,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
       }
       /**
        * <pre>
-       *guessed
+       *?? 1085
        * </pre>
        *
        * <code>bool sight_group_with_owner = 6;</code>
@@ -2914,8 +2904,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033EvtCreateGadgetNotify.proto\032\023AbilitySt" +
-      "ring.proto\032\021ForwardType.proto\032\014Vector.pr" +
+      "\n\033EvtCreateGadgetNotify.proto\032\014Vector.pr" +
+      "oto\032\023AbilityString.proto\032\021ForwardType.pr" +
       "oto\032\025LifeByOwnerType.proto\"\263\005\n\025EvtCreate" +
       "GadgetNotify\022\036\n\025target_entity_id_list\030\200\t" +
       " \003(\r\022%\n\014ability_name\030\253\005 \001(\0132\016.AbilityStr" +
@@ -2939,9 +2929,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.getDescriptor(),
         });
     internal_static_EvtCreateGadgetNotify_descriptor =
@@ -2950,9 +2940,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCreateGadgetNotify_descriptor,
         new java.lang.String[] { "TargetEntityIdList", "AbilityName", "InitPos", "InitEulerAngles", "TargetLockPointIndexList", "Guid", "CampId", "TargetLockPointIndex", "OwnerEntityId", "LocalId", "ForwardType", "CampType", "TargetEntityId", "EntityId", "LifeByOwnerType", "RoomId", "IsPeerIdFromPlayer", "IsAsyncLoad", "IsTrueLifeTimeByOwner", "SightGroupWithOwner", "BornSlotIndex", "PropOwnerEntityId", "ConfigId", "InitPoseId", });
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.LifeByOwnerTypeOuterClass.getDescriptor();
   }
 

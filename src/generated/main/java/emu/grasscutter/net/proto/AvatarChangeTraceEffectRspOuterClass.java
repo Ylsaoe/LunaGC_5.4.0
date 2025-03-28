@@ -37,6 +37,11 @@ public final class AvatarChangeTraceEffectRspOuterClass {
     int getTraceEffectId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 377
+   * </pre>
+   *
    * Protobuf type {@code AvatarChangeTraceEffectRsp}
    */
   public static final class AvatarChangeTraceEffectRsp extends
@@ -340,6 +345,11 @@ public final class AvatarChangeTraceEffectRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 377
+     * </pre>
+     *
      * Protobuf type {@code AvatarChangeTraceEffectRsp}
      */
     public static final class Builder extends

@@ -40,6 +40,10 @@ public final class AnimatorParameterValueInfoPairOuterClass {
     int getNameId();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code AnimatorParameterValueInfoPair}
    */
   public static final class AnimatorParameterValueInfoPair extends
@@ -343,6 +347,10 @@ public final class AnimatorParameterValueInfoPairOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code AnimatorParameterValueInfoPair}
      */
     public static final class Builder extends

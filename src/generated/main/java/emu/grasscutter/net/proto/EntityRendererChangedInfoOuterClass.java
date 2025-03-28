@@ -65,6 +65,10 @@ public final class EntityRendererChangedInfoOuterClass {
     int getVisibilityCount();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code EntityRendererChangedInfo}
    */
   public static final class EntityRendererChangedInfo extends
@@ -470,6 +474,10 @@ public final class EntityRendererChangedInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code EntityRendererChangedInfo}
      */
     public static final class Builder extends

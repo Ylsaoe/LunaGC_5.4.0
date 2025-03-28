@@ -34,12 +34,16 @@ public final class TrifleGadgetOuterClass {
     emu.grasscutter.net.proto.ItemOuterClass.ItemOrBuilder getItemOrBuilder();
 
     /**
-     * <code>uint32 LOEDJGCKDMP = 2;</code>
-     * @return The lOEDJGCKDMP.
+     * <code>uint32 HHJEMFIHPEC = 2;</code>
+     * @return The hHJEMFIHPEC.
      */
-    int getLOEDJGCKDMP();
+    int getHHJEMFIHPEC();
   }
   /**
+   * <pre>
+   * Version: 5.
+   * </pre>
+   *
    * Protobuf type {@code TrifleGadget}
    */
   public static final class TrifleGadget extends
@@ -99,7 +103,7 @@ public final class TrifleGadgetOuterClass {
             }
             case 16: {
 
-              lOEDJGCKDMP_ = input.readUInt32();
+              hHJEMFIHPEC_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,15 +164,15 @@ public final class TrifleGadgetOuterClass {
       return getItem();
     }
 
-    public static final int LOEDJGCKDMP_FIELD_NUMBER = 2;
-    private int lOEDJGCKDMP_;
+    public static final int HHJEMFIHPEC_FIELD_NUMBER = 2;
+    private int hHJEMFIHPEC_;
     /**
-     * <code>uint32 LOEDJGCKDMP = 2;</code>
-     * @return The lOEDJGCKDMP.
+     * <code>uint32 HHJEMFIHPEC = 2;</code>
+     * @return The hHJEMFIHPEC.
      */
     @java.lang.Override
-    public int getLOEDJGCKDMP() {
-      return lOEDJGCKDMP_;
+    public int getHHJEMFIHPEC() {
+      return hHJEMFIHPEC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -188,8 +192,8 @@ public final class TrifleGadgetOuterClass {
       if (item_ != null) {
         output.writeMessage(1, getItem());
       }
-      if (lOEDJGCKDMP_ != 0) {
-        output.writeUInt32(2, lOEDJGCKDMP_);
+      if (hHJEMFIHPEC_ != 0) {
+        output.writeUInt32(2, hHJEMFIHPEC_);
       }
       unknownFields.writeTo(output);
     }
@@ -204,9 +208,9 @@ public final class TrifleGadgetOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getItem());
       }
-      if (lOEDJGCKDMP_ != 0) {
+      if (hHJEMFIHPEC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, lOEDJGCKDMP_);
+          .computeUInt32Size(2, hHJEMFIHPEC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,8 +232,8 @@ public final class TrifleGadgetOuterClass {
         if (!getItem()
             .equals(other.getItem())) return false;
       }
-      if (getLOEDJGCKDMP()
-          != other.getLOEDJGCKDMP()) return false;
+      if (getHHJEMFIHPEC()
+          != other.getHHJEMFIHPEC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -245,8 +249,8 @@ public final class TrifleGadgetOuterClass {
         hash = (37 * hash) + ITEM_FIELD_NUMBER;
         hash = (53 * hash) + getItem().hashCode();
       }
-      hash = (37 * hash) + LOEDJGCKDMP_FIELD_NUMBER;
-      hash = (53 * hash) + getLOEDJGCKDMP();
+      hash = (37 * hash) + HHJEMFIHPEC_FIELD_NUMBER;
+      hash = (53 * hash) + getHHJEMFIHPEC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,6 +347,10 @@ public final class TrifleGadgetOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.
+     * </pre>
+     *
      * Protobuf type {@code TrifleGadget}
      */
     public static final class Builder extends
@@ -386,7 +394,7 @@ public final class TrifleGadgetOuterClass {
           item_ = null;
           itemBuilder_ = null;
         }
-        lOEDJGCKDMP_ = 0;
+        hHJEMFIHPEC_ = 0;
 
         return this;
       }
@@ -419,7 +427,7 @@ public final class TrifleGadgetOuterClass {
         } else {
           result.item_ = itemBuilder_.build();
         }
-        result.lOEDJGCKDMP_ = lOEDJGCKDMP_;
+        result.hHJEMFIHPEC_ = hHJEMFIHPEC_;
         onBuilt();
         return result;
       }
@@ -471,8 +479,8 @@ public final class TrifleGadgetOuterClass {
         if (other.hasItem()) {
           mergeItem(other.getItem());
         }
-        if (other.getLOEDJGCKDMP() != 0) {
-          setLOEDJGCKDMP(other.getLOEDJGCKDMP());
+        if (other.getHHJEMFIHPEC() != 0) {
+          setHHJEMFIHPEC(other.getHHJEMFIHPEC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -622,33 +630,33 @@ public final class TrifleGadgetOuterClass {
         return itemBuilder_;
       }
 
-      private int lOEDJGCKDMP_ ;
+      private int hHJEMFIHPEC_ ;
       /**
-       * <code>uint32 LOEDJGCKDMP = 2;</code>
-       * @return The lOEDJGCKDMP.
+       * <code>uint32 HHJEMFIHPEC = 2;</code>
+       * @return The hHJEMFIHPEC.
        */
       @java.lang.Override
-      public int getLOEDJGCKDMP() {
-        return lOEDJGCKDMP_;
+      public int getHHJEMFIHPEC() {
+        return hHJEMFIHPEC_;
       }
       /**
-       * <code>uint32 LOEDJGCKDMP = 2;</code>
-       * @param value The lOEDJGCKDMP to set.
+       * <code>uint32 HHJEMFIHPEC = 2;</code>
+       * @param value The hHJEMFIHPEC to set.
        * @return This builder for chaining.
        */
-      public Builder setLOEDJGCKDMP(int value) {
+      public Builder setHHJEMFIHPEC(int value) {
         
-        lOEDJGCKDMP_ = value;
+        hHJEMFIHPEC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LOEDJGCKDMP = 2;</code>
+       * <code>uint32 HHJEMFIHPEC = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLOEDJGCKDMP() {
+      public Builder clearHHJEMFIHPEC() {
         
-        lOEDJGCKDMP_ = 0;
+        hHJEMFIHPEC_ = 0;
         onChanged();
         return this;
       }
@@ -720,8 +728,8 @@ public final class TrifleGadgetOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022TrifleGadget.proto\032\nItem.proto\"8\n\014Trif" +
-      "leGadget\022\023\n\004item\030\001 \001(\0132\005.Item\022\023\n\013LOEDJGC" +
-      "KDMP\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "leGadget\022\023\n\004item\030\001 \001(\0132\005.Item\022\023\n\013HHJEMFI" +
+      "HPEC\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -734,7 +742,7 @@ public final class TrifleGadgetOuterClass {
     internal_static_TrifleGadget_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TrifleGadget_descriptor,
-        new java.lang.String[] { "Item", "LOEDJGCKDMP", });
+        new java.lang.String[] { "Item", "HHJEMFIHPEC", });
     emu.grasscutter.net.proto.ItemOuterClass.getDescriptor();
   }
 

@@ -40,6 +40,55 @@ public final class SceneEntityAiInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getBornPosOrBuilder();
 
     /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+    int getSkillCdMapCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+    boolean containsSkillCdMap(
+        int key);
+    /**
+     * Use {@link #getSkillCdMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getSkillCdMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getSkillCdMapMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+
+    int getSkillCdMapOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+
+    int getSkillCdMapOrThrow(
+        int key);
+
+    /**
+     * <code>.ServantInfo servant_info = 4;</code>
+     * @return Whether the servantInfo field is set.
+     */
+    boolean hasServantInfo();
+    /**
+     * <code>.ServantInfo servant_info = 4;</code>
+     * @return The servantInfo.
+     */
+    emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo getServantInfo();
+    /**
+     * <code>.ServantInfo servant_info = 4;</code>
+     */
+    emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfoOrBuilder getServantInfoOrBuilder();
+
+    /**
      * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
      */
     int getAiThreatMapCount();
@@ -74,60 +123,11 @@ public final class SceneEntityAiInfoOuterClass {
         int key);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-    int getSkillCdMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-    boolean containsSkillCdMap(
-        int key);
-    /**
-     * Use {@link #getSkillCdMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getSkillCdMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getSkillCdMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-
-    int getSkillCdMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-
-    int getSkillCdMapOrThrow(
-        int key);
-
-    /**
-     * <code>.ServantInfo servant_info = 4;</code>
-     * @return Whether the servantInfo field is set.
-     */
-    boolean hasServantInfo();
-    /**
-     * <code>.ServantInfo servant_info = 4;</code>
-     * @return The servantInfo.
-     */
-    emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo getServantInfo();
-    /**
-     * <code>.ServantInfo servant_info = 4;</code>
-     */
-    emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfoOrBuilder getServantInfoOrBuilder();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
     int getSkillGroupCdMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
     boolean containsSkillGroupCdMap(
         int key);
@@ -138,29 +138,23 @@ public final class SceneEntityAiInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillGroupCdMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillGroupCdMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
 
     int getSkillGroupCdMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
 
     int getSkillGroupCdMapOrThrow(
         int key);
-
-    /**
-     * <code>bool is_entered_combat = 8;</code>
-     * @return The isEnteredCombat.
-     */
-    boolean getIsEnteredCombat();
 
     /**
      * <code>uint32 cur_tactic = 7;</code>
@@ -169,6 +163,10 @@ public final class SceneEntityAiInfoOuterClass {
     int getCurTactic();
   }
   /**
+   * <pre>
+   * Version: 5.0
+   * </pre>
+   *
    * Protobuf type {@code SceneEntityAiInfo}
    */
   public static final class SceneEntityAiInfo extends
@@ -233,16 +231,16 @@ public final class SceneEntityAiInfoOuterClass {
               break;
             }
             case 26: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                skillGroupCdMap_ = com.google.protobuf.MapField.newMapField(
-                    SkillGroupCdMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                skillCdMap_ = com.google.protobuf.MapField.newMapField(
+                    SkillCdMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              skillGroupCdMap__ = input.readMessage(
-                  SkillGroupCdMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              skillGroupCdMap_.getMutableMap().put(
-                  skillGroupCdMap__.getKey(), skillGroupCdMap__.getValue());
+              skillCdMap__ = input.readMessage(
+                  SkillCdMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              skillCdMap_.getMutableMap().put(
+                  skillCdMap__.getKey(), skillCdMap__.getValue());
               break;
             }
             case 34: {
@@ -259,10 +257,10 @@ public final class SceneEntityAiInfoOuterClass {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 aiThreatMap_ = com.google.protobuf.MapField.newMapField(
                     AiThreatMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               aiThreatMap__ = input.readMessage(
@@ -272,26 +270,21 @@ public final class SceneEntityAiInfoOuterClass {
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                skillCdMap_ = com.google.protobuf.MapField.newMapField(
-                    SkillCdMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                skillGroupCdMap_ = com.google.protobuf.MapField.newMapField(
+                    SkillGroupCdMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              skillCdMap__ = input.readMessage(
-                  SkillCdMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              skillCdMap_.getMutableMap().put(
-                  skillCdMap__.getKey(), skillCdMap__.getValue());
+              skillGroupCdMap__ = input.readMessage(
+                  SkillGroupCdMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              skillGroupCdMap_.getMutableMap().put(
+                  skillGroupCdMap__.getKey(), skillGroupCdMap__.getValue());
               break;
             }
             case 56: {
 
               curTactic_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              isEnteredCombat_ = input.readBool();
               break;
             }
             default: {
@@ -323,11 +316,11 @@ public final class SceneEntityAiInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
+        case 3:
+          return internalGetSkillCdMap();
         case 5:
           return internalGetAiThreatMap();
         case 6:
-          return internalGetSkillCdMap();
-        case 3:
           return internalGetSkillGroupCdMap();
         default:
           throw new RuntimeException(
@@ -377,6 +370,113 @@ public final class SceneEntityAiInfoOuterClass {
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getBornPosOrBuilder() {
       return getBornPos();
+    }
+
+    public static final int SKILL_CD_MAP_FIELD_NUMBER = 3;
+    private static final class SkillCdMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.SceneEntityAiInfoOuterClass.internal_static_SceneEntityAiInfo_SkillCdMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> skillCdMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetSkillCdMap() {
+      if (skillCdMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            SkillCdMapDefaultEntryHolder.defaultEntry);
+      }
+      return skillCdMap_;
+    }
+
+    public int getSkillCdMapCount() {
+      return internalGetSkillCdMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsSkillCdMap(
+        int key) {
+      
+      return internalGetSkillCdMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getSkillCdMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillCdMap() {
+      return getSkillCdMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillCdMapMap() {
+      return internalGetSkillCdMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+    @java.lang.Override
+
+    public int getSkillCdMapOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetSkillCdMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
+     */
+    @java.lang.Override
+
+    public int getSkillCdMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetSkillCdMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int SERVANT_INFO_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo servantInfo_;
+    /**
+     * <code>.ServantInfo servant_info = 4;</code>
+     * @return Whether the servantInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasServantInfo() {
+      return servantInfo_ != null;
+    }
+    /**
+     * <code>.ServantInfo servant_info = 4;</code>
+     * @return The servantInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo getServantInfo() {
+      return servantInfo_ == null ? emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.getDefaultInstance() : servantInfo_;
+    }
+    /**
+     * <code>.ServantInfo servant_info = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfoOrBuilder getServantInfoOrBuilder() {
+      return getServantInfo();
     }
 
     public static final int AI_THREAT_MAP_FIELD_NUMBER = 5;
@@ -460,114 +560,7 @@ public final class SceneEntityAiInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SKILL_CD_MAP_FIELD_NUMBER = 6;
-    private static final class SkillCdMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.SceneEntityAiInfoOuterClass.internal_static_SceneEntityAiInfo_SkillCdMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> skillCdMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetSkillCdMap() {
-      if (skillCdMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            SkillCdMapDefaultEntryHolder.defaultEntry);
-      }
-      return skillCdMap_;
-    }
-
-    public int getSkillCdMapCount() {
-      return internalGetSkillCdMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsSkillCdMap(
-        int key) {
-      
-      return internalGetSkillCdMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getSkillCdMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillCdMap() {
-      return getSkillCdMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillCdMapMap() {
-      return internalGetSkillCdMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-    @java.lang.Override
-
-    public int getSkillCdMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetSkillCdMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
-     */
-    @java.lang.Override
-
-    public int getSkillCdMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetSkillCdMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int SERVANT_INFO_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo servantInfo_;
-    /**
-     * <code>.ServantInfo servant_info = 4;</code>
-     * @return Whether the servantInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasServantInfo() {
-      return servantInfo_ != null;
-    }
-    /**
-     * <code>.ServantInfo servant_info = 4;</code>
-     * @return The servantInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo getServantInfo() {
-      return servantInfo_ == null ? emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo.getDefaultInstance() : servantInfo_;
-    }
-    /**
-     * <code>.ServantInfo servant_info = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfoOrBuilder getServantInfoOrBuilder() {
-      return getServantInfo();
-    }
-
-    public static final int SKILL_GROUP_CD_MAP_FIELD_NUMBER = 3;
+    public static final int SKILL_GROUP_CD_MAP_FIELD_NUMBER = 6;
     private static final class SkillGroupCdMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -594,7 +587,7 @@ public final class SceneEntityAiInfoOuterClass {
       return internalGetSkillGroupCdMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
 
     @java.lang.Override
@@ -612,7 +605,7 @@ public final class SceneEntityAiInfoOuterClass {
       return getSkillGroupCdMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
     @java.lang.Override
 
@@ -620,7 +613,7 @@ public final class SceneEntityAiInfoOuterClass {
       return internalGetSkillGroupCdMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
     @java.lang.Override
 
@@ -633,7 +626,7 @@ public final class SceneEntityAiInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
      */
     @java.lang.Override
 
@@ -646,17 +639,6 @@ public final class SceneEntityAiInfoOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
-    }
-
-    public static final int IS_ENTERED_COMBAT_FIELD_NUMBER = 8;
-    private boolean isEnteredCombat_;
-    /**
-     * <code>bool is_entered_combat = 8;</code>
-     * @return The isEnteredCombat.
-     */
-    @java.lang.Override
-    public boolean getIsEnteredCombat() {
-      return isEnteredCombat_;
     }
 
     public static final int CUR_TACTIC_FIELD_NUMBER = 7;
@@ -693,8 +675,8 @@ public final class SceneEntityAiInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetSkillGroupCdMap(),
-          SkillGroupCdMapDefaultEntryHolder.defaultEntry,
+          internalGetSkillCdMap(),
+          SkillCdMapDefaultEntryHolder.defaultEntry,
           3);
       if (servantInfo_ != null) {
         output.writeMessage(4, getServantInfo());
@@ -708,14 +690,11 @@ public final class SceneEntityAiInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetSkillCdMap(),
-          SkillCdMapDefaultEntryHolder.defaultEntry,
+          internalGetSkillGroupCdMap(),
+          SkillGroupCdMapDefaultEntryHolder.defaultEntry,
           6);
       if (curTactic_ != 0) {
         output.writeUInt32(7, curTactic_);
-      }
-      if (isEnteredCombat_ != false) {
-        output.writeBool(8, isEnteredCombat_);
       }
       unknownFields.writeTo(output);
     }
@@ -735,14 +714,14 @@ public final class SceneEntityAiInfoOuterClass {
           .computeMessageSize(2, getBornPos());
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetSkillGroupCdMap().getMap().entrySet()) {
+           : internalGetSkillCdMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        skillGroupCdMap__ = SkillGroupCdMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        skillCdMap__ = SkillCdMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, skillGroupCdMap__);
+            .computeMessageSize(3, skillCdMap__);
       }
       if (servantInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -759,22 +738,18 @@ public final class SceneEntityAiInfoOuterClass {
             .computeMessageSize(5, aiThreatMap__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetSkillCdMap().getMap().entrySet()) {
+           : internalGetSkillGroupCdMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        skillCdMap__ = SkillCdMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        skillGroupCdMap__ = SkillGroupCdMapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, skillCdMap__);
+            .computeMessageSize(6, skillGroupCdMap__);
       }
       if (curTactic_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, curTactic_);
-      }
-      if (isEnteredCombat_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isEnteredCombat_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -798,8 +773,6 @@ public final class SceneEntityAiInfoOuterClass {
         if (!getBornPos()
             .equals(other.getBornPos())) return false;
       }
-      if (!internalGetAiThreatMap().equals(
-          other.internalGetAiThreatMap())) return false;
       if (!internalGetSkillCdMap().equals(
           other.internalGetSkillCdMap())) return false;
       if (hasServantInfo() != other.hasServantInfo()) return false;
@@ -807,10 +780,10 @@ public final class SceneEntityAiInfoOuterClass {
         if (!getServantInfo()
             .equals(other.getServantInfo())) return false;
       }
+      if (!internalGetAiThreatMap().equals(
+          other.internalGetAiThreatMap())) return false;
       if (!internalGetSkillGroupCdMap().equals(
           other.internalGetSkillGroupCdMap())) return false;
-      if (getIsEnteredCombat()
-          != other.getIsEnteredCombat()) return false;
       if (getCurTactic()
           != other.getCurTactic()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -831,10 +804,6 @@ public final class SceneEntityAiInfoOuterClass {
         hash = (37 * hash) + BORN_POS_FIELD_NUMBER;
         hash = (53 * hash) + getBornPos().hashCode();
       }
-      if (!internalGetAiThreatMap().getMap().isEmpty()) {
-        hash = (37 * hash) + AI_THREAT_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetAiThreatMap().hashCode();
-      }
       if (!internalGetSkillCdMap().getMap().isEmpty()) {
         hash = (37 * hash) + SKILL_CD_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSkillCdMap().hashCode();
@@ -843,13 +812,14 @@ public final class SceneEntityAiInfoOuterClass {
         hash = (37 * hash) + SERVANT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getServantInfo().hashCode();
       }
+      if (!internalGetAiThreatMap().getMap().isEmpty()) {
+        hash = (37 * hash) + AI_THREAT_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetAiThreatMap().hashCode();
+      }
       if (!internalGetSkillGroupCdMap().getMap().isEmpty()) {
         hash = (37 * hash) + SKILL_GROUP_CD_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSkillGroupCdMap().hashCode();
       }
-      hash = (37 * hash) + IS_ENTERED_COMBAT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsEnteredCombat());
       hash = (37 * hash) + CUR_TACTIC_FIELD_NUMBER;
       hash = (53 * hash) + getCurTactic();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -948,6 +918,10 @@ public final class SceneEntityAiInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.0
+     * </pre>
+     *
      * Protobuf type {@code SceneEntityAiInfo}
      */
     public static final class Builder extends
@@ -963,11 +937,11 @@ public final class SceneEntityAiInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
+          case 3:
+            return internalGetSkillCdMap();
           case 5:
             return internalGetAiThreatMap();
           case 6:
-            return internalGetSkillCdMap();
-          case 3:
             return internalGetSkillGroupCdMap();
           default:
             throw new RuntimeException(
@@ -978,11 +952,11 @@ public final class SceneEntityAiInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
+          case 3:
+            return internalGetMutableSkillCdMap();
           case 5:
             return internalGetMutableAiThreatMap();
           case 6:
-            return internalGetMutableSkillCdMap();
-          case 3:
             return internalGetMutableSkillGroupCdMap();
           default:
             throw new RuntimeException(
@@ -1023,7 +997,6 @@ public final class SceneEntityAiInfoOuterClass {
           bornPos_ = null;
           bornPosBuilder_ = null;
         }
-        internalGetMutableAiThreatMap().clear();
         internalGetMutableSkillCdMap().clear();
         if (servantInfoBuilder_ == null) {
           servantInfo_ = null;
@@ -1031,9 +1004,8 @@ public final class SceneEntityAiInfoOuterClass {
           servantInfo_ = null;
           servantInfoBuilder_ = null;
         }
+        internalGetMutableAiThreatMap().clear();
         internalGetMutableSkillGroupCdMap().clear();
-        isEnteredCombat_ = false;
-
         curTactic_ = 0;
 
         return this;
@@ -1069,8 +1041,6 @@ public final class SceneEntityAiInfoOuterClass {
         } else {
           result.bornPos_ = bornPosBuilder_.build();
         }
-        result.aiThreatMap_ = internalGetAiThreatMap();
-        result.aiThreatMap_.makeImmutable();
         result.skillCdMap_ = internalGetSkillCdMap();
         result.skillCdMap_.makeImmutable();
         if (servantInfoBuilder_ == null) {
@@ -1078,9 +1048,10 @@ public final class SceneEntityAiInfoOuterClass {
         } else {
           result.servantInfo_ = servantInfoBuilder_.build();
         }
+        result.aiThreatMap_ = internalGetAiThreatMap();
+        result.aiThreatMap_.makeImmutable();
         result.skillGroupCdMap_ = internalGetSkillGroupCdMap();
         result.skillGroupCdMap_.makeImmutable();
-        result.isEnteredCombat_ = isEnteredCombat_;
         result.curTactic_ = curTactic_;
         onBuilt();
         return result;
@@ -1136,18 +1107,15 @@ public final class SceneEntityAiInfoOuterClass {
         if (other.hasBornPos()) {
           mergeBornPos(other.getBornPos());
         }
-        internalGetMutableAiThreatMap().mergeFrom(
-            other.internalGetAiThreatMap());
         internalGetMutableSkillCdMap().mergeFrom(
             other.internalGetSkillCdMap());
         if (other.hasServantInfo()) {
           mergeServantInfo(other.getServantInfo());
         }
+        internalGetMutableAiThreatMap().mergeFrom(
+            other.internalGetAiThreatMap());
         internalGetMutableSkillGroupCdMap().mergeFrom(
             other.internalGetSkillGroupCdMap());
-        if (other.getIsEnteredCombat() != false) {
-          setIsEnteredCombat(other.getIsEnteredCombat());
-        }
         if (other.getCurTactic() != 0) {
           setCurTactic(other.getCurTactic());
         }
@@ -1332,134 +1300,6 @@ public final class SceneEntityAiInfoOuterClass {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> aiThreatMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetAiThreatMap() {
-        if (aiThreatMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              AiThreatMapDefaultEntryHolder.defaultEntry);
-        }
-        return aiThreatMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableAiThreatMap() {
-        onChanged();;
-        if (aiThreatMap_ == null) {
-          aiThreatMap_ = com.google.protobuf.MapField.newMapField(
-              AiThreatMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!aiThreatMap_.isMutable()) {
-          aiThreatMap_ = aiThreatMap_.copy();
-        }
-        return aiThreatMap_;
-      }
-
-      public int getAiThreatMapCount() {
-        return internalGetAiThreatMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsAiThreatMap(
-          int key) {
-        
-        return internalGetAiThreatMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getAiThreatMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getAiThreatMap() {
-        return getAiThreatMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getAiThreatMapMap() {
-        return internalGetAiThreatMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-      @java.lang.Override
-
-      public int getAiThreatMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetAiThreatMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-      @java.lang.Override
-
-      public int getAiThreatMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetAiThreatMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearAiThreatMap() {
-        internalGetMutableAiThreatMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-
-      public Builder removeAiThreatMap(
-          int key) {
-        
-        internalGetMutableAiThreatMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableAiThreatMap() {
-        return internalGetMutableAiThreatMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-      public Builder putAiThreatMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableAiThreatMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
-       */
-
-      public Builder putAllAiThreatMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableAiThreatMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> skillCdMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
       internalGetSkillCdMap() {
@@ -1486,7 +1326,7 @@ public final class SceneEntityAiInfoOuterClass {
         return internalGetSkillCdMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
 
       @java.lang.Override
@@ -1504,7 +1344,7 @@ public final class SceneEntityAiInfoOuterClass {
         return getSkillCdMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1512,7 +1352,7 @@ public final class SceneEntityAiInfoOuterClass {
         return internalGetSkillCdMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1525,7 +1365,7 @@ public final class SceneEntityAiInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1546,7 +1386,7 @@ public final class SceneEntityAiInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
 
       public Builder removeSkillCdMap(
@@ -1565,7 +1405,7 @@ public final class SceneEntityAiInfoOuterClass {
         return internalGetMutableSkillCdMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
       public Builder putSkillCdMap(
           int key,
@@ -1577,7 +1417,7 @@ public final class SceneEntityAiInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_cd_map = 3;</code>
        */
 
       public Builder putAllSkillCdMap(
@@ -1707,6 +1547,134 @@ public final class SceneEntityAiInfoOuterClass {
       }
 
       private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> aiThreatMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetAiThreatMap() {
+        if (aiThreatMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              AiThreatMapDefaultEntryHolder.defaultEntry);
+        }
+        return aiThreatMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableAiThreatMap() {
+        onChanged();;
+        if (aiThreatMap_ == null) {
+          aiThreatMap_ = com.google.protobuf.MapField.newMapField(
+              AiThreatMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!aiThreatMap_.isMutable()) {
+          aiThreatMap_ = aiThreatMap_.copy();
+        }
+        return aiThreatMap_;
+      }
+
+      public int getAiThreatMapCount() {
+        return internalGetAiThreatMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsAiThreatMap(
+          int key) {
+        
+        return internalGetAiThreatMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getAiThreatMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getAiThreatMap() {
+        return getAiThreatMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getAiThreatMapMap() {
+        return internalGetAiThreatMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getAiThreatMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetAiThreatMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getAiThreatMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetAiThreatMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearAiThreatMap() {
+        internalGetMutableAiThreatMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+
+      public Builder removeAiThreatMap(
+          int key) {
+        
+        internalGetMutableAiThreatMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableAiThreatMap() {
+        return internalGetMutableAiThreatMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+      public Builder putAiThreatMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableAiThreatMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ai_threat_map = 5;</code>
+       */
+
+      public Builder putAllAiThreatMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableAiThreatMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> skillGroupCdMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
       internalGetSkillGroupCdMap() {
@@ -1733,7 +1701,7 @@ public final class SceneEntityAiInfoOuterClass {
         return internalGetSkillGroupCdMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
 
       @java.lang.Override
@@ -1751,7 +1719,7 @@ public final class SceneEntityAiInfoOuterClass {
         return getSkillGroupCdMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
       @java.lang.Override
 
@@ -1759,7 +1727,7 @@ public final class SceneEntityAiInfoOuterClass {
         return internalGetSkillGroupCdMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
       @java.lang.Override
 
@@ -1772,7 +1740,7 @@ public final class SceneEntityAiInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
       @java.lang.Override
 
@@ -1793,7 +1761,7 @@ public final class SceneEntityAiInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
 
       public Builder removeSkillGroupCdMap(
@@ -1812,7 +1780,7 @@ public final class SceneEntityAiInfoOuterClass {
         return internalGetMutableSkillGroupCdMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
       public Builder putSkillGroupCdMap(
           int key,
@@ -1824,44 +1792,13 @@ public final class SceneEntityAiInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; skill_group_cd_map = 6;</code>
        */
 
       public Builder putAllSkillGroupCdMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableSkillGroupCdMap().getMutableMap()
             .putAll(values);
-        return this;
-      }
-
-      private boolean isEnteredCombat_ ;
-      /**
-       * <code>bool is_entered_combat = 8;</code>
-       * @return The isEnteredCombat.
-       */
-      @java.lang.Override
-      public boolean getIsEnteredCombat() {
-        return isEnteredCombat_;
-      }
-      /**
-       * <code>bool is_entered_combat = 8;</code>
-       * @param value The isEnteredCombat to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsEnteredCombat(boolean value) {
-        
-        isEnteredCombat_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_entered_combat = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsEnteredCombat() {
-        
-        isEnteredCombat_ = false;
-        onChanged();
         return this;
       }
 
@@ -1954,15 +1891,15 @@ public final class SceneEntityAiInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SceneEntityAiInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_SceneEntityAiInfo_AiThreatMapEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SceneEntityAiInfo_SkillCdMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SceneEntityAiInfo_SkillCdMapEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SceneEntityAiInfo_AiThreatMapEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SceneEntityAiInfo_SkillGroupCdMapEntry_descriptor;
   private static final 
@@ -1978,20 +1915,20 @@ public final class SceneEntityAiInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SceneEntityAiInfo.proto\032\021ServantInfo.p" +
-      "roto\032\014Vector.proto\"\357\003\n\021SceneEntityAiInfo" +
+      "roto\032\014Vector.proto\"\324\003\n\021SceneEntityAiInfo" +
       "\022\022\n\nis_ai_open\030\001 \001(\010\022\031\n\010born_pos\030\002 \001(\0132\007" +
-      ".Vector\022:\n\rai_threat_map\030\005 \003(\0132#.SceneEn" +
-      "tityAiInfo.AiThreatMapEntry\0228\n\014skill_cd_" +
-      "map\030\006 \003(\0132\".SceneEntityAiInfo.SkillCdMap" +
-      "Entry\022\"\n\014servant_info\030\004 \001(\0132\014.ServantInf" +
-      "o\022C\n\022skill_group_cd_map\030\003 \003(\0132\'.SceneEnt" +
-      "ityAiInfo.SkillGroupCdMapEntry\022\031\n\021is_ent" +
-      "ered_combat\030\010 \001(\010\022\022\n\ncur_tactic\030\007 \001(\r\0322\n" +
-      "\020AiThreatMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
-      "\002 \001(\r:\0028\001\0321\n\017SkillCdMapEntry\022\013\n\003key\030\001 \001(" +
-      "\r\022\r\n\005value\030\002 \001(\r:\0028\001\0326\n\024SkillGroupCdMapE" +
-      "ntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      ".Vector\0228\n\014skill_cd_map\030\003 \003(\0132\".SceneEnt" +
+      "ityAiInfo.SkillCdMapEntry\022\"\n\014servant_inf" +
+      "o\030\004 \001(\0132\014.ServantInfo\022:\n\rai_threat_map\030\005" +
+      " \003(\0132#.SceneEntityAiInfo.AiThreatMapEntr" +
+      "y\022C\n\022skill_group_cd_map\030\006 \003(\0132\'.SceneEnt" +
+      "ityAiInfo.SkillGroupCdMapEntry\022\022\n\ncur_ta" +
+      "ctic\030\007 \001(\r\0321\n\017SkillCdMapEntry\022\013\n\003key\030\001 \001" +
+      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0322\n\020AiThreatMapEntr" +
+      "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0326\n\024Ski" +
+      "llGroupCdMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2004,18 +1941,18 @@ public final class SceneEntityAiInfoOuterClass {
     internal_static_SceneEntityAiInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityAiInfo_descriptor,
-        new java.lang.String[] { "IsAiOpen", "BornPos", "AiThreatMap", "SkillCdMap", "ServantInfo", "SkillGroupCdMap", "IsEnteredCombat", "CurTactic", });
-    internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor =
-      internal_static_SceneEntityAiInfo_descriptor.getNestedTypes().get(0);
-    internal_static_SceneEntityAiInfo_AiThreatMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "IsAiOpen", "BornPos", "SkillCdMap", "ServantInfo", "AiThreatMap", "SkillGroupCdMap", "CurTactic", });
     internal_static_SceneEntityAiInfo_SkillCdMapEntry_descriptor =
-      internal_static_SceneEntityAiInfo_descriptor.getNestedTypes().get(1);
+      internal_static_SceneEntityAiInfo_descriptor.getNestedTypes().get(0);
     internal_static_SceneEntityAiInfo_SkillCdMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityAiInfo_SkillCdMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor =
+      internal_static_SceneEntityAiInfo_descriptor.getNestedTypes().get(1);
+    internal_static_SceneEntityAiInfo_AiThreatMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SceneEntityAiInfo_AiThreatMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_SceneEntityAiInfo_SkillGroupCdMapEntry_descriptor =
       internal_static_SceneEntityAiInfo_descriptor.getNestedTypes().get(2);

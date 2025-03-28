@@ -31,6 +31,10 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
     int getElementType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code GameplayRecommendationElementReliquaryRequest}
    */
   public static final class GameplayRecommendationElementReliquaryRequest extends
@@ -306,6 +310,10 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code GameplayRecommendationElementReliquaryRequest}
      */
     public static final class Builder extends

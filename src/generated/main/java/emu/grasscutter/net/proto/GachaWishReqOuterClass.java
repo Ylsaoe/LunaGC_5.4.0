@@ -25,7 +25,7 @@ public final class GachaWishReqOuterClass {
     int getGachaScheduleId();
 
     /**
-     * <code>uint32 itemId = 7;</code>
+     * <code>uint32 item_id = 7;</code>
      * @return The itemId.
      */
     int getItemId();
@@ -37,6 +37,11 @@ public final class GachaWishReqOuterClass {
     int getGachaType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 26690
+   * </pre>
+   *
    * Protobuf type {@code GachaWishReq}
    */
   public static final class GachaWishReq extends
@@ -139,10 +144,10 @@ public final class GachaWishReqOuterClass {
       return gachaScheduleId_;
     }
 
-    public static final int ITEMID_FIELD_NUMBER = 7;
+    public static final int ITEM_ID_FIELD_NUMBER = 7;
     private int itemId_;
     /**
-     * <code>uint32 itemId = 7;</code>
+     * <code>uint32 item_id = 7;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -239,7 +244,7 @@ public final class GachaWishReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GACHA_SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGachaScheduleId();
-      hash = (37 * hash) + ITEMID_FIELD_NUMBER;
+      hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getItemId();
       hash = (37 * hash) + GACHA_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getGachaType();
@@ -339,6 +344,11 @@ public final class GachaWishReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 26690
+     * </pre>
+     *
      * Protobuf type {@code GachaWishReq}
      */
     public static final class Builder extends
@@ -530,7 +540,7 @@ public final class GachaWishReqOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 itemId = 7;</code>
+       * <code>uint32 item_id = 7;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -538,7 +548,7 @@ public final class GachaWishReqOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 itemId = 7;</code>
+       * <code>uint32 item_id = 7;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +559,7 @@ public final class GachaWishReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 itemId = 7;</code>
+       * <code>uint32 item_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -656,10 +666,10 @@ public final class GachaWishReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GachaWishReq.proto\"M\n\014GachaWishReq\022\031\n\021" +
-      "gacha_schedule_id\030\002 \001(\r\022\016\n\006itemId\030\007 \001(\r\022" +
-      "\022\n\ngacha_type\030\005 \001(\rB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\022GachaWishReq.proto\"N\n\014GachaWishReq\022\031\n\021" +
+      "gacha_schedule_id\030\002 \001(\r\022\017\n\007item_id\030\007 \001(\r" +
+      "\022\022\n\ngacha_type\030\005 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

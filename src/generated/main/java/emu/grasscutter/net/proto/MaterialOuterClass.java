@@ -40,6 +40,10 @@ public final class MaterialOuterClass {
     int getCount();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code Material}
    */
   public static final class Material extends
@@ -343,6 +347,10 @@ public final class MaterialOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code Material}
      */
     public static final class Builder extends

@@ -19,6 +19,11 @@ public final class WorldPlayerReviveReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 26926
+   * </pre>
+   *
    * Protobuf type {@code WorldPlayerReviveReq}
    */
   public static final class WorldPlayerReviveReq extends
@@ -240,6 +245,11 @@ public final class WorldPlayerReviveReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 26926
+     * </pre>
+     *
      * Protobuf type {@code WorldPlayerReviveReq}
      */
     public static final class Builder extends

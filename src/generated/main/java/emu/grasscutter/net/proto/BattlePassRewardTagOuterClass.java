@@ -48,6 +48,10 @@ public final class BattlePassRewardTagOuterClass {
     emu.grasscutter.net.proto.BattlePassUnlockStatusOuterClass.BattlePassUnlockStatus getUnlockStatus();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BattlePassRewardTag}
    */
   public static final class BattlePassRewardTag extends
@@ -386,6 +390,10 @@ public final class BattlePassRewardTagOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BattlePassRewardTag}
      */
     public static final class Builder extends

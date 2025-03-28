@@ -43,6 +43,11 @@ public final class AvatarUpgradeRspOuterClass {
     int getRetcode();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 4274
+   * </pre>
+   *
    * Protobuf type {@code AvatarUpgradeRsp}
    */
   public static final class AvatarUpgradeRsp extends
@@ -373,6 +378,11 @@ public final class AvatarUpgradeRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 4274
+     * </pre>
+     *
      * Protobuf type {@code AvatarUpgradeRsp}
      */
     public static final class Builder extends

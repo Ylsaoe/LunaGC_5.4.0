@@ -19,19 +19,11 @@ public final class BattlePassProductOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string normal_product_id = 2;</code>
      * @return The normalProductId.
      */
     java.lang.String getNormalProductId();
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string normal_product_id = 2;</code>
      * @return The bytes for normalProductId.
      */
@@ -39,19 +31,11 @@ public final class BattlePassProductOuterClass {
         getNormalProductIdBytes();
 
     /**
-     * <pre>
-     * from 5.3 
-     * </pre>
-     *
      * <code>string extra_product_id = 6;</code>
      * @return The extraProductId.
      */
     java.lang.String getExtraProductId();
     /**
-     * <pre>
-     * from 5.3 
-     * </pre>
-     *
      * <code>string extra_product_id = 6;</code>
      * @return The bytes for extraProductId.
      */
@@ -59,19 +43,11 @@ public final class BattlePassProductOuterClass {
         getExtraProductIdBytes();
 
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string upgrade_product_id = 5;</code>
      * @return The upgradeProductId.
      */
     java.lang.String getUpgradeProductId();
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string upgrade_product_id = 5;</code>
      * @return The bytes for upgradeProductId.
      */
@@ -79,6 +55,10 @@ public final class BattlePassProductOuterClass {
         getUpgradeProductIdBytes();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code BattlePassProduct}
    */
   public static final class BattlePassProduct extends
@@ -179,10 +159,6 @@ public final class BattlePassProductOuterClass {
     public static final int NORMAL_PRODUCT_ID_FIELD_NUMBER = 2;
     private volatile java.lang.Object normalProductId_;
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string normal_product_id = 2;</code>
      * @return The normalProductId.
      */
@@ -200,10 +176,6 @@ public final class BattlePassProductOuterClass {
       }
     }
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string normal_product_id = 2;</code>
      * @return The bytes for normalProductId.
      */
@@ -225,10 +197,6 @@ public final class BattlePassProductOuterClass {
     public static final int EXTRA_PRODUCT_ID_FIELD_NUMBER = 6;
     private volatile java.lang.Object extraProductId_;
     /**
-     * <pre>
-     * from 5.3 
-     * </pre>
-     *
      * <code>string extra_product_id = 6;</code>
      * @return The extraProductId.
      */
@@ -246,10 +214,6 @@ public final class BattlePassProductOuterClass {
       }
     }
     /**
-     * <pre>
-     * from 5.3 
-     * </pre>
-     *
      * <code>string extra_product_id = 6;</code>
      * @return The bytes for extraProductId.
      */
@@ -271,10 +235,6 @@ public final class BattlePassProductOuterClass {
     public static final int UPGRADE_PRODUCT_ID_FIELD_NUMBER = 5;
     private volatile java.lang.Object upgradeProductId_;
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string upgrade_product_id = 5;</code>
      * @return The upgradeProductId.
      */
@@ -292,10 +252,6 @@ public final class BattlePassProductOuterClass {
       }
     }
     /**
-     * <pre>
-     * from 5.3
-     * </pre>
-     *
      * <code>string upgrade_product_id = 5;</code>
      * @return The bytes for upgradeProductId.
      */
@@ -489,6 +445,10 @@ public final class BattlePassProductOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code BattlePassProduct}
      */
     public static final class Builder extends
@@ -652,10 +612,6 @@ public final class BattlePassProductOuterClass {
 
       private java.lang.Object normalProductId_ = "";
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string normal_product_id = 2;</code>
        * @return The normalProductId.
        */
@@ -672,10 +628,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string normal_product_id = 2;</code>
        * @return The bytes for normalProductId.
        */
@@ -693,10 +645,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string normal_product_id = 2;</code>
        * @param value The normalProductId to set.
        * @return This builder for chaining.
@@ -712,10 +660,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string normal_product_id = 2;</code>
        * @return This builder for chaining.
        */
@@ -726,10 +670,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string normal_product_id = 2;</code>
        * @param value The bytes for normalProductId to set.
        * @return This builder for chaining.
@@ -748,10 +688,6 @@ public final class BattlePassProductOuterClass {
 
       private java.lang.Object extraProductId_ = "";
       /**
-       * <pre>
-       * from 5.3 
-       * </pre>
-       *
        * <code>string extra_product_id = 6;</code>
        * @return The extraProductId.
        */
@@ -768,10 +704,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       * from 5.3 
-       * </pre>
-       *
        * <code>string extra_product_id = 6;</code>
        * @return The bytes for extraProductId.
        */
@@ -789,10 +721,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       * from 5.3 
-       * </pre>
-       *
        * <code>string extra_product_id = 6;</code>
        * @param value The extraProductId to set.
        * @return This builder for chaining.
@@ -808,10 +736,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * from 5.3 
-       * </pre>
-       *
        * <code>string extra_product_id = 6;</code>
        * @return This builder for chaining.
        */
@@ -822,10 +746,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * from 5.3 
-       * </pre>
-       *
        * <code>string extra_product_id = 6;</code>
        * @param value The bytes for extraProductId to set.
        * @return This builder for chaining.
@@ -844,10 +764,6 @@ public final class BattlePassProductOuterClass {
 
       private java.lang.Object upgradeProductId_ = "";
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string upgrade_product_id = 5;</code>
        * @return The upgradeProductId.
        */
@@ -864,10 +780,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string upgrade_product_id = 5;</code>
        * @return The bytes for upgradeProductId.
        */
@@ -885,10 +797,6 @@ public final class BattlePassProductOuterClass {
         }
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string upgrade_product_id = 5;</code>
        * @param value The upgradeProductId to set.
        * @return This builder for chaining.
@@ -904,10 +812,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string upgrade_product_id = 5;</code>
        * @return This builder for chaining.
        */
@@ -918,10 +822,6 @@ public final class BattlePassProductOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * from 5.3
-       * </pre>
-       *
        * <code>string upgrade_product_id = 5;</code>
        * @param value The bytes for upgradeProductId to set.
        * @return This builder for chaining.

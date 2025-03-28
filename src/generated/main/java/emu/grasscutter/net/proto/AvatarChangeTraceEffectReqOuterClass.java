@@ -31,6 +31,11 @@ public final class AvatarChangeTraceEffectReqOuterClass {
     long getAvatarGuid();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 6074
+   * </pre>
+   *
    * Protobuf type {@code AvatarChangeTraceEffectReq}
    */
   public static final class AvatarChangeTraceEffectReq extends
@@ -307,6 +312,11 @@ public final class AvatarChangeTraceEffectReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 6074
+     * </pre>
+     *
      * Protobuf type {@code AvatarChangeTraceEffectReq}
      */
     public static final class Builder extends

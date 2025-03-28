@@ -25,6 +25,10 @@ public final class MirrorAvatarInfoOuterClass {
     int getCopyFromAvatarType();
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * </pre>
+   *
    * Protobuf type {@code MirrorAvatarInfo}
    */
   public static final class MirrorAvatarInfo extends
@@ -273,6 +277,10 @@ public final class MirrorAvatarInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * </pre>
+     *
      * Protobuf type {@code MirrorAvatarInfo}
      */
     public static final class Builder extends
