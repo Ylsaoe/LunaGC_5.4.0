@@ -1117,7 +1117,7 @@ public final class PacketOpcodes {
     public static final int FungusRenameReq = 1;
     public static final int FungusRenameRsp = 1;
     public static final int FunitureMakeMakeInfoChangeNotify = 1;
-    public static final int FurnitureCurModuleArrangeCountNotify = 1;
+    public static final int FurnitureCurModuleArrangeCountNotify = 27772;
     public static final int FurnitureMakeBeHelpedNotify = 1;
     public static final int FurnitureMakeCancelReq = 1;
     public static final int FurnitureMakeCancelRsp = 1;
@@ -1304,7 +1304,7 @@ public final class PacketOpcodes {
     public static final int GetAllMailRsp = 1;
     public static final int GetAllSceneGalleryInfoReq = 1;
     public static final int GetAllSceneGalleryInfoRsp = 1;
-    public static final int GetAreaExplorePointReq = 25575;
+    public static final int GetAreaExplorePointReq = 25775;
     public static final int GetAreaExplorePointRsp = 1;
     public static final int GetAuthSalesmanInfoReq = 1;
     public static final int GetAuthSalesmanInfoRsp = 1;
@@ -1332,7 +1332,7 @@ public final class PacketOpcodes {
     public static final int GetDungeonEntryExploreConditionReq = 1;
     public static final int GetExpeditionAssistInfoListReq = 1;
     public static final int GetExpeditionAssistInfoListRsp = 1;
-    public static final int GetFurnitureCurModuleArrangeCountReq = 1;
+    public static final int GetFurnitureCurModuleArrangeCountReq = 20837;
     public static final int GetGameTimeLockedQuestListReq = 1;
     public static final int GetGameTimeLockedQuestListRsp = 1;
     public static final int GetHomeExchangeWoodInfoReq = 1;
@@ -1352,9 +1352,9 @@ public final class PacketOpcodes {
     public static final int GetOpActivityInfoReq = 1;
     public static final int GetOpActivityInfoRsp = 1;
     public static final int GetParentQuestVideoKeyReq = 1;
-    public static final int GetPlayerBlacklistReq = 1;
-    public static final int GetPlayerBlacklistRsp = 1;
-    public static final int GetPlayerHomeCompInfoReq = 1;
+    public static final int GetPlayerBlacklistReq = 2402;
+    public static final int GetPlayerBlacklistRsp = 5035;
+    public static final int GetPlayerHomeCompInfoReq = 27620;
     public static final int GetPlayerMpModeAvailabilityReq = 1;
     public static final int GetProfilePictureDataReq = 1;
     public static final int GetProfilePictureDataRsp = 1;

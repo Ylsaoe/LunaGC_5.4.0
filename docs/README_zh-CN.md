@@ -2,8 +2,6 @@
 
 旧 Discord https://discord.gg/8vSyTHVphj
 
-# 我摆烂了
-
 # 安装指南
 
 本指南非常简洁，仅包含启动服务器和客户端的步骤。

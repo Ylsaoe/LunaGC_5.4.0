@@ -19,6 +19,11 @@ public final class GetPlayerHomeCompInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 27620
+   * </pre>
+   *
    * Protobuf type {@code GetPlayerHomeCompInfoReq}
    */
   public static final class GetPlayerHomeCompInfoReq extends
@@ -240,6 +245,11 @@ public final class GetPlayerHomeCompInfoReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 27620
+     * </pre>
+     *
      * Protobuf type {@code GetPlayerHomeCompInfoReq}
      */
     public static final class Builder extends

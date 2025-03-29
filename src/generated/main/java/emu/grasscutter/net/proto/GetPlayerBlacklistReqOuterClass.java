@@ -19,6 +19,11 @@ public final class GetPlayerBlacklistReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
+   * <pre>
+   * Version: 5.4
+   * CmdId: 2402
+   * </pre>
+   *
    * Protobuf type {@code GetPlayerBlacklistReq}
    */
   public static final class GetPlayerBlacklistReq extends
@@ -240,6 +245,11 @@ public final class GetPlayerBlacklistReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.4
+     * CmdId: 2402
+     * </pre>
+     *
      * Protobuf type {@code GetPlayerBlacklistReq}
      */
     public static final class Builder extends
