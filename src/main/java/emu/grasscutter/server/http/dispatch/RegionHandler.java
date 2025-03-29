@@ -148,7 +148,7 @@ public final class RegionHandler implements Router {
         // customConfig.addProperty("downloadMode", "0");
         // customConfig.add("codeSwitch", codeSwitch);
         // customConfig.add("coverSwitch", hiddenIcons);
-        customConfig.addProperty("downloadEnablePatchedAsb", "false");
+        customConfig.addProperty("downloadEnablePatchedAsb", "true");
         customConfig.addProperty("showexception", String.valueOf(GameConstants.DEBUG));
 
         // 添加 "me" 对象
