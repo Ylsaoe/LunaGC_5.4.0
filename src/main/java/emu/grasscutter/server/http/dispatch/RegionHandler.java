@@ -170,7 +170,7 @@ public final class RegionHandler implements Router {
         customConfig.add("greyTest", greyTest);
 
         // 添加 "regionConfig"
-        customConfig.addProperty("regionConfig", "https://dispatchcnglobal.yuanshen.com/query_security_file?file_key=CNRELAndroid5.5.0");
+        customConfig.addProperty("regionConfig", "https://dispatchcnglobal.yuanshen.com/query_security_file?file_key=CNRELAndroid5.4.0");
 
         // XOR the config with the key.
         var encodedConfig = JsonUtils.encode(customConfig).getBytes();
