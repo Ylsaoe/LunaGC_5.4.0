@@ -81,9 +81,6 @@ public class EntityClientGadget extends EntityBaseGadget {
 
         GameEntity ownerEntity = scene.getEntityById(this.ownerEntityId);
         ownerEntity = findOwnerEntity(ownerEntity);
-        if (ownerEntity == null) {
-            ownerEntity = ownerEntity.getScene().getEntityById(16777225);
-        }
         if (ownerEntity instanceof EntityClientGadget ownerGadget) {
             this.originalOwnerEntityId = ownerGadget.getOriginalOwnerEntityId();
         } else {
