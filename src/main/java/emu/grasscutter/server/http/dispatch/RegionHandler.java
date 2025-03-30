@@ -6,10 +6,8 @@ import com.google.gson.*;
 import com.google.protobuf.ByteString;
 import emu.grasscutter.*;
 import emu.grasscutter.Grasscutter.ServerRunMode;
-import emu.grasscutter.config.ConfigContainer.Region;
 import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp;
 import emu.grasscutter.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp;
-import emu.grasscutter.net.proto.ResVersionConfigOuterClass;
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
@@ -87,40 +85,11 @@ public final class RegionHandler implements Router {
                     servers.add(identifier);
 
                     // Create a region info object.
-                    HotUpdateResourceDownload.Resource hotfix = new HotUpdateResourceDownload.Resource();
-
-
-					var regionInfo = RegionInfo.newBuilder()
-                        .setGateserverIp(region.Ip)
-                        .setGateserverPort(region.Port)
-                        .setResourceUrl(hotfix.resourceUrl)
-                        .setDataUrl(hotfix.dataUrl)
-                        .setResourceUrlBak(hotfix.resourceUrlBak)
-                        .setClientDataVersion(hotfix.clientDataVersion)
-                        .setClientSilenceDataVersion(hotfix.clientSilenceDataVersion)
-                        .setClientDataMd5(hotfix.clientDataMd5)
-                        .setClientSilenceDataMd5(hotfix.clientSilenceDataMd5)
-                        .setResVersionConfig(
-                            ResVersionConfigOuterClass.ResVersionConfig.newBuilder()
-                                .setVersion(hotfix.resVersionConfig.version)
-                                .setMd5(hotfix.resVersionConfig.md5)
-                                .setReleaseTotalSize(hotfix.resVersionConfig.releaseTotalSize)
-                                .setVersionSuffix(hotfix.resVersionConfig.versionSuffix)
-                                .setBranch(hotfix.resVersionConfig.branch)
-                                .build())
-                        .setClientVersionSuffix(hotfix.clientVersionSuffix)
-                        .setClientSilenceVersionSuffix(hotfix.clientSilenceVersionSuffix)
-                        .setNextResourceUrl(hotfix.nextResourceUrl)
-                        .setNextResVersionConfig(
-                            ResVersionConfigOuterClass.ResVersionConfig.newBuilder()
-                                .setVersion(hotfix.nextResVersionConfig.version)
-                                .setMd5(hotfix.nextResVersionConfig.md5)
-                                .setReleaseTotalSize(hotfix.nextResVersionConfig.releaseTotalSize)
-                                .setVersionSuffix(hotfix.nextResVersionConfig.versionSuffix)
-                                .setBranch(hotfix.nextResVersionConfig.branch))
-                        .setSecretKey(ByteString.copyFrom(Crypto.DISPATCH_SEED))
-                        .build();
-
+                    var regionInfo =
+                            RegionInfo.newBuilder()
+                                    .setGateserverIp(region.Ip)
+                                    .setGateserverPort(region.Port)
+                                    .build();
                     // Create an updated region query.
                     var updatedQuery =
                             QueryCurrRegionHttpRsp.newBuilder()
@@ -142,40 +111,17 @@ public final class RegionHandler implements Router {
         // Create a config object.
         var customConfig = new JsonObject();
         customConfig.addProperty("sdkenv", "2");
-        // customConfig.addProperty("checkdevice", "false");
-        // customConfig.addProperty("loadPatch", "false");
-        // customConfig.addProperty("regionConfig", "pm|fk|add");
-        // customConfig.addProperty("downloadMode", "0");
-        // customConfig.add("codeSwitch", codeSwitch);
-        // customConfig.add("coverSwitch", hiddenIcons);
-        customConfig.addProperty("downloadEnablePatchedAsb", true);
+        customConfig.addProperty("checkdevice", "false");
+        customConfig.addProperty("loadPatch", "false");
         customConfig.addProperty("showexception", String.valueOf(GameConstants.DEBUG));
-
-        // 添加 "me" 对象
-        var meConf = new JsonObject();
-        meConf.addProperty("enable", false);
-        customConfig.add("me", meConf);
-
-        // 添加 "greyTest" 数组
-        var greyTest = new JsonArray();
-        var greyTestItem = new JsonObject();
-        var platforms = new JsonArray();
-        platforms.add("Android");
-        greyTestItem.add("platforms", platforms);
-        greyTestItem.addProperty("rate", 0.7);
-        var codeSwitchs = new JsonArray();
-        codeSwitchs.add(3079);
-        greyTestItem.add("codeSwitchs", codeSwitchs);
-        greyTest.add(greyTestItem);
-        customConfig.add("greyTest", greyTest);
-
-        // 添加 "regionConfig"
-        customConfig.addProperty("regionConfig", "https://dispatchcnglobal.yuanshen.com/query_security_file?file_key=CNRELAndroid5.4.0");
+        customConfig.addProperty("regionConfig", "pm|fk|add");
+        customConfig.addProperty("downloadMode", "0");
+        customConfig.add("codeSwitch", codeSwitch);
+        customConfig.add("coverSwitch", hiddenIcons);
 
         // XOR the config with the key.
         var encodedConfig = JsonUtils.encode(customConfig).getBytes();
         Crypto.xor(encodedConfig, Crypto.DISPATCH_KEY);
-
 
         // Create an updated region list.
         var updatedRegionList =
