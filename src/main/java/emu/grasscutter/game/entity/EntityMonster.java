@@ -2,6 +2,7 @@ package emu.grasscutter.game.entity;
 
 import static emu.grasscutter.scripts.constants.EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE;
 
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.config.ConfigEntityMonster;
 import emu.grasscutter.data.common.PropGrowCurve;
@@ -26,9 +27,11 @@ import emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo;
 import emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.SceneWeaponInfo;
 import emu.grasscutter.net.proto.ServantInfoOuterClass.ServantInfo;
+import emu.grasscutter.net.proto.VisionTypeOuterClass;
 import emu.grasscutter.scripts.constants.EventType;
 import emu.grasscutter.scripts.data.*;
 import emu.grasscutter.server.event.entity.EntityDamageEvent;
+import emu.grasscutter.server.packet.send.PacketSceneEntityDisappearNotify;
 import emu.grasscutter.utils.helpers.ProtoHelper;
 import it.unimi.dsi.fastutil.ints.Int2FloatOpenHashMap;
 import java.util.*;
@@ -273,6 +276,28 @@ public class EntityMonster extends GameEntity {
         var scene = this.getScene();
         var challenge = Optional.ofNullable(scene.getChallenge());
         var scriptManager = scene.getScriptManager();
+
+        Grasscutter.getLogger().warn("Boss {} is dying, starting gadget cleanup...", this.getId());
+        // 清理所有由 Boss 创建的 Gadget
+        scene.getEntities().values().stream()
+            .filter(e -> e instanceof EntityGadget)
+            .map(e -> (EntityGadget) e)
+            .filter(gadget -> {
+                boolean isOwned = gadget.getOwner() != null && gadget.getOwner() == this;
+                if (isOwned) {
+                    Grasscutter.getLogger().warn(
+                        "Removing gadget {} (ID: {}) owned by Boss {}",
+                        gadget.getGadgetId(), gadget.getId(), this.getId()
+                    );
+                }
+                return isOwned;
+            })
+            .forEach(gadget -> {
+                getScene().killEntity(gadget, killerId);
+                getScene().broadcastPacket(new PacketSceneEntityDisappearNotify(
+                    gadget, VisionTypeOuterClass.VisionType.VISION_TYPE_DIE
+                ));
+            });
 
         Optional.ofNullable(this.getSpawnEntry()).ifPresent(scene.getDeadSpawnedEntities()::add);
 
