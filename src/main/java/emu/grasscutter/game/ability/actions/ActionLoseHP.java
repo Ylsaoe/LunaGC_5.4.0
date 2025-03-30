@@ -8,11 +8,7 @@ import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason;
 import emu.grasscutter.server.packet.send.PacketEntityFightPropChangeReasonNotify;
-import emu.grasscutter.server.packet.send.PacketEntityFightPropUpdateNotify;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass;
-import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
-import emu.grasscutter.server.packet.send.PacketEntityAnimatorPairValueInfoNotify;
-import emu.grasscutter.server.packet.send.PacketServerGlobalValueChangeNotify;
 
 @AbilityAction(AbilityModifierAction.Type.LoseHP)
 public final class ActionLoseHP extends AbilityActionHandler {
@@ -21,27 +17,27 @@ public final class ActionLoseHP extends AbilityActionHandler {
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
                 Grasscutter.getLogger().info("LoseHP executed");
                 var owner = ability.getOwner();
-                
-             
-            
-                
+
+
+
+
                 if (owner instanceof EntityClientGadget ownerGadget) {
                     Grasscutter.getLogger().info("Owner is a client gadget");
                     owner = ownerGadget.getScene().getEntityById(ownerGadget.getOwnerEntityId());
-                    
-        
-            
-                   
-            
+
+
+
+
+
                     // Check if the ability is invulnerable for the owner
                     if (ownerGadget.getOwner().getAbilityManager().isAbilityInvulnerable()) return true;
                 }
 
-    
+
 
         if (owner == null) {
        Grasscutter.getLogger().info("Owner is null");
-        }   
+        }
 
         if (action.enableLockHP && target.isLockHP()) {
             return true;
@@ -85,8 +81,8 @@ public final class ActionLoseHP extends AbilityActionHandler {
 
         target.damage(amountToLose);
         target.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(target, FightProperty.FIGHT_PROP_CUR_HP, -amountToLose, PropChangeReasonOuterClass.PropChangeReason.PROP_CHANGE_REASON_ABILITY, ChangeHpReason.CHANGE_HP_SUB_ABILITY));
-                
-            
+
+
 
         return true;
     }
