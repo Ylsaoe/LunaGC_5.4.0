@@ -27,6 +27,7 @@ import it.unimi.dsi.fastutil.ints.*;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.*;
 import emu.grasscutter.database.Database;
@@ -1031,10 +1032,11 @@ public final class TeamManager extends BasePlayerDataManager {
     * Performs a bulk save operation on all avatars.
     */
     public void saveAvatars() {
-        // Save all avatars from active team
-        Database.saveAll(this.getActiveTeam().stream()
-                .map(EntityAvatar::getAvatar)
-                .toList());
+        List<Avatar> avatarsToSave = this.getActiveTeam().stream()
+            .map(EntityAvatar::getAvatar)
+            .collect(Collectors.toCollection(ArrayList::new));
+
+        Database.saveAll(avatarsToSave);
     }
 
     public void onPlayerLogin() { // Hack for now to fix resonances on login

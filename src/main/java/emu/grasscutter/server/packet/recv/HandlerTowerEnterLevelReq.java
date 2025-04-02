@@ -3,7 +3,6 @@ package emu.grasscutter.server.packet.recv;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.TowerEnterLevelReqOuterClass.TowerEnterLevelReq;
 import emu.grasscutter.server.game.GameSession;
-import emu.grasscutter.server.packet.send.PacketTowerLevelStarCondNotify;
 
 @Opcodes(PacketOpcodes.TowerEnterLevelReq)
 public class HandlerTowerEnterLevelReq extends PacketHandler {

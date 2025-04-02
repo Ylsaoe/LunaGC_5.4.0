@@ -19,24 +19,24 @@ public final class GetProfilePictureDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 special_profile_picture_list = 6;</code>
+     * <code>repeated uint32 special_profile_picture_list = 14;</code>
      * @return A list containing the specialProfilePictureList.
      */
     java.util.List<java.lang.Integer> getSpecialProfilePictureListList();
     /**
-     * <code>repeated uint32 special_profile_picture_list = 6;</code>
+     * <code>repeated uint32 special_profile_picture_list = 14;</code>
      * @return The count of specialProfilePictureList.
      */
     int getSpecialProfilePictureListCount();
     /**
-     * <code>repeated uint32 special_profile_picture_list = 6;</code>
+     * <code>repeated uint32 special_profile_picture_list = 14;</code>
      * @param index The index of the element to return.
      * @return The specialProfilePictureList at the given index.
      */
     int getSpecialProfilePictureList(int index);
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -44,7 +44,7 @@ public final class GetProfilePictureDataRspOuterClass {
   /**
    * <pre>
    * Version: 5.4
-   * CmdId: ?? 20098
+   * CmdId: 27172
    * </pre>
    *
    * Protobuf type {@code GetProfilePictureDataRsp}
@@ -93,7 +93,12 @@ public final class GetProfilePictureDataRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 specialProfilePictureList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +106,7 @@ public final class GetProfilePictureDataRspOuterClass {
               specialProfilePictureList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -112,11 +117,6 @@ public final class GetProfilePictureDataRspOuterClass {
                 specialProfilePictureList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 72: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -154,10 +154,10 @@ public final class GetProfilePictureDataRspOuterClass {
               emu.grasscutter.net.proto.GetProfilePictureDataRspOuterClass.GetProfilePictureDataRsp.class, emu.grasscutter.net.proto.GetProfilePictureDataRspOuterClass.GetProfilePictureDataRsp.Builder.class);
     }
 
-    public static final int SPECIAL_PROFILE_PICTURE_LIST_FIELD_NUMBER = 6;
+    public static final int SPECIAL_PROFILE_PICTURE_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList specialProfilePictureList_;
     /**
-     * <code>repeated uint32 special_profile_picture_list = 6;</code>
+     * <code>repeated uint32 special_profile_picture_list = 14;</code>
      * @return A list containing the specialProfilePictureList.
      */
     @java.lang.Override
@@ -166,14 +166,14 @@ public final class GetProfilePictureDataRspOuterClass {
       return specialProfilePictureList_;
     }
     /**
-     * <code>repeated uint32 special_profile_picture_list = 6;</code>
+     * <code>repeated uint32 special_profile_picture_list = 14;</code>
      * @return The count of specialProfilePictureList.
      */
     public int getSpecialProfilePictureListCount() {
       return specialProfilePictureList_.size();
     }
     /**
-     * <code>repeated uint32 special_profile_picture_list = 6;</code>
+     * <code>repeated uint32 special_profile_picture_list = 14;</code>
      * @param index The index of the element to return.
      * @return The specialProfilePictureList at the given index.
      */
@@ -182,10 +182,10 @@ public final class GetProfilePictureDataRspOuterClass {
     }
     private int specialProfilePictureListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -208,15 +208,15 @@ public final class GetProfilePictureDataRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (retcode_ != 0) {
+        output.writeInt32(2, retcode_);
+      }
       if (getSpecialProfilePictureListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(specialProfilePictureListMemoizedSerializedSize);
       }
       for (int i = 0; i < specialProfilePictureList_.size(); i++) {
         output.writeUInt32NoTag(specialProfilePictureList_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,6 +227,10 @@ public final class GetProfilePictureDataRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < specialProfilePictureList_.size(); i++) {
@@ -240,10 +244,6 @@ public final class GetProfilePictureDataRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         specialProfilePictureListMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,7 +379,7 @@ public final class GetProfilePictureDataRspOuterClass {
     /**
      * <pre>
      * Version: 5.4
-     * CmdId: ?? 20098
+     * CmdId: 27172
      * </pre>
      *
      * Protobuf type {@code GetProfilePictureDataRsp}
@@ -555,7 +555,7 @@ public final class GetProfilePictureDataRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @return A list containing the specialProfilePictureList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +564,14 @@ public final class GetProfilePictureDataRspOuterClass {
                  java.util.Collections.unmodifiableList(specialProfilePictureList_) : specialProfilePictureList_;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @return The count of specialProfilePictureList.
        */
       public int getSpecialProfilePictureListCount() {
         return specialProfilePictureList_.size();
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @param index The index of the element to return.
        * @return The specialProfilePictureList at the given index.
        */
@@ -579,7 +579,7 @@ public final class GetProfilePictureDataRspOuterClass {
         return specialProfilePictureList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The specialProfilePictureList to set.
        * @return This builder for chaining.
@@ -592,7 +592,7 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @param value The specialProfilePictureList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +603,7 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @param values The specialProfilePictureList to add.
        * @return This builder for chaining.
        */
@@ -616,7 +616,7 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 6;</code>
+       * <code>repeated uint32 special_profile_picture_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSpecialProfilePictureList() {
@@ -628,7 +628,7 @@ public final class GetProfilePictureDataRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -636,7 +636,7 @@ public final class GetProfilePictureDataRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class GetProfilePictureDataRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -725,7 +725,7 @@ public final class GetProfilePictureDataRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036GetProfilePictureDataRsp.proto\"Q\n\030GetP" +
       "rofilePictureDataRsp\022$\n\034special_profile_" +
-      "picture_list\030\006 \003(\r\022\017\n\007retcode\030\t \001(\005B\033\n\031e" +
+      "picture_list\030\016 \003(\r\022\017\n\007retcode\030\002 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
