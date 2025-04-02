@@ -771,7 +771,7 @@ public final class PacketOpcodes {
     public static final int ClientBulletCreateNotify = 1;
     public static final int ClientCollectorDataNotify = 1;
     public static final int ClientHashDebugNotify = 1;
-    public static final int ClientLoadingCostumeVerificationNotify = 1;
+    public static final int ClientLoadingCostumeVerificationNotify = 23703;
     public static final int ClientLockGameTimeNotify = 1;
     public static final int ClientNewMailNotify = 1;
     public static final int ClientPauseNotify = 1;
@@ -904,8 +904,8 @@ public final class PacketOpcodes {
     public static final int DungeonGetStatueDropRsp = 1;
     public static final int DungeonInterruptChallengeReq = 1;
     public static final int DungeonInterruptChallengeRsp = 1;
-    public static final int DungeonPlayerDieReq = 1;
-    public static final int DungeonPlayerDieRsp = 1;
+    public static final int DungeonPlayerDieReq = 28883;
+    public static final int DungeonPlayerDieRsp = 3468;
     public static final int DungeonPreloadMonsterNotify = 1;
     public static final int DungeonRestartInviteReplyReq = 1;
     public static final int DungeonRestartInviteReplyRsp = 1;
@@ -1023,7 +1023,7 @@ public final class PacketOpcodes {
     public static final int ExitFishingReq = 1;
     public static final int ExitFishingRsp = 1;
     public static final int ExitSceneWeatherAreaNotify = 1;
-    public static final int ExitTransPointRegionNotify = 1;
+    public static final int ExitTransPointRegionNotify = 25988;
     public static final int ExpeditionChallengeEnterRegionNotify = 1;
     public static final int ExpeditionChallengeFinishedNotify = 1;
     public static final int ExpeditionRecallReq = 1;
@@ -1356,8 +1356,8 @@ public final class PacketOpcodes {
     public static final int GetPlayerBlacklistRsp = 5035;
     public static final int GetPlayerHomeCompInfoReq = 27620;
     public static final int GetPlayerMpModeAvailabilityReq = 1;
-    public static final int GetProfilePictureDataReq = 1;
-    public static final int GetProfilePictureDataRsp = 1;
+    public static final int GetProfilePictureDataReq = 29582; // ??
+    public static final int GetProfilePictureDataRsp = 27172;
     public static final int GetPushTipsRewardReq = 1;
     public static final int GetPushTipsRewardRsp = 1;
     public static final int GetQuestLackingResourceReq = 1;
@@ -2036,8 +2036,8 @@ public final class PacketOpcodes {
     public static final int SceneForceUnlockNotify = 1;
     public static final int SceneGalleryInfoNotify = 1;
     public static final int SceneKickPlayerNotify = 1;
-    public static final int SceneKickPlayerReq = 1;
-    public static final int SceneKickPlayerRsp = 1;
+    public static final int SceneKickPlayerReq = 9470;
+    public static final int SceneKickPlayerRsp = 625;
     public static final int SceneOwnerGadgetChainLevelNotify = 1;
     public static final int ScenePlayBattleInfoListNotify = 1;
     public static final int ScenePlayBattleInfoNotify = 1;
@@ -2220,8 +2220,8 @@ public final class PacketOpcodes {
     public static final int TakeMaterialDeleteReturnReq = 1;
     public static final int TakeMaterialDeleteReturnRsp = 1;
     public static final int TakeOfferingLevelRewardRsp = 1;
-    public static final int TakePlayerLevelRewardReq = 1;
-    public static final int TakePlayerLevelRewardRsp = 1;
+    public static final int TakePlayerLevelRewardReq = 6627;
+    public static final int TakePlayerLevelRewardRsp = 5266;
     public static final int TakeRegionSearchRewardReq = 1;
     public static final int TakeRegionSearchRewardRsp = 1;
     public static final int TakeResinCardDailyRewardReq = 1;
