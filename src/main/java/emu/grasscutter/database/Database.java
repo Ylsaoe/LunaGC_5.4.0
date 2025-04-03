@@ -52,9 +52,6 @@ public interface Database {
                 .filter(o -> !o.isGameObject())
                 .toList();
 
-        // Clear the collective list.
-        objects.clear();
-
         // Save all objects.
         var executor = DatabaseHelper.getEventExecutor();
         if (Grasscutter.getRunMode() != Grasscutter.ServerRunMode.DISPATCH_ONLY) {

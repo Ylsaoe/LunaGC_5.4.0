@@ -36,34 +36,34 @@ public final class MapLayerInfoOuterClass {
     int getUnlockedMapLayerGroupIdList(int index);
 
     /**
-     * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+     * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
      * @return A list containing the unlockedMapLayerIdList.
      */
     java.util.List<java.lang.Integer> getUnlockedMapLayerIdListList();
     /**
-     * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+     * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
      * @return The count of unlockedMapLayerIdList.
      */
     int getUnlockedMapLayerIdListCount();
     /**
-     * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+     * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The unlockedMapLayerIdList at the given index.
      */
     int getUnlockedMapLayerIdList(int index);
 
     /**
-     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
      * @return A list containing the unlockedMapLayerFloorIdList.
      */
     java.util.List<java.lang.Integer> getUnlockedMapLayerFloorIdListList();
     /**
-     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
      * @return The count of unlockedMapLayerFloorIdList.
      */
     int getUnlockedMapLayerFloorIdListCount();
     /**
-     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The unlockedMapLayerFloorIdList at the given index.
      */
@@ -144,27 +144,6 @@ public final class MapLayerInfoOuterClass {
               break;
             }
             case 32: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unlockedMapLayerFloorIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              unlockedMapLayerFloorIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                unlockedMapLayerFloorIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                unlockedMapLayerFloorIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 120: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 unlockedMapLayerIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -172,7 +151,7 @@ public final class MapLayerInfoOuterClass {
               unlockedMapLayerIdList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -181,6 +160,27 @@ public final class MapLayerInfoOuterClass {
               }
               while (input.getBytesUntilLimit() > 0) {
                 unlockedMapLayerIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                unlockedMapLayerFloorIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              unlockedMapLayerFloorIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                unlockedMapLayerFloorIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                unlockedMapLayerFloorIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -203,11 +203,11 @@ public final class MapLayerInfoOuterClass {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           unlockedMapLayerGroupIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unlockedMapLayerFloorIdList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           unlockedMapLayerIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          unlockedMapLayerFloorIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -254,10 +254,10 @@ public final class MapLayerInfoOuterClass {
     }
     private int unlockedMapLayerGroupIdListMemoizedSerializedSize = -1;
 
-    public static final int UNLOCKED_MAP_LAYER_ID_LIST_FIELD_NUMBER = 15;
+    public static final int UNLOCKED_MAP_LAYER_ID_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList unlockedMapLayerIdList_;
     /**
-     * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+     * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
      * @return A list containing the unlockedMapLayerIdList.
      */
     @java.lang.Override
@@ -266,14 +266,14 @@ public final class MapLayerInfoOuterClass {
       return unlockedMapLayerIdList_;
     }
     /**
-     * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+     * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
      * @return The count of unlockedMapLayerIdList.
      */
     public int getUnlockedMapLayerIdListCount() {
       return unlockedMapLayerIdList_.size();
     }
     /**
-     * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+     * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The unlockedMapLayerIdList at the given index.
      */
@@ -282,10 +282,10 @@ public final class MapLayerInfoOuterClass {
     }
     private int unlockedMapLayerIdListMemoizedSerializedSize = -1;
 
-    public static final int UNLOCKED_MAP_LAYER_FLOOR_ID_LIST_FIELD_NUMBER = 4;
+    public static final int UNLOCKED_MAP_LAYER_FLOOR_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList unlockedMapLayerFloorIdList_;
     /**
-     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
      * @return A list containing the unlockedMapLayerFloorIdList.
      */
     @java.lang.Override
@@ -294,14 +294,14 @@ public final class MapLayerInfoOuterClass {
       return unlockedMapLayerFloorIdList_;
     }
     /**
-     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
      * @return The count of unlockedMapLayerFloorIdList.
      */
     public int getUnlockedMapLayerFloorIdListCount() {
       return unlockedMapLayerFloorIdList_.size();
     }
     /**
-     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+     * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The unlockedMapLayerFloorIdList at the given index.
      */
@@ -332,19 +332,19 @@ public final class MapLayerInfoOuterClass {
       for (int i = 0; i < unlockedMapLayerGroupIdList_.size(); i++) {
         output.writeUInt32NoTag(unlockedMapLayerGroupIdList_.getInt(i));
       }
-      if (getUnlockedMapLayerFloorIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(unlockedMapLayerFloorIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < unlockedMapLayerFloorIdList_.size(); i++) {
-        output.writeUInt32NoTag(unlockedMapLayerFloorIdList_.getInt(i));
-      }
       if (getUnlockedMapLayerIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(unlockedMapLayerIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockedMapLayerIdList_.size(); i++) {
         output.writeUInt32NoTag(unlockedMapLayerIdList_.getInt(i));
+      }
+      if (getUnlockedMapLayerFloorIdListList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(unlockedMapLayerFloorIdListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < unlockedMapLayerFloorIdList_.size(); i++) {
+        output.writeUInt32NoTag(unlockedMapLayerFloorIdList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -371,20 +371,6 @@ public final class MapLayerInfoOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unlockedMapLayerFloorIdList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unlockedMapLayerFloorIdList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getUnlockedMapLayerFloorIdListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        unlockedMapLayerFloorIdListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
         for (int i = 0; i < unlockedMapLayerIdList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
             .computeUInt32SizeNoTag(unlockedMapLayerIdList_.getInt(i));
@@ -396,6 +382,20 @@ public final class MapLayerInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         unlockedMapLayerIdListMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < unlockedMapLayerFloorIdList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(unlockedMapLayerFloorIdList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getUnlockedMapLayerFloorIdListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        unlockedMapLayerFloorIdListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -821,7 +821,7 @@ public final class MapLayerInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @return A list containing the unlockedMapLayerIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -830,14 +830,14 @@ public final class MapLayerInfoOuterClass {
                  java.util.Collections.unmodifiableList(unlockedMapLayerIdList_) : unlockedMapLayerIdList_;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @return The count of unlockedMapLayerIdList.
        */
       public int getUnlockedMapLayerIdListCount() {
         return unlockedMapLayerIdList_.size();
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @param index The index of the element to return.
        * @return The unlockedMapLayerIdList at the given index.
        */
@@ -845,7 +845,7 @@ public final class MapLayerInfoOuterClass {
         return unlockedMapLayerIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The unlockedMapLayerIdList to set.
        * @return This builder for chaining.
@@ -858,7 +858,7 @@ public final class MapLayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @param value The unlockedMapLayerIdList to add.
        * @return This builder for chaining.
        */
@@ -869,7 +869,7 @@ public final class MapLayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @param values The unlockedMapLayerIdList to add.
        * @return This builder for chaining.
        */
@@ -882,7 +882,7 @@ public final class MapLayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_id_list = 15;</code>
+       * <code>repeated uint32 unlocked_map_layer_id_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockedMapLayerIdList() {
@@ -900,7 +900,7 @@ public final class MapLayerInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @return A list containing the unlockedMapLayerFloorIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -909,14 +909,14 @@ public final class MapLayerInfoOuterClass {
                  java.util.Collections.unmodifiableList(unlockedMapLayerFloorIdList_) : unlockedMapLayerFloorIdList_;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @return The count of unlockedMapLayerFloorIdList.
        */
       public int getUnlockedMapLayerFloorIdListCount() {
         return unlockedMapLayerFloorIdList_.size();
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The unlockedMapLayerFloorIdList at the given index.
        */
@@ -924,7 +924,7 @@ public final class MapLayerInfoOuterClass {
         return unlockedMapLayerFloorIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The unlockedMapLayerFloorIdList to set.
        * @return This builder for chaining.
@@ -937,7 +937,7 @@ public final class MapLayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @param value The unlockedMapLayerFloorIdList to add.
        * @return This builder for chaining.
        */
@@ -948,7 +948,7 @@ public final class MapLayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @param values The unlockedMapLayerFloorIdList to add.
        * @return This builder for chaining.
        */
@@ -961,7 +961,7 @@ public final class MapLayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 4;</code>
+       * <code>repeated uint32 unlocked_map_layer_floor_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockedMapLayerFloorIdList() {
@@ -1039,8 +1039,8 @@ public final class MapLayerInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\022MapLayerInfo.proto\"\206\001\n\014MapLayerInfo\022(\n" +
       " unlocked_map_layer_group_id_list\030\003 \003(\r\022" +
-      "\"\n\032unlocked_map_layer_id_list\030\017 \003(\r\022(\n u" +
-      "nlocked_map_layer_floor_id_list\030\004 \003(\rB\033\n" +
+      "\"\n\032unlocked_map_layer_id_list\030\004 \003(\r\022(\n u" +
+      "nlocked_map_layer_floor_id_list\030\017 \003(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

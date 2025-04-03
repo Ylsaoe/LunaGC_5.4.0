@@ -343,7 +343,6 @@ public class AbilityModifier implements Serializable {
         public String srcTarget, dstTarget;
         public String srcKey, dstKey;
         public List<Map<String, Object>> targetPredicates;
-        public AbilityModifierAction otherTargets;
 
         public DynamicFloat minValue = DynamicFloat.ZERO;
         public DynamicFloat maxValue = DynamicFloat.ZERO;
