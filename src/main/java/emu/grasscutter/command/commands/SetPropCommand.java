@@ -76,6 +76,10 @@ public final class SetPropCommand implements CommandHandler {
         this.props.put("unlockmap", unlockmap);
         this.props.put("um", unlockmap);
 
+        Prop unlockmapall = new Prop("UnlockMapAll", PseudoProp.UNLOCK_MAP_ALL);
+        this.props.put("unlockmapall", unlockmapall);
+        this.props.put("umall", unlockmapall);
+
         Prop flyable = new Prop("IsFlyable", PlayerProperty.PROP_IS_FLYABLE, PseudoProp.IS_FLYABLE);
         this.props.put("canfly", flyable);
         this.props.put("fly", flyable);
@@ -130,6 +134,7 @@ public final class SetPropCommand implements CommandHandler {
                     case SET_OPENSTATE -> this.setOpenState(targetPlayer, value, 1);
                     case UNSET_OPENSTATE -> this.setOpenState(targetPlayer, value, 0);
                     case UNLOCK_MAP -> unlockMap(targetPlayer, value);
+                    case UNLOCK_MAP_ALL -> unlockMapAll(targetPlayer);
                     case CAN_DIVE -> canDive(targetPlayer, value);
                     default -> targetPlayer.setProperty(prop.prop, value);
                 };
@@ -275,6 +280,23 @@ public final class SetPropCommand implements CommandHandler {
         return true;
     }
 
+    private boolean unlockMapAll(Player targetPlayer) {
+        // Unlock.
+        GameData.getScenePointsPerScene().forEach((sceneId, scenePoints) -> {
+            // Unlock trans points.
+            targetPlayer.getUnlockedScenePoints(sceneId).addAll(scenePoints);
+
+            // Unlock map areas.
+            targetPlayer.getUnlockedSceneAreas(sceneId).addAll(sceneAreas);
+        });
+
+        // Send notify.
+        int playerScene = targetPlayer.getSceneId();
+        targetPlayer.sendPacket(new PacketScenePointUnlockNotify(playerScene, targetPlayer.getUnlockedScenePoints(playerScene)));
+        targetPlayer.sendPacket(new PacketSceneAreaUnlockNotify(playerScene, targetPlayer.getUnlockedSceneAreas(playerScene)));
+        return true;
+    }
+
     enum PseudoProp {
         NONE,
         WORLD_LEVEL,
@@ -286,6 +308,7 @@ public final class SetPropCommand implements CommandHandler {
         SET_OPENSTATE,
         UNSET_OPENSTATE,
         UNLOCK_MAP,
+        UNLOCK_MAP_ALL,
         IS_FLYABLE,
         CAN_DIVE
     }

@@ -213,7 +213,7 @@ public final class PacketOpcodes {
     public static final int GetAllMailNotify = 9209;
     public static final int GetAllMailResultNotify = 9103;
     public static final int GetAllUnlockNameCardReq = 3665;
-    public static final int GetAllUnlockNameCardRsp = 23784;
+    public static final int GetAllUnlockNameCardRsp = 395;
     public static final int GetFriendShowAvatarInfoReq = 2170;
     public static final int GetFriendShowAvatarInfoRsp = 6349;
     public static final int GetFriendShowNameCardInfoReq = 22485;
@@ -1357,7 +1357,7 @@ public final class PacketOpcodes {
     public static final int GetPlayerHomeCompInfoReq = 27620;
     public static final int GetPlayerMpModeAvailabilityReq = 1;
     public static final int GetProfilePictureDataReq = 29582; // ??
-    public static final int GetProfilePictureDataRsp = 27172;
+    public static final int GetProfilePictureDataRsp = 27172; // ??
     public static final int GetPushTipsRewardReq = 1;
     public static final int GetPushTipsRewardRsp = 1;
     public static final int GetQuestLackingResourceReq = 1;

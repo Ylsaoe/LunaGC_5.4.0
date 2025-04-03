@@ -18,11 +18,7 @@ public final class ActionKillSelf extends AbilityActionHandler {
             return false;
         }
 
-        target.getScene().killEntity(target, action.otherTargets.configID);
-        Grasscutter.getLogger()
-            .info(
-                "KillGadget configID {}",
-                action.otherTargets.configID);
+        target.getScene().killEntity(target);
         return true;
     }
 }
