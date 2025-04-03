@@ -15,7 +15,6 @@ import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData.InherentProudSkil
 import emu.grasscutter.data.excels.reliquary.*;
 import emu.grasscutter.data.excels.trial.TrialAvatarTemplateData;
 import emu.grasscutter.data.excels.weapon.*;
-//import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.utils.objects.DatabaseObject;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.inventory.*;
@@ -761,7 +760,7 @@ public class Avatar implements DatabaseObject<Avatar> {
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
                 hpDebt);
-                
+
 
 
         // Packet
@@ -1039,7 +1038,7 @@ public class Avatar implements DatabaseObject<Avatar> {
     public void save() {
         this.deferSave();
     }
-    
+
     /**
      * Saves this object to the database.
      *
@@ -1122,7 +1121,7 @@ public class Avatar implements DatabaseObject<Avatar> {
 
         return avatarInfo.build();
     }
-    
+
 
     // used only in character showcase
     public ShowAvatarInfo toShowAvatarInfoProto() {
