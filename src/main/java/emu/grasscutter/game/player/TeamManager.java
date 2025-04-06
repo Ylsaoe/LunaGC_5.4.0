@@ -104,36 +104,6 @@ public final class TeamManager extends BasePlayerDataManager {
             }
         }
 
-        // 处理Level_Monster_Nada_setting配置
-        // Handle Level_Monster_Nada_setting config
-        String levelEntityConfig = getPlayer().getScene().getSceneData().getLevelEntityConfig();
-        ConfigLevelEntity configLevelEntity = GameData.getConfigLevelEntityDataMap().get(levelEntityConfig);
-
-        if (configLevelEntity != null) {
-            List<ConfigAbilityData> teamAbilities = configLevelEntity.getTeamAbilities();
-            if (teamAbilities != null) {
-                for (ConfigAbilityData skill : teamAbilities) {
-
-                    if (skill != null && skill.abilityName != null) {
-                        Grasscutter.getLogger().info("Loading team ability: [{}] from config {} as embryoId {}",
-                            skill, levelEntityConfig, embryoId);
-
-                        AbilityEmbryoOuterClass.AbilityEmbryo emb =
-                            AbilityEmbryoOuterClass.AbilityEmbryo.newBuilder()
-                                .setAbilityId(++embryoId)
-                                .setAbilityNameHash(Utils.abilityHash(skill.abilityName))
-                                .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME)
-                                .build();
-                        abilityControlBlock.addAbilityEmbryoList(emb);
-                    } else {
-                        Grasscutter.getLogger().warn("Invalid skill config in {}", levelEntityConfig);
-                    }
-                }
-            }else {
-                Grasscutter.getLogger().warn("No team abilities found in config: {}", levelEntityConfig);
-            }
-        }
-
         // same as avatar ability hash (add frm levelEntityConfig data)
         if (this.getTeamAbilityEmbryos().size() > 0) {
             for (String skill : this.getTeamAbilityEmbryos()) {
