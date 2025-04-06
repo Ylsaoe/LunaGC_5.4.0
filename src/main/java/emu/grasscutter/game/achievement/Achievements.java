@@ -201,7 +201,7 @@ public class Achievements {
         return status == Status.STATUS_FINISHED || status == Status.STATUS_REWARD_TAKEN;
     }
 
-    public void takeGoalReward(List<Integer> ids) {
+    public void takeReward(List<Integer> ids) {
         List<GameItem> rewards = Lists.newArrayList();
 
         for (int i : ids) {
@@ -246,7 +246,7 @@ public class Achievements {
                         ids, rewards.stream().map(GameItem::toItemParam).toList()));
     }
 
-    public void takeReward(List<Integer> ids) {
+    public void takeGoalReward(List<Integer> ids) {
         List<GameItem> rewards = Lists.newArrayList();
 
         for (int i : ids) {

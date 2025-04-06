@@ -402,9 +402,9 @@ public final class PacketOpcodes {
 	public static final int StoreItemDelNotify = 24974;
 	public static final int SyncScenePlayTeamEntityNotify = 26676;
 	public static final int SyncTeamEntityNotify = 4231;
-    public static final int TakeAchievementGoalRewardReq = 9183;
+    public static final int TakeAchievementGoalRewardReq = 25178;
     public static final int TakeAchievementGoalRewardRsp = 24473;
-    public static final int TakeAchievementRewardReq = 25178;
+    public static final int TakeAchievementRewardReq = 9183;
     public static final int TakeAchievementRewardRsp = 24949;
 	public static final int TakeBattlePassRewardReq = 4300;
 	public static final int TakeBattlePassRewardRsp = 8882;
@@ -1356,8 +1356,8 @@ public final class PacketOpcodes {
     public static final int GetPlayerBlacklistRsp = 5035;
     public static final int GetPlayerHomeCompInfoReq = 27620;
     public static final int GetPlayerMpModeAvailabilityReq = 1;
-    public static final int GetProfilePictureDataReq = 29582; // ??
-    public static final int GetProfilePictureDataRsp = 27172; // ??
+    public static final int GetProfilePictureDataReq = 1; // ?? 29582
+    public static final int GetProfilePictureDataRsp = 1; // ?? 27172
     public static final int GetPushTipsRewardReq = 1;
     public static final int GetPushTipsRewardRsp = 1;
     public static final int GetQuestLackingResourceReq = 1;

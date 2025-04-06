@@ -1160,7 +1160,7 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
 
         return SocialDetail.newBuilder()
             .setUid(this.getUid())
-            .setProfilePicture(ProfilePicture.newBuilder().setHeadImageId(this.getHeadImage()))
+            .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(this.getHeadImage()))
             .setNickname(this.getNickname())
             .setSignature(this.getSignature())
             .setLevel(this.getLevel())
@@ -1472,6 +1472,9 @@ public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
         // Create world
         World world = new World(this);
         world.addPlayer(this);
+
+        //Set uid
+        session.send(new PacketWindSeedUID());
 
         // Multiplayer setting
         this.setProperty(PlayerProperty.PROP_PLAYER_MP_SETTING_TYPE, this.getMpSetting().getNumber(), false);
